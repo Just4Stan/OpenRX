@@ -4176,16 +4176,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 59.69) (xy 266.7 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0db54f95-6b60-4b99-8a30-355da28b1bbc")
-	)
-	(wire
-		(pts
 			(xy 309.88 86.36) (xy 314.96 86.36)
 		)
 		(stroke
@@ -4676,6 +4666,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 59.69) (xy 243.84 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944acfbc-33d8-42e7-a1c2-55848eb5f9c6")
+	)
+	(wire
+		(pts
 			(xy 309.88 83.82) (xy 314.96 83.82)
 		)
 		(stroke
@@ -4683,6 +4683,16 @@
 			(type default)
 		)
 		(uuid "95fbb552-44a6-490a-9bc7-10b66908c65f")
+	)
+	(wire
+		(pts
+			(xy 252.73 59.69) (xy 255.27 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af5e47f-e15c-468f-b201-fb878a2dbe36")
 	)
 	(wire
 		(pts
@@ -4893,6 +4903,16 @@
 			(type default)
 		)
 		(uuid "d0d22117-1e97-4989-a665-16aded1e8f30")
+	)
+	(wire
+		(pts
+			(xy 262.89 59.69) (xy 266.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d153d287-0c9f-4420-aecd-3bd6fbf2a23a")
 	)
 	(wire
 		(pts
@@ -5839,22 +5859,22 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "798a1d45-4125-410b-8b70-4f0c94709570")
-		)
-		(pin "2"
-			(uuid "1cb8b237-660d-4ec4-ad38-a419cd167580")
-		)
 		(property "LCSC" "C88374"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "3"
+			(uuid "798a1d45-4125-410b-8b70-4f0c94709570")
+		)
+		(pin "2"
+			(uuid "1cb8b237-660d-4ec4-ad38-a419cd167580")
 		)
 		(pin "1"
 			(uuid "7706870d-ed6c-426c-bcd4-ac141fbc953a")
@@ -6749,6 +6769,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C7498014"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2ad36d7a-2f91-4e3e-8e60-83d7e12159fe")
 		)
@@ -6763,17 +6794,6 @@
 		)
 		(pin "5"
 			(uuid "0f1d5b96-98a3-43d5-a178-0e821a6141d0")
-		)
-		(property "LCSC" "C7498014"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
 		)
 		(pin "1"
 			(uuid "8cb71227-58e4-4483-8c37-40798ba63285")
@@ -7774,9 +7794,9 @@
 		)
 		(property "LCSC" "C23733"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,6 +7903,98 @@
 			(project "OpenRX-900"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 259.08 59.69 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "657d8df3-a922-443c-b4f2-b35347d0b0b5")
+		(property "Reference" "C13"
+			(at 261.62 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10pF"
+			(at 261.62 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 262.89 58.7248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 259.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14854"
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87b2fd92-55ae-421c-850f-4f8043b7126a")
+		)
+		(pin "2"
+			(uuid "503f9a94-35ac-406f-a4b2-74c4de30dfb1")
+		)
+		(instances
+			(project "OpenRX-900"
+				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -8473,22 +8585,22 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "7d8828d1-9589-4c49-9bbf-a3d6b73dbbe3")
-		)
-		(pin "3"
-			(uuid "68cfbae2-85cb-4b06-831c-f5302d022ddc")
-		)
 		(property "LCSC" "C22434888"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "4"
+			(uuid "7d8828d1-9589-4c49-9bbf-a3d6b73dbbe3")
+		)
+		(pin "3"
+			(uuid "68cfbae2-85cb-4b06-831c-f5302d022ddc")
 		)
 		(pin "1"
 			(uuid "10c7d55b-b697-4573-8114-d3d1d67dd1d2")
@@ -8569,10 +8681,108 @@
 				)
 			)
 		)
+		(property "LCSC" "C1035"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a15e73a4-5cb0-4e29-a044-4f1fee06dcde")
 		)
-		(property "LCSC" "C1035"
+		(pin "1"
+			(uuid "c2538a8f-9301-4011-91ec-2069281e3a0a")
+		)
+		(instances
+			(project "OpenRX-900"
+				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 248.92 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7996bc5a-572e-4d20-9313-6a51bae37115")
+		(property "Reference" "R8"
+			(at 248.92 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 248.92 57.15 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 248.92 57.912 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 248.92 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25092"
+			(at 187.96 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25092"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8583,13 +8793,16 @@
 				)
 			)
 		)
+		(pin "2"
+			(uuid "b29e3918-d477-45ad-91e8-2c3a0cb478d5")
+		)
 		(pin "1"
-			(uuid "c2538a8f-9301-4011-91ec-2069281e3a0a")
+			(uuid "928740a4-601f-4d8e-86f1-29c08d5a8018")
 		)
 		(instances
 			(project "OpenRX-900"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "L1")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10057,6 +10270,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C19842466"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "e980c9ed-647b-4a76-8e47-63aa90c3a121")
 		)
@@ -10077,17 +10301,6 @@
 		)
 		(pin "8"
 			(uuid "c604f0d5-dd9e-499a-a9f4-ad854cecc4ff")
-		)
-		(property "LCSC" "C19842466"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
 		)
 		(pin "1"
 			(uuid "535c64c6-ea62-4b84-94c7-509f3d3971d9")
@@ -10863,19 +11076,19 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "30617184-eb20-4bae-bfe8-c74729cdd367")
-		)
 		(property "LCSC" "C25741"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "30617184-eb20-4bae-bfe8-c74729cdd367")
 		)
 		(pin "1"
 			(uuid "f56faf7f-f028-48b0-98a0-2b56d297c863")
@@ -11211,19 +11424,19 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "bfe2bffa-3c92-4aed-a0af-89bf0a6cca14")
-		)
 		(property "LCSC" "C25741"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "bfe2bffa-3c92-4aed-a0af-89bf0a6cca14")
 		)
 		(pin "1"
 			(uuid "1938bda3-0e45-4af5-bd51-4f830ecb787b")
@@ -11485,19 +11698,19 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "f524b8a1-5eb6-4310-b28f-ada4d1333612")
-		)
 		(property "LCSC" "C25741"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "f524b8a1-5eb6-4310-b28f-ada4d1333612")
 		)
 		(pin "1"
 			(uuid "04dc0da5-0b9f-4d9e-bb86-c79be8dc6400")
