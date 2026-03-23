@@ -291,7 +291,7 @@ Only after Lite + Nano are stable:
 
 ## Known Issues
 
-1. **LR1121 footprint**: easyeda2kicad imported as 5x5mm QFN-32, but LR1121 is actually 4x4mm. Fix footprint before layout.
+1. ~~LR1121 footprint~~: Confirmed QFN-32 5x5mm per LCSC C7498014 listing and Semtech datasheet. Footprint is correct as imported.
 2. **Sub-GHz balun** (Johanson 0900BM15A0001): Not on LCSC. Either consign from DigiKey or design discrete LC balun.
 3. **PWM GPIO allocation**: 6 channels + FEM control exceeds ESP32-C3 GPIO count. 4ch safe, 6ch needs DIO2-based antenna switching (unconfirmed in ELRS).
 4. **Gemini FEM control**: Must use LR1121 RFSW pins, not MCU GPIOs. Current DESIGN.md partially wrong on this.

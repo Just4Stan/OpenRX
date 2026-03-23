@@ -202,16 +202,17 @@ Based on Semtech reference design AN1200.76 and SX1261/SX1262 matching guideline
 
 **IMPORTANT:** These values are approximate and require VNA tuning on the actual PCB. The impedance match depends heavily on PCB layout, trace impedance, and via placement. Semtech's IPD reference design (AN1200.76) uses an integrated passive device that replaces the discrete network.
 
-### Alternative: Johanson IPD Balun
+### Preferred Integrated RF Front End
 
-Instead of discrete components, use **Johanson 0900FM15K0039** (0805 package):
-- Integrates balun, matching, and filtering in a single 0805 component
-- Replaces 12 discrete components
-- Optimized for SX1261/SX1262 (compatible with LR1121 sub-GHz port)
-- Insertion loss: 1.1dB TX typical, 1.5dB RX typical
-- **Note:** This part may not be available on LCSC. Check DigiKey/Mouser.
+Use **Johanson 0900PC16J0042001E** (`LCSC C19842466`) as the preferred sub-GHz RF front end:
+- Designed specifically for the **Semtech LR1110 / LR1120 / LR1121** family
+- Covers **863-870MHz** and **902-928MHz**
+- Integrates the **impedance transformation balun** and **harmonic filtering**
+- Provides separate **RX**, **TX_LP**, and **TX_HP** ports that map directly to `RFI_P/N_LF0`, `RFO_LP_LF`, and `RFO_HP_LF`
+- Johanson states it provides the attenuation needed to help meet **FCC / ETSI** requirements
+- Typical loss is **1.0dB TX** and **1.7dB RX**
 
-For this budget design, the discrete matching network is recommended for cost reasons.
+For OpenRX, this is the best baseline because it removes most of the uncertain hand-tuned 868/915MHz matching work. The discrete network above should be treated as a fallback only if `C19842466` becomes unavailable or if you want a lower-BOM-cost prototype that will still need RF tuning.
 
 
 ## ESP32-C3FH4 (U2)
@@ -590,7 +591,13 @@ These values are for the discrete sub-GHz matching network. Exact values require
 | L3  | 15nH | 0402 | 1 | TBD | RFI_N match |
 | L4  | 6.8nH | 0402 | 1 | TBD | Series match |
 
-Note: RF inductor LCSC part numbers need to be selected based on Q-factor and SRF at 868/915MHz. Search LCSC for "15nH 0402" and "6.8nH 0402" RF inductors. Murata LQW15AN or similar recommended.
+Preferred alternative to the discrete network:
+
+| Ref | Value / Part | Package | Qty | LCSC | Notes |
+|-----|--------------|---------|-----|------|-------|
+| IPD1 | Johanson 0900PC16J0042001E | 2.0x1.6mm 10-pad | 1 | C19842466 | LR11xx-specific 868/915MHz integrated passive device. Replaces the discrete sub-GHz balun/match/filter network above. |
+
+As of March 23, 2026, recent LCSC indexing showed `C19842466` with immediate stock and pricing around `$0.96 @ 1`, `$0.78 @ 10`, `$0.60 @ 100`. If `IPD1` is used, the discrete RF network above should not be populated.
 
 ## Mechanical
 

@@ -2,10 +2,10 @@
 
 Budget 2.4GHz ExpressLRS receiver.
 
-> Audit note: the antenna sections below are stale. `C89334` / `2450AT18A100E` is now reserved for the ESP32-C3 Wi-Fi update/admin antenna path, separate from the ELRS radio RF path. Use `KICAD_WORKFLOW.md` as the authority for new schematic capture.
+> Audit note: the antenna sections below are stale. In the current KiCad sheet, `AE1` / `C89334` / `2450AT18A100E` is the ESP32-C3 Wi-Fi update antenna, while the ELRS RF path currently goes to `AE2` / `47948-0001`. Use `KICAD_WORKFLOW.md` as the authority for new schematic capture.
 
 - PCB: 16x12mm, 2-layer, 1.0mm thickness
-- Target BOM: EUR 3-4
+- Procurement snapshot: the current schematic prices closer to `$8.8` from LCSC before VAT/shipping. The old `EUR 3-4` target is not realistic for the current fitted parts.
 - Input: 3.3-5V from flight controller
 
 ## Block Diagram
@@ -224,18 +224,18 @@ LCSC C2875272. SMD 1612-4P (1.6x1.2mm). Changjing, 10pF load, +/-10ppm.
 
 ## RF Path (Low-Pass Filter)
 
-No PA/LNA. SX1281 RFIO connects to ceramic antenna through a single multilayer LPF (DEA102700LT-6307A2). This matches the RadioMaster reference design.
+No PA/LNA. In the current KiCad sheet, the ELRS RF path runs from SX1281 RFIO through `DEA102700LT-6307A2` into the Molex `47948-0001` antenna/feed part. The separate `2450AT18A100E` chip antenna is reserved for ESP32-C3 Wi-Fi update mode.
 
 ```
-SX1281                  LPF                    Ceramic Antenna
-RFIO  ---[FL1 DEA102700LT-6307A2]---[feed]--- 2450AT18A100E
-(pin 15)   (TDK, 0402-4pin)                   (Johanson)
+SX1281                  LPF                    ELRS Antenna / Feed
+RFIO  ---[FL1 DEA102700LT-6307A2]---[feed]--- 47948-0001
+(pin 15)   (TDK, 0402-4pin)                   (Molex)
 ```
 
 ### Filter:
 - FL1: DEA102700LT-6307A2 (TDK), LCSC C574024, 0402 4-pin multilayer LPF
-- 50 ohm input/output, 2.4GHz bandpass, integrated low-pass filtering
-- No discrete matching components needed. The DEA handles both harmonic suppression and adequate impedance transition from SX1281 RFIO (~40 ohm) to 50 ohm antenna.
+- 50 ohm input/output, low-pass filtering
+- This is the current schematic implementation, but it should not be treated as a Semtech-specific one-part SX1281 match. CE sign-off on the Lite RF path is still pending RF validation.
 
 ### Ceramic Antenna: 2450AT18A100E (ANT1)
 
@@ -371,109 +371,45 @@ Note: For production, this can be replaced with solder pads or omitted entirely 
 - No PA: TX power limited to SX1281 native +12.5dBm max
 - No LNA: RX sensitivity limited to SX1281 native (~-105dBm for LoRa, ~-98dBm for FLRC)
 - Range estimate: 200-500m LOS at 500Hz, 1-2km at 50Hz. Adequate for proximity/indoor/whoop flying.
-- 2-layer RF: Impedance control less precise than 4-layer. DEA102700LT-6307A2 LPF is fixed/pre-matched, no tuning required.
-- Ceramic antenna: ~2-3dB gain penalty vs external dipole/T-antenna
+- 2-layer RF: impedance control is less precise than a 4-layer board
+- Current Lite sheet uses the Molex antenna/feed part, so the older ceramic-antenna range assumptions in this document are stale
 
 ---
 
 # OpenRX-Lite Bill of Materials
 
-Target BOM cost: EUR 3-4 at quantity 100+
+## 2026-03-23 LCSC Pricing Snapshot
 
-## ICs
+The previous BOM estimate in this document was stale. The table below is based on the current KiCad netlist plus current LCSC search results, using the first listed purchasable price tier. Prices exclude VAT, shipping, PCB, and assembly.
 
-| Designator | Value | Package | LCSC | Description | Qty | Est. Price (USD) |
-|------------|-------|---------|------|-------------|-----|-----------------|
-| U1 | ESP32-C3FH4 | QFN-32 (5x5mm) | C2858491 | RISC-V MCU, 160MHz, 4MB flash, WiFi+BLE | 1 | $1.69 |
-| U2 | SX1281IMLTRT | QFN-24 (4x4mm) | C2151551 | 2.4GHz LoRa/FLRC/FSK transceiver | 1 | $2.50 |
-| U3 | TLV75533PDQNR | X2SON-4 (1.0x1.0mm) | C2861882 | 3.3V 500mA LDO (TI) | 1 | $0.15 |
+| Ref | Part | LCSC | Current LCSC Price | Availability Note |
+|-----|------|------|--------------------|-------------------|
+| U1 | ESP32-C3FH4 | C2858491 | $2.2891 | In stock on the most recent LCSC crawl |
+| U2 | TLV75533PDQNR | C2861882 | $0.1290 | In stock on the most recent LCSC crawl |
+| U3 | SX1281IMLTRT | C2151551 | $3.6011 | Most recent LCSC crawl showed out of stock |
+| X1 | CJ17-400001010B20 | C2875272 | $0.2035 | In stock, but not deep stock |
+| OSC1 | OW7EL89CENUNFAYLC-52M | C22434896 | $0.7907 | In stock on the most recent LCSC crawl |
+| USB1 | DEA102700LT-6307A2 | C574024 | $0.0952 | In stock on the most recent LCSC crawl |
+| AE1 | 2450AT18A100E | C89334 | $0.5293 | Wi-Fi update antenna only in the current sheet |
+| AE2 | 47948-0001 | C152351 | $1.0869 | Current ELRS antenna/feed part in the sheet |
+| D1 | XL-1010RGBC-WS2812B | C5349953 | $0.0732 | Optional |
 
-## Crystals and Oscillators
+### Lite Cost Summary
 
-| Designator | Value | Package | LCSC | Description | Qty | Est. Price (USD) |
-|------------|-------|---------|------|-------------|-----|-----------------|
-| Y1 | 40MHz | SMD1612-4P (1.6x1.2mm) | C2875272 | Crystal, 10pF load, +/-10ppm (CJ17-400001010B20) | 1 | $0.08 |
-| Y2 | 52MHz TCXO | SMD2016-4P (2.0x1.6mm) | C22434896 | TCXO, 3.3V, +/-0.5ppm (OW7EL89CENUNFAYLC-52M) | 1 | $0.45 |
+- Base fitted RF/logic subtotal from the current schematic, without optional LED and without passives: `$8.7248`
+- With optional LED stuffed: `$8.7980`
+- Corrected passives should only add a few cents, but the current passive `LCSC` fields in the schematic are not trustworthy enough for an auto-BOM total yet
 
-## Antenna
+### Passive Procurement Audit
 
-| Designator | Value | Package | LCSC | Description | Qty | Est. Price (USD) |
-|------------|-------|---------|------|-------------|-----|-----------------|
-| ANT1 | 2450AT18A100E | 3.2x1.6mm | C89334 | 2.4GHz ceramic chip antenna (Johanson) | 1 | $0.25 |
+Do not order Lite passives directly from the current schematic `LCSC` fields. At least these mappings are wrong in the current KiCad sheet:
 
-## Optional Components
+- `100nF` capacitors are currently tagged as `C14858`, which is not a 100nF part: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L9703), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L9758)
+- `1uF` capacitors are currently tagged as `C77857`, which is not a capacitor: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L5815), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L5870)
+- `C18` is a `1nF` coupling capacitor but is currently tagged as `C80390`, which is not a 1nF capacitor: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L7397), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L7450)
 
-| Designator | Value | Package | LCSC | Description | Qty | Est. Price (USD) |
-|------------|-------|---------|------|-------------|-----|-----------------|
-| D1 | XL-1010RGBC-WS2812B | 1.0x1.0mm | C5349953 | Addressable RGB LED (status indicator) | 0-1 | $0.05 |
-| SW1 | Tactile switch | 3x4mm or 2x3mm | -- | Boot button (can substitute solder pads) | 0-1 | $0.02 |
+### Current Procurement Verdict
 
-## Passives (not imported -- add manually in KiCad)
-
-### Capacitors
-
-| Designator | Value | Package | Dielectric | Voltage | Qty | Notes |
-|------------|-------|---------|------------|---------|-----|-------|
-| C1 | 1uF | 0402 | X5R | 10V | 1 | LDO input (TLV755 local) |
-| C2 | 10uF | 0603 | X5R | 10V | 1 | 5V rail bulk |
-| C3 | 1uF | 0402 | X5R | 10V | 1 | LDO output (TLV755 local) |
-| C4 | 10uF | 0603 | X5R | 10V | 1 | 3.3V rail bulk (near ESP32) |
-| C5 | 100nF | 0402 | X7R | 16V | 1 | ESP32-C3 3V3 decoupling |
-| C6 | 1uF | 0402 | X5R | 10V | 1 | ESP32-C3 EN RC filter |
-| C7 | 10pF | 0402 | C0G | 50V | 1 | Crystal load cap (XTAL_P) |
-| C8 | 10pF | 0402 | C0G | 50V | 1 | Crystal load cap (XTAL_N) |
-| C9 | 100nF | 0402 | X7R | 16V | 1 | SX1281 VDD (pin 1) |
-| C10 | 100nF | 0402 | X7R | 16V | 1 | SX1281 VDD_IN (pin 2) |
-| C11 | 100nF | 0402 | X7R | 16V | 1 | SX1281 NRESET RC filter |
-| C12 | 470nF | 0402 | X5R | 10V | 1 | SX1281 VR_PA (LDO mode) |
-| C13 | 100nF | 0402 | X7R | 16V | 1 | SX1281 VDD (pin 11) |
-| C14 | 10pF | 0402 | C0G | 50V | 1 | TCXO AC coupling (optional) |
-| C15 | 100nF | 0402 | X7R | 16V | 1 | TCXO VDD decoupling |
-| C16 | 100nF | 0402 | X7R | 16V | 1 | WS2812B decoupling (optional) |
-
-**Capacitor totals:** 100nF x9, 10pF x3, 10uF x1, 22uF x1, 1uF x1, 470nF x1
-
-### Resistors
-
-| Designator | Value | Package | Qty | Notes |
-|------------|-------|---------|-----|-------|
-| R1 | 10k | 0402 | 1 | ESP32-C3 EN pull-up |
-| R2 | 10k | 0402 | 1 | SPI NSS pull-up |
-| R3 | 10k | 0402 | 1 | BOOT GPIO9 pull-up |
-| R4 | 100R | 0402 | 1 | WS2812B data series (optional) |
-| R5 | 10k | 0402 | 1 | SX1281 NRESET pull-up |
-
-**Resistor totals:** 10k x4, 100R x1
-
-## Imported Components (easyeda2kicad)
-
-The following components have been imported into `libs/OpenRX-Lite.*`:
-
-| LCSC | Part | Symbol | Footprint |
-|------|------|--------|-----------|
-| C2858491 | ESP32-C3FH4 | ESP32-C3FH4 | QFN-32_L5.0-W5.0-P0.50-TL-EP3.7 |
-| C2151551 | SX1281IMLTRT | SX1281IMLTRT | QFN-24_L4.0-W4.0-P0.50-TL-EP2.6 |
-| C89334 | 2450AT18A100E | 2450AT18A100E | ANT-SMD_L3.2-W1.6 |
-| C2861882 | TLV75533PDQNR | TLV75533PDQNR | X2SON-4_L1.0-W1.0-P0.65-TL-EP |
-| C22434896 | 52MHz TCXO | OW7EL89CENUNFAYLC-52M | OSC-SMD_4P-L2.0-W1.6-BL_TXC_7Z |
-| C2875272 | 40MHz Crystal | CJ17-400001010B20 | CRYSTAL-SMD_4P-L1.6-W1.2-BL |
-| C574024 | DEA102700LT-6307A2 | DEA102700LT-6307A2 | FILTER-SMD_4P-L1.0-W0.5 |
-
-Library path: `libs/OpenRX-Lite.kicad_sym` (symbols), `libs/OpenRX-Lite.pretty/` (footprints), `libs/OpenRX-Lite.3dshapes/` (3D models)
-
-## BOM Cost Estimate (qty 100, LCSC pricing)
-
-| Category | Est. Cost |
-|----------|-----------|
-| ESP32-C3FH4 | $1.69 |
-| SX1281IMLTRT | $2.50 |
-| TLV755C33M5G-N | $0.07 |
-| 52MHz TCXO | $0.45 |
-| 40MHz Crystal | $0.08 |
-| Ceramic Antenna | $0.25 |
-| DEA102700LT-6307A2 LPF | $0.10 |
-| All passives (~16 caps, 5 resistors) | ~$0.12 |
-| WS2812B (optional) | $0.05 |
-| **Total (without PCB/assembly)** | **~$5.31** |
-
-**Note:** The SX1281 is the cost driver at $2.50. At qty 1000+ the price drops to ~$1.80, bringing total BOM closer to $4.50. The EUR 3-4 target is aggressive and may require either volume pricing or substituting a cheaper transceiver (SX1280 if available cheaper). PCB fabrication and assembly at JLCPCB adds approximately $1-2 per unit at qty 100.
+- The current Lite is not a `EUR 3-4` receiver. With the fitted parts now in the sheet, it is roughly an `$8.8` class BOM before PCB and assembly.
+- Lite is also not currently cheaper than Nano because the present Lite sheet uses the Molex `47948-0001` antenna/feed part, which is materially more expensive than Nano’s `U.FL` path.
+- The most important availability blocker is `SX1281IMLTRT`, because the most recent LCSC crawl showed it out of stock.

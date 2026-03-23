@@ -335,9 +335,9 @@ LR1121 RFI_N (pin 12) ──┴── C_MATCH (0.5pF) ──┘
 
 **Balun Options:**
 
-1. **Johanson 0900BM15A0001 (preferred):** Integrated balun for 868/915MHz, 0805 package. Converts differential to 50-ohm single-ended. No external matching components needed.
+1. **Johanson 0900PC16J0042001E (preferred):** LR11xx-specific integrated passive device for 863-870MHz and 902-928MHz. It exposes dedicated `RX`, `TX_LP`, and `TX_HP` ports and directly matches the LR1121 `RFI_P/N_LF0`, `RFO_LP_LF`, and `RFO_HP_LF` pins. This is the cleanest CE-oriented choice.
 
-2. **Discrete balun:** Use 3-element LC matching network (requires tuning). Not recommended for production.
+2. **Discrete balun / match:** Use a Semtech-style LC network only as a fallback if the Johanson IPD is unavailable. It will require tuning on the real PCB.
 
 **Matching Network (if using discrete components):**
 
@@ -632,12 +632,12 @@ All parts sourced from LCSC for JLCPCB assembly compatibility.
 | Y1 | 40MHz Crystal | — | C14346 | 3.2x2.5mm | 1 | ~$0.08 | 10pF load, for ESP32-C3 |
 | Y2 | 32MHz TCXO | OW2EL89CENUXFMYLC-32M (YXC) | C22434888 | 3.2x2.5mm | 1 | ~$0.90 | Peak-shaving sine, 3.3V, +/-2.5ppm. Set VTCXO=3.3V in firmware |
 | B1 | 2.4GHz Balun | DEA102700LT-6307A2 | C574024 | SMD | 1 | ~$0.10 | RFIO_HF to RFX2401C TXRX matching |
-| T1 | Sub-GHz Balun | 0900BM15A0001 | — | 0805 | 1 | ~$0.50 | 868/915MHz balun. Source from DigiKey/Mouser if not on LCSC |
+| T1 | Sub-GHz LR11xx IPD | 0900PC16J0042001E | C19842466 | 2.0x1.6mm 10-pad | 1 | ~$0.96 | Johanson LR1110/LR1120/LR1121 integrated balun + filter. Preferred OpenRX baseline. |
 
 **Balun Alternatives (LCSC):**
-- Search LCSC for 868/915MHz balun in 0805 or 0603 package
-- Johanson 0900BM15A0001 may need DigiKey sourcing (~$0.45 @ 100+)
-- Alternative: discrete LC balun (3x inductors + 2x caps) saves cost but needs tuning
+- Preferred: `0900PC16J0042001E / C19842466`
+- If that part goes out of stock, use the discrete Semtech-style RF network rather than a random wideband 50:100 balun
+- Older generic 868/915MHz Johanson baluns are not as attractive here because they are not LR11xx-specific and LCSC stock is worse
 
 ## Connectors
 

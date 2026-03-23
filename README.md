@@ -10,12 +10,14 @@ Part of the [OpenDrone](https://github.com/Just4Stan) ecosystem. Six ELRS 4.0 re
 
 | Model | Band | MCU | RF | Front-End | Size | BOM | Retail | Use Case |
 |-------|------|-----|-----|-----------|------|-----|--------|----------|
-| **Lite** | 2.4 GHz | ESP32-C3 | SX1281 | — | 16x12mm | ~€5 | €8-10 | Whoops, micro quads |
-| **Nano** | 2.4 GHz | ESP32-C3 | SX1281 | RFX2401C | 20x13mm | ~€6 | €12-15 | Standard 5" quads |
+| **Lite** | 2.4 GHz | ESP32-C3 | SX1281 | — | 16x12mm | ~$8.8 provisional | €8-10 | Whoops, micro quads |
+| **Nano** | 2.4 GHz | ESP32-C3 | SX1281 | RFX2401C | 20x13mm | ~$8.7 provisional | €12-15 | Standard 5" quads |
 | **900** | 868/915 MHz | ESP32-C3 | LR1121 | — | 18x13mm | ~€5 | €10-13 | Long range |
 | **Dual** | Dual-band | ESP32-C3 | LR1121 | RFX2401C | 22x15mm | ~€6 | €15-18 | Switchable bands |
 | **PWM** | 2.4 GHz | ESP32-C3 | SX1281 | RFX2401C | 30x20mm | ~€6 | €15-18 | Fixed wing, servos |
 | **Gemini** | Xrossband | ESP32-C3 | 2x LR1121 | RFX2401C | 24x18mm | ~€9 | €25-30 | Flagship simultaneous |
+
+Lite and Nano pricing above is a March 23, 2026 LCSC snapshot from the current KiCad netlists, excluding VAT/shipping and treating passives as provisional because several passive `LCSC` fields in the schematics are currently wrong. The other four receivers still carry planning estimates.
 
 ## Which One Do I Need?
 
@@ -38,10 +40,10 @@ Two RF platforms, one MCU, one front-end across all receivers:
 | Shared LDO | TLV75533PDQNR | C2861882 | Lite, Nano, 900, Dual |
 | 52MHz TCXO | YXC OW7EL89 | C22434896 | SX1281 family |
 | 32MHz TCXO | YXC OW2EL89 | C22434888 | LR1121 family |
-| 40MHz crystal | TXC 7M | C90924 | All 6 |
+| 40MHz crystal | CJ17-400001010B20 | C2875272 | Lite, Nano |
 | RGB LED | XL-1010RGBC-WS2812B | C5349953 | Optional status LED on Lite, Nano, 900, Dual |
 
-All passives are JLCPCB basic parts (0402, zero setup fee). Full BOM per receiver in each `DESIGN.md`.
+Passive sourcing is under audit. Do not trust the current Lite/Nano schematic `LCSC` fields for every capacitor/resistor until the passive mapping cleanup is complete. Current pricing snapshots live in each receiver `DESIGN.md`.
 
 Shared-package policy: default active packages are `QFN/DFN/X2SON/WSON`; `SOT-23-5`, `SOT-223`, and larger LEDs are exceptions only when input-voltage or current margin requires them. `PWM` remains a high-VIN exception, and `Gemini` remains a higher-current power exception.
 

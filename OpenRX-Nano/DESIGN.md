@@ -1,6 +1,8 @@
 # OpenRX-Nano Schematic Design Document
 
 > Audit note: for current ExpressLRS unified RX targets, the front-end control keys are `power_rxen` and `power_txen`, not `rx_en` and `tx_en`.
+>
+> Procurement note: `AE1` / `2450AT18A100E` is the ESP32-C3 Wi-Fi update antenna in the current schematic. The ELRS RF path goes out through `JP1` / `U.FL-R-SMT-1(80)`.
 
 2.4GHz ExpressLRS receiver with PA+LNA front-end.
 PCB: 20x13mm, 2-layer, 1.0mm thickness.
@@ -48,8 +50,9 @@ Antenna ◄──► UFL/IPEX ◄──► [C15: 0.3pF shunt] ◄──► RFX24
 ```
 
 Between SX1281 RFIO (pin 15) and RFX2401C TXRX (pin 4): a single DEA102700LT-6307A2
-(LCSC C574024, 0402 integrated LPF) provides impedance matching and low-pass filtering.
-No discrete matching network or separate SAW filter needed — this single component replaces
+(LCSC C574024, 0402 integrated LPF) is the current fitted low-pass element in the
+schematic. It should not be described as a Semtech-specific one-part SX1281 match. This
+single component replaces
 what earlier revisions called a "SAW filter" in this path. Both ports are 50 ohm; the
 RFX2401C TXRX is DC shorted to GND internally, providing the DC path required by SX1281
 RFIO. No external DC blocking cap needed.
@@ -114,7 +117,7 @@ LCSC: C2858491 | Package: QFN-32, 5x5mm | 4MB internal flash
         GND              GND  GND              GND
 ```
 
-Crystal: SMD3225, 40MHz, 10pF load, +/-10ppm (e.g. JGHC S3240000101040, LCSC C426988)
+Crystal: current schematic uses `CJ17-400001010B20`, LCSC `C2875272`, 40MHz, 10pF load.
 
 ### Reset Circuit
 
@@ -344,7 +347,7 @@ LCSC: C22434896 | YXC OW7EL89CENUNFAYLC-52M | Package: SMD2016 (2.0x1.6mm) | 3.3
 
 For ESP32-C3FH4 main clock.
 
-LCSC: C426988 | JGHC S3240000101040 | Package: SMD3225 | 40MHz, 10pF, +/-10ppm
+LCSC: C2875272 | CJ17-400001010B20 | Package: SMD1612-4P | 40MHz, 10pF, +/-10ppm
 
 ### Crystal Circuit
 
@@ -363,9 +366,9 @@ the crystal traces with ground.
 
 LCSC: C574024 | Package: 0402 | 2.4GHz integrated low-pass filter
 
-Placed between SX1281 RFIO (pin 15) and RFX2401C TXRX (pin 4). Provides impedance
-matching and low-pass filtering in a single component. No discrete matching network
-needed.
+Placed between SX1281 RFIO (pin 15) and RFX2401C TXRX (pin 4). In the current
+schematic it is the fitted low-pass element, but it should not be described as a
+Semtech-specific one-part SX1281 matching solution.
 
 ```
     SX1281 RFIO (pin 15) ── FL1 ── RFX2401C TXRX (pin 4)
@@ -378,7 +381,7 @@ path. The antenna-side harmonic filtering is handled by C15 (0.3pF shunt on ANT 
 
 ## 8. UFL/IPEX Connector (J1)
 
-LCSC: C22418213 | Package: SMD | UFL receptacle
+LCSC: C88374 | Package: SMD | U.FL receptacle
 
 ```
     Signal pin ── RFX2401C ANT (via C15 shunt)
@@ -560,111 +563,44 @@ TLV755 rated 500mA — adequate for all operating modes.
 
 # OpenRX-Nano Bill of Materials
 
-> Audit note: this is the current preferred 2.4GHz baseline. Uses RFX2401C with DEA102700LT-6307A2 LPF (replaces earlier SAW filter). Connector choices still need to be reconciled with `CORE_BOM.md` before freezing procurement.
+## 2026-03-23 LCSC Pricing Snapshot
 
-Target BOM cost: EUR 5-6 at quantity 100+
+The previous Nano BOM section was stale and did not match the current KiCad sheet. The table below is based on the current schematic netlist plus current LCSC search results, using the first listed purchasable price tier. Prices exclude VAT, shipping, PCB, and assembly.
 
-## Active Components
+| Ref | Part | LCSC | Current LCSC Price | Availability Note |
+|-----|------|------|--------------------|-------------------|
+| U1 | TLV75533PDQNR | C2861882 | $0.1290 | In stock on the most recent LCSC crawl |
+| U2 | ESP32-C3FH4 | C2858491 | $2.2891 | In stock on the most recent LCSC crawl |
+| U3 | SX1281IMLTRT | C2151551 | $3.6011 | Most recent LCSC crawl showed out of stock |
+| U4 | RFX2401C | C19213 | $0.8604 | In stock on the most recent LCSC crawl |
+| X1 | CJ17-400001010B20 | C2875272 | $0.2035 | In stock, but not deep stock |
+| OSC1 | OW7EL89CENUNFAYLC-52M | C22434896 | $0.7907 | In stock on the most recent LCSC crawl |
+| USB1 | DEA102700LT-6307A2 | C574024 | $0.0952 | In stock on the most recent LCSC crawl |
+| JP1 | U.FL-R-SMT-1(80) | C88374 | $0.1286 | In stock on the most recent LCSC crawl |
+| AE1 | 2450AT18A100E | C89334 | $0.5293 | Wi-Fi update antenna only in the current sheet |
+| D1 | XL-1010RGBC-WS2812B | C5349953 | $0.0732 | Optional |
 
-| Ref | Description | MPN | Package | LCSC | Qty | Unit Price (USD) | Notes |
-|-----|-------------|-----|---------|------|-----|-------------------|-------|
-| U1  | 3.3V 500mA LDO | TLV75533PDQNR | X2SON-4 1x1mm | C2861882 | 1 | $0.15 | TI, Extended |
-| U2  | MCU, 4MB flash | ESP32-C3FH4 | QFN-32 5x5mm | C2858491 | 1 | $1.15 | Extended |
-| U3  | 2.4GHz LoRa transceiver | SX1281IMLTRT | QFN-24 4x4mm | C2151551 | 1 | $1.80 | Extended |
-| U4  | 2.4GHz PA+LNA+Switch | RFX2401C | QFN-16 3x3mm | C19213 | 1 | $0.90 | Extended |
-| Y1  | 40MHz crystal, 10pF | S3240000101040 | SMD3225 | C426988 | 1 | $0.06 | Extended |
-| Y2  | 52MHz TCXO, 3.3V, ±0.5ppm | OW7EL89CENUNFAYLC-52M | SMD2016 | C22434896 | 1 | $0.42 | Extended |
-| FL1 | 2.4GHz LPF | DEA102700LT-6307A2 | 0402 | C574024 | 1 | $0.10 | Extended |
-| J1  | UFL/IPEX connector | CONUFL001-SMD-T | SMD | C22418213 | 1 | $0.56 | Extended |
-| LED1 | Addressable RGB LED | XL-1010RGBC-WS2812B | 1010 (1x1mm) | C5349953 | 1 | $0.04 | Extended |
-| SW1 | Tactile switch (boot) | — | 3x4mm SMD | — | 1 | $0.02 | Any 3x4 tact |
+### Nano Cost Summary
 
-### Active Component Subtotal: ~$5.17
+- Base fitted RF/logic subtotal from the current schematic, without optional LED and without passives: `$8.6269`
+- With optional LED stuffed: `$8.7001`
+- Corrected passives should only add a few cents, but the current passive `LCSC` fields in the schematic are not trustworthy enough for an auto-BOM total yet
 
-## Passive Components — Capacitors
+### Passive Procurement Audit
 
-| Ref | Value | Package | Spec | LCSC | Qty | Notes |
-|-----|-------|---------|------|------|-----|-------|
-| C1  | 1uF   | 0402 | X5R 10V ±10% | C52923 | 1 | LDO input local (TLV755), basic |
-| C2  | 10uF  | 0603 | X5R 10V ±10% | C15525 | 1 | 5V rail bulk, basic |
-| C3  | 1uF   | 0402 | X5R 10V ±10% | C52923 | 1 | LDO output local (TLV755), basic |
-| C4  | 10uF  | 0603 | X5R 10V ±10% | C15525 | 1 | 3.3V rail bulk, basic |
-| C5  | 1uF   | 0402 | X7R 16V ±10% | C52923 | 1 | EN RC delay, basic |
-| C6  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | ESP32 VDD3P3, basic |
-| C7  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | ESP32 VDD_SPI, basic |
-| C8  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | ESP32 VDD3P3_RTC, basic |
-| C9  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | SX1281 pin 1 VDD, basic |
-| C10 | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | SX1281 pin 2 VDD_IN, basic |
-| C11 | 470nF | 0402 | X7R 16V ±10% | C1543 | 1 | SX1281 VR_PA (LDO mode), basic |
-| C12 | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | SX1281 pin 11 VDD, basic |
-| C13 | 1uF   | 0402 | X5R 16V ±10% | C52923 | 1 | RFX2401C VDD, basic |
-| C14 | 220pF | 0402 | C0G/NP0 50V ±5% | C1604 | 1 | RFX2401C VDD HF, basic |
-| C15 | 0.3pF | 0402 | C0G/NP0 50V | — | 1 | 5th harmonic filter, see note |
-| C16 | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | TCXO VCC, basic |
-| C17 | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | WS2812B VDD, basic |
-| CX1 | 10pF  | 0402 | C0G/NP0 50V ±5% | C32949 | 1 | 40MHz crystal load, basic |
-| CX2 | 10pF  | 0402 | C0G/NP0 50V ±5% | C32949 | 1 | 40MHz crystal load, basic |
+Do not order Nano passives directly from the current schematic `LCSC` fields. At least these mappings are wrong in the current KiCad sheet:
 
-**Note on C15 (0.3pF)**: MANDATORY -- do not omit. Required for 5th harmonic suppression
-and CE compliance per RFX2401C eval board. 0.3pF C0G 0402 caps exist as standard parts
-(check LCSC/Murata GJM series). If unavailable, 0.5pF C0G 0402 (e.g. LCSC C1550) is the
-closest standard substitute. RadioMaster Ranger Nano uses 0.3pF.
+- `100nF` capacitors are currently tagged as `C14858`, which is not a 100nF part: [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L10579), [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L10634)
+- `1uF` capacitors are currently tagged as `C77857`, which is not a capacitor: [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L6523), [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L6578)
+- `C18` is a `1nF` coupling capacitor but is currently tagged as `C80390`, which is not a 1nF capacitor: [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L8305), [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L8358)
 
-### Capacitor Subtotal: ~$0.10 (all basic parts, negligible cost)
+The Nano-specific RF parts themselves do at least match the intended values in the current schematic:
 
-## Passive Components — Resistors
+- `C20 = 220pF` on the RFX2401C supply network: [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L7920)
+- `C22 = 0.3pF` on the ANT side shunt: [esp32c3_sx1281_rx_core.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Nano/esp32c3_sx1281_rx_core.kicad_sch#L7853)
 
-| Ref | Value | Package | Spec | LCSC | Qty | Notes |
-|-----|-------|---------|------|------|-----|-------|
-| R1  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | ESP32 EN pull-up, basic |
-| R2  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | GPIO9 boot pull-up, basic |
-| R3  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | SX1281 NRESET pull-up, basic |
-| R4  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | SX1281 NSS pull-up, basic |
-| R5  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | TXEN series, basic |
-| R6  | 10k | 0402 | ±1% 1/16W | C25744 | 1 | RXEN series, basic |
-| R7  | 470R | 0402 | ±1% 1/16W | C25117 | 1 | LED DIN series, basic |
+### Current Procurement Verdict
 
-### Resistor Subtotal: ~$0.01
-
-## Connectors / Mechanical
-
-| Ref | Description | Package | LCSC | Qty | Notes |
-|-----|-------------|---------|------|-----|-------|
-| J1  | UFL/IPEX connector | SMD | C22418213 | 1 | Listed in actives above |
-| J2  | Solder pads 4x (5V, GND, TX, RX) | 1.27mm pitch | — | 1 | Copper pads on PCB edge |
-| TP1-3 | Test pads (USB D+, D-, GND) | 1.0mm round | — | 3 | Copper pads |
-
-## BOM Cost Summary (USD, qty 100)
-
-| Category | Cost |
-|----------|------|
-| Active components | $5.17 |
-| Passive components | $0.15 |
-| **Total BOM** | **~$5.32** |
-
-At current exchange rates (~1 USD = 0.92 EUR), BOM is approximately **EUR 4.90**.
-Within the EUR 5-6 target.
-
-## JLCPCB Assembly Notes
-
-- 9 unique active component types (all SMD)
-- 19 unique passive component types (mostly 0402, basic parts)
-- Total component count: ~30 parts
-- Basic parts: TLV755, all 0402 caps and resistors (no setup fee)
-- Extended parts: ESP32-C3, SX1281, RFX2401C, crystal, TCXO, DEA LPF, UFL, WS2812B
-  (setup fee per unique extended part, ~$3 each)
-- Setup fees at qty 100: ~$27 total ($0.27/board)
-- PCB cost (20x13mm, 2-layer, 1.0mm, qty 100): ~$0.50/board
-- Assembly cost: ~$0.50/board
-- **Total per-board cost at qty 100: ~EUR 6.10** (BOM + PCB + assembly + setup)
-
-## Alternate Parts
-
-| Original | Alternative | LCSC | Notes |
-|----------|-------------|------|-------|
-| RFX2401C (C19213) | SE2431L-R | C2649471 | **Not recommended** -- EOL, low stock, no restock expected |
-| DEA102700LT-6307A2 (C574024) | 2450FM07D0034 | C2651081 | Johanson SAW/BPF alternative (functionally equivalent) |
-| OW7EL89CENUNFAYLC-52M | ABDFTCXO-52MHz | C568568 | Abracon TCXO, larger package |
-| S3240000101040 (C426988) | Any 40MHz 10pF 3225 | C90924 | TXC Corp alternative |
-| C22418213 (UFL) | Any IPEX1/UFL receptacle | — | Standard footprint |
-| XL-1010RGBC-WS2812B (C5349953) | WS2812C-2020 | — | Works at 3.3V natively |
+- The current Nano is not a `EUR 5-6` receiver. With the fitted parts now in the sheet, it is roughly an `$8.7` class BOM before PCB and assembly.
+- Nano is currently slightly cheaper than Lite because Lite still carries the more expensive Molex antenna/feed part, while Nano uses a cheaper `U.FL` output.
+- The most important availability blocker is still `SX1281IMLTRT`, because the most recent LCSC crawl showed it out of stock.

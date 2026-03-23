@@ -258,10 +258,9 @@ RFI_N ----+              | Balun    |     microstrip   (sub-GHz)
                          +----------+
 ```
 
-Balun: 0868BM15A0001E (Johanson Technology) or equivalent LTCC balun for 868/915MHz.
-Alternative: discrete L-C balun using 0402 components (lower cost, requires tuning).
+Balun / IPD: **Johanson 0900PC16J0042001E** (`LCSC C19842466`) is the preferred part here. It is designed specifically for the **Semtech LR1110 / LR1120 / LR1121** family and covers both **863-870MHz** and **902-928MHz**. It exposes dedicated `RX`, `TX_LP`, and `TX_HP` ports, so it fits the LR1121 sub-GHz architecture much better than the older generic 868/915 LTCC baluns.
 
-Matching network: Per LR1121 reference design. Typically 2-3 component pi or L network between LR1121 differential outputs and balun input.
+Alternative: discrete L-C network using the Semtech-style direct-tie topology. Use this only if the Johanson LR11xx IPD is unavailable, because it will need tuning.
 
 No PA/LNA on sub-GHz path. The LR1121 internal PA provides up to +22dBm on sub-GHz which is sufficient for a receiver (telemetry TX power). The LR1121 has good RX sensitivity (-148dBm on sub-GHz) without external LNA.
 
@@ -680,16 +679,15 @@ Target unit BOM cost: EUR 12-15 (at qty 100)
 | Ref | Qty | Description | MPN | LCSC | Package | Unit Price (USD) | Notes |
 |-----|-----|-------------|-----|------|---------|-----------------|-------|
 | FL1 | 1 | 2.4GHz SAW bandpass filter | SAFFB2G45MA0F0AR1X | C910680 | 1.1x0.9mm | ~$0.05 | Murata, 2.4-2.5GHz ISM band |
-| BL1 | 1 | Sub-GHz balun 868/915MHz | 0896BM15A0001E | TBD | 0805 | ~$0.50 | Johanson, 50-ohm differential to single-ended. Not confirmed on LCSC -- may need consignment or alternative. |
+| BL1 | 1 | Sub-GHz LR11xx IPD | 0900PC16J0042001E | C19842466 | 2.0x1.6mm 10-pad | ~$0.96 | Johanson LR1110/LR1120/LR1121 integrated balun + filter, preferred for Gemini Radio 1. |
 | J1 | 1 | IPEX MHF4 connector (sub-GHz) | KH-IPEX4-2020 | C530666 | SMD | ~$0.09 | Kinghelm, 50-ohm, 3GHz rated |
 | J2 | 1 | IPEX MHF4 connector (2.4GHz) | KH-IPEX4-2020 | C530666 | SMD | ~$0.09 | Same part |
 
 ### Sub-GHz Balun Alternatives
-The Johanson 0896BM15A0001E may not be available on LCSC. Alternatives:
-1. Discrete L-C balun using 0402 inductors and capacitors (cheapest, requires tuning)
-2. Anaren B0310J50100AHF (LCSC C502721) -- 315MHz, too low
-3. Check LCSC balun category for 868/915MHz options
-4. Consign from Mouser/DigiKey if no LCSC equivalent
+The preferred OpenRX part is `0900PC16J0042001E / C19842466`. If LCSC stock disappears:
+1. Use the discrete LR1121 direct-tie / matching network and tune it on the real board
+2. Do not substitute a generic wideband balun by default; that loses the LR11xx-specific match and weakens CE confidence
+3. Older Johanson 863-928MHz baluns such as `0896FB15A0100(E)` or `0896BM15E0025(E)` are secondary options only, and recent LCSC stock has been poor
 
 If using discrete balun, add 3-4 passive components (inductors + capacitors) instead of BL1.
 
