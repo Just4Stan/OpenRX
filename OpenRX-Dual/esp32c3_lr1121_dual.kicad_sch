@@ -4745,6 +4745,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 59.69) (xy 256.54 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0256d3fe-9df9-401f-8c2a-3e2306bc763a")
+	)
+	(wire
+		(pts
 			(xy 397.51 153.67) (xy 411.48 153.67)
 		)
 		(stroke
@@ -4792,16 +4802,6 @@
 			(type default)
 		)
 		(uuid "0ccec574-6183-47ff-b6f6-ed051965efdb")
-	)
-	(wire
-		(pts
-			(xy 243.84 59.69) (xy 266.7 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0db54f95-6b60-4b99-8a30-355da28b1bbc")
 	)
 	(wire
 		(pts
@@ -4962,6 +4962,16 @@
 			(type default)
 		)
 		(uuid "273d22f6-83ef-4907-a8d9-510d0ca7d762")
+	)
+	(wire
+		(pts
+			(xy 243.84 59.69) (xy 246.38 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28900a12-249d-4458-9450-1c9fddabf43a")
 	)
 	(wire
 		(pts
@@ -5482,6 +5492,16 @@
 			(type default)
 		)
 		(uuid "aecd0838-7f31-40b2-8dc9-dcde4a6441cc")
+	)
+	(wire
+		(pts
+			(xy 264.16 59.69) (xy 266.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa56d05-0417-4052-9dd6-385a4eeb7703")
 	)
 	(wire
 		(pts
@@ -6181,9 +6201,9 @@
 		)
 		(property "LCSC" "C19213"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7848,9 +7868,9 @@
 		)
 		(property "LCSC" "C574024"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8784,6 +8804,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 260.35 59.69 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e092d85-bcfa-4f97-97b1-a215e60e569f")
+		(property "Reference" "C13"
+			(at 262.89 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10pF"
+			(at 262.89 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 264.16 58.7248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 260.35 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14854"
+			(at 214.63 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d5c9d66-0cbb-468e-98b4-c63d462a8add")
+		)
+		(pin "2"
+			(uuid "bd70c502-4b29-435c-82d3-d6e5c37cf5d2")
+		)
+		(instances
+			(project "OpenRX-Dual"
+				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 195.58 121.92 0)
 		(unit 1)
@@ -9337,9 +9449,9 @@
 		)
 		(property "LCSC" "C19213"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13288,6 +13400,107 @@
 			(project "OpenRX-Dual"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed03bed1-afee-435e-a672-598194ec4759")
+		(property "Reference" "R6"
+			(at 250.19 55.118 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 250.19 57.658 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 250.19 57.912 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 189.23 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25092"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b4b89018-bd3c-4c91-8932-1b7ece7adf1b")
+		)
+		(pin "1"
+			(uuid "7d68f4d4-a724-4764-8aab-5e3991374cbf")
+		)
+		(instances
+			(project "OpenRX-Dual"
+				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "R6")
 					(unit 1)
 				)
 			)

@@ -505,7 +505,7 @@
         "uuid": "8521861a-4fab-458b-8289-5e2efb91d906"
       }
     ],
-    "used_designators": "C22",
+    "used_designators": "#PWR29,C22",
     "variants": []
   },
   "sheets": [
