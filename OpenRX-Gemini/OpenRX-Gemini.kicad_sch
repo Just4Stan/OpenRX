@@ -1,9 +1,52 @@
 (kicad_sch
-  (version 20231120)
-  (generator "eeschema")
-  (generator_version "9.0")
-  (uuid "00000000-0000-0000-0000-000000000000")
-  (paper "A3")
-  (lib_symbols)
-  (symbol_instances)
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c2d3e4f5-a6b7-8901-cdef-234567890abc")
+	(paper "A3")
+	(lib_symbols)
+	(sheet
+		(at 25.4 25.4)
+		(size 66.04 113.03)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a1b2c3d4-e5f6-7890-abcd-ef0123456789")
+		(property "Sheetname" "ESP32-C3 + 2x LR1121 Gemini"
+			(at 25.4 24.6888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32c3_lr1121_gemini.kicad_sch"
+			(at 25.4 141.478 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
