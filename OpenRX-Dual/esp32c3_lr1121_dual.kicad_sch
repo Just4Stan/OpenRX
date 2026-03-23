@@ -4708,10 +4708,6 @@
 		(uuid "86d7b9db-a328-43be-ba82-5a7e6d303037")
 	)
 	(no_connect
-		(at 266.7 88.9)
-		(uuid "8b7e0523-e342-48ce-a478-5f17313fd433")
-	)
-	(no_connect
 		(at 309.88 67.31)
 		(uuid "8bbff350-087d-4b35-bee6-e023dda66f9e")
 	)
@@ -5852,6 +5848,16 @@
 			(type default)
 		)
 		(uuid "fc20a6ce-0309-4bb7-91a8-cf65a5f81b5c")
+	)
+	(wire
+		(pts
+			(xy 260.35 88.9) (xy 266.7 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd3a7774-8c74-4d70-8a65-863b35dc7e8f")
 	)
 	(wire
 		(pts
@@ -8206,6 +8212,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 260.35 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b09100a-d384-48cf-bb7e-4096c7f7ecd6")
+		(property "Reference" "#PWR047"
+			(at 260.35 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 260.35 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 260.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68deeb49-3815-4cdc-bbf1-9bd58edff995")
+		)
+		(instances
+			(project "OpenRX-Dual"
+				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 73.66 45.72 0)
 		(unit 1)
@@ -8227,7 +8311,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 66.04 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8271,7 +8355,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8721,7 +8805,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 31.75 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8765,7 +8849,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8980,6 +9064,99 @@
 			(project "OpenRX-Dual"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 260.35 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50b194c5-8279-4338-a72c-04b1ed8414cf")
+		(property "Reference" "R7"
+			(at 262.89 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 262.89 93.9799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 262.128 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 260.35 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at -62.23 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ca36c8da-ef07-40e3-b2df-729d2c5d3a32")
+		)
+		(pin "1"
+			(uuid "fbb8bacc-da42-4a34-8ac8-04861b4f9f54")
+		)
+		(instances
+			(project "OpenRX-Dual"
+				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -13470,32 +13647,10 @@
 			)
 		)
 		(property "LCSC" "C25092"
-			(at 189.23 382.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25092"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25092"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

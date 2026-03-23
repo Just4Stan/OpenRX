@@ -4095,10 +4095,6 @@
 		(uuid "83a01662-8d0e-439c-9ea6-789caf7b17e5")
 	)
 	(no_connect
-		(at 266.7 88.9)
-		(uuid "8b7e0523-e342-48ce-a478-5f17313fd433")
-	)
-	(no_connect
 		(at 309.88 67.31)
 		(uuid "8bbff350-087d-4b35-bee6-e023dda66f9e")
 	)
@@ -4773,6 +4769,16 @@
 			(type default)
 		)
 		(uuid "ab71c8e6-e9cf-4531-8948-af15d01c3292")
+	)
+	(wire
+		(pts
+			(xy 259.08 88.9) (xy 266.7 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac9df10c-e317-40b6-b726-ac5f23a64a24")
 	)
 	(wire
 		(pts
@@ -7009,7 +7015,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 66.04 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7053,7 +7059,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7386,7 +7392,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 31.75 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7430,7 +7436,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8772,21 +8778,10 @@
 			)
 		)
 		(property "LCSC" "C25092"
-			(at 187.96 382.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25092"
 			(at 0 0 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,6 +8798,84 @@
 			(project "OpenRX-900"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 259.08 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bc66ed7-dbdc-4dd2-9448-e42d345392ce")
+		(property "Reference" "#PWR041"
+			(at 259.08 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ab415b5-2268-4166-ba0a-a71f09c9dd17")
+		)
+		(instances
+			(project "OpenRX-900"
+				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -11097,6 +11170,99 @@
 			(project "OpenRX-900"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 259.08 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5a37b24-3921-416b-a1b0-1ea8e2d48fff")
+		(property "Reference" "R9"
+			(at 261.62 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 261.62 93.9799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 260.858 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at -63.5 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6f536e38-c9eb-4d43-9132-90456f365448")
+		)
+		(pin "1"
+			(uuid "5455c359-9f04-45d0-b23f-b429d7c1b61d")
+		)
+		(instances
+			(project "OpenRX-900"
+				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
+					(reference "R9")
 					(unit 1)
 				)
 			)

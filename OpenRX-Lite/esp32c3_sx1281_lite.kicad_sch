@@ -6008,7 +6008,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 66.04 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6052,7 +6052,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6616,7 +6616,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 31.75 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6660,7 +6660,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C71153"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
