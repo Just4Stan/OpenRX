@@ -170,8 +170,26 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "OpenRX-Gemini.kicad_sch",
+        "name": "OpenRX-Gemini",
+        "uuid": "c2d3e4f5-a6b7-8901-cdef-234567890abc"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "c2d3e4f5-a6b7-8901-cdef-234567890abc",
+      "OpenRX-Gemini"
+    ],
+    [
+      "a1b2c3d4-e5f6-7890-abcd-ef0123456789",
+      "ESP32-C3 + 2x LR1121 Gemini"
+    ]
+  ],
   "text_variables": {}
 }

@@ -1,59 +1,55 @@
 # OpenRX — Open Source ExpressLRS Receiver Family
 
-Part of the [OpenDrone](https://github.com/Just4Stan) ecosystem. Six ELRS 4.0 receivers from budget nano to Xrossband Gemini.
+Part of the [OpenDrone](https://github.com/Just4Stan) ecosystem. Current release plan is a three-SKU ELRS 4.0 receiver stack: `Lite`, `Mono`, and `Gemini`.
 
 **License:** CERN-OHL-S v2 (hardware), MIT (firmware/tools)
 
-**Status:** Design briefs complete (`DESIGN.md` per receiver). KiCad schematic capture in progress — see `KICAD_WORKFLOW.md` for the working procedure.
+**Status:** Repo structure and KiCad project naming now match the reduced release stack. Active top-level projects are `OpenRX-Lite`, `OpenRX-Mono`, and `OpenRX-Gemini`. Older concepts were moved under `archive/legacy-projects/`.
 
-## The Lineup
+**Current portfolio recommendation:** see [PRODUCT_LINEUP_REDUCTION_2026-03-23.md](PRODUCT_LINEUP_REDUCTION_2026-03-23.md). The commercial ELRS market is converging on a smaller ladder than the current six-project concept.
+
+## Release Stack
 
 | Model | Band | MCU | RF | Front-End | Size | BOM | Retail | Use Case |
 |-------|------|-----|-----|-----------|------|-----|--------|----------|
-| **Lite** | 2.4 GHz | ESP32-C3 | SX1281 | — | 16x12mm | ~$8.8 provisional | €8-10 | Whoops, micro quads |
-| **Nano** | 2.4 GHz | ESP32-C3 | SX1281 | RFX2401C | 20x13mm | ~$8.7 provisional | €12-15 | Standard 5" quads |
-| **900** | 868/915 MHz | ESP32-C3 | LR1121 | — | 18x13mm | ~€5 | €10-13 | Long range |
-| **Dual** | Dual-band | ESP32-C3 | LR1121 | RFX2401C | 22x15mm | ~€6 | €15-18 | Switchable bands |
-| **PWM** | 2.4 GHz | ESP32-C3 | SX1281 | RFX2401C | 30x20mm | ~€6 | €15-18 | Fixed wing, servos |
-| **Gemini** | Xrossband | ESP32-C3 | 2x LR1121 | RFX2401C | 24x18mm | ~€9 | €25-30 | Flagship simultaneous |
+| **Lite** | 2.4 GHz | ESP32-C3 | SX1281 | — | 16x12mm target | compact / low-cost target | entry | Ceramic-antenna micro / whoop RX |
+| **Mono** | Multi-band | ESP32-C3 | LR1121 | optional matched output path | TBD | mainstream target | mainstream | Single-radio all-rounder, one U.FL |
+| **Gemini** | Xrossband | ESP32-C3 | 2x LR1121 | premium RF path | TBD | premium target | premium | Flagship simultaneous 2.4 + 868/915 |
 
-Lite and Nano pricing above is a March 23, 2026 LCSC snapshot from the current KiCad netlists, excluding VAT/shipping and treating passives as provisional because several passive `LCSC` fields in the schematics are currently wrong. The other four receivers still carry planning estimates.
+`Lite` remains the only current small 2.4-only product, and its intended release form is ceramic-antenna-only. `Mono` absorbs the old `900` and `Dual` market position. `Gemini` remains the premium later-phase product.
 
 ## Which One Do I Need?
 
 - **Tiny whoops / micro quads** → Lite
-- **3-5" FPV quads** → Nano (best value) or Dual (dual-band flexibility)
-- **Maximum range** → 900 (cheap) or Dual (switchable)
-- **Fixed wing / heli / cars / boats** → PWM (direct servo outputs)
-- **Best possible link** → Gemini (simultaneous 2.4GHz + 900MHz)
+- **Most FPV builds / one-board-for-most-users** → Mono
+- **Best possible link / flagship** → Gemini
 
 ## Architecture
 
-Two RF platforms, one MCU, one front-end across all receivers:
+Two active RF platforms, one MCU family:
 
 | Component | Part | LCSC | Used In |
 |-----------|------|------|---------|
-| MCU | ESP32-C3FH4 | C2858491 | All 6 |
-| 2.4GHz RF | SX1281IMLTRT | C2151551 | Lite, Nano, PWM |
-| Dual-band RF | LR1121IMLTRT | C7498014 | 900, Dual, Gemini |
-| 2.4GHz PA+LNA | RFX2401C | C19213 | Nano, Dual, PWM, Gemini |
-| Shared LDO | TLV75533PDQNR | C2861882 | Lite, Nano, 900, Dual |
-| 52MHz TCXO | YXC OW7EL89 | C22434896 | SX1281 family |
-| 32MHz TCXO | YXC OW2EL89 | C22434888 | LR1121 family |
-| 40MHz crystal | CJ17-400001010B20 | C2875272 | Lite, Nano |
-| RGB LED | XL-1010RGBC-WS2812B | C5349953 | Optional status LED on Lite, Nano, 900, Dual |
+| MCU | ESP32-C3FH4 | C2858491 | Lite, Mono, Gemini |
+| 2.4GHz RF | SX1281IMLTRT | C2151551 | Lite |
+| Multi-band RF | LR1121IMLTRT | C7498014 | Mono, Gemini |
+| Shared LDO | TLV75533PDQNR | C2861882 | Lite, Mono |
+| 52MHz TCXO | YXC OW7EL89 | C22434896 | Lite |
+| 32MHz TCXO | YXC OW2EL89 | C22434888 | Mono, Gemini |
+| 40MHz crystal | CJ17-400001010B20 | C2875272 | Lite, Mono |
+| RGB LED | XL-1010RGBC-WS2812B | C5349953 | Optional status LED on Lite, Mono |
 
-Passive sourcing is under audit. Do not trust the current Lite/Nano schematic `LCSC` fields for every capacitor/resistor until the passive mapping cleanup is complete. Current pricing snapshots live in each receiver `DESIGN.md`.
+Passive sourcing is still under review at the schematic level. Treat the current `DESIGN.md` files for legacy concepts as reference notes, not launch BOM commitments.
 
-Shared-package policy: default active packages are `QFN/DFN/X2SON/WSON`; `SOT-23-5`, `SOT-223`, and larger LEDs are exceptions only when input-voltage or current margin requires them. `PWM` remains a high-VIN exception, and `Gemini` remains a higher-current power exception.
+Shared-package policy: default active packages are `QFN/DFN/X2SON/WSON`; larger packages are exceptions only when RF, voltage, or thermal margin requires them.
 
 ## CE/FCC Certification
 
-Two RF cores = two test families:
-- **SX1281 family** (Lite, Nano, PWM): full test on PWM, delta-test others
-- **LR1121 family** (900, Dual, Gemini): full test on Gemini, delta-test others
+Two active RF families:
+- **Lite / SX1281**
+- **Mono + Gemini / LR1121**
 
-Budget: ~€20-30K for all 6 via family approach.
+Certification should be planned around the reduced stack, not the older six-concept family.
 
 ## Repository Structure
 
@@ -65,25 +61,22 @@ OpenRX/
 │   ├── libs/                ← OpenRX-Shared symbols + footprints + 3D models
 │   └── sheets/              ← Reusable schematic blocks
 ├── datasheets/common/       ← Shared datasheet cache
-├── OpenRX-Lite/             ← Budget 2.4GHz
+├── OpenRX-Lite/             ← Active release SKU: tiny 2.4GHz ceramic-ant board
 │   ├── *.kicad_pro/sch/pcb  ← KiCad project
 │   ├── DESIGN.md            ← Pin-level schematic + BOM
 │   ├── datasheets/          ← Local datasheets
 │   └── libs/                ← Project-local symbols + footprints for receiver-specific parts only
-├── OpenRX-Nano/             ← Standard 2.4GHz + PA/LNA
-├── OpenRX-900/              ← Budget sub-GHz
-├── OpenRX-Dual/             ← Dual-band switchable
-├── OpenRX-PWM/              ← 6ch PWM for fixed wing
-└── OpenRX-Gemini/           ← Flagship Xrossband
+├── OpenRX-Mono/             ← Active mainstream single-LR1121 project
+├── OpenRX-Gemini/           ← Active later-phase flagship concept
+└── archive/legacy-projects/ ← Archived Nano / 900 / PWM / placeholder projects
 ```
 
-## Competing With RadioMaster
+## Market Position
 
-| Segment | RadioMaster | OpenRX | Advantage |
-|---------|------------|--------|-----------|
-| Budget 2.4GHz | XR2 (€10) | Lite (€8-10) | Open source |
-| Mid 2.4GHz | XR1 (€14) | Nano (€12-15) | Open source, PA+LNA |
-| Sub-GHz | — | 900 (€10-13) | No cheap RM 900MHz |
-| Dual-band | XR3 (€30) | Dual (€15-18) | 40-50% cheaper |
-| PWM | ER5C (€20) | PWM (€15-18) | Open source |
-| Gemini | XR4 (€40) | Gemini (€25-30) | 25-35% cheaper |
+| Segment | Market pattern | OpenRX plan |
+|---------|----------------|-------------|
+| Tiny 2.4GHz | RadioMaster XR2 | Lite |
+| Mainstream multi-band | RadioMaster XR1 / BETAFPV SuperX Mono style | Mono |
+| Premium GemX / Gemini | RadioMaster DBR4 | Gemini |
+
+See [PRODUCT_LINEUP_REDUCTION_2026-03-23.md](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/PRODUCT_LINEUP_REDUCTION_2026-03-23.md) for the reasoning behind the cut.

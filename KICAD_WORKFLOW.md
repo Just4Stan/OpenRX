@@ -2,9 +2,21 @@
 
 Working procedure for schematic capture and layout. Checked against the local ExpressLRS tree at `/Users/stan/Documents/GitHub/ExpressLRS` on 2026-03-23.
 
+Current release stack:
+
+- `Lite`
+- `Mono`
+- `Gemini`
+
+Legacy concept projects (`Nano`, `900`, `PWM`, old placeholder projects) now live under `archive/legacy-projects/` and should not drive current product decisions.
+
 ## Golden Rule
 
-Do not advance all 6 projects independently. Three reusable hardware cores feed the six products. Capture one core, freeze it, then fan out.
+Do not advance the old six-concept repo structure independently. Capture the reduced release stack in this order:
+
+1. `Lite`
+2. `Mono`
+3. `Gemini`
 
 ## KiCad File Safety
 
@@ -68,12 +80,10 @@ Post-import checks:
 
 | # | Receiver | Core | Status | Notes |
 |---|----------|------|--------|-------|
-| 1 | **OpenRX-Lite** | ESP32-C3 + SX1281 | **Start now** | Simplest SX1281 baseline |
-| 2 | **OpenRX-Nano** | reuse Lite core + add FEM sheet | Start after Lite | Add RFX2401C front-end |
-| 3 | **OpenRX-900** | ESP32-C3 + LR1121 | After LR1121 datasheet pass | LR1121 pinout needs verification |
-| 4 | **OpenRX-Dual** | reuse 900 core + add 2.4GHz FEM | After 900 | FEM driven from LR1121 RFSW pins |
-| 5 | **OpenRX-Gemini** | ESP32-C3 + 2x LR1121 | After Dual | Dual-radio SPI, tightest GPIO |
-| 6 | **OpenRX-PWM** | reuse Lite core + add PWM bank | Last | GPIO allocation needs firmware check |
+| 1 | **OpenRX-Lite** | ESP32-C3 + SX1281 | **Current priority** | Tiny 2.4GHz ceramic-ant release board |
+| 2 | **OpenRX-Mono** | ESP32-C3 + LR1121 | After Lite baseline | Mainstream single-radio multi-band board |
+| 3 | **OpenRX-Gemini** | ESP32-C3 + 2x LR1121 | After Mono | Later-phase flagship |
+| 4 | **Legacy concept projects** | Nano / 900 / PWM | Archived reference only | Mine for ideas, do not treat as active SKU plans |
 
 ## Shared Schematic Sheets
 
@@ -81,14 +91,12 @@ Use KiCad hierarchical sheets. Capture these blocks once in `shared/sheets/`, th
 
 | Sheet | Contents | Used By |
 |-------|----------|---------|
-| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + XL-1010RGBC-WS2812B + C89334 Wi-Fi antenna | Lite, Nano, 900, Dual |
-| `power_3v3.kicad_sch` | TLV75533PDQNR + 1uF local VIN/VOUT caps | Lite, Nano, 900, Dual |
-| `sx1281_radio.kicad_sch` | SX1281 + 52MHz TCXO + VR_PA cap + NSS pull-up + NRESET RC | Lite, Nano, PWM |
-| `rfx2401c_fem.kicad_sch` | RFX2401C + SAW filter + UFL connector + matching | Nano, Dual, PWM, Gemini |
-| `lr1121_radio.kicad_sch` | LR1121 + 32MHz TCXO + DC-DC inductor + RFSW connections | 900, Dual, Gemini |
-| `subghz_output.kicad_sch` | Sub-GHz balun + UFL connector | 900, Dual, Gemini |
-| `crsf_io.kicad_sch` | UART TX/RX pads + 5V/GND pads | All 6 |
-| `pwm_bank.kicad_sch` | 6x PWM outputs + protection resistors + servo headers | PWM only |
+| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + XL-1010RGBC-WS2812B + C89334 Wi-Fi antenna | Lite, Mono |
+| `power_3v3.kicad_sch` | TLV75533PDQNR + 1uF local VIN/VOUT caps | Lite, Mono |
+| `sx1281_radio.kicad_sch` | SX1281 + 52MHz TCXO + VR_PA cap + NSS pull-up + NRESET RC | Lite |
+| `lr1121_radio.kicad_sch` | LR1121 + 32MHz TCXO + DC-DC inductor + RFSW connections | Mono, Gemini |
+| `subghz_output.kicad_sch` | Sub-GHz balun + UFL connector | Mono, Gemini |
+| `crsf_io.kicad_sch` | UART TX/RX pads + 5V/GND pads | Lite, Mono, Gemini |
 
 **How to reference shared sheets from a product project:**
 - In KiCad: Add Hierarchical Sheet -> browse to `../shared/sheets/esp32c3_core.kicad_sch`
@@ -106,7 +114,7 @@ Use KiCad hierarchical sheets. Capture these blocks once in `shared/sheets/`, th
 
 These are the firmware-backed pin names. Your `hardware.json` target definition must use these exact keys.
 
-### SX1281 Receivers (Lite, Nano, PWM)
+### SX1281 Receiver (Lite)
 
 | ELRS Key | ESP32-C3 GPIO | SX1281 Pin | Notes |
 |----------|---------------|------------|-------|
@@ -117,12 +125,9 @@ These are the firmware-backed pin names. Your `hardware.json` target definition 
 | `radio_dio1` | GPIO5 | DIO1 (5) | **Main IRQ — NOT DIO0** |
 | `radio_busy` | GPIO3 | BUSY (4) | Mandatory for OpenRX |
 | `radio_rst` | GPIO2 | NRESETn (3) | Include always |
-| `power_txen` | GPIO1 | — | RFX2401C TXEN (Nano/PWM only) |
-| `power_rxen` | GPIO0 | — | RFX2401C RXEN (Nano/PWM only) |
-
 **UART:** GPIO20 (RX) / GPIO21 (TX) — CRSF serial to flight controller.
 
-### LR1121 Single-Radio (900, Dual)
+### LR1121 Single-Radio (Mono)
 
 | ELRS Key | ESP32-C3 GPIO | LR1121 Pin | Notes |
 |----------|---------------|------------|-------|
@@ -179,7 +184,7 @@ The DEA102700LT-6307A2 (TDK, LCSC C574024) is a 50-ohm-in/50-ohm-out multilayer 
 SX1281 RFIO (pin 15) → DEA102700LT-6307A2 → ceramic antenna or UFL
 ```
 
-### With RFX2401C (Nano, PWM, Dual, Gemini)
+### With RFX2401C (legacy concepts or future premium variants)
 
 ```
 SX1281 RFIO (pin 15) → DEA102700LT-6307A2 → RFX2401C TXRX (pin 4, 50Ω)
@@ -187,6 +192,8 @@ RFX2401C ANT (pin 10) → 0.3pF shunt to GND → UFL connector
 ```
 
 The 0.3pF on the ANT output is **mandatory per RFX2401C datasheet** — filters the 5th harmonic (~12 GHz). Without it, expect CE spurious emission failure. Place as close to ANT pin as possible.
+
+Do not treat random trace capacitance or the `U.FL` launch pad parasitic as the design replacement for this part. Those parasitics exist, but they are layout-dependent and should be treated only as trim on top of a real capacitor footprint, not as the baseline harmonic-control element.
 
 **Do NOT add** discrete L-match or pi-filter networks. The DESIGN.md files contain stale matching network sections that should be ignored.
 
@@ -204,7 +211,7 @@ Use **LDO mode** on all SX1281 receivers:
 
 ## Step-by-Step: Capturing OpenRX-Lite
 
-This is the first receiver to capture. It establishes the SX1281 core that Nano and PWM reuse.
+This is the first receiver to capture. It establishes the small dedicated 2.4GHz product.
 
 ### Step 1: Create shared ESP32-C3 core sheet
 
@@ -217,7 +224,7 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
 7. Add: `2450AT18A100E` (`C89334`) on `LNA_IN` as the ESP32 Wi-Fi update antenna, with the required edge placement and keepout
 8. Add: USB D+/D- test pads on GPIO18/19
 9. Add: 3.3V decoupling (3x 100nF on VDD3P3, VDD_SPI, VDD3P3_RTC + 1uF on VDDA)
-10. Export hierarchical pins for: SPI bus (SCK/MISO/MOSI/NSS), radio control (DIO1/BUSY/RST), UART (TX/RX), power control (TXEN/RXEN), power rails (3.3V/GND/5V)
+10. Export hierarchical pins for: SPI bus (SCK/MISO/MOSI/NSS), radio control (DIO1/BUSY/RST), UART (TX/RX), power rails (3.3V/GND/5V)
 
 ### Step 2: Create shared power sheet
 
@@ -255,29 +262,25 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
 3. Connect all hierarchical pins
 4. Run ERC
 
-### Step 6: Freeze the SX1281 pin contract
+### Step 6: Freeze the Lite pin contract
 
 Once Lite passes ERC:
-- The GPIO assignments in the ESP32-C3 core sheet are now frozen
-- Nano and PWM must use the same core sheet without modifying pin assignments
-- Any Nano/PWM-specific features go in separate sheets (FEM, PWM bank)
+- the GPIO assignments in the ESP32-C3 core sheet are now frozen for Lite
+- move directly to the single-radio `LR1121` mainstream board (`Mono`)
 
-### Step 7: OpenRX-Nano
+### Step 7: Move to Mono
 
-1. Copy Lite's top-level structure
-2. Reuse same 3 shared sheets (esp32c3_core, power_3v3, sx1281_radio)
-3. Add new shared sheet: `rfx2401c_fem.kicad_sch` (RFX2401C + 0.3pF 5th harmonic cap + UFL connector)
-4. Wire: SX1281 RFIO → DEA102700LT-6307A2 → RFX2401C TXRX. RFX2401C ANT → 0.3pF shunt → UFL
-5. Wire TXEN → GPIO1, RXEN → GPIO0
-6. Remove ceramic antenna (Lite-specific)
-
-### Step 8: Move to LR1121 family
-
-Only after Lite + Nano are stable:
-1. Do LR1121 datasheet reconciliation pass for OpenRX-900
+1. Do the final LR1121 datasheet reconciliation pass
 2. Create `shared/sheets/lr1121_radio.kicad_sch`
 3. Create `shared/sheets/subghz_output.kicad_sch`
-4. Capture OpenRX-900 -> OpenRX-Dual -> OpenRX-Gemini -> OpenRX-PWM
+4. Capture the single-radio `Mono` board
+
+### Step 8: Move to Gemini
+
+Only after Lite + Mono are stable:
+1. Freeze the `LR1121` single-radio pin contract
+2. Extend it to the dual-radio `Gemini` board
+3. Treat legacy concept projects as reference only
 
 ## Layout Guidelines
 
@@ -293,5 +296,4 @@ Only after Lite + Nano are stable:
 
 1. ~~LR1121 footprint~~: Confirmed QFN-32 5x5mm per LCSC C7498014 listing and Semtech datasheet. Footprint is correct as imported.
 2. **Sub-GHz balun** (Johanson 0900BM15A0001): Not on LCSC. Either consign from DigiKey or design discrete LC balun.
-3. **PWM GPIO allocation**: 6 channels + FEM control exceeds ESP32-C3 GPIO count. 4ch safe, 6ch needs DIO2-based antenna switching (unconfirmed in ELRS).
-4. **Gemini FEM control**: Must use LR1121 RFSW pins, not MCU GPIOs. Current DESIGN.md partially wrong on this.
+3. **Gemini FEM control**: Must use LR1121 RFSW pins, not MCU GPIOs. Current legacy concept docs were partially wrong on this.

@@ -1,8 +1,10 @@
 # OpenRX-Gemini Schematic Design Document
 
 Date: 2026-03-23
-Status: Design phase
+Status: Later-phase active concept in the reduced release stack
 Target: Xrossband dual-band simultaneous ExpressLRS receiver
+
+> Release-plan note: `OpenRX-Gemini` remains in the release stack as the premium flagship, but only after `Lite` and `Mono`. This document should be treated as a concept target until the design is a true `2x LR1121` implementation.
 
 ## Overview
 

@@ -5742,7 +5742,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -5835,7 +5835,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6515,7 +6515,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6607,7 +6607,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6700,7 +6700,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6792,7 +6792,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C20069240"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7197,7 +7197,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7389,7 +7389,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C20069240"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7714,7 +7714,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8413,7 +8413,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C80390"
+		(property "LCSC" "C66942"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8769,7 +8769,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8862,7 +8862,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9032,7 +9032,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10065,7 +10065,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10158,7 +10158,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10656,7 +10656,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11079,7 +11079,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11172,7 +11172,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C304534"
+		(property "LCSC" "C85926"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11478,7 +11478,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11571,7 +11571,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11664,7 +11664,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11757,7 +11757,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)

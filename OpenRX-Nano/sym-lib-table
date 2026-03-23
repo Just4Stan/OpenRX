@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name "OpenRX-Shared")(type "KiCad")(uri "${KIPRJMOD}/../shared/libs/OpenRX-Shared.kicad_sym")(options "")(descr "Shared symbols for all OpenRX receivers"))
-  (lib (name "OpenRX-Lite")(type "KiCad")(uri "${KIPRJMOD}/../OpenRX-Lite/libs/OpenRX-Lite.kicad_sym")(options "")(descr "Lite local symbols (cross-project compat)"))
-)

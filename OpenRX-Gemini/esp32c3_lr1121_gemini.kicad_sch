@@ -6200,13 +6200,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR09")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR09")
 					(unit 1)
@@ -6290,13 +6290,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR011")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR011")
 					(unit 1)
@@ -6403,7 +6403,7 @@
 			(uuid "faefdd22-247f-4606-b45b-17545e3a31a5")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "JP2")
 					(unit 1)
@@ -6477,7 +6477,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -6501,13 +6501,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C9")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C9")
 					(unit 1)
@@ -6585,7 +6585,7 @@
 			(uuid "52a42dbc-7ba1-460c-bed2-d176d428c337")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR042")
 					(unit 1)
@@ -6786,13 +6786,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "U1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U1")
 					(unit 1)
@@ -6899,13 +6899,13 @@
 			(uuid "7706870d-ed6c-426c-bcd4-ac141fbc953a")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "JP1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "JP1")
 					(unit 1)
@@ -6989,13 +6989,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR08")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR08")
 					(unit 1)
@@ -7093,13 +7093,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C12")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C12")
 					(unit 1)
@@ -7171,7 +7171,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 224.79 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -7189,13 +7189,13 @@
 			(uuid "767c5f81-f439-4b84-bd6c-92151580cee6")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C22")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C22")
 					(unit 1)
@@ -7267,7 +7267,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 224.79 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -7285,13 +7285,13 @@
 			(uuid "514b6458-0d33-4535-b387-fdcd9e55246d")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C23")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C23")
 					(unit 1)
@@ -7375,13 +7375,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR028")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR028")
 					(unit 1)
@@ -7463,13 +7463,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "TP4")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP4")
 					(unit 1)
@@ -7544,7 +7544,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7568,13 +7568,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C2")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C2")
 					(unit 1)
@@ -7648,7 +7648,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -7672,13 +7672,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C8")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C8")
 					(unit 1)
@@ -7757,13 +7757,13 @@
 			(uuid "aaa531ec-8edb-4c78-9e2d-96e828ea870f")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR030")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR030")
 					(unit 1)
@@ -7870,7 +7870,7 @@
 			(uuid "dd777e30-7fca-42f6-99c5-7046f019ff88")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "USB1")
 					(unit 1)
@@ -8066,13 +8066,13 @@
 			(uuid "087f459b-d6f1-435f-91fe-931292aa7d7d")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "U4")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U4")
 					(unit 1)
@@ -8147,7 +8147,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8171,13 +8171,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R1")
 					(unit 1)
@@ -8207,7 +8207,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 66.04 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8251,7 +8251,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C62164"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8275,13 +8275,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C7")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C7")
 					(unit 1)
@@ -8365,13 +8365,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR01")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR01")
 					(unit 1)
@@ -8449,13 +8449,13 @@
 			(uuid "88709686-03da-41f5-9c7a-8cf322c93543")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR037")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR037")
 					(unit 1)
@@ -8530,7 +8530,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 6.35 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8548,7 +8548,7 @@
 			(uuid "f8457d61-474a-45e4-966e-0883ba1d596f")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C26")
 					(unit 1)
@@ -8665,13 +8665,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "U2")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U2")
 					(unit 1)
@@ -8701,7 +8701,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10pF"
+		(property "Value" "18pF"
 			(at 31.75 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8745,7 +8745,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14854"
+		(property "LCSC" "C62164"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -8769,13 +8769,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C6")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C6")
 					(unit 1)
@@ -8859,13 +8859,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR013")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR013")
 					(unit 1)
@@ -8947,13 +8947,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "TP1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP1")
 					(unit 1)
@@ -9028,7 +9028,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9052,13 +9052,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C4")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C4")
 					(unit 1)
@@ -9149,13 +9149,13 @@
 			(uuid "4f41a0a0-c645-49b7-bee3-5155438662c1")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C20")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C20")
 					(unit 1)
@@ -9227,7 +9227,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 374.65 -124.46 0)
 			(hide yes)
 			(show_name no)
@@ -9245,13 +9245,13 @@
 			(uuid "861314bf-adb4-4c99-89e0-ccd189ea87ce")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C24")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C24")
 					(unit 1)
@@ -9398,7 +9398,7 @@
 			(uuid "4e68c6f7-93f6-4edd-920b-2f0763417f5f")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U3")
 					(unit 1)
@@ -9476,13 +9476,13 @@
 			(uuid "a8223a34-70b4-4088-88ea-fa54d55721ea")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR038")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR038")
 					(unit 1)
@@ -9566,13 +9566,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR06")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR06")
 					(unit 1)
@@ -9651,13 +9651,13 @@
 			(uuid "84ba1a5f-d124-47da-8501-424a09c47b17")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR035")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR035")
 					(unit 1)
@@ -9770,13 +9770,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "D1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "D1")
 					(unit 1)
@@ -9853,7 +9853,7 @@
 			(uuid "7171d6bc-24da-42e3-b204-da1390c32e01")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR045")
 					(unit 1)
@@ -9931,13 +9931,13 @@
 			(uuid "9c97453d-24d4-42eb-a3c3-1c844fc4d657")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR034")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR034")
 					(unit 1)
@@ -10015,13 +10015,13 @@
 			(uuid "54b324df-6dd6-4873-92fc-6b32b0c8c1f8")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR040")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR040")
 					(unit 1)
@@ -10128,13 +10128,13 @@
 			(uuid "ca3e58d4-07a4-4399-b18c-6688ba136d82")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "U5")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U5")
 					(unit 1)
@@ -10206,7 +10206,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1035"
+		(property "LCSC" "C6808014"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10224,13 +10224,13 @@
 			(uuid "c2538a8f-9301-4011-91ec-2069281e3a0a")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "L1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "L1")
 					(unit 1)
@@ -10343,13 +10343,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "X1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "X1")
 					(unit 1)
@@ -10432,13 +10432,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR023")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR023")
 					(unit 1)
@@ -10545,13 +10545,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "AE1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "AE1")
 					(unit 1)
@@ -10629,7 +10629,7 @@
 			(uuid "71112cd7-57e1-45a6-83ec-c69d632e60ec")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR046")
 					(unit 1)
@@ -10704,7 +10704,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10728,13 +10728,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R3")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R3")
 					(unit 1)
@@ -10809,7 +10809,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10833,13 +10833,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R2")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R2")
 					(unit 1)
@@ -10923,13 +10923,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR012")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR012")
 					(unit 1)
@@ -11003,7 +11003,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11027,13 +11027,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C10")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C10")
 					(unit 1)
@@ -11115,13 +11115,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "TP2")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP2")
 					(unit 1)
@@ -11205,13 +11205,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#FLG02")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG02")
 					(unit 1)
@@ -11295,13 +11295,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR010")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR010")
 					(unit 1)
@@ -11376,7 +11376,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14856"
+		(property "LCSC" "C62548"
 			(at 7.62 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11394,7 +11394,7 @@
 			(uuid "02a4699d-ec32-434c-9cfc-c9c3502b688f")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C25")
 					(unit 1)
@@ -11478,13 +11478,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR02")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR02")
 					(unit 1)
@@ -11563,7 +11563,7 @@
 			(uuid "ccfc5991-8b2c-4fc6-a6b3-e0b722321f2c")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR041")
 					(unit 1)
@@ -11648,13 +11648,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR05")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR05")
 					(unit 1)
@@ -11738,13 +11738,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR014")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR014")
 					(unit 1)
@@ -11819,7 +11819,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C172043"
+		(property "LCSC" "C106225"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11843,13 +11843,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R4")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R4")
 					(unit 1)
@@ -11926,7 +11926,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -11950,13 +11950,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C5")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C5")
 					(unit 1)
@@ -12082,13 +12082,13 @@
 			(uuid "491bd5b7-3c50-4c1c-a178-5a96aaf4139b")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "T1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "T1")
 					(unit 1)
@@ -12167,13 +12167,13 @@
 			(uuid "fd72e13b-31f9-4976-85e8-44452a87e555")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR036")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR036")
 					(unit 1)
@@ -12257,13 +12257,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#FLG01")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG01")
 					(unit 1)
@@ -12361,13 +12361,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C11")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C11")
 					(unit 1)
@@ -12451,13 +12451,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#FLG03")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG03")
 					(unit 1)
@@ -12541,13 +12541,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR07")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR07")
 					(unit 1)
@@ -12625,13 +12625,13 @@
 			(uuid "fc6dbce2-2969-470d-8ad7-60cbe8a4ab7d")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR031")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR031")
 					(unit 1)
@@ -12706,7 +12706,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -12730,13 +12730,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C1")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C1")
 					(unit 1)
@@ -12819,13 +12819,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR04")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR04")
 					(unit 1)
@@ -12900,7 +12900,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C270364"
 			(at -8.89 0 0)
 			(hide yes)
 			(show_name no)
@@ -12918,13 +12918,13 @@
 			(uuid "f56faf7f-f028-48b0-98a0-2b56d297c863")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "R5")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R5")
 					(unit 1)
@@ -13008,13 +13008,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR03")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR03")
 					(unit 1)
@@ -13092,13 +13092,13 @@
 			(uuid "b07e5b31-3daa-4848-a6db-a7b1cb26b21e")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR039")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR039")
 					(unit 1)
@@ -13173,7 +13173,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 71.12 7.62 0)
 			(hide yes)
 			(show_name no)
@@ -13191,13 +13191,13 @@
 			(uuid "b6fcf7c0-15a7-4f54-9986-64c1cf92e26b")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C21")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C21")
 					(unit 1)
@@ -13279,13 +13279,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "TP3")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP3")
 					(unit 1)
@@ -13362,7 +13362,7 @@
 			(uuid "d144d14c-6c6f-4444-810a-4a12dac28497")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR044")
 					(unit 1)
@@ -13437,7 +13437,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C77857"
+		(property "LCSC" "C76935"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13461,13 +13461,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C19")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C19")
 					(unit 1)
@@ -13545,13 +13545,13 @@
 			(uuid "058ab60f-3c93-46c1-bd82-51feaff3f6bb")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR029")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR029")
 					(unit 1)
@@ -13629,7 +13629,7 @@
 			(uuid "5fd5ca92-0d86-4169-80bc-11d5575137b9")
 		)
 		(instances
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR043")
 					(unit 1)
@@ -13704,7 +13704,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14858"
+		(property "LCSC" "C76939"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13728,13 +13728,13 @@
 					(unit 1)
 				)
 			)
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "C3")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C3")
 					(unit 1)
@@ -13812,13 +13812,13 @@
 			(uuid "c78d0d28-0bdf-4475-a6e3-f073ad1113ae")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR032")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR032")
 					(unit 1)
@@ -13896,13 +13896,13 @@
 			(uuid "962de5b3-29b8-4e2d-a5db-bfe5e77b1c76")
 		)
 		(instances
-			(project "OpenRX-900"
+			(project "OpenRX-Gemini"
 				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
 					(reference "#PWR033")
 					(unit 1)
 				)
 			)
-			(project "OpenRX-Dual"
+			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR033")
 					(unit 1)

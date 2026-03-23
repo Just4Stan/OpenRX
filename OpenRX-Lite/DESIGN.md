@@ -1,10 +1,10 @@
 # OpenRX-Lite Schematic Documentation
 
-Budget 2.4GHz ExpressLRS receiver.
+Active release SKU. Tiny `2.4GHz` ExpressLRS receiver with ceramic main antenna.
 
-> Audit note: the antenna sections below are stale. In the current KiCad sheet, `AE1` / `C89334` / `2450AT18A100E` is the ESP32-C3 Wi-Fi update antenna, while the ELRS RF path currently goes to `AE2` / `47948-0001`. Use `KICAD_WORKFLOW.md` as the authority for new schematic capture.
+> Release-plan note: Lite stays in the release stack. Its intended product form is a ceramic-antenna-only micro / whoop receiver. Any Molex / alternate-main-antenna references below should be treated as historical schematic detail, not the product decision.
 
-- PCB: 16x12mm, 2-layer, 1.0mm thickness
+- PCB: 16x12mm target, 2-layer, 1.0mm thickness
 - Procurement snapshot: the current schematic prices closer to `$8.8` from LCSC before VAT/shipping. The old `EUR 3-4` target is not realistic for the current fitted parts.
 - Input: 3.3-5V from flight controller
 
@@ -398,15 +398,18 @@ The previous BOM estimate in this document was stale. The table below is based o
 
 - Base fitted RF/logic subtotal from the current schematic, without optional LED and without passives: `$8.7248`
 - With optional LED stuffed: `$8.7980`
-- Corrected passives should only add a few cents, but the current passive `LCSC` fields in the schematic are not trustworthy enough for an auto-BOM total yet
+- The passive `LCSC` fields in the schematic have now been corrected, but live JLC/LCSC pricing should still be re-quoted before ordering.
 
-### Passive Procurement Audit
+### Passive Procurement Status
 
-Do not order Lite passives directly from the current schematic `LCSC` fields. At least these mappings are wrong in the current KiCad sheet:
+The Lite schematic passive `LCSC` fields have been corrected. Important current mappings include:
 
-- `100nF` capacitors are currently tagged as `C14858`, which is not a 100nF part: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L9703), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L9758)
-- `1uF` capacitors are currently tagged as `C77857`, which is not a capacitor: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L5815), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L5870)
-- `C18` is a `1nF` coupling capacitor but is currently tagged as `C80390`, which is not a 1nF capacitor: [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L7397), [esp32c3_sx1281_lite.kicad_sch](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch#L7450)
+- `100nF 0201` -> `C76939`
+- `1uF 0201` -> `C76935`
+- `18pF 0201` -> `C62164`
+- `1nF 0201` -> `C66942`
+- `470nF 0201` -> `C85926`
+- `10k 0201` -> `C106225`
 
 ### Current Procurement Verdict
 

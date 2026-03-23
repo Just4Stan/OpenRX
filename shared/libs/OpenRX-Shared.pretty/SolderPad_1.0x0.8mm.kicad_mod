@@ -20,4 +20,15 @@
 	(fp_line (start 0.7 -0.6) (end 0.7 0.6) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
 	(fp_line (start 0.7 0.6) (end -0.7 0.6) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
 	(fp_line (start -0.7 0.6) (end -0.7 -0.6) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+	(model "${KIPRJMOD}/../shared/libs/OpenRX-Shared.3dshapes/SolderPad_1.0x0.8mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
