@@ -4873,6 +4873,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 189.23) (xy 87.63 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dcad2a3-ff38-4ac1-b8b3-c93424df8cb3")
+	)
+	(wire
+		(pts
 			(xy 189.23 114.3) (xy 190.5 114.3)
 		)
 		(stroke
@@ -6506,6 +6516,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 73.66 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f80386-ea40-4fcf-b6cd-4136b369a13c")
+		(property "Reference" "R8"
+			(at 76.2 184.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 76.2 186.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 71.882 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 73.66 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C106225"
+			(at -73.66 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0e3ac90f-adcd-4dab-b7d2-95bd8404a741")
+		)
+		(pin "1"
+			(uuid "394d0532-8a99-49c9-98f1-7bc437729eac")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 215.9 203.2 0)
 		(unit 1)
@@ -7052,6 +7155,95 @@
 			(project "OpenRX-Gemini"
 				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 73.66 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12f8fedb-ee0a-434a-8fa2-5587a3d042a8")
+		(property "Reference" "#PWR010"
+			(at 73.66 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 73.66 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 73.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19213"
+			(at -73.66 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b8fb7301-9c61-4510-b48c-b8c88dcb6fef")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -11828,7 +12020,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 161.29 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12182,7 +12374,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 161.29 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14745,7 +14937,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 91.44 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -15915,7 +16107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 91.44 64.77 0)
 			(hide yes)
 			(show_name no)

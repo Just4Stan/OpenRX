@@ -5967,7 +5967,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 167.64 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -7191,7 +7191,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 97.79 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -8541,7 +8541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 97.79 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -10892,7 +10892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
 			(at 167.64 106.68 0)
 			(hide yes)
 			(show_name no)
