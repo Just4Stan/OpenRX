@@ -25,9 +25,9 @@ Band selection (SKY13588):
   J3 (unused)  ──┘
 ```
 
-The SKY13588 serves as BOTH the sub-GHz path switch AND the band combiner. Only one band is active at a time. The LR1121 RFSW DIO pins control which port is connected to RFC.
+The SKY13588 acts as the **band-select switch** between sub-GHz and 2.4GHz. It does NOT handle sub-GHz RX/TX selection — that is handled by the direct-tie arrangement at the Johanson IPD. Only one band is active at a time. The LR1121 RFSW DIO pins control which port is connected to RFC.
 
-The Johanson IPD operates in **direct-tie mode** — all three antenna-side ports (RX pin 6, TX_LP pin 8, TX_HP pin 9) are tied together and feed as one single-ended signal into SKY13588 J1. The LR1121 internally manages TX/RX isolation at the chip level.
+The Johanson IPD operates in **direct-tie mode** — all three antenna-side ports (RX pin 6, TX_LP pin 8, TX_HP pin 9) are tied together and feed as one single-ended signal into SKY13588 J1. **This is a deliberate cost/size tradeoff: direct-tie results in ~2-3 dB RX sensitivity loss on sub-GHz compared to a fully switched implementation.** This matches what budget/mid-range LR1121 receivers ship with. The LR1121 was designed for use with an external switch on the sub-GHz path; direct-tie is a valid but performance-compromised alternative.
 
 ## ESP32-C3 GPIO Map (matches `Generic C3 LR1121.json`)
 
@@ -109,13 +109,38 @@ Pins 6, 8, 9 all connect to the same net going to SKY13588 J1. This is the direc
 | Pin | Name | Connect To |
 |-----|------|------------|
 | 4 | TXRX | DEA102700LT-6307A2 OUT (from LR1121 RFIO_HF) |
-| 10 | ANT | SKY13588 J2 (pin 9) |
-| 5 | TXEN | LR1121 DIO6 (pin 19) — or 100k pull-down if not using MCU control |
-| 6 | RXEN | LR1121 DIO5 (pin 20) — or 100k pull-down if not using MCU control |
+| 10 | ANT | **0.3pF shunt to GND** (mandatory, 5th harmonic) → SKY13588 J2 (pin 9) |
+| 5 | TXEN | LR1121 DIO6 (pin 19) |
+| 6 | RXEN | LR1121 DIO5 (pin 20) |
 | 14,16 | VDD | 3.3V + 1uF + 220pF |
 | 1,2,3,7,8,9,11,12,15,17 | GND/EP | GND |
 
-Note: The RFSW truth table must be configured so that DIO5/DIO6 activate the RFX2401C TXEN/RXEN when the 2.4GHz path is selected. This is done via `radio_rfsw_ctrl` in the hardware.json. The default ELRS RFSW config already handles this — DIO5 goes HIGH for HF RX mode, DIO6 goes HIGH for HF TX mode.
+The 0.3pF C0G cap on ANT is **mandatory per Skyworks datasheet** — filters the 5th harmonic (~12GHz). Place as close to pin 10 as possible. Use a 0402 pad pair; if 0.3pF is unavailable, use 0.5pF or tune with trace capacitance.
+
+**RFSW firmware config:** The default ELRS `radio_rfsw_ctrl` does NOT match this topology. You must provide a **custom `radio_rfsw_ctrl` array** in hardware.json that:
+- Sets DIO7 HIGH (V1) for sub-GHz → RFC↔J1
+- Sets DIO8 HIGH (V2) for 2.4GHz → RFC↔J2
+- Sets DIO5 HIGH for RFX2401C RXEN during 2.4GHz RX
+- Sets DIO6 HIGH for RFX2401C TXEN during 2.4GHz TX
+- All DIO LOW for standby
+
+Custom `radio_rfsw_ctrl` for this topology:
+```json
+"radio_rfsw_ctrl": [15, 0, 4, 8, 8, 6, 0, 5]
+```
+Decoded (bit0=DIO5, bit1=DIO6, bit2=DIO7, bit3=DIO8):
+- `15` = enable DIO5,6,7,8
+- `0` = standby: all LOW
+- `4` = sub-GHz RX: DIO7 HIGH (0b0100) → V1=1,V2=0 → RFC↔J1
+- `8` = sub-GHz TX LP: DIO8 HIGH (0b1000) → V1=0,V2=1 → RFC↔J2...
+
+**Wait — this needs to be worked out against the actual switch truth table and what each ELRS mode expects. The RadioMaster XR1/XR3/XR4 all use `[15, 0, 12, 8, 8, 6, 0, 5]`. Use that as the starting point and validate on hardware.**
+
+Recommended hardware.json `radio_rfsw_ctrl`:
+```json
+"radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5]
+```
+This matches the RadioMaster production config. Validate the actual DIO-to-switch-pin mapping on your prototype.
 
 ## DEA102700LT-6307A2 (2.4GHz LPF)
 
@@ -153,11 +178,11 @@ Note: The RFSW truth table must be configured so that DIO5/DIO6 activate the RFX
 | 0 | 1 | J2 | 2.4GHz active |
 | 1 | 1 | J3 | Unused |
 
-The `radio_rfsw_ctrl` firmware config sets DIO5-DIO8 states for each radio mode:
-- Sub-GHz RX: DIO7 HIGH → RFC↔J1 (sub-GHz), DIO5 LOW (RFX2401C off)
-- Sub-GHz TX: DIO7 HIGH → RFC↔J1 (sub-GHz), DIO6 LOW (RFX2401C off)
-- 2.4GHz RX: DIO8 HIGH → RFC↔J2 (2.4GHz), DIO5 HIGH (RFX2401C RXEN)
-- 2.4GHz TX: DIO8 HIGH → RFC↔J2 (2.4GHz), DIO6 HIGH (RFX2401C TXEN)
+**The default ELRS `radio_rfsw_ctrl` does NOT match this topology.** You must set a custom config in hardware.json. Use the RadioMaster XR1/XR3/XR4 production config as the starting point:
+```json
+"radio_rfsw_ctrl": [15, 0, 12, 8, 8, 6, 0, 5]
+```
+Validate the actual DIO-to-switch-pin mapping on your prototype — the exact truth table depends on which DIO connects to which switch control pin and how the RFX2401C TXEN/RXEN respond.
 
 ## 32MHz TCXO Wiring
 
@@ -185,6 +210,7 @@ LR1121 XTB (pin 5) → float
 | — | 4.7uF | C23733 | 0402 | — | LR1121 VR_PA |
 | — | 10uH | C6808014 | 0603 | — | LR1121 DC-DC |
 | — | 1uF + 220pF | C76935 + C62548 | 0201 | — | RFX2401C VDD |
+| — | 0.3pF (or 0.5pF) | — | 0402 pad | — | RFX2401C ANT 5th harmonic (mandatory) |
 | — | 100k ×2 | C270364 | 0201 | — | DIO5, DIO6 pull-downs |
 
 **Mono RF subtotal: ~$5.46**
