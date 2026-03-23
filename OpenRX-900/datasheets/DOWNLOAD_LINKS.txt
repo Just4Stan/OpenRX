@@ -1,0 +1,22 @@
+# OpenRX-900 Datasheets - Download Manually
+
+## LR1121 (already downloaded as LR1121_datasheet_v1.1.pdf)
+https://cdn.hackaday.io/files/1901428135035328/LR1121_data_sheet_V1_1.pdf
+
+## ESP32-C3 Datasheet
+https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+
+## ESP32-C3 Hardware Design Guidelines
+https://www.espressif.com/sites/default/files/documentation/esp32-c3_hardware_design_guidelines_en.pdf
+
+## ME6211C LDO Datasheet
+https://datasheet.lcsc.com/lcsc/1811131510_MICRONE-Nanjing-Micro-One-Elec-ME6211C33M5G-N_C82942.pdf
+
+## LR1121 User Manual
+https://www.mouser.com/pdfDocs/UserManual_LR1121_v1_1.pdf
+
+## LR1121 PCB Design Guidelines (AN1200.66)
+https://www.semtech.com (search for AN1200.66)
+
+## LR1121 IPD Reference Design (AN1200.76)
+https://www.semtech.com (search for AN1200.76)
