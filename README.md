@@ -35,12 +35,15 @@ Two RF platforms, one MCU, one front-end across all receivers:
 | 2.4GHz RF | SX1281IMLTRT | C2151551 | Lite, Nano, PWM |
 | Dual-band RF | LR1121IMLTRT | C7498014 | 900, Dual, Gemini |
 | 2.4GHz PA+LNA | RFX2401C | C19213 | Nano, Dual, PWM, Gemini |
-| LDO | ME6211C33M5G-N | C82942 | All (PWM uses AMS1117) |
+| Shared LDO | TLV75533PDQNR | C2861882 | Lite, Nano, 900, Dual |
 | 52MHz TCXO | YXC OW7EL89 | C22434896 | SX1281 family |
 | 32MHz TCXO | YXC OW2EL89 | C22434888 | LR1121 family |
 | 40MHz crystal | TXC 7M | C90924 | All 6 |
+| RGB LED | XL-1010RGBC-WS2812B | C5349953 | Optional status LED on Lite, Nano, 900, Dual |
 
 All passives are JLCPCB basic parts (0402, zero setup fee). Full BOM per receiver in each `DESIGN.md`.
+
+Shared-package policy: default active packages are `QFN/DFN/X2SON/WSON`; `SOT-23-5`, `SOT-223`, and larger LEDs are exceptions only when input-voltage or current margin requires them. `PWM` remains a high-VIN exception, and `Gemini` remains a higher-current power exception.
 
 ## CE/FCC Certification
 
@@ -57,14 +60,14 @@ OpenRX/
 ├── README.md               ← This file
 ├── KICAD_WORKFLOW.md        ← How to capture schematics (read first)
 ├── shared/                  ← Shared KiCad libs and schematic sheets
-│   ├── libs/                ← OpenRX-Shared symbols + footprints
+│   ├── libs/                ← OpenRX-Shared symbols + footprints + 3D models
 │   └── sheets/              ← Reusable schematic blocks
 ├── datasheets/common/       ← Shared datasheet cache
 ├── OpenRX-Lite/             ← Budget 2.4GHz
 │   ├── *.kicad_pro/sch/pcb  ← KiCad project
 │   ├── DESIGN.md            ← Pin-level schematic + BOM
 │   ├── datasheets/          ← Local datasheets
-│   └── libs/                ← Project-local symbols + footprints
+│   └── libs/                ← Project-local symbols + footprints for receiver-specific parts only
 ├── OpenRX-Nano/             ← Standard 2.4GHz + PA/LNA
 ├── OpenRX-900/              ← Budget sub-GHz
 ├── OpenRX-Dual/             ← Dual-band switchable

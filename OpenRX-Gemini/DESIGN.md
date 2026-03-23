@@ -46,7 +46,7 @@ Target BOM: EUR 12-15
 - Reverse polarity: no protection (standard for ELRS receivers, FC provides regulated supply)
 
 ### LDO: AP2112K-3.3TRG1 (LCSC C51118, SOT-23-5)
-Selected over RT9080 for better availability and proven ELRS use. 600mA output, dropout 250mV at 600mA.
+600mA output, dropout 250mV. Gemini exception to the X2SON TLV755 default — dual radios + FEM peak at ~490mA, exceeding TLV755's 500mA rating.
 
 Dual LR1121 + ESP32-C3 + RFX2401C peak current estimate:
 - ESP32-C3: ~80mA (WiFi off, SPI active)
@@ -161,7 +161,7 @@ Total GPIOs committed: 12 ELRS radio pins + 2 UART pins. GPIO18 and GPIO19 are f
 
 | Feature | Why Not | Mitigation |
 |---------|---------|-----------|
-| WS2812B RGB LED | No GPIO available | Use simple LED on 3.3V rail with current limit (always on when powered). Or omit entirely. |
+| XL-1010RGBC-WS2812B RGB LED | No GPIO available | Use simple LED on 3.3V rail with current limit (always on when powered). Or omit entirely. |
 | Boot button | No GPIO for dedicated button | WiFi OTA for updates. Factory flash via UART passthrough. Bind via ELRS 3-click on power cycle. |
 | Dedicated USB D-/D+ | GPIO18/19 available but no connector footprint budgeted on 24x18mm board | Route test pads for GPIO18 (D-) / GPIO19 (D+) if space permits. |
 | Bind button | No GPIO | ELRS auto-bind on first power-up, or 3-click power cycle method. |
@@ -172,7 +172,7 @@ Total GPIOs committed: 12 ELRS radio pins + 2 UART pins. GPIO18 and GPIO19 are f
 Tying both LR1121 NRESET pins to GPIO2 (shared) frees GPIO0 for another function. Trade-offs:
 
 Advantages:
-- Frees GPIO0 for WS2812B LED, boot button, or bind button
+- Frees GPIO0 for XL-1010RGBC-WS2812B LED, boot button, or bind button
 - Simpler routing (one net instead of two)
 
 Disadvantages:
@@ -182,7 +182,7 @@ Disadvantages:
 
 RECOMMENDATION: Use separate NRESET lines (GPIO0 and GPIO2). Independent reset is important for a dual-radio design where one radio might need recovery without disrupting the other. The cost is losing LED/button capability, which is acceptable for a premium miniature receiver.
 
-If a LED is absolutely required for user feedback, use the shared NRESET variant and put a WS2812B on GPIO0.
+If a LED is absolutely required for user feedback, use the shared NRESET variant and put a XL-1010RGBC-WS2812B on GPIO0.
 
 ### GPIO9 Boot Strap Safety Analysis
 

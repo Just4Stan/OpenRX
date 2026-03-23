@@ -8,7 +8,7 @@ Sub-GHz (868/915MHz) ExpressLRS receiver using ESP32-C3FH4 + LR1121.
                     3.3-5V IN
                        │
                    ┌───┴───┐
-                   │ME6211C│ LDO
+                   │TLV755 │ LDO
                    │ 33M5G │
                    └───┬───┘
                      3.3V
@@ -31,17 +31,16 @@ Sub-GHz (868/915MHz) ExpressLRS receiver using ESP32-C3FH4 + LR1121.
                        Antenna
 ```
 
-## Power Supply — ME6211C33M5G-N (U3)
+## Power Supply — TLV75533PDQNR (U3)
 
-500mA 3.3V LDO, SOT-23-5. LCSC C82942.
+500mA 3.3V LDO, X2SON-4 (1.0x1.0mm). LCSC C2861882. TI. Max VIN 5.5V.
 
 | Pin | Name | Connection |
 |-----|------|------------|
-| 1   | VIN  | 5V input + C1 (10uF ceramic) + C2 (100nF ceramic) to GND |
-| 2   | GND  | Ground |
-| 3   | EN   | Tied to VIN (always enabled) |
-| 4   | NC   | No connect |
-| 5   | VOUT | 3.3V rail + C3 (22uF ceramic) + C4 (100nF ceramic) to GND |
+| 1   | IN   | 5V input + C1 (1uF 0402) local + 10uF bulk to GND |
+| 2   | GND  | Ground (exposed pad) |
+| 3   | EN   | Tied to IN (always enabled) |
+| 4   | OUT  | 3.3V rail + C3 (1uF 0402) local + 10uF bulk to GND |
 
 Notes:
 - Input voltage range: 3.3V-5V from FC
@@ -329,9 +328,9 @@ C_load = 2 * (CL - Cstray) = 2 * (10 - 2.5) = 15pF
 Use 10pF caps as a starting point (Espressif recommendation). Adjust based on frequency measurement.
 
 
-## WS2812B-2020 RGB LED (D1)
+## XL-1010RGBC-WS2812B RGB LED (D1)
 
-Addressable RGB LED, 2.0x2.0mm. LCSC C965555.
+Addressable RGB LED, 1.0x1.0mm. LCSC C5349953.
 
 | Pin | Name | Connection |
 |-----|------|------------|
@@ -510,10 +509,10 @@ Target BOM cost: EUR 4-5 (at JLCPCB assembly quantities)
 |-----|-------------|-----|------|---------|-----|------------|-------|
 | U1  | LR1121 sub-GHz/2.4GHz transceiver | LR1121IMLTRT | C7498014 | QFN-32 4x4mm | 1 | ~$2.50 | Main RF transceiver |
 | U2  | ESP32-C3FH4 MCU (4MB flash) | ESP32-C3FH4 | C2858491 | QFN-32 5x5mm | 1 | ~$1.20 | RISC-V MCU, WiFi+BLE |
-| U3  | ME6211C33M5G-N 3.3V LDO | ME6211C33M5G-N | C82942 | SOT-23-5 | 1 | ~$0.04 | 500mA, 3.3V output |
+| U3  | TLV75533PDQNR 3.3V LDO | TLV75533PDQNR | C2861882 | X2SON-4 1x1mm | 1 | ~$0.15 | TI, 500mA, max 5.5V input |
 | Y2  | 32MHz TCXO (peak-shaving sine) | OW2EL89CENUXFMYLC-32M | C22434888 | SMD3225-4P | 1 | ~$0.46 | For LR1121 clock |
 | Y1  | 40MHz crystal (10pF load) | 7M40000005 | C90924 | SMD3225-4P | 1 | ~$0.08 | For ESP32-C3 clock |
-| D1  | WS2812B-2020 RGB LED | WS2812B-2020 | C965555 | 2020 | 1 | ~$0.04 | Addressable LED |
+| D1  | XL-1010RGBC-WS2812B | XL-1010RGBC-WS2812B | C5349953 | 1010 (1x1mm) | 1 | ~$0.04 | Addressable LED |
 | J1  | U.FL antenna connector | U.FL-R-SMT-1(80) | C88374 | SMD | 1 | ~$0.08 | 50 ohm, HRS/Hirose |
 
 **Active subtotal: ~$4.40**
@@ -618,9 +617,9 @@ At JLCPCB assembly quantities (100+), expect ~$3.50-4.00 per board.
 ## LCSC Part Availability Notes
 
 - All capacitors and resistors use LCSC basic parts (no extended library fee)
-- ME6211C33M5G-N (C82942) is an LCSC basic part
+- TLV75533PDQNR (C2861882) is an LCSC extended part
 - ESP32-C3FH4 (C2858491) and LR1121 (C7498014) are extended parts (extra assembly fee)
-- WS2812B-2020 (C965555) is an extended part
+- XL-1010RGBC-WS2812B (C5349953) is an extended part
 - U.FL connector (C88374) is an extended part
 - 40MHz crystal (C90924) is an extended part
 - 32MHz TCXO (C22434888) is an extended part
@@ -640,13 +639,13 @@ Before ordering, verify these components are in stock on LCSC:
 # Main ICs
 easyeda2kicad --full --lcsc_id=C2858491 --output=libs  # ESP32-C3FH4
 easyeda2kicad --full --lcsc_id=C7498014 --output=libs  # LR1121IMLTRT
-easyeda2kicad --full --lcsc_id=C82942 --output=libs    # ME6211C33M5G-N
+easyeda2kicad --full --lcsc_id=C2861882 --output=libs  # TLV75533PDQNR
 
 # TCXO and Crystal
 easyeda2kicad --full --lcsc_id=C22434888 --output=libs # 32MHz TCXO
 easyeda2kicad --full --lcsc_id=C90924 --output=libs    # 40MHz crystal
 
 # LED and Connector
-easyeda2kicad --full --lcsc_id=C965555 --output=libs   # WS2812B-2020
+easyeda2kicad --full --lcsc_id=C5349953 --output=libs  # XL-1010RGBC-WS2812B
 easyeda2kicad --full --lcsc_id=C88374 --output=libs    # U.FL connector
 ```

@@ -53,7 +53,7 @@ Dual-band switchable ExpressLRS receiver with PA+LNA.
 
 ## 1. Power Supply
 
-### 1.1 LDO Regulator — ME6211C33M5G-N (LCSC C82942)
+### 1.1 LDO Regulator — TLV75533PDQNR (LCSC C2861882)
 
 Converts 3.3–5V input from flight controller to clean 3.3V rail.
 
@@ -73,7 +73,7 @@ Converts 3.3–5V input from flight controller to clean 3.3V rail.
 **Notes:**
 - 500mA max output, sufficient for ESP32-C3 (~80mA active) + LR1121 (~120mA TX) + RFX2401C (~140mA TX)
 - Total worst-case current ~330mA during 2.4GHz TX with PA active
-- Thermal pad on SOT-23-5 connects to GND pour
+- Thermal pad on X2SON-4 1x1mm connects to GND pour
 
 ---
 
@@ -442,9 +442,9 @@ Two UFL/IPEX-1 connectors, one for each band.
 
 ---
 
-## 6. WS2812B Status LED (LCSC C965555)
+## 6. WS2812B Status LED (LCSC C5349953)
 
-WS2812B-2020 (2x2mm addressable RGB LED).
+XL-1010RGBC-WS2812B (2x2mm addressable RGB LED).
 
 | Pin | Name | Connection |
 |-----|------|------------|
@@ -622,8 +622,8 @@ All parts sourced from LCSC for JLCPCB assembly compatibility.
 | U1 | MCU | ESP32-C3FH4 | C2858491 | QFN-32 (5x5mm) | 1 | ~$1.50 | RISC-V, 4MB flash internal |
 | U2 | RF Transceiver | LR1121IMLTRT | C7498014 | QFN-32 (4x4mm) | 1 | ~$3.20 | Sub-GHz + 2.4GHz LoRa |
 | U3 | 2.4GHz FEM | RFX2401C | C19213 | QFN-16 (3x3mm) | 1 | ~$0.51 | LNA+PA, TXEN/RXEN control |
-| U4 | LDO 3.3V | ME6211C33M5G-N | C82942 | SOT-23-5 | 1 | ~$0.04 | 500mA, 3.3V output |
-| D1 | LED | WS2812B-2020 | C965555 | 2020 (2x2mm) | 1 | ~$0.04 | Addressable RGB |
+| U4 | LDO 3.3V | TLV75533PDQNR | C2861882 | X2SON-4 1x1mm | 1 | ~$0.04 | 500mA, 3.3V output |
+| D1 | LED | XL-1010RGBC-WS2812B | C5349953 | 1010 (1x1mm) | 1 | ~$0.04 | Addressable RGB |
 
 ## RF / Frequency Components
 
@@ -699,7 +699,7 @@ All 0402, 1% tolerance.
 | ESP32-C3FH4 | $1.50 |
 | LR1121IMLTRT | $3.20 |
 | RFX2401C | $0.51 |
-| ME6211C33M5G-N (LDO) | $0.04 |
+| TLV75533PDQNR (LDO) | $0.04 |
 | 32MHz TCXO | $0.90 |
 | 40MHz Crystal | $0.08 |
 | 2.4GHz Balun (DEA) | $0.10 |
@@ -729,8 +729,8 @@ All 0402, 1% tolerance.
 | ESP32-C3FH4 (C2858491) | In stock | ESP32-C3 (C2838500) — needs external flash |
 | LR1121IMLTRT (C7498014) | Verify stock | Source from Mouser/DigiKey if needed |
 | RFX2401C (C19213) | In stock | QFN-16 3x3mm, $0.51 |
-| ME6211C33M5G-N (C82942) | In stock (basic part) | AP2112K-3.3 or similar |
-| WS2812B-2020 (C965555) | In stock | SK6805-EC20 (better 3.3V compat) |
+| TLV75533PDQNR (C2861882) | In stock (basic part) | AP2112K-3.3 or similar |
+| XL-1010RGBC-WS2812B (C5349953) | In stock | SK6805-EC20 (better 3.3V compat) |
 | 32MHz TCXO (C22434888) | Verify stock | Any 32MHz TCXO, match VTCXO voltage |
 | DEA102700LT-6307A2 (C574024) | Verify stock | 2.4GHz balun for RFIO_HF to RFX2401C |
 | UFL Connector (C88373) | In stock | C434812 or generic IPEX-1 |
@@ -742,13 +742,13 @@ All 0402, 1% tolerance.
 
 | Part | JLCPCB Type | Setup Fee |
 |------|-------------|-----------|
-| ME6211C33M5G-N | Basic | None |
+| TLV75533PDQNR | Basic | None |
 | 0402 Resistors | Basic | None |
 | 0402 Capacitors | Basic | None |
 | ESP32-C3FH4 | Extended | $3/part type |
 | LR1121IMLTRT | Extended | $3/part type |
 | RFX2401C | Extended | $3/part type |
-| WS2812B-2020 | Extended | $3/part type |
+| XL-1010RGBC-WS2812B | Extended | $3/part type |
 | 32MHz TCXO | Extended | $3/part type |
 | DEA102700LT-6307A2 | Extended | $3/part type |
 | UFL Connectors | Extended | $3/part type |
@@ -766,8 +766,8 @@ Components to import into project-local library:
 C2858491  # ESP32-C3FH4
 C7498014  # LR1121IMLTRT
 C19213    # RFX2401C
-C82942    # ME6211C33M5G-N
-C965555   # WS2812B-2020
+C2861882    # TLV75533PDQNR
+C5349953   # XL-1010RGBC-WS2812B
 C22434888 # 32MHz TCXO (YXC OW2EL89CENUXFMYLC-32M)
 C574024   # DEA102700LT-6307A2 (2.4GHz balun)
 C88373    # U.FL-R-SMT-1(10)

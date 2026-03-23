@@ -10,7 +10,7 @@ PCB: 20x13mm, 2-layer, 1.0mm thickness.
 ```
                           +-------------------+
                           |                   |
-   FC 5V ──► ME6211 LDO ─┤─► 3.3V Rail       |
+   FC 5V ──► TLV755 LDO ─┤─► 3.3V Rail       |
                           |                   |
                           |   ┌───────────┐   |
                           |   │ ESP32-C3  │   |
@@ -60,41 +60,41 @@ design. Do not omit. See note in BOM section for sourcing.
 
 ---
 
-## 1. Power Supply — ME6211C33M5G-N (U1)
+## 1. Power Supply — TLV75533PDQNR (U1)
 
-LCSC: C82942 | Package: SOT-23-5 | 3.3V 500mA LDO
+LCSC: C2861882 | Package: X2SON-4 (1.0x1.0mm) | 3.3V 500mA LDO (TI)
 
 ```
         VIN (5V from FC)
          │
-         ├──┤C1: 10uF 0805 X5R 10V├──┐
-         │                            │
-         ├──┤C2: 100nF 0402 X7R 16V├──┤
-         │                            │
-    ┌────┴────┐                       │
-    │ 1: VIN  │                      GND
-    │ 2: GND  ├──── GND
-    │ 3: EN   ├──── VIN (tied to input)
-    │ 4: NC   │
-    │ 5: VOUT ├──── 3.3V Rail
+         ├──┤C_bulk: 10uF 0603├──GND
+         │
+         ├──┤C1: 1uF 0402├──GND
+         │
+    ┌────┴────┐
+    │ 1: IN   │
+    │ 2: GND  ├──── GND (exposed pad)
+    │ 3: EN   ├──── IN (tied to input)
+    │ 4: OUT  ├──── 3.3V Rail
     └────┬────┘
          │
-         ├──┤C3: 22uF 0805 X5R 10V├──┐
-         │                            │
-         ├──┤C4: 100nF 0402 X7R 16V├──┤
-         │                            │
-        3.3V                         GND
+         ├──┤C3: 1uF 0402├──GND
+         │
+         ├──┤C_bulk: 10uF 0603├──GND
+         │
+        3.3V
 ```
 
-### ME6211C33M5G-N Pin Table
+### TLV75533PDQNR Pin Table
 
 | Pin | Name | Connection | Notes |
 |-----|------|------------|-------|
-| 1   | VIN  | 5V input from FC | C1 (10uF) + C2 (100nF) to GND |
-| 2   | GND  | Ground | Thermal pad area |
-| 3   | EN   | VIN (tied high) | Active high enable |
-| 4   | NC   | No connect | Leave floating |
-| 5   | VOUT | 3.3V output | C3 (22uF) + C4 (100nF) to GND |
+| 1   | IN   | 5V input from FC | C1 (1uF 0402) local + 10uF bulk to GND |
+| 2   | GND  | Ground | Exposed pad |
+| 3   | EN   | IN (tied high) | Active high enable |
+| 4   | OUT  | 3.3V output | C3 (1uF 0402) local + 10uF bulk to GND |
+
+Note: TLV755 max VIN is 5.5V. Input from FC 5V rail only, not raw battery.
 
 ---
 
@@ -391,20 +391,20 @@ trace width over ground plane (verify with impedance calculator for actual stack
 
 ---
 
-## 9. WS2812B-2020 RGB LED (LED1)
+## 9. XL-1010RGBC-WS2812B RGB LED (LED1)
 
-LCSC: C965555 | Package: 2020 (2.0x2.0mm)
+LCSC: C5349953 | Package: 1010 (1.0x1.0mm)
 
 ```
     ┌────────────┐
-    │ 1: VDD     ├── 3.3V (or 5V — WS2812B-2020 works at 3.5-5.3V)
+    │ 1: VDD     ├── 5V (XL-1010RGBC needs 3.5-5.3V supply)
     │ 2: DOUT    ├── NC (single LED, no chain)
     │ 3: GND     ├── GND
     │ 4: DIN     ├── ESP32-C3 GPIO10
     └────────────┘
 ```
 
-**IMPORTANT**: WS2812B-2020 VDD range is 3.5-5.3V. At 3.3V it is out of spec and may
+**IMPORTANT**: XL-1010RGBC-WS2812B VDD range is 3.5-5.3V. At 3.3V it is out of spec and may
 not work reliably. Options:
 1. Power from 5V rail (before LDO) — requires 5V always present
 2. Use WS2812C-2020 variant which works down to 3.3V
@@ -492,10 +492,10 @@ For ExpressLRS `hardware.json`:
 
 | Ref | Value | Package | Description | Location |
 |-----|-------|---------|-------------|----------|
-| C1  | 10uF  | 0805 | X5R 10V, LDO input | ME6211 VIN |
-| C2  | 100nF | 0402 | X7R 16V, LDO input bypass | ME6211 VIN |
-| C3  | 22uF  | 0805 | X5R 10V, LDO output | ME6211 VOUT |
-| C4  | 100nF | 0402 | X7R 16V, LDO output bypass | ME6211 VOUT |
+| C1  | 1uF   | 0402 | X5R 10V, LDO input local | TLV755 IN |
+| C2  | 10uF  | 0603 | X5R 10V, 5V rail bulk | 5V entry |
+| C3  | 1uF   | 0402 | X5R 10V, LDO output local | TLV755 OUT |
+| C4  | 10uF  | 0603 | X5R 10V, 3.3V rail bulk | Near ESP32 |
 | C5  | 1uF   | 0402 | X7R 16V, EN RC delay | ESP32-C3 EN |
 | C6  | 100nF | 0402 | X7R 16V, MCU decoupling | ESP32-C3 VDD3P3 |
 | C7  | 100nF | 0402 | X7R 16V, MCU decoupling | ESP32-C3 VDD_SPI |
@@ -536,7 +536,7 @@ For ExpressLRS `hardware.json`:
 | **Total (RX mode)** | **~49mA** | **~103mA** | Normal operation |
 | **Total (TX burst)** | **~161mA** | **~273mA** | Telemetry TX burst |
 
-ME6211 rated 500mA — adequate for all operating modes.
+TLV755 rated 500mA — adequate for all operating modes.
 
 ---
 
@@ -568,7 +568,7 @@ Target BOM cost: EUR 5-6 at quantity 100+
 
 | Ref | Description | MPN | Package | LCSC | Qty | Unit Price (USD) | Notes |
 |-----|-------------|-----|---------|------|-----|-------------------|-------|
-| U1  | 3.3V 500mA LDO | ME6211C33M5G-N | SOT-23-5 | C82942 | 1 | $0.07 | Basic part |
+| U1  | 3.3V 500mA LDO | TLV75533PDQNR | X2SON-4 1x1mm | C2861882 | 1 | $0.15 | TI, Extended |
 | U2  | MCU, 4MB flash | ESP32-C3FH4 | QFN-32 5x5mm | C2858491 | 1 | $1.15 | Extended |
 | U3  | 2.4GHz LoRa transceiver | SX1281IMLTRT | QFN-24 4x4mm | C2151551 | 1 | $1.80 | Extended |
 | U4  | 2.4GHz PA+LNA+Switch | RFX2401C | QFN-16 3x3mm | C19213 | 1 | $0.90 | Extended |
@@ -576,7 +576,7 @@ Target BOM cost: EUR 5-6 at quantity 100+
 | Y2  | 52MHz TCXO, 3.3V, ±0.5ppm | OW7EL89CENUNFAYLC-52M | SMD2016 | C22434896 | 1 | $0.42 | Extended |
 | FL1 | 2.4GHz LPF | DEA102700LT-6307A2 | 0402 | C574024 | 1 | $0.10 | Extended |
 | J1  | UFL/IPEX connector | CONUFL001-SMD-T | SMD | C22418213 | 1 | $0.56 | Extended |
-| LED1 | WS2812B RGB LED | WS2812B-2020 | 2020 | C965555 | 1 | $0.04 | Extended |
+| LED1 | Addressable RGB LED | XL-1010RGBC-WS2812B | 1010 (1x1mm) | C5349953 | 1 | $0.04 | Extended |
 | SW1 | Tactile switch (boot) | — | 3x4mm SMD | — | 1 | $0.02 | Any 3x4 tact |
 
 ### Active Component Subtotal: ~$5.17
@@ -585,10 +585,10 @@ Target BOM cost: EUR 5-6 at quantity 100+
 
 | Ref | Value | Package | Spec | LCSC | Qty | Notes |
 |-----|-------|---------|------|------|-----|-------|
-| C1  | 10uF  | 0805 | X5R 25V ±10% | C15850 | 1 | LDO input, basic |
-| C2  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | LDO input bypass, basic |
-| C3  | 22uF  | 0805 | X5R 25V ±10% | C45783 | 1 | LDO output, basic |
-| C4  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | LDO output bypass, basic |
+| C1  | 1uF   | 0402 | X5R 10V ±10% | C52923 | 1 | LDO input local (TLV755), basic |
+| C2  | 10uF  | 0603 | X5R 10V ±10% | C15525 | 1 | 5V rail bulk, basic |
+| C3  | 1uF   | 0402 | X5R 10V ±10% | C52923 | 1 | LDO output local (TLV755), basic |
+| C4  | 10uF  | 0603 | X5R 10V ±10% | C15525 | 1 | 3.3V rail bulk, basic |
 | C5  | 1uF   | 0402 | X7R 16V ±10% | C52923 | 1 | EN RC delay, basic |
 | C6  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | ESP32 VDD3P3, basic |
 | C7  | 100nF | 0402 | X7R 16V ±10% | C1525 | 1 | ESP32 VDD_SPI, basic |
@@ -650,7 +650,7 @@ Within the EUR 5-6 target.
 - 9 unique active component types (all SMD)
 - 19 unique passive component types (mostly 0402, basic parts)
 - Total component count: ~30 parts
-- Basic parts: ME6211, all 0402 caps and resistors (no setup fee)
+- Basic parts: TLV755, all 0402 caps and resistors (no setup fee)
 - Extended parts: ESP32-C3, SX1281, RFX2401C, crystal, TCXO, DEA LPF, UFL, WS2812B
   (setup fee per unique extended part, ~$3 each)
 - Setup fees at qty 100: ~$27 total ($0.27/board)
@@ -667,4 +667,4 @@ Within the EUR 5-6 target.
 | OW7EL89CENUNFAYLC-52M | ABDFTCXO-52MHz | C568568 | Abracon TCXO, larger package |
 | S3240000101040 (C426988) | Any 40MHz 10pF 3225 | C90924 | TXC Corp alternative |
 | C22418213 (UFL) | Any IPEX1/UFL receptacle | — | Standard footprint |
-| WS2812B-2020 (C965555) | WS2812C-2020 | — | Works at 3.3V natively |
+| XL-1010RGBC-WS2812B (C5349953) | WS2812C-2020 | — | Works at 3.3V natively |

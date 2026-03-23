@@ -24,6 +24,46 @@ Every text-side schematic change must be validated before it is handed back:
 
 This repo should be treated as GUI-authored KiCad data with CLI verification, not as freehand S-expression source.
 
+## Shared Library Policy
+
+`shared/libs/OpenRX-Shared.*` is the source of truth for reusable parts shared across multiple receivers.
+
+Use the shared library for:
+- MCUs, radios, shared power parts, shared clocks, shared LEDs, shared antennas
+- any part that will appear in more than one receiver family
+
+Use project-local `libs/` only for:
+- one-off parts unique to a single receiver
+- temporary imports while evaluating a part before promoting it to the shared library
+
+Do not hand-draw new reusable symbols or footprints when the part exists in LCSC / EasyEDA. Import it first, then do only minimal cleanup.
+
+Current shared compact defaults:
+- `TLV75533PDQNR` on `OpenRX-Shared:X2SON-4_L1.0-W1.0-P0.65-TL-EP`
+- `XL-1010RGBC-WS2812B` on `OpenRX-Shared:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B`
+
+Legacy parts may still exist in project-local receiver libraries, but they are not part of the shared baseline for new work.
+
+## Shared Part Import Rule
+
+When a new reusable part is needed:
+1. `cd` into a product directory such as `OpenRX-Lite/`
+2. import into the shared library, not the project-local one
+3. verify the symbol, footprint, and 3D path before using it in a schematic
+
+Example:
+
+```bash
+cd OpenRX-Lite
+easyeda2kicad --lcsc_id C2861882 --full --output ../shared/libs/OpenRX-Shared.kicad_sym --project-relative --overwrite
+easyeda2kicad --lcsc_id C5349953 --full --output ../shared/libs/OpenRX-Shared.kicad_sym --project-relative --overwrite
+```
+
+Post-import checks:
+- symbol footprint field should point at `OpenRX-Shared:<footprint-name>`
+- footprint `model` path should point at `${KIPRJMOD}/../shared/libs/OpenRX-Shared.3dshapes/...`
+- if the importer writes a bad relative 3D path, fix only that path text and nothing else
+
 ## Capture Order
 
 | # | Receiver | Core | Status | Notes |
@@ -41,8 +81,8 @@ Use KiCad hierarchical sheets. Capture these blocks once in `shared/sheets/`, th
 
 | Sheet | Contents | Used By |
 |-------|----------|---------|
-| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + WS2812B | All 6 |
-| `power_3v3.kicad_sch` | ME6211 LDO + input/output decoupling | All except PWM |
+| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + XL-1010RGBC-WS2812B | Lite, Nano, 900, Dual |
+| `power_3v3.kicad_sch` | TLV75533PDQNR + 1uF local VIN/VOUT caps | Lite, Nano, 900, Dual |
 | `sx1281_radio.kicad_sch` | SX1281 + 52MHz TCXO + VR_PA cap + NSS pull-up + NRESET RC | Lite, Nano, PWM |
 | `rfx2401c_fem.kicad_sch` | RFX2401C + SAW filter + UFL connector + matching | Nano, Dual, PWM, Gemini |
 | `lr1121_radio.kicad_sch` | LR1121 + 32MHz TCXO + DC-DC inductor + RFSW connections | 900, Dual, Gemini |
@@ -53,6 +93,14 @@ Use KiCad hierarchical sheets. Capture these blocks once in `shared/sheets/`, th
 **How to reference shared sheets from a product project:**
 - In KiCad: Add Hierarchical Sheet -> browse to `../shared/sheets/esp32c3_core.kicad_sch`
 - The `${KIPRJMOD}/../shared/` path is already configured in sym-lib-table and fp-lib-table
+- Place shared symbols and footprints from the `OpenRX-Shared` library first; only fall back to project-local libraries for receiver-specific parts
+
+## Package Policy
+
+- Default active packages: `QFN`, `DFN`, `X2SON`, `WSON`
+- Default passive package: `0402`
+- Use `0603` / `0805` only where capacitance, voltage rating, RF behavior, or thermal margin requires it
+- Do not keep `SOT-23-5`, `SOT-223`, or `2x2/3.5x3.5` LEDs as the shared default when a smaller validated part exists
 
 ## ELRS Pin Contract
 
@@ -155,7 +203,7 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
 3. Place: ESP32-C3FH4, 40MHz crystal (C90924), 2x 10pF load caps
 4. Add: CHIP_EN circuit (10k pull-up + 1uF to GND)
 5. Add: GPIO9 boot pull-up (10k)
-6. Add: WS2812B-2020 on GPIO10 + 100R series + 100nF decoupling
+6. Add: XL-1010RGBC-WS2812B on GPIO10 + 330R series + 100nF decoupling, powered from 5V
 7. Add: USB D+/D- test pads on GPIO18/19
 8. Add: 3.3V decoupling (3x 100nF on VDD3P3, VDD_SPI, VDD3P3_RTC + 1uF on VDDA)
 9. Export hierarchical pins for: SPI bus (SCK/MISO/MOSI/NSS), radio control (DIO1/BUSY/RST), UART (TX/RX), power control (TXEN/RXEN), power rails (3.3V/GND/5V)
@@ -163,9 +211,9 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
 ### Step 2: Create shared power sheet
 
 1. Create `shared/sheets/power_3v3.kicad_sch`
-2. Place: ME6211C33M5G-N (C82942)
-3. Input: 5V + 10uF + 100nF
-4. Output: 3.3V + 22uF + 100nF
+2. Place: TLV75533PDQNR (C2861882)
+3. Local input cap: 1uF at IN to GND, plus 10uF bulk at the 5V power entry
+4. Local output cap: 1uF at OUT to GND, plus 10uF bulk on the 3.3V rail near the ESP32-C3
 5. EN tied to VIN
 6. Export: 5V_IN, 3V3_OUT, GND
 

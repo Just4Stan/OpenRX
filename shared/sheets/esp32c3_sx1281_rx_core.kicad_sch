@@ -1,165 +1,1640 @@
 (kicad_sch
-  (version 20231120)
-  (generator "codex")
-  (generator_version "1.0")
-  (uuid "488293bf-a361-4959-9226-e5baf7b91769")
-  (paper "A3")
-  (lib_symbols)
-  (polyline
-    (pts
-      (xy 20.32 40.64) (xy 76.20 40.64) (xy 76.20 86.36) (xy 20.32 86.36) (xy 20.32 40.64)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "484182bf-1c86-4633-b495-e8cee7d7b92b")
-  )
-  (polyline
-    (pts
-      (xy 88.90 27.94) (xy 182.88 27.94) (xy 182.88 128.27) (xy 88.90 128.27) (xy 88.90 27.94)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "8064b4d0-057c-4c5a-a6af-1a0b02dbde5b")
-  )
-  (polyline
-    (pts
-      (xy 195.58 27.94) (xy 297.18 27.94) (xy 297.18 128.27) (xy 195.58 128.27) (xy 195.58 27.94)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "af512fcb-da90-4381-815b-bac2aea3fe51")
-  )
-  (polyline
-    (pts
-      (xy 309.88 40.64) (xy 388.62 40.64) (xy 388.62 86.36) (xy 309.88 86.36) (xy 309.88 40.64)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "a7788c8d-2188-4abe-8cf5-4dc93f585008")
-  )
-  (text "OpenRX Shared SX1281 Receiver Core"
-    (at 19.05 15.24 0)
-    (effects
-      (font
-        (size 2.032 2.032)
-      )
-    )
-    (uuid "5eac3ea6-6546-4963-84f0-c96d74a0373b")
-  )
-  (text "This sheet is the reusable capture host for the Lite/Nano SX1281 family."
-    (at 19.05 22.86 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "a115f163-2d94-4be9-a781-fcccd24bf882")
-  )
-  (text "POWER"
-    (at 24.13 46.99 0)
-    (effects
-      (font
-        (size 1.778 1.778)
-      )
-    )
-    (uuid "e77f6d63-f288-47c9-b546-9b5e5d74627e")
-  )
-  (text "U3  ME6211C33M5G-N\nC1/C2 input decoupling\nC3/C4 output decoupling\nVIN 5V input rail\nVOUT +3.3V system rail"
-    (at 24.13 54.61 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "bd72c569-72d2-4d1c-9e4d-4642a9f175f5")
-  )
-  (text "MCU + CLOCK"
-    (at 92.71 34.29 0)
-    (effects
-      (font
-        (size 1.778 1.778)
-      )
-    )
-    (uuid "112fa560-89d4-40b7-b50b-833ad28a9fd9")
-  )
-  (text "U1  ESP32-C3FH4\nY1  40MHz crystal\nR1/C6 EN RC delay\nR2 NSS pull-up\nR3 BOOT pull-up\nOptional GPIO9 boot pad\nOptional GPIO18/GPIO19 USB test pads"
-    (at 92.71 41.91 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "c34e3f3e-7345-444b-8910-e4fab609b16e")
-  )
-  (text "Firmware-critical mapping:\nGPIO4 = radio_sck\nGPIO5 = radio_dio1\nGPIO6 = radio_miso\nGPIO7 = radio_mosi\nGPIO8 = radio_nss\nGPIO3 = radio_busy\nGPIO2 = radio_rst\nU0RXD = serial_rx\nU0TXD = serial_tx"
-    (at 92.71 71.12 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "dce62a7f-2ffc-4539-9c16-b75d9d8ad97d")
-  )
-  (text "RADIO + TCXO"
-    (at 199.39 34.29 0)
-    (effects
-      (font
-        (size 1.778 1.778)
-      )
-    )
-    (uuid "8c3b5d7f-2f87-4e63-8972-facaaa48dceb")
-  )
-  (text "U2  SX1281IMLTRT\nY2  52MHz TCXO\nC9/C10/C12/C13 supply decoupling\nR5/C11 radio reset network\nLDO mode on VR_PA\nDIO2/DIO3 left unused in Lite baseline"
-    (at 199.39 41.91 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "ee0364fd-af80-40f9-9ef5-8e21b8ad7be6")
-  )
-  (text "SX1281 pin contract already validated against local ExpressLRS:\nuse logical radio_dio1 for IRQ, not radio_dio0.\nKeep BUSY and RST in the baseline."
-    (at 199.39 71.12 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "a0878990-2410-4ebf-b4f4-21a411629df0")
-  )
-  (text "RF OUTPUT"
-    (at 313.69 46.99 0)
-    (effects
-      (font
-        (size 1.778 1.778)
-      )
-    )
-    (uuid "1e6ed02a-6c0e-40a3-9db1-a3c8bf3e4392")
-  )
-  (text "ANT1 2450AT18A100E\nL1/C16 Lite matching network\nNo PA/LNA in the shared Lite core\nKeep antenna edge-placement and keepout in PCB work"
-    (at 313.69 54.61 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "ed681b01-e5f7-4780-b193-70ed47931e29")
-  )
-  (text "Use the OpenRX-Shared library alias for imported symbols, footprints, and 3D models.\nNext capture pass on this sheet: place U3/U1/Y1/U2/Y2/ANT1, then add the passive network exactly from OpenRX-Lite/SCHEMATIC.md."
-    (at 20.32 144.78 0)
-    (effects
-      (font
-        (size 1.27 1.27)
-      )
-    )
-    (uuid "3272122e-a7df-4270-b748-11d74e002039")
-  )
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "488293bf-a361-4959-9226-e5baf7b91769")
+	(paper "A3")
+	(lib_symbols
+		(symbol "OpenRX-Shared:2450AT18A100E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AE"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2450AT18A100E"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OpenRX-Shared:ANT-SMD_L3.2-W1.6"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/RF-Antenna_JOHANSON_2450AT18A100E_2450AT18A100E_C89334.html"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C89334"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2450AT18A100E_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "ANT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OpenRX-Shared:CJ17-400001010B20"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CJ17-400001010B20"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OpenRX-Shared:CRYSTAL-SMD_4P-L1.6-W1.2-BL"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2875272"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CJ17-400001010B20_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -2.54 -2.54) (xy -2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 -3.81)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.78) (xy -1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.51 1.78)
+					(end 0.51 -1.78)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.78) (xy 1.27 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 2.54 2.54) (xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OpenRX-Shared:ESP32-C3FH4"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ESP32-C3FH4"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OpenRX-Shared:QFN-32_L5.0-W5.0-P0.50-TL-EP3.7"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2858491"
+				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ESP32-C3FH4_0_1"
+				(rectangle
+					(start -16.51 22.86)
+					(end 16.51 -22.86)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -15.24 21.59)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 17.78 0)
+					(length 2.54)
+					(name "LNA_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 15.24 0)
+					(length 2.54)
+					(name "VDD3P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 12.7 0)
+					(length 2.54)
+					(name "VDD3P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 10.16 0)
+					(length 2.54)
+					(name "XTAL_32K_P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 7.62 0)
+					(length 2.54)
+					(name "XTAL_32K_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 5.08 0)
+					(length 2.54)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 2.54 0)
+					(length 2.54)
+					(name "CHIP_EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 0 0)
+					(length 2.54)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -2.54 0)
+					(length 2.54)
+					(name "MTMS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -5.08 0)
+					(length 2.54)
+					(name "MTDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -7.62 0)
+					(length 2.54)
+					(name "VDD3P3_RTC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -10.16 0)
+					(length 2.54)
+					(name "MTCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -12.7 0)
+					(length 2.54)
+					(name "MTDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -15.24 0)
+					(length 2.54)
+					(name "GPIO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -17.78 0)
+					(length 2.54)
+					(name "GPIO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -19.05 -20.32 0)
+					(length 2.54)
+					(name "GPIO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -20.32 180)
+					(length 2.54)
+					(name "VDD3P3_CPU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -17.78 180)
+					(length 2.54)
+					(name "VDD_SPI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -15.24 180)
+					(length 2.54)
+					(name "SPIHD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -12.7 180)
+					(length 2.54)
+					(name "SPIWP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -10.16 180)
+					(length 2.54)
+					(name "SPICS0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -7.62 180)
+					(length 2.54)
+					(name "SPICLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -5.08 180)
+					(length 2.54)
+					(name "SPID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 -2.54 180)
+					(length 2.54)
+					(name "SPIQ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 0 180)
+					(length 2.54)
+					(name "GPIO18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 2.54 180)
+					(length 2.54)
+					(name "GPIO19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 5.08 180)
+					(length 2.54)
+					(name "U0RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 7.62 180)
+					(length 2.54)
+					(name "U0TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 10.16 180)
+					(length 2.54)
+					(name "XTAL_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 12.7 180)
+					(length 2.54)
+					(name "XTAL_P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 15.24 180)
+					(length 2.54)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 17.78 180)
+					(length 2.54)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 19.05 20.32 180)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(polyline
+		(pts
+			(xy 20.32 40.64) (xy 76.2 40.64) (xy 76.2 86.36) (xy 20.32 86.36) (xy 20.32 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "484182bf-1c86-4633-b495-e8cee7d7b92b")
+	)
+	(polyline
+		(pts
+			(xy 88.9 27.94) (xy 182.88 27.94) (xy 182.88 128.27) (xy 88.9 128.27) (xy 88.9 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8064b4d0-057c-4c5a-a6af-1a0b02dbde5b")
+	)
+	(polyline
+		(pts
+			(xy 309.88 40.64) (xy 388.62 40.64) (xy 388.62 86.36) (xy 309.88 86.36) (xy 309.88 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a7788c8d-2188-4abe-8cf5-4dc93f585008")
+	)
+	(polyline
+		(pts
+			(xy 195.58 27.94) (xy 297.18 27.94) (xy 297.18 128.27) (xy 195.58 128.27) (xy 195.58 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "af512fcb-da90-4381-815b-bac2aea3fe51")
+	)
+	(text "MCU + CLOCK"
+		(exclude_from_sim no)
+		(at 92.71 34.29 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "112fa560-89d4-40b7-b50b-833ad28a9fd9")
+	)
+	(text "RF OUTPUT"
+		(exclude_from_sim no)
+		(at 313.69 46.99 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "1e6ed02a-6c0e-40a3-9db1-a3c8bf3e4392")
+	)
+	(text "Use the OpenRX-Shared library alias for imported symbols, footprints, and 3D models.\nNext capture pass on this sheet: place U3/U1/Y1/U2/Y2/ANT1, then add the passive network exactly from OpenRX-Lite/SCHEMATIC.md."
+		(exclude_from_sim no)
+		(at 20.32 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3272122e-a7df-4270-b748-11d74e002039")
+	)
+	(text "OpenRX Shared SX1281 Receiver Core"
+		(exclude_from_sim no)
+		(at 19.05 15.24 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+		)
+		(uuid "5eac3ea6-6546-4963-84f0-c96d74a0373b")
+	)
+	(text "RADIO + TCXO"
+		(exclude_from_sim no)
+		(at 199.39 34.29 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "8c3b5d7f-2f87-4e63-8972-facaaa48dceb")
+	)
+	(text "SX1281 pin contract already validated against local ExpressLRS:\nuse logical radio_dio1 for IRQ, not radio_dio0.\nKeep BUSY and RST in the baseline."
+		(exclude_from_sim no)
+		(at 199.39 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a0878990-2410-4ebf-b4f4-21a411629df0")
+	)
+	(text "This sheet is the reusable capture host for the Lite/Nano SX1281 family."
+		(exclude_from_sim no)
+		(at 19.05 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a115f163-2d94-4be9-a781-fcccd24bf882")
+	)
+	(text "U3  TLV75533PDQNR\nC1  1uF local VIN cap\nC2  1uF local VOUT cap\n10uF bulk at 5V entry\n10uF bulk on +3.3V rail\nVIN 5V input rail\nVOUT +3.3V system rail"
+		(exclude_from_sim no)
+		(at 24.13 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bd72c569-72d2-4d1c-9e4d-4642a9f175f5")
+	)
+	(text "U1  ESP32-C3FH4\nY1  40MHz crystal\nR1/C6 EN RC delay\nR2 NSS pull-up\nR3 BOOT pull-up\nOptional GPIO9 boot pad\nOptional GPIO18/GPIO19 USB test pads"
+		(exclude_from_sim no)
+		(at 92.71 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c34e3f3e-7345-444b-8910-e4fab609b16e")
+	)
+	(text "Firmware-critical mapping:\nGPIO4 = radio_sck\nGPIO5 = radio_dio1\nGPIO6 = radio_miso\nGPIO7 = radio_mosi\nGPIO8 = radio_nss\nGPIO3 = radio_busy\nGPIO2 = radio_rst\nU0RXD = serial_rx\nU0TXD = serial_tx"
+		(exclude_from_sim no)
+		(at 92.71 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dce62a7f-2ffc-4539-9c16-b75d9d8ad97d")
+	)
+	(text "POWER"
+		(exclude_from_sim no)
+		(at 24.13 46.99 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "e77f6d63-f288-47c9-b546-9b5e5d74627e")
+	)
+	(text "ANT1 2450AT18A100E\nL1/C16 Lite matching network\nNo PA/LNA in the shared Lite core\nKeep antenna edge-placement and keepout in PCB work"
+		(exclude_from_sim no)
+		(at 313.69 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ed681b01-e5f7-4780-b193-70ed47931e29")
+	)
+	(text "U2  SX1281IMLTRT\nY2  52MHz TCXO\nC9/C10/C12/C13 supply decoupling\nR5/C11 radio reset network\nLDO mode on VR_PA\nDIO2/DIO3 left unused in Lite baseline"
+		(exclude_from_sim no)
+		(at 199.39 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee0364fd-af80-40f9-9ef5-8e21b8ad7be6")
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:ESP32-C3FH4")
+		(at 203.2 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15ad4fde-0fa9-47c5-9925-12804fe1fb9b")
+		(property "Reference" "U1"
+			(at 203.2 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP32-C3FH4"
+			(at 203.2 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:QFN-32_L5.0-W5.0-P0.50-TL-EP3.7"
+			(at 203.2 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.2 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2858491"
+			(at 203.2 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "28"
+			(uuid "8c3972bf-c635-4484-9bce-5a5b3858b534")
+		)
+		(pin "26"
+			(uuid "fb67c6e3-aac5-494d-82f9-f9fccb481893")
+		)
+		(pin "27"
+			(uuid "065e639f-8a4a-408a-ac43-bfc78ee216d6")
+		)
+		(pin "23"
+			(uuid "764f2c98-2484-4c5c-a76c-96c179431618")
+		)
+		(pin "21"
+			(uuid "02d1c6e1-dc8d-435d-8f90-ecb657473843")
+		)
+		(pin "22"
+			(uuid "19f94fe1-d623-44fb-8275-dfe3a6397406")
+		)
+		(pin "20"
+			(uuid "691ee6d9-7ee2-497a-b5d5-02246aaa8bc5")
+		)
+		(pin "19"
+			(uuid "aa4b7a0b-0aef-4902-97e1-cc59fb988143")
+		)
+		(pin "18"
+			(uuid "c4f644b6-7196-4412-8bac-77fe23dbe69b")
+		)
+		(pin "17"
+			(uuid "8cd61cd8-1fab-4123-ab1d-083841c4faa0")
+		)
+		(pin "1"
+			(uuid "bbe9e331-6eff-4fb6-b842-543025a5e793")
+		)
+		(pin "2"
+			(uuid "3709a90e-4e8a-438f-99e0-9a79f7326930")
+		)
+		(pin "3"
+			(uuid "f84a7662-a59a-4084-9677-cc0198dad594")
+		)
+		(pin "4"
+			(uuid "6d93020f-a00a-4347-ad78-61723dc4860d")
+		)
+		(pin "5"
+			(uuid "c6f49db1-8f45-4ad0-845e-451ac6169bd6")
+		)
+		(pin "13"
+			(uuid "e0aaa79f-0765-47b5-9e0a-83a9f548551e")
+		)
+		(pin "12"
+			(uuid "a41db9fa-ac14-4e3e-842c-6c22f9ee4c6c")
+		)
+		(pin "11"
+			(uuid "b0387ab0-08e9-4701-b652-877c840a05f0")
+		)
+		(pin "14"
+			(uuid "31319ddc-9018-4150-a2b4-ce760604698f")
+		)
+		(pin "15"
+			(uuid "713d2bc7-11ee-4ab6-934b-f4329ce56931")
+		)
+		(pin "16"
+			(uuid "414dcdc2-97d7-4067-9783-224b038fbce9")
+		)
+		(pin "10"
+			(uuid "d5d32de5-b946-4318-a643-668b7b9c91ac")
+		)
+		(pin "9"
+			(uuid "b952d0eb-c267-4bcd-b1d9-b032af0ab580")
+		)
+		(pin "8"
+			(uuid "09e0dba7-d110-46a4-a498-cef7a7bfbb8d")
+		)
+		(pin "7"
+			(uuid "eb1f0d78-53e9-49bf-9fa4-a28b02850a97")
+		)
+		(pin "6"
+			(uuid "561b34a2-7f59-4562-adfa-675e7afa3c58")
+		)
+		(pin "32"
+			(uuid "bb464a02-feee-4d1a-8ec4-ab15ce5cf791")
+		)
+		(pin "31"
+			(uuid "9d3f0f48-7d5f-4e0b-a080-e5c898685216")
+		)
+		(pin "33"
+			(uuid "8dfdeabc-9508-4808-844c-6d4c4bd689b7")
+		)
+		(pin "29"
+			(uuid "fd34667f-f300-4c88-a839-c128d5728b9e")
+		)
+		(pin "30"
+			(uuid "c28919d6-45a6-46e5-b1db-077de4040e17")
+		)
+		(pin "25"
+			(uuid "29b7ae6b-7b1f-480e-a159-004d7e3ef55a")
+		)
+		(pin "24"
+			(uuid "d65016f8-79d3-4806-bc10-6d59840204a3")
+		)
+		(instances
+			(project "OpenRX-Lite"
+				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:CJ17-400001010B20")
+		(at 261.62 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d63efad-a37b-42fe-8a38-cb4d6f3b695d")
+		(property "Reference" "X1"
+			(at 261.62 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CJ17-400001010B20"
+			(at 261.62 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:CRYSTAL-SMD_4P-L1.6-W1.2-BL"
+			(at 261.62 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2875272"
+			(at 261.62 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "6dea38b9-120a-4fcb-b03b-69d26e1a3ba0")
+		)
+		(pin "1"
+			(uuid "579124a0-63c7-49d3-a571-62774d2638dd")
+		)
+		(pin "2"
+			(uuid "4d730417-ef08-4d39-b306-2f69d731b58c")
+		)
+		(pin "4"
+			(uuid "996e2825-b4ad-40c6-8080-4f5bd412485c")
+		)
+		(instances
+			(project "OpenRX-Lite"
+				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:2450AT18A100E")
+		(at 288.29 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f417945-eb50-4da3-8352-32e9a7a4038c")
+		(property "Reference" "AE1"
+			(at 292.1 151.7649 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2450AT18A100E"
+			(at 292.1 154.3049 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:ANT-SMD_L3.2-W1.6"
+			(at 288.29 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/RF-Antenna_JOHANSON_2450AT18A100E_2450AT18A100E_C89334.html"
+			(at 288.29 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 288.29 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C89334"
+			(at 288.29 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "770b29e6-d037-432b-9a51-f8c2d03a23b7")
+		)
+		(pin "1"
+			(uuid "0f3f051e-cb9f-4c50-9f73-3c56abcb0f41")
+		)
+		(instances
+			(project "OpenRX-Lite"
+				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
+					(reference "AE1")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
