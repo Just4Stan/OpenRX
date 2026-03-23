@@ -20,3 +20,5 @@ fp-info-cache
 
 # Claude Code
 .claude/
+OpenRX-Lite/.history
+*.rpt

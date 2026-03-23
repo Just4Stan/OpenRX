@@ -31,7 +31,7 @@ PCB: 20x13mm, 2-layer, 1.0mm thickness.
                           |   │  PA+LNA   │   |
                           |   └─────┬─────┘   |
                           |         │         |
-                          |    SAW Filter     |
+                          |   DEA LPF Filter  |
                           |         │         |
                           |    UFL Connector  |
                           +-------------------+
@@ -43,19 +43,20 @@ PCB: 20x13mm, 2-layer, 1.0mm thickness.
 ## RF Signal Path
 
 ```
-Antenna ◄──► UFL/IPEX ◄──► SAW Filter ◄──► RFX2401C ANT (pin 10) ◄──► [internal switch] ◄──► TXRX (pin 4) ◄──► SX1281 RFIO (pin 15)
-                           2450FM07D0034         (C3: 0.3pF 5th harm.)                                              (DC blocked internally)
+Antenna ◄──► UFL/IPEX ◄──► [C15: 0.3pF shunt] ◄──► RFX2401C ANT (pin 10) ◄──► [internal switch] ◄──► TXRX (pin 4) ◄──► DEA102700LT-6307A2 ◄──► SX1281 RFIO (pin 15)
+                             (MANDATORY, 5th harm.)                                                                       (LPF, LCSC C574024)
 ```
 
-The SAW filter (Johanson 2450FM07D0034) is placed between the UFL connector and the
-RFX2401C ANT pin. It provides bandpass filtering at 2.4GHz and is internally DC-blocked.
+Between SX1281 RFIO (pin 15) and RFX2401C TXRX (pin 4): a single DEA102700LT-6307A2
+(LCSC C574024, 0402 integrated LPF) provides impedance matching and low-pass filtering.
+No discrete matching network or separate SAW filter needed — this single component replaces
+what earlier revisions called a "SAW filter" in this path. Both ports are 50 ohm; the
+RFX2401C TXRX is DC shorted to GND internally, providing the DC path required by SX1281
+RFIO. No external DC blocking cap needed.
 
-Between RFX2401C TXRX (pin 4) and SX1281 RFIO (pin 15): direct connection. Both ports
-are 50 ohm, DC shorted to GND internally on the RFX2401C side. The SX1281 RFIO also
-requires a DC path to GND (provided internally by the RFX2401C). No external DC blocking
-cap needed.
-
-C3 (0.3pF) placed directly at RFX2401C ANT pin for 5th harmonic filtering per datasheet.
+**MANDATORY**: C15 (0.3pF C0G 0402) shunt cap to GND on RFX2401C ANT pin (pin 10).
+This is the 5th harmonic filter required for CE compliance per the RFX2401C eval board
+design. Do not omit. See note in BOM section for sourcing.
 
 ---
 
@@ -216,7 +217,7 @@ LCSC: C2151551 | Package: QFN-24, 4x4mm | LDO Mode
 | 12  | XTA     | 52MHz TCXO output | Clock input |
 | 13  | XTB     | NC (floating) | Not used with TCXO |
 | 14  | GND     | GND | |
-| 15  | RFIO    | RFX2401C TXRX (pin 4) | RF I/O, 50 ohm |
+| 15  | RFIO    | DEA102700LT-6307A2 (FL1) to RFX2401C TXRX (pin 4) | RF I/O, 50 ohm, via LPF |
 | 16  | MISO    | ESP32-C3 GPIO6 | SPI data out |
 | 17  | MOSI    | ESP32-C3 GPIO7 | SPI data in |
 | 18  | SCK     | ESP32-C3 GPIO4 | SPI clock |
@@ -261,13 +262,13 @@ function (same manufacturer, same feature set), is QFN-16 3x3mm, is in stock at 
 | 1   | N/C  | GND or float | Not connected internally |
 | 2   | GND  | GND | |
 | 3   | GND  | GND | |
-| 4   | TXRX | SX1281 RFIO (pin 15) | RF to/from transceiver, 50 ohm, DC shorted to GND |
+| 4   | TXRX | DEA102700LT-6307A2 (FL1) to SX1281 RFIO (pin 15) | RF to/from transceiver via LPF, 50 ohm, DC shorted to GND |
 | 5   | TXEN | ESP32-C3 GPIO1 via R5 (10k series) | TX enable, active high. CMOS 1.2V logic. |
 | 6   | RXEN | ESP32-C3 GPIO0 via R6 (10k series) | RX enable, active high |
 | 7   | N/C  | GND or float | Not connected internally |
 | 8   | GND  | GND | |
 | 9   | GND  | GND | |
-| 10  | ANT  | SAW filter input/output | 50 ohm antenna port, DC shorted to GND |
+| 10  | ANT  | C15 (0.3pF shunt to GND) then UFL connector | 50 ohm antenna port, DC shorted to GND. C15 is MANDATORY for CE. |
 | 11  | GND  | GND | |
 | 12  | N/C  | GND or float | Not connected internally |
 | 13  | DNC  | Do not connect | Leave floating |
@@ -299,25 +300,19 @@ exposed pad.
 
 ### RFX2401C Harmonic Filter
 
-Per the RFX2401C datasheet, a 5th harmonic filter cap C3 is required at the ANT pin:
+**MANDATORY**: C15 (0.3pF C0G 0402) shunt cap to GND on ANT pin (pin 10). This is the
+5th harmonic filter required for CE compliance per the RFX2401C eval board design.
+Do not omit.
 
 ```
     RFX2401C ANT (pin 10) ── C15 (0.3pF 0402) ── GND
                      │
-                SAW Filter (2450FM07D0034)
-                     │
                 UFL Connector
 ```
 
-The Johanson 2450FM07D0034 SAW filter provides bandpass filtering at 2.45GHz and
-replaces the need for a discrete LC harmonic filter network. This is the recommended
-approach for SX1280/SX1281 designs per Johanson's application note.
-
-If the SAW filter is not available, use the discrete LC filter from the RFX2401C eval board:
-- L1: 2.4nH 0402 inductor
-- L2: 2.4nH 0402 inductor
-- C4-C7: 1.5pF 0402 caps
-- C3: 0.3pF 0402 (5th harmonic, always required)
+The DEA102700LT-6307A2 LPF between SX1281 RFIO and RFX2401C TXRX handles in-band
+filtering and impedance matching. The 0.3pF shunt on ANT handles remaining harmonic
+suppression on the antenna side. No additional SAW or LC filter network is needed.
 
 ---
 
@@ -364,21 +359,20 @@ the crystal traces with ground.
 
 ---
 
-## 7. SAW Filter — Johanson 2450FM07D0034 (FL1)
+## 7. LPF — DEA102700LT-6307A2 (FL1)
 
-LCSC: C2651081 | Package: 0402-style (1.0x0.5mm), 4 pads
+LCSC: C574024 | Package: 0402 | 2.4GHz integrated low-pass filter
 
-Bandpass filter centered at 2.45GHz, ~100MHz bandwidth, ~0.75dB insertion loss.
-Internally DC blocked. Optimized for Semtech SX1280/SX1281 designs.
+Placed between SX1281 RFIO (pin 15) and RFX2401C TXRX (pin 4). Provides impedance
+matching and low-pass filtering in a single component. No discrete matching network
+needed.
 
 ```
-    RFX2401C ANT (pin 10) ── [C15: 0.3pF] ── FL1 pin 2 (IN)
-                                               FL1 pin 5 (OUT) ── UFL connector signal
-                                               FL1 pins 1,3,4,6 ── GND
+    SX1281 RFIO (pin 15) ── FL1 ── RFX2401C TXRX (pin 4)
 ```
 
-If C2651081 is out of stock, alternative: Johanson 2450FM07D0034001T or
-equivalent 2.4GHz bandpass/lowpass filter.
+This replaces what earlier revisions called a "SAW filter" in the transceiver-to-FEM
+path. The antenna-side harmonic filtering is handled by C15 (0.3pF shunt on ANT pin).
 
 ---
 
@@ -387,11 +381,11 @@ equivalent 2.4GHz bandpass/lowpass filter.
 LCSC: C22418213 | Package: SMD | UFL receptacle
 
 ```
-    Signal pin ── SAW filter output
+    Signal pin ── RFX2401C ANT (via C15 shunt)
     GND pins ── GND (multiple pads)
 ```
 
-Standard UFL/IPEX1 footprint. Signal trace from SAW filter to connector must be
+Standard UFL/IPEX1 footprint. Signal trace from RFX2401C ANT pin to connector must be
 50 ohm controlled impedance. On 2-layer 1.0mm FR4, this is approximately 0.5mm
 trace width over ground plane (verify with impedance calculator for actual stackup).
 
@@ -552,7 +546,7 @@ ME6211 rated 500mA — adequate for all operating modes.
    multiple vias (minimum 4 per IC).
 2. **RF traces**: 50 ohm controlled impedance from SX1281 RFIO through RFX2401C to
    UFL connector. Keep as short as possible. No sharp bends.
-3. **Component placement**: SX1281, RFX2401C, SAW filter, and UFL connector should be
+3. **Component placement**: SX1281, DEA LPF (FL1), RFX2401C, and UFL connector should be
    in a straight line to minimize RF trace length.
 4. **Decoupling caps**: Place all decoupling caps as close as possible to their respective
    IC power pins with short ground returns.
@@ -566,7 +560,7 @@ ME6211 rated 500mA — adequate for all operating modes.
 
 # OpenRX-Nano Bill of Materials
 
-> Audit note: this is the current preferred 2.4GHz baseline because it already uses `RFX2401C`. The SAW filter and connector choices still need to be reconciled with `CORE_BOM.md` before freezing procurement.
+> Audit note: this is the current preferred 2.4GHz baseline. Uses RFX2401C with DEA102700LT-6307A2 LPF (replaces earlier SAW filter). Connector choices still need to be reconciled with `CORE_BOM.md` before freezing procurement.
 
 Target BOM cost: EUR 5-6 at quantity 100+
 
@@ -580,7 +574,7 @@ Target BOM cost: EUR 5-6 at quantity 100+
 | U4  | 2.4GHz PA+LNA+Switch | RFX2401C | QFN-16 3x3mm | C19213 | 1 | $0.90 | Extended |
 | Y1  | 40MHz crystal, 10pF | S3240000101040 | SMD3225 | C426988 | 1 | $0.06 | Extended |
 | Y2  | 52MHz TCXO, 3.3V, ±0.5ppm | OW7EL89CENUNFAYLC-52M | SMD2016 | C22434896 | 1 | $0.42 | Extended |
-| FL1 | 2.4GHz SAW filter | 2450FM07D0034T | 0402-4pad | C2651081 | 1 | $0.15 | Extended |
+| FL1 | 2.4GHz LPF | DEA102700LT-6307A2 | 0402 | C574024 | 1 | $0.10 | Extended |
 | J1  | UFL/IPEX connector | CONUFL001-SMD-T | SMD | C22418213 | 1 | $0.56 | Extended |
 | LED1 | WS2812B RGB LED | WS2812B-2020 | 2020 | C965555 | 1 | $0.04 | Extended |
 | SW1 | Tactile switch (boot) | — | 3x4mm SMD | — | 1 | $0.02 | Any 3x4 tact |
@@ -611,10 +605,10 @@ Target BOM cost: EUR 5-6 at quantity 100+
 | CX1 | 10pF  | 0402 | C0G/NP0 50V ±5% | C32949 | 1 | 40MHz crystal load, basic |
 | CX2 | 10pF  | 0402 | C0G/NP0 50V ±5% | C32949 | 1 | 40MHz crystal load, basic |
 
-**Note on C15 (0.3pF)**: This is a non-standard value. Options:
-- Use 0.5pF (LCSC C1550 or similar) as closest standard value
-- Omit if the SAW filter provides adequate harmonic rejection
-- Use copper pour pad to create parasitic capacitance (~0.3pF)
+**Note on C15 (0.3pF)**: MANDATORY -- do not omit. Required for 5th harmonic suppression
+and CE compliance per RFX2401C eval board. 0.3pF C0G 0402 caps exist as standard parts
+(check LCSC/Murata GJM series). If unavailable, 0.5pF C0G 0402 (e.g. LCSC C1550) is the
+closest standard substitute. RadioMaster Ranger Nano uses 0.3pF.
 
 ### Capacitor Subtotal: ~$0.10 (all basic parts, negligible cost)
 
@@ -657,7 +651,7 @@ Within the EUR 5-6 target.
 - 19 unique passive component types (mostly 0402, basic parts)
 - Total component count: ~30 parts
 - Basic parts: ME6211, all 0402 caps and resistors (no setup fee)
-- Extended parts: ESP32-C3, SX1281, RFX2401C, crystal, TCXO, SAW, UFL, WS2812B
+- Extended parts: ESP32-C3, SX1281, RFX2401C, crystal, TCXO, DEA LPF, UFL, WS2812B
   (setup fee per unique extended part, ~$3 each)
 - Setup fees at qty 100: ~$27 total ($0.27/board)
 - PCB cost (20x13mm, 2-layer, 1.0mm, qty 100): ~$0.50/board
@@ -668,8 +662,8 @@ Within the EUR 5-6 target.
 
 | Original | Alternative | LCSC | Notes |
 |----------|-------------|------|-------|
-| RFX2401C (C19213) | SE2431L-R | C2649471 | Discontinued, check stock |
-| 2450FM07D0034 (C2651081) | 2450LP14A100T | — | Johanson LP filter alternative |
+| RFX2401C (C19213) | SE2431L-R | C2649471 | **Not recommended** -- EOL, low stock, no restock expected |
+| DEA102700LT-6307A2 (C574024) | 2450FM07D0034 | C2651081 | Johanson SAW/BPF alternative (functionally equivalent) |
 | OW7EL89CENUNFAYLC-52M | ABDFTCXO-52MHz | C568568 | Abracon TCXO, larger package |
 | S3240000101040 (C426988) | Any 40MHz 10pF 3225 | C90924 | TXC Corp alternative |
 | C22418213 (UFL) | Any IPEX1/UFL receptacle | — | Standard footprint |

@@ -1,14 +1,12 @@
 # OpenRX-Gemini Schematic Design Document
 
-> Audit note: this brief is not yet aligned with the current ExpressLRS `LR1121` receiver code. For current work, treat `LR1121 DIO9 -> radio_dio1 / radio_dio1_2` as the IRQ contract, and do not rely on the sections below that use `radio_dio0`, `radio_dio0_2`, or ESP32 `power_txen` / `power_rxen` for the 2.4GHz FEM.
-
 Date: 2026-03-23
 Status: Design phase
 Target: Xrossband dual-band simultaneous ExpressLRS receiver
 
 ## Overview
 
-The OpenRX-Gemini is a dual-LR1121 receiver for ExpressLRS 4.x Xrossband (simultaneous 868/915MHz + 2.4GHz) and True Diversity modes. It uses an ESP32-C3FH4 MCU with two LR1121 radios on a shared SPI bus, a SE2431L front-end on the 2.4GHz path, and direct balun output on the sub-GHz path.
+The OpenRX-Gemini is a dual-LR1121 receiver for ExpressLRS 4.x Xrossband (simultaneous 868/915MHz + 2.4GHz) and True Diversity modes. It uses an ESP32-C3FH4 MCU with two LR1121 radios on a shared SPI bus, an RFX2401C front-end on the 2.4GHz path, and direct balun output on the sub-GHz path.
 
 ELRS firmware target: `Unified_ESP32C3_LR1121_RX`
 
@@ -35,11 +33,9 @@ Target BOM: EUR 12-15
                            |  GPIO0  NRST2 ---|--- NRST ---+        |
                            |  GPIO1  BUSY2 ---|--- BUSY ---+        |
                            |  GPIO9  DIO9_2---|--- DIO9 ---+        |
-                           |                  |        LR1121 #2    |
-                           |  GPIO18 TXEN  ---|---+                 |
-                           |  GPIO19 RXEN  ---|---+---> SE2431L     |
-                           +------------------+         |           |
-                                                        v           |
+                           |                  |    RFSW --> RFX2401C
+                           +------------------+        LR1121 #2    |
+                                                        |           |
                                                    2.4GHz UFL    Sub-GHz UFL
 ```
 
@@ -52,11 +48,11 @@ Target BOM: EUR 12-15
 ### LDO: AP2112K-3.3TRG1 (LCSC C51118, SOT-23-5)
 Selected over RT9080 for better availability and proven ELRS use. 600mA output, dropout 250mV at 600mA.
 
-Dual LR1121 + ESP32-C3 + SE2431L peak current estimate:
+Dual LR1121 + ESP32-C3 + RFX2401C peak current estimate:
 - ESP32-C3: ~80mA (WiFi off, SPI active)
 - LR1121 x2: ~50mA each in RX, ~120mA each in TX (telemetry)
-- SE2431L: ~25mA in RX mode, ~120mA in TX mode
-- Total worst case (both radios TX + SE2431L TX): ~490mA
+- RFX2401C: ~25mA in RX mode, ~120mA in TX mode
+- Total worst case (both radios TX + RFX2401C TX): ~490mA
 - Typical operation (both RX): ~230mA
 
 600mA LDO provides adequate margin for typical operation.
@@ -109,8 +105,8 @@ The ESP32-C3FH4 has 4MB flash integrated. No external flash required.
 | 20 | SPICLK/GPIO15 | NC | - | Internal flash |
 | 21 | SPID/GPIO13 | NC | - | Internal flash |
 | 22 | SPIQ/GPIO12 | NC | - | Internal flash |
-| 23 | GPIO18 | SE2431L TXEN | FE_TXEN | Front-end TX enable |
-| 24 | GPIO19 | SE2431L RXEN | FE_RXEN | Front-end RX enable (also USB_D+ alt) |
+| 23 | GPIO18 | NC | - | Available. FEM driven by LR1121 RFSW, not MCU GPIO. |
+| 24 | GPIO19 | NC | - | Available (also USB_D+ alt). FEM driven by LR1121 RFSW. |
 | 25 | GPIO20 | UART RX from FC | UART_RX | CRSF input from flight controller |
 | 26 | GPIO21 | UART TX to FC | UART_TX | CRSF output to flight controller |
 | 27 | VDD3P3 | 3.3V | VCC_3V3 | 100nF to GND |
@@ -154,12 +150,12 @@ No USB test pads are provided. Firmware update is WiFi OTA only (triggered via E
 | 8 | Radio 1 NSS | radio_nss | Output | Active low |
 | 9 | Radio 2 DIO9 | radio_dio1_2 | Input | IRQ. Boot pin, needs 10k pull-up. |
 | 10 | Radio 2 NSS | radio_nss_2 | Output | Active low |
-| 18 | Board-reserved | n/a | I/O | Do not dedicate to FEM control in the current LR1121 architecture. |
-| 19 | Board-reserved | n/a | I/O | Do not dedicate to FEM control in the current LR1121 architecture. |
+| 18 | Available | n/a | I/O | Free. FEM controlled by LR1121 RFSW pins, not MCU GPIO. |
+| 19 | Available | n/a | I/O | Free. USB_D+ alt function. |
 | 20 | UART RX (from FC) | serial_rx | Input | CRSF/MAVLink |
 | 21 | UART TX (to FC) | serial_tx | Output | CRSF/MAVLink |
 
-Total GPIOs committed: 14 ELRS pins plus 2 board-reserved pins (GPIO18/GPIO19). Do not spend GPIO18/GPIO19 until the final FEM / debug / USB decision is locked.
+Total GPIOs committed: 12 ELRS radio pins + 2 UART pins. GPIO18 and GPIO19 are free (FEM is driven by LR1121 RFSW pins via SetDioAsRfSwitch, not MCU GPIOs).
 
 ### What We Cannot Fit
 
@@ -167,7 +163,7 @@ Total GPIOs committed: 14 ELRS pins plus 2 board-reserved pins (GPIO18/GPIO19). 
 |---------|---------|-----------|
 | WS2812B RGB LED | No GPIO available | Use simple LED on 3.3V rail with current limit (always on when powered). Or omit entirely. |
 | Boot button | No GPIO for dedicated button | WiFi OTA for updates. Factory flash via UART passthrough. Bind via ELRS 3-click on power cycle. |
-| Dedicated USB D-/D+ on the locked production pinout | GPIO18/19 are still board-reserved while the final RF control strategy is being closed | Route test pads only until the final board architecture is frozen. |
+| Dedicated USB D-/D+ | GPIO18/19 available but no connector footprint budgeted on 24x18mm board | Route test pads for GPIO18 (D-) / GPIO19 (D+) if space permits. |
 | Bind button | No GPIO | ELRS auto-bind on first power-up, or 3-click power cycle method. |
 | Second UART | No GPIO | Single UART to FC only. |
 
@@ -302,8 +298,8 @@ In True Diversity mode: can operate on same band as Radio 1.
 | 8 | RFO_P | NC | - | Not used |
 | 9 | RFO_N | NC | - | Not used |
 | 10 | VBAT_SW | 3.3V via ferrite + 4.7uF | R2_VBAT_SW | Switched PA supply |
-| 11 | RFSW_0 | NC or to SE2431L logic | - | RF switch DIO for front-end control. See RF switch discussion. |
-| 12 | RFSW_1 | NC | - | |
+| 11 | RFSW_0 | RFX2401C RXEN | FE_RXEN | RF switch DIO. Directly drives FEM RXEN via SetDioAsRfSwitch(). |
+| 12 | RFSW_1 | RFX2401C TXEN | FE_TXEN | RF switch DIO. Directly drives FEM TXEN via SetDioAsRfSwitch(). |
 | 13 | RFSW_2 | NC | - | |
 | 14 | RFSW_3 | NC | - | |
 | 15 | BUSY | GPIO1 | RADIO2_BUSY | |
@@ -322,17 +318,18 @@ In True Diversity mode: can operate on same band as Radio 1.
 | 28 | DIO8 | NC | - | |
 | 29 | DIO10 | NC | - | |
 | 30 | DIO11 | NC | - | |
-| 31 | RFI_HF | Matching network to SE2431L | R2_RFI_HF | 2.4GHz single-ended RF port |
+| 31 | RFI_HF | DEA102700LT-6307A2 (C574024) to RFX2401C TXRX | R2_RFI_HF | 2.4GHz single-ended RF port via diplexer/matching |
 | 32 | VSS | GND | GND | |
 | EP | GND | Ground | GND | Exposed pad |
 
 ### 2.4GHz RF Path
 
 ```
-LR1121 #2     Matching      SE2431L          SAW         UFL
-RFI_HF ----> Pi network --> RF_IN/RF_OUT --> Filter ---> UFL #2
-                            TXEN <-- GPIO18              (2.4GHz)
-                            RXEN <-- GPIO19
+LR1121 #2       Diplexer           RFX2401C                    UFL
+RFI_HF ----> DEA102700LT-6307A2 --> TXRX                      |
+             (C574024)               ANT --> 0.3pF shunt GND --> UFL #2
+                                     RXEN <-- LR1121 RFSW_0     (2.4GHz)
+                                     TXEN <-- LR1121 RFSW_1
 ```
 
 ### TCXO #2
@@ -345,11 +342,11 @@ Why two separate TCXOs instead of shared clock:
 - Independent clocks eliminate cross-coupling risk between radios
 - Simpler layout with each TCXO placed adjacent to its radio
 
-## SE2431L 2.4GHz Front-End (U4)
+## RFX2401C 2.4GHz Front-End (U4)
 
 ### Package
-QFN-20, 3x3mm, 0.4mm pitch
-LCSC: search for SE2431L-R (Skyworks)
+QFN-16, 3x3mm, 0.5mm pitch
+LCSC: C19213
 
 ### Function
 2.4GHz PA + LNA + TX/RX switch for Radio 2 (2.4GHz path).
@@ -357,27 +354,32 @@ LCSC: search for SE2431L-R (Skyworks)
 - TX mode: PA provides up to +22dBm output (for telemetry)
 - Integrated T/R switch eliminates external switch
 
+### FEM Control Model
+The RFX2401C TXEN and RXEN pins are driven directly by LR1121 Radio 2 RFSW pins, NOT by MCU GPIOs. The LR1121 firmware configures RFSW states via `SetDioAsRfSwitch()`:
+- LR1121 RFSW_0 -> RFX2401C RXEN (high during 2.4GHz RX)
+- LR1121 RFSW_1 -> RFX2401C TXEN (high during 2.4GHz TX)
+- In sub-GHz mode and standby, both RFSW_0 and RFSW_1 are LOW (FEM sleeps automatically)
+
+This eliminates the need for MCU GPIO FEM control, freeing GPIO18 and GPIO19.
+
 ### Complete Pin Table
 
 | Pin | Name | Connection | Net Name | Notes |
 |-----|------|-----------|----------|-------|
-| 1 | RF_IN | LR1121 #2 RFI_HF via matching | FE_RF_IN | From radio matching network |
+| 1 | TXRX | DEA102700LT-6307A2 output | FE_TXRX | From diplexer to LR1121 RFI_HF |
 | 2 | GND | GND | GND | |
-| 3 | VDD_LNA | 3.3V | VCC_3V3 | 100nF to GND |
+| 3 | VDD | 3.3V | VCC_3V3 | 100nF + 1uF to GND |
 | 4 | GND | GND | GND | |
-| 5 | ANT | SAW filter input | FE_ANT | To antenna via SAW |
+| 5 | ANT | 0.3pF shunt to GND, then UFL | FE_ANT | To antenna connector |
 | 6 | GND | GND | GND | |
-| 7 | VDD_PA | 3.3V | VCC_3V3 | 100nF + 1uF to GND. Main PA supply. |
-| 8 | VDD_PA | 3.3V | VCC_3V3 | Tied to pin 7 |
-| 9 | GND | GND | GND | |
-| 10 | NC | - | - | |
-| 11 | TXEN | GPIO18 | FE_TXEN | High = TX mode. 100k pull-down. |
-| 12 | RXEN | GPIO19 | FE_RXEN | High = RX mode. 100k pull-down. |
-| 13 | NC | - | - | |
-| 14-20 | GND | GND | GND | Multiple ground pins |
+| 7 | VDD | 3.3V | VCC_3V3 | Tied to pin 3 |
+| 8 | GND | GND | GND | |
+| 9 | RXEN | LR1121 #2 RFSW_0 | FE_RXEN | High = RX mode. 100k pull-down. |
+| 10 | TXEN | LR1121 #2 RFSW_1 | FE_TXEN | High = TX mode. 100k pull-down. |
+| 11-16 | GND | GND | GND | Ground pins |
 | EP | GND | GND | GND | Exposed pad |
 
-### SE2431L Control Truth Table
+### RFX2401C Control Truth Table
 
 | TXEN | RXEN | Mode | Current |
 |------|------|------|---------|
@@ -386,18 +388,18 @@ LCSC: search for SE2431L-R (Skyworks)
 | 1 | 0 | TX (PA active) | ~120mA |
 | 1 | 1 | Invalid | Do not use |
 
-Default state at boot (GPIOs floating/low): both TXEN and RXEN low = shutdown. Safe.
+Default state at boot (RFSW pins low after reset): both TXEN and RXEN low = shutdown. Safe.
 
-### SAW Filter
-2.4GHz SAW/BAW filter between SE2431L ANT pin and UFL connector.
-Purpose: reject out-of-band interference, especially from co-located sub-GHz transmissions.
+### 2.4GHz RF Path Detail
+```
+LR1121 RFI_HF --> DEA102700LT-6307A2 (C574024) --> RFX2401C TXRX
+RFX2401C ANT --> 0.3pF shunt to GND --> UFL connector
+```
 
-Recommended: SAFFB2G41FA0F0A (Murata) or equivalent 2.4-2.5GHz bandpass filter.
-Package: 1210 or 0805 SMD.
+The DEA102700LT-6307A2 is a 2.4GHz diplexer/matching network between the LR1121 RFI_HF single-ended port and the RFX2401C TXRX pin. The 0.3pF shunt capacitor on the ANT output provides DC blocking and minor impedance adjustment to the UFL connector.
 
-### SE2431L Matching
-RF_IN and ANT pins require matching networks per SE2431L reference design.
-Typically 2-element L-match on each port. Values depend on PCB stackup and trace impedance.
+### RFX2401C Matching
+TXRX and ANT pins may require minimal matching per RFX2401C reference design. The DEA102700LT-6307A2 handles the primary matching on the radio side. Values depend on PCB stackup and trace impedance.
 
 ## SPI Bus Architecture
 
@@ -459,8 +461,11 @@ No external RF switch on sub-GHz path. The LR1121 internal T/R switch handles RX
 RFSW pins are either NC or used as general status outputs. For OpenRX-Gemini, leave NC.
 
 ### 2.4GHz Radio (Radio 2) RF Switch Configuration
-For current ELRS-compatible work, the 2.4GHz FEM should be treated as an LR1121-side RF switching problem, not an ESP32 GPIO problem.
-Prefer driving the 2.4GHz front-end from LR1121 RFSW outputs and the `radio_rfsw_ctrl` configuration, not from `power_txen` / `power_rxen`.
+The RFX2401C FEM is driven directly by LR1121 RFSW pins:
+- RFSW_0 -> RFX2401C RXEN
+- RFSW_1 -> RFX2401C TXEN
+
+The LR1121 firmware configures these via `SetDioAsRfSwitch()` and the `radio_rfsw_ctrl` hardware.json array. No MCU GPIOs (`power_txen` / `power_rxen`) are used for FEM control.
 
 ### ELRS hardware.json RFSW Configuration
 For the OpenRX-Gemini, the radio_rfsw_ctrl array configures the LR1121 internal switch states:
@@ -488,12 +493,12 @@ Two UFL/IPEX MHF4 connectors:
 | Connector | Band | Radio | Net |
 |-----------|------|-------|-----|
 | J1 | Sub-GHz (868/915MHz) | LR1121 #1 | ANT_SUBGHZ |
-| J2 | 2.4GHz | LR1121 #2 via SE2431L | ANT_2G4 |
+| J2 | 2.4GHz | LR1121 #2 via RFX2401C | ANT_2G4 |
 
 IPEX MHF4 (1.4mm height) recommended for minimal profile.
 Footprint: standard IPEX MHF4 with ground pads and anchor.
 
-Signal integrity: 50-ohm controlled impedance microstrip from SE2431L/balun to connector. Keep traces short (< 10mm).
+Signal integrity: 50-ohm controlled impedance microstrip from RFX2401C/balun to connector. Keep traces short (< 10mm).
 
 ## Passive Components Summary
 
@@ -519,9 +524,9 @@ Signal integrity: 50-ohm controlled impedance microstrip from SE2431L/balun to c
 | C19 | 100nF X5R 6.3V | R2_VR_PA | Radio 2 VR_PA |
 | C20 | 4.7uF X5R 6.3V | R2_VBAT_SW | Radio 2 VBAT_SW |
 | C21 | 100nF X5R 6.3V | R2_VDD_TCXO | Radio 2 TCXO supply |
-| C22 | 100nF X5R 6.3V | VCC_3V3 | SE2431L VDD_LNA |
-| C23 | 100nF X5R 6.3V | VCC_3V3 | SE2431L VDD_PA |
-| C24 | 1uF X5R 6.3V | VCC_3V3 | SE2431L VDD_PA bulk |
+| C22 | 100nF X5R 6.3V | VCC_3V3 | RFX2401C VDD |
+| C23 | 100nF X5R 6.3V | VCC_3V3 | RFX2401C VDD |
+| C24 | 1uF X5R 6.3V | VCC_3V3 | RFX2401C VDD bulk |
 | C25 | 1uF X5R 6.3V | CHIP_EN | ESP32-C3 EN RC delay |
 | C26 | 100nF X5R 6.3V | RADIO1_NRST | Radio 1 NRESET debounce |
 | C27 | 100nF X5R 6.3V | RADIO2_NRST | Radio 2 NRESET debounce |
@@ -536,8 +541,8 @@ Signal integrity: 50-ohm controlled impedance microstrip from SE2431L/balun to c
 | R4 | 10k | GPIO9 | GPIO9 boot strap pull-up |
 | R5 | 10k | RADIO1_NRST | NRESET1 pull-up |
 | R6 | 10k | RADIO2_NRST | NRESET2 pull-up |
-| R7 | 100k | FE_TXEN | SE2431L TXEN pull-down (safe boot) |
-| R8 | 100k | FE_RXEN | SE2431L RXEN pull-down (safe boot) |
+| R7 | 100k | FE_TXEN | RFX2401C TXEN pull-down (safe boot) |
+| R8 | 100k | FE_RXEN | RFX2401C RXEN pull-down (safe boot) |
 
 ### Ferrite Beads (0402 package)
 
@@ -549,8 +554,8 @@ Signal integrity: 50-ohm controlled impedance microstrip from SE2431L/balun to c
 ### RF Matching Components
 Values TBD during layout. Placeholder for:
 - 3x components for sub-GHz balun matching (Radio 1 RFI_P/RFI_N to balun)
-- 2x components for 2.4GHz matching (Radio 2 RFI_HF to SE2431L)
-- 2x components for SE2431L ANT to SAW filter matching
+- 1x DEA102700LT-6307A2 diplexer (Radio 2 RFI_HF to RFX2401C TXRX)
+- 1x 0.3pF shunt cap (RFX2401C ANT to GND)
 
 All RF matching components: 0402 or 0201 NP0/C0G capacitors and wire-wound inductors.
 
@@ -617,7 +622,7 @@ Notes:
 3. Component placement:
    - ESP32-C3 center of board
    - LR1121 #1 near sub-GHz UFL connector (minimize trace length)
-   - LR1121 #2 near SE2431L and 2.4GHz UFL connector
+   - LR1121 #2 near RFX2401C and 2.4GHz UFL connector
    - TCXOs immediately adjacent to their respective LR1121
    - LDO near power input pads
 4. Decoupling: place capacitors as close as possible to IC power pins. Via directly to ground plane.
@@ -632,16 +637,16 @@ Notes:
 | GPIO9 boot conflict with LR1121 DIO9 | Medium | 10k pull-up ensures HIGH at boot. LR1121 DIO9 default LOW after reset. Tested safe in theory, verify on first proto. |
 | SPI bus noise with two radios | Low | NSS pull-ups prevent bus contention. ELRS firmware serializes transactions. Short SPI traces. |
 | LR1121 LCSC stock | High | C7498014 showed low stock historically. Order early, consider alternative distributors. |
-| Thermal on 24x18mm board | Medium | Dual radios + SE2431L generate heat. Thermal vias mandatory. Max TX duty cycle limited by ELRS protocol (short telemetry bursts). |
+| Thermal on 24x18mm board | Medium | Dual radios + RFX2401C generate heat. Thermal vias mandatory. Max TX duty cycle limited by ELRS protocol (short telemetry bursts). |
 | No LED for user feedback | Low | Acceptable for premium miniature receiver. User relies on Lua/OTA for status. Consider shared NRESET variant if LED required. |
-| SE2431L 2.4GHz only | None | Correct. SE2431L is only on 2.4GHz path. Sub-GHz path has no front-end (LR1121 internal PA/LNA sufficient). |
+| RFX2401C 2.4GHz only | None | Correct. RFX2401C is only on 2.4GHz path. Sub-GHz path has no front-end (LR1121 internal PA/LNA sufficient). |
 | WiFi OTA range without antenna | Low | Sufficient for close-range updates. Standard ELRS practice. |
 
 ---
 
 # OpenRX-Gemini Bill of Materials
 
-> Audit note: this is an `ESP32-C3 + 2x LR1121` concept BOM. The 2.4GHz front-end is still documented as `SE2431L`; do not treat the front-end choice as locked until the common BOM strategy is reconciled.
+> This is an `ESP32-C3 + 2x LR1121 + RFX2401C` concept BOM.
 
 Date: 2026-03-23
 Status: Design phase
@@ -654,7 +659,7 @@ Target unit BOM cost: EUR 12-15 (at qty 100)
 | U1 | 1 | MCU, ESP32-C3FH4, 4MB flash integrated | ESP32-C3FH4 | C2858491 | QFN-32 5x5mm | ~$1.80 | WiFi+BLE, RISC-V, 160MHz |
 | U2 | 1 | Sub-GHz Radio, LR1121 | LR1121IMLTRT | C7498014 | QFN-32 4x4mm | ~$2.50 | Sub-GHz primary (868/915MHz) |
 | U3 | 1 | 2.4GHz Radio, LR1121 | LR1121IMLTRT | C7498014 | QFN-32 4x4mm | ~$2.50 | 2.4GHz primary |
-| U4 | 1 | 2.4GHz Front-End (PA+LNA+Switch) | SE2431L-R | C2649471 | QFN-24 3x4mm | ~$1.89 | Skyworks, RX gain +11dB, TX +22dBm |
+| U4 | 1 | 2.4GHz Front-End (PA+LNA+Switch) | RFX2401C | C19213 | QFN-16 3x3mm | ~$0.51 | RX gain +11dB, TX +22dBm. RFSW-driven by LR1121. |
 | U5 | 1 | LDO 3.3V 600mA | AP2112K-3.3TRG1 | C51118 | SOT-23-5 | ~$0.07 | Diodes Inc, 250mV dropout |
 
 ## Oscillators
@@ -709,9 +714,9 @@ If using discrete balun, add 3-4 passive components (inductors + capacitors) ins
 | C19 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | Radio 2 VR_PA |
 | C20 | 1 | 4.7uF | 6.3V | C368816 | ~$0.005 | Radio 2 VBAT_SW |
 | C21 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | Radio 2 VDD_TCXO |
-| C22 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | SE2431L VDD_LNA |
-| C23 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | SE2431L VDD_PA |
-| C24 | 1 | 1uF | 6.3V | C52923 | ~$0.003 | SE2431L VDD_PA bulk |
+| C22 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | RFX2401C VDD |
+| C23 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | RFX2401C VDD |
+| C24 | 1 | 1uF | 6.3V | C52923 | ~$0.003 | RFX2401C VDD bulk |
 | C25 | 1 | 1uF | 6.3V | C52923 | ~$0.003 | CHIP_EN RC delay |
 | C26 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | Radio 1 NRESET debounce |
 | C27 | 1 | 100nF | 6.3V | C307331 | ~$0.003 | Radio 2 NRESET debounce |
@@ -734,8 +739,8 @@ Capacitor subtotals: 14x 100nF, 4x 1uF, 2x 4.7uF, 3x 22uF (0805)
 | R4 | 1 | 10k | C25744 | ~$0.002 | GPIO9 boot strap pull-up |
 | R5 | 1 | 10k | C25744 | ~$0.002 | Radio 1 NRESET pull-up |
 | R6 | 1 | 10k | C25744 | ~$0.002 | Radio 2 NRESET pull-up |
-| R7 | 1 | 100k | C25741 | ~$0.002 | SE2431L TXEN pull-down |
-| R8 | 1 | 100k | C25741 | ~$0.002 | SE2431L RXEN pull-down |
+| R7 | 1 | 100k | C25741 | ~$0.002 | RFX2401C TXEN pull-down |
+| R8 | 1 | 100k | C25741 | ~$0.002 | RFX2401C RXEN pull-down |
 
 Resistor subtotals: 6x 10k, 2x 100k
 
@@ -759,8 +764,8 @@ Resistor subtotals: 6x 10k, 2x 100k
 |-----|-----|-------------|---------|-------|
 | L_RF1-L_RF2 | 2 | Sub-GHz matching inductors | 0402 | Values from LR1121 ref design, typically 3.9nH-12nH |
 | C_RF1-C_RF3 | 3 | Sub-GHz matching capacitors | 0402 | Values from LR1121 ref design, NP0/C0G |
-| L_RF3-L_RF4 | 2 | 2.4GHz matching inductors | 0402 | SE2431L input/output matching |
-| C_RF4-C_RF6 | 3 | 2.4GHz matching capacitors | 0402 | SE2431L input/output matching, NP0/C0G |
+| L_RF3-L_RF4 | 2 | 2.4GHz matching inductors | 0402 | RFX2401C input/output matching |
+| C_RF4-C_RF6 | 3 | 2.4GHz matching capacitors | 0402 | RFX2401C input/output matching, NP0/C0G |
 
 RF matching component values are determined during layout based on PCB stackup and trace impedance. Budget ~$0.10 total for RF passives.
 
@@ -773,7 +778,7 @@ Use wire-wound or thin-film inductors for RF (not multilayer ferrite).
 |----------|----------------|
 | ESP32-C3FH4 | $1.80 |
 | LR1121 x2 | $5.00 |
-| SE2431L | $1.89 |
+| RFX2401C | $0.51 |
 | AP2112K LDO | $0.07 |
 | TCXOs x2 | $0.92 |
 | SAW filter | $0.05 |
@@ -783,15 +788,15 @@ Use wire-wound or thin-film inductors for RF (not multilayer ferrite).
 | Resistors (8 pcs) | $0.02 |
 | Ferrite beads (2 pcs) | $0.01 |
 | RF matching (~10 pcs) | $0.10 |
-| **Total BOM** | **~$10.84** |
+| **Total BOM** | **~$9.46** |
 
-EUR equivalent at 1.08 rate: ~EUR 11.70
+EUR equivalent at 1.08 rate: ~EUR 10.22
 
 ### Cost Notes
-- LR1121 is the dominant cost driver at ~46% of BOM
+- LR1121 is the dominant cost driver at ~53% of BOM
 - Target EUR 12-15 is achievable at these prices
 - JLCPCB assembly adds ~$0.50/board for basic parts, ~$3-5/board for extended parts
-- SE2431L is extended part on JLCPCB (extra setup fee ~$3 per unique extended part)
+- RFX2401C is extended part on JLCPCB (extra setup fee ~$3 per unique extended part)
 - LR1121 is extended part
 - PCB fabrication at qty 100: ~$1-2/board for 4-layer 24x18mm
 
@@ -799,7 +804,7 @@ EUR equivalent at 1.08 rate: ~EUR 11.70
 - RadioMaster XR4: $39.99 retail
 - RadioMaster DBR4: $28.99 retail
 - OpenRX-Gemini target: $20-25 retail (open source, community pricing)
-- BOM at ~$11 leaves margin for PCB, assembly, packaging, and distribution
+- BOM at ~$9.50 leaves margin for PCB, assembly, packaging, and distribution
 
 ## Component Sourcing Risk
 
@@ -807,7 +812,7 @@ EUR equivalent at 1.08 rate: ~EUR 11.70
 |-----------|------|----------------------|-----------|
 | ESP32-C3FH4 (C2858491) | Low | Good LCSC stock | Widely available |
 | LR1121 (C7498014) | HIGH | Low/variable LCSC stock | Order early. Check Mouser/DigiKey. Consider consignment. |
-| SE2431L-R (C2649471) | Medium | ~1272 units | Adequate for prototype. Monitor for production. |
+| RFX2401C (C19213) | Low | Good LCSC stock | Widely available, LCSC basic-level stock |
 | AP2112K (C51118) | Low | 162k+ units | Very common, JLCPCB basic |
 | YXC TCXO (C22434888) | Medium | ~2782 units | Adequate. Check alternative: Taitien TYETBCSANF-32.000000 (C6732076) when back in stock. |
 | SAW filter (C910680) | Low | Good stock | Murata, widely available |
@@ -826,7 +831,7 @@ EUR equivalent at 1.08 rate: ~EUR 11.70
 ### Extended Parts (setup fee per unique part)
 - ESP32-C3FH4 (C2858491)
 - LR1121IMLTRT (C7498014) -- x2 but same part number = one setup fee
-- SE2431L-R (C2649471)
+- RFX2401C (C19213)
 - YXC TCXO (C22434888) -- x2 but same part number = one setup fee
 - SAFFB2G45MA0F0AR1X (C910680)
 - KH-IPEX4-2020 (C530666) -- x2 but same part number = one setup fee

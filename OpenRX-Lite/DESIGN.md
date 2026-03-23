@@ -52,8 +52,8 @@ Budget 2.4GHz ExpressLRS receiver. No PA/LNA, no UFL -- direct SX1281 to ceramic
             |               |  RFIO   |
             |               +----+----+
             |                    |
-            |               L-match network
-            |               2.2nH + 1.0pF
+            |              DEA102700LT-6307A2
+            |                  (LPF)
             |                    |
             |               +----------+
             |               | Ceramic  |
@@ -162,7 +162,7 @@ LCSC C2151551. 2.4GHz LoRa/FLRC/FSK transceiver. Used in LDO mode (no external i
 | 12 | XTA | 52MHz TCXO output (Y2 pin 3) | TCXO clock input. AC coupling cap may be needed (10pF, C14) depending on TCXO output type. If TCXO is clipped sine output, direct connection OK. |
 | 13 | XTB | NC (floating) | Only used in crystal mode. Leave floating for TCXO mode. |
 | 14 | GND | GND | |
-| 15 | RFIO | L-match network to antenna | See RF Path section below |
+| 15 | RFIO | DEA102700LT-6307A2 (FL1) to antenna | See RF Path section below |
 | 16 | MISO | ESP32-C3 GPIO6 (pin 7) | SPI data output |
 | 17 | MOSI | ESP32-C3 GPIO7 (pin 8) | SPI data input |
 | 18 | SCK | ESP32-C3 GPIO4 (pin 5) | SPI clock input |
@@ -220,22 +220,20 @@ LCSC C2875272. SMD 1612-4P (1.6x1.2mm). Changjing, 10pF load, +/-10ppm.
 - Guard ring on GND plane around crystal traces recommended.
 - Keep copper pour away from crystal on the other layer.
 
-## RF Path (Antenna Matching)
+## RF Path (Low-Pass Filter)
 
-No PA/LNA. Direct connection from SX1281 RFIO to ceramic antenna through L-match network.
+No PA/LNA. SX1281 RFIO connects to ceramic antenna through a single multilayer LPF (DEA102700LT-6307A2). This matches the RadioMaster reference design.
 
 ```
-SX1281          L-match              Ceramic Antenna
-RFIO  ---[L1 2.2nH]---+---[feed]--- 2450AT18A100E
-(pin 15)               |             (Johanson)
-                   [C16 1.0pF]
-                       |
-                      GND
+SX1281                  LPF                    Ceramic Antenna
+RFIO  ---[FL1 DEA102700LT-6307A2]---[feed]--- 2450AT18A100E
+(pin 15)   (TDK, 0402-4pin)                   (Johanson)
 ```
 
-### Components:
-- L1: 2.2nH inductor, 0402, high-Q (>30 at 2.4GHz). LCSC basic part preferred.
-- C16: 1.0pF capacitor, 0402, C0G/NP0. Tight tolerance (+/-0.1pF if possible).
+### Filter:
+- FL1: DEA102700LT-6307A2 (TDK), LCSC C574024, 0402 4-pin multilayer LPF
+- 50 ohm input/output, 2.4GHz bandpass, integrated low-pass filtering
+- No discrete matching components needed. The DEA handles both harmonic suppression and adequate impedance transition from SX1281 RFIO (~40 ohm) to 50 ohm antenna.
 
 ### Ceramic Antenna: 2450AT18A100E (ANT1)
 
@@ -245,7 +243,6 @@ LCSC C89334. Johanson, 3.2x1.6mm chip antenna.
 - Antenna MUST be placed at PCB edge with ground plane keepout per Johanson application note.
 - Minimum 1mm clearance from antenna feed to GND pour on top layer.
 - Ground plane on bottom layer should extend under antenna for return path.
-- Antenna impedance is nominally 50 ohm but varies with ground plane geometry. L-match values (2.2nH/1.0pF) are starting points -- tune with VNA on actual PCB.
 - No copper (signal or ground) on the same layer as antenna within keepout zone.
 - Performance will be significantly worse than external antenna. Expected range: 200-500m line of sight with ELRS 500Hz mode. Adequate for typical FPV use (proximity/indoor/whoops).
 
@@ -259,7 +256,7 @@ Standard addressable RGB LED for status indication.
 | DIN | ESP32-C3 GPIO10 (pin 11) through 100R series resistor (R4) |
 | DOUT | NC |
 | GND | GND |
-| Decoupling | 100nF (C17) close to VDD pin |
+| Decoupling | 100nF (C16) close to VDD pin |
 
 Note: WS2812B is optional. Omit to save BOM cost and board space. ELRS firmware can function without LED.
 
@@ -314,8 +311,7 @@ Note: For production, this can be replaced with solder pads or omitted entirely 
 | C13 | 100nF | 0402 X7R 16V | SX1281 VDD | U2 pin 11 |
 | C14 | 10pF | 0402 C0G 50V | TCXO AC coupling | Y2 out to U2 XTA (optional) |
 | C15 | 100nF | 0402 X7R 16V | TCXO VDD | Y2 pin 1 |
-| C16 | 1.0pF | 0402 C0G 50V | Antenna match | Shunt to GND in L-match |
-| C17 | 100nF | 0402 X7R 16V | WS2812B VDD | D1 (optional) |
+| C16 | 100nF | 0402 X7R 16V | WS2812B VDD | D1 (optional) |
 
 ## Complete Resistor Summary
 
@@ -327,11 +323,11 @@ Note: For production, this can be replaced with solder pads or omitted entirely 
 | R4 | 100R | 0402 | WS2812B data series resistor (optional) |
 | R5 | 10k | 0402 | SX1281 NRESET pull-up |
 
-## Complete Inductor Summary
+## RF Filter
 
-| Designator | Value | Package | Location |
-|------------|-------|---------|----------|
-| L1 | 2.2nH | 0402 | Antenna L-match series inductor |
+| Designator | Value | Package | LCSC | Location |
+|------------|-------|---------|------|----------|
+| FL1 | DEA102700LT-6307A2 | 0402-4pin | C574024 | LPF between SX1281 RFIO and antenna |
 
 ## Design Notes and Considerations
 
@@ -373,7 +369,7 @@ Note: For production, this can be replaced with solder pads or omitted entirely 
 - No PA: TX power limited to SX1281 native +12.5dBm max
 - No LNA: RX sensitivity limited to SX1281 native (~-105dBm for LoRa, ~-98dBm for FLRC)
 - Range estimate: 200-500m LOS at 500Hz, 1-2km at 50Hz. Adequate for proximity/indoor/whoop flying.
-- 2-layer RF: Impedance control less precise than 4-layer. Antenna match will need bench tuning.
+- 2-layer RF: Impedance control less precise than 4-layer. DEA102700LT-6307A2 LPF is fixed/pre-matched, no tuning required.
 - Ceramic antenna: ~2-3dB gain penalty vs external dipole/T-antenna
 
 ---
@@ -431,10 +427,9 @@ Target BOM cost: EUR 3-4 at quantity 100+
 | C13 | 100nF | 0402 | X7R | 16V | 1 | SX1281 VDD (pin 11) |
 | C14 | 10pF | 0402 | C0G | 50V | 1 | TCXO AC coupling (optional) |
 | C15 | 100nF | 0402 | X7R | 16V | 1 | TCXO VDD decoupling |
-| C16 | 1.0pF | 0402 | C0G | 50V | 1 | Antenna match shunt cap |
-| C17 | 100nF | 0402 | X7R | 16V | 1 | WS2812B decoupling (optional) |
+| C16 | 100nF | 0402 | X7R | 16V | 1 | WS2812B decoupling (optional) |
 
-**Capacitor totals:** 100nF x9, 10pF x3, 10uF x1, 22uF x1, 1uF x1, 470nF x1, 1pF x1
+**Capacitor totals:** 100nF x9, 10pF x3, 10uF x1, 22uF x1, 1uF x1, 470nF x1
 
 ### Resistors
 
@@ -448,12 +443,6 @@ Target BOM cost: EUR 3-4 at quantity 100+
 
 **Resistor totals:** 10k x4, 100R x1
 
-### Inductors
-
-| Designator | Value | Package | Qty | Notes |
-|------------|-------|---------|-----|-------|
-| L1 | 2.2nH | 0402 | 1 | Antenna L-match series. High-Q (>30 at 2.4GHz). |
-
 ## Imported Components (easyeda2kicad)
 
 The following components have been imported into `libs/OpenRX-Lite.*`:
@@ -466,6 +455,7 @@ The following components have been imported into `libs/OpenRX-Lite.*`:
 | C82942 | ME6211C33M5G-N | ME6211C33M5G-N | SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL |
 | C22434896 | 52MHz TCXO | OW7EL89CENUNFAYLC-52M | OSC-SMD_4P-L2.0-W1.6-BL_TXC_7Z |
 | C2875272 | 40MHz Crystal | CJ17-400001010B20 | CRYSTAL-SMD_4P-L1.6-W1.2-BL |
+| C574024 | DEA102700LT-6307A2 | DEA102700LT-6307A2 | FILTER-SMD_4P-L1.0-W0.5 |
 
 Library path: `libs/OpenRX-Lite.kicad_sym` (symbols), `libs/OpenRX-Lite.pretty/` (footprints), `libs/OpenRX-Lite.3dshapes/` (3D models)
 
@@ -479,8 +469,9 @@ Library path: `libs/OpenRX-Lite.kicad_sym` (symbols), `libs/OpenRX-Lite.pretty/`
 | 52MHz TCXO | $0.45 |
 | 40MHz Crystal | $0.08 |
 | Ceramic Antenna | $0.25 |
-| All passives (~17 caps, 5 resistors, 1 inductor) | ~$0.15 |
+| DEA102700LT-6307A2 LPF | $0.10 |
+| All passives (~16 caps, 5 resistors) | ~$0.12 |
 | WS2812B (optional) | $0.05 |
-| **Total (without PCB/assembly)** | **~$5.24** |
+| **Total (without PCB/assembly)** | **~$5.31** |
 
 **Note:** The SX1281 is the cost driver at $2.50. At qty 1000+ the price drops to ~$1.80, bringing total BOM closer to $4.50. The EUR 3-4 target is aggressive and may require either volume pricing or substituting a cheaper transceiver (SX1280 if available cheaper). PCB fabrication and assembly at JLCPCB adds approximately $1-2 per unit at qty 100.

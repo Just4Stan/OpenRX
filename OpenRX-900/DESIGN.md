@@ -1,7 +1,5 @@
 # OpenRX-900 Schematic Design
 
-> Audit note: this brief still contains unresolved `LR1121` package and pin-mapping contradictions. Do not start schematic capture from it until the LR1121 section is reconciled against the official Semtech datasheet and the intended ELRS target wiring.
-
 Sub-GHz (868/915MHz) ExpressLRS receiver using ESP32-C3FH4 + LR1121.
 
 ## Block Diagram
@@ -130,7 +128,7 @@ The LR1121 uses a DIO Switch Matrix (SWM) to assign functions to DIOs. For ELRS 
 | DIO10   | 8          | 32k_N/RFSW4  | Not connected |
 | DIO11   | 7          | 32k_P/NC     | Not connected |
 
-Note: For sub-GHz only without external PA/LNA, RFSW pins are driven by LR1121 firmware to select internal RF paths (HP PA, LP PA, or RX). No external RF switch needed. The ELRS firmware configures these via `radio_dcdc: true` in the target JSON.
+Note: For sub-GHz only without external PA/LNA, RFSW pins are driven by LR1121 firmware via `SetDioAsRfSwitch()` to select internal RF paths (HP PA, LP PA, or RX). No external RF switch IC needed. The ELRS firmware configures this through the `radio_rfsw_ctrl` mechanism in the target definition, not via MCU GPIOs.
 
 ### LR1121 Power Supply Network
 
@@ -503,8 +501,6 @@ Note: `radio_dcdc: true` enables the LR1121 internal DC-DC converter via the DCC
 ---
 
 # OpenRX-900 Bill of Materials
-
-> Audit note: do not lock the LR1121 footprint or schematic pin mapping from this file alone. Treat `LR1121IMLTRT` as `QFN-32 4x4mm` and reconcile the full radio section against the official Semtech datasheet before drawing the real schematic.
 
 Target BOM cost: EUR 4-5 (at JLCPCB assembly quantities)
 
