@@ -8,6 +8,8 @@ Part of the [OpenDrone](https://github.com/Just4Stan) ecosystem. Current release
 
 **Current portfolio recommendation:** see [PRODUCT_LINEUP_REDUCTION_2026-03-23.md](PRODUCT_LINEUP_REDUCTION_2026-03-23.md). The commercial ELRS market is converging on a smaller ladder than the current six-project concept.
 
+**Mono/Gemini topology research:** see [MONO_GEMINI_TOPOLOGY_RESEARCH_2026-03-23.md](MONO_GEMINI_TOPOLOGY_RESEARCH_2026-03-23.md) for the current competitor and ExpressLRS target deep-dive.
+
 ## Release Stack
 
 | Model | Band | MCU | RF | Front-End | Size | BOM | Retail | Use Case |
@@ -77,6 +79,6 @@ OpenRX/
 |---------|----------------|-------------|
 | Tiny 2.4GHz | RadioMaster XR2 | Lite |
 | Mainstream multi-band | RadioMaster XR1 / BETAFPV SuperX Mono style | Mono |
-| Premium GemX / Gemini | RadioMaster DBR4 | Gemini |
+| Premium GemX / Gemini | RadioMaster XR4 / BETAFPV SuperX Nano | Gemini |
 
 See [PRODUCT_LINEUP_REDUCTION_2026-03-23.md](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/PRODUCT_LINEUP_REDUCTION_2026-03-23.md) for the reasoning behind the cut.
