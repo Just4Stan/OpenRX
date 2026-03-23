@@ -1,27 +1,33 @@
 # OpenRX Final Netlist
 
+Based on RadioMaster XR4 teardown analysis and ELRS firmware targets.
+
 ---
 
 # Part 1: OpenRX-Mono
 
-One ESP32-C3 + one LR1121 + one SKY13588 + one Johanson IPD + one DEA LPF → one UFL → one dual-band antenna.
+One ESP32-C3 + one LR1121 + one RFX2401C + one SKY13588 + one Johanson IPD + one DEA LPF → one UFL → one dual-band antenna.
 
 ## Signal Flow
 
 ```
-                    Sub-GHz:
-LR1121 RFI_N (29) ──┐
-LR1121 RFI_P (30) ──┤──→ Johanson IPD (balun) ──→ IPD RX out (pin 6)  → SKY13588 J1 (pin 1)
-LR1121 RFO_LP (31) ─┤──→ Johanson IPD ──────────→ IPD TX_LP out (pin 8)→ SKY13588 J2 (pin 9)
-LR1121 RFO_HP (32) ─┘──→ Johanson IPD ──────────→ IPD TX_HP out (pin 9)→ SKY13588 J3 (pin 3)
-                                                                              │
-                                                              SKY13588 RFC (pin 11) ──→ UFL
-                    2.4GHz:                                                   │
-LR1121 RFIO_HF (26) ──→ DEA102700LT-6307A2 (LPF) ───────────────────────────┘
-                                                         (joins at antenna trace)
+Sub-GHz path (direct-tie):
+  LR1121 RFI_N/P (pins 29-30) ──┐
+  LR1121 RFO_LP_LF (pin 31)  ──┤──→ Johanson IPD (all outputs tied together) ──→ SKY13588 J1
+  LR1121 RFO_HP_LF (pin 32)  ──┘
+
+2.4GHz path:
+  LR1121 RFIO_HF (pin 26) ──→ DEA102700LT LPF ──→ RFX2401C ──→ SKY13588 J2
+
+Band selection (SKY13588):
+  J1 (sub-GHz) ──┐
+  J2 (2.4GHz)  ──┤──→ RFC ──→ DC block / matching ──→ UFL ──→ dual-band antenna
+  J3 (unused)  ──┘
 ```
 
-The LR1121 only uses one band at a time. When sub-GHz is active, the SKY13588 routes the correct path (RX/TX_LP/TX_HP). When 2.4GHz is active, the switch is OFF (high impedance) and the signal goes through the DEA LPF directly.
+The SKY13588 serves as BOTH the sub-GHz path switch AND the band combiner. Only one band is active at a time. The LR1121 RFSW DIO pins control which port is connected to RFC.
+
+The Johanson IPD operates in **direct-tie mode** — all three antenna-side ports (RX pin 6, TX_LP pin 8, TX_HP pin 9) are tied together and feed as one single-ended signal into SKY13588 J1. The LR1121 internally manages TX/RX isolation at the chip level.
 
 ## ESP32-C3 GPIO Map (matches `Generic C3 LR1121.json`)
 
@@ -35,7 +41,7 @@ The LR1121 only uses one band at a time. When sub-GHz is active, the SKY13588 ro
 | 6 | 12 | MTCK | LR1121 DIO2/SCK (pin 23) | `radio_sck` |
 | 7 | 13 | MTDO | LR1121 DIO1/NSS (pin 24) + 10k pull-up | `radio_nss` |
 | 8 | 14 | GPIO8 | WS2812B LED data | `led_rgb` |
-| 9 | 15 | GPIO9 | Button + 10k pull-up | `button` |
+| 9 | 15 | GPIO9 | Button (C2976675) + 10k pull-up | `button` |
 | 20 | 27 | U0RXD | CRSF RX solder pad | `serial_rx` |
 | 21 | 28 | U0TXD | CRSF TX solder pad | `serial_tx` |
 | — | 1 | LNA_IN | WiFi antenna (2450AT18A100E) | — |
@@ -44,7 +50,7 @@ The LR1121 only uses one band at a time. When sub-GHz is active, the SKY13588 ro
 | — | 7 | CHIP_EN | 10k pull-up + 1uF to GND | — |
 | — | 31,32 | VDDA | 3.3V + 1uF decoupling | — |
 
-GPIO 0, 10, 18, 19 are unused on Mono.
+GPIO 0, 10, 18, 19 are NC on Mono.
 
 ## LR1121 Pin-by-Pin
 
@@ -59,15 +65,13 @@ GPIO 0, 10, 18, 19 are unused on Mono.
 | 7 | 32k_P/DIO11 | NC |
 | 8 | 32k_N/DIO10 | NC |
 | 9 | DIO9 | ESP32 GPIO1 (IRQ) |
-| 10 | DIO8 | SKY13588 V2 (pin 5) |
-| 11 | DIO7 | SKY13588 V1 (pin 4) |
-| 12 | VREG | 100nF to GND only (output, NOT 3.3V) |
+| 10 | DIO8 | SKY13588 V2 (pin 5) — band/path select |
+| 11 | DIO7 | SKY13588 V1 (pin 4) — band/path select |
+| 12 | VREG | 100nF to GND only (output, NOT to 3.3V) |
 | 13 | GND | GND |
 | 14 | DCC_SW | 10uH inductor to pin 15 (VBAT) |
 | 15 | VBAT | 3.3V + 100nF |
-| 16 | DNC | NC |
-| 17 | DNC | NC |
-| 18 | DNC | NC |
+| 16-18 | DNC | NC |
 | 19 | DIO6 | 100k pull-down to GND |
 | 20 | DIO5 | 100k pull-down to GND |
 | 21 | DIO4 | ESP32 GPIO5 (MISO) |
@@ -76,15 +80,14 @@ GPIO 0, 10, 18, 19 are unused on Mono.
 | 24 | DIO1 | ESP32 GPIO7 (NSS) + 10k pull-up |
 | 25 | DIO0/BUSY | ESP32 GPIO3 |
 | 26 | RFIO_HF | DEA102700LT-6307A2 IN |
-| 27 | DNC | NC |
-| 28 | DNC | NC |
+| 27-28 | DNC | NC |
 | 29 | RFI_N_LF0 | Johanson IPD pin 4 |
 | 30 | RFI_P_LF0 | Johanson IPD pin 3 |
 | 31 | RFO_LP_LF | Johanson IPD pin 2 |
 | 32 | RFO_HP_LF | Johanson IPD pin 1 |
 | 33 | EP | GND |
 
-## Johanson IPD (0900PC16J0042001E) Pin-by-Pin
+## Johanson IPD (0900PC16J0042001E) — Direct-Tie Mode
 
 | Pin # | Name | Connect To |
 |-------|------|------------|
@@ -93,38 +96,26 @@ GPIO 0, 10, 18, 19 are unused on Mono.
 | 3 | RFI_P_LF0 | LR1121 pin 30 |
 | 4 | RFI_N_LF0 | LR1121 pin 29 |
 | 5 | GND | GND |
-| 6 | RX | SKY13588 J1 (pin 1) |
+| 6 | RX | **Tied together** → SKY13588 J1 (pin 1) |
 | 7 | GND | GND |
-| 8 | TX_LP | SKY13588 J2 (pin 9) |
-| 9 | TX_HP | SKY13588 J3 (pin 3) |
+| 8 | TX_LP | **Tied together** → SKY13588 J1 (pin 1) |
+| 9 | TX_HP | **Tied together** → SKY13588 J1 (pin 1) |
 | 10 | GND | GND |
 
-## SKY13588-460LF Pin-by-Pin
+Pins 6, 8, 9 all connect to the same net going to SKY13588 J1. This is the direct-tie topology.
 
-| Pin # | Name | Connect To |
-|-------|------|------------|
-| 1 | J1 | Johanson IPD RX (pin 6) — sub-GHz receive path |
-| 2 | GND | GND |
-| 3 | J3 | Johanson IPD TX_HP (pin 9) — sub-GHz high-power TX |
-| 4 | V1 | LR1121 DIO7 (pin 11) — switch control |
-| 5 | V2 | LR1121 DIO8 (pin 10) — switch control |
-| 6 | VDD | 3.3V + 100nF decoupling |
-| 7 | GND | GND |
-| 8 | GND | GND |
-| 9 | J2 | Johanson IPD TX_LP (pin 8) — sub-GHz low-power TX |
-| 10 | GND | GND |
-| 11 | RFC | Antenna trace → joins DEA LPF output → UFL |
-| 12 | GND | GND |
-| 13 | EP | GND |
+## RFX2401C (2.4GHz PA+LNA)
 
-### Switch Truth Table
+| Pin | Name | Connect To |
+|-----|------|------------|
+| 4 | TXRX | DEA102700LT-6307A2 OUT (from LR1121 RFIO_HF) |
+| 10 | ANT | SKY13588 J2 (pin 9) |
+| 5 | TXEN | LR1121 DIO6 (pin 19) — or 100k pull-down if not using MCU control |
+| 6 | RXEN | LR1121 DIO5 (pin 20) — or 100k pull-down if not using MCU control |
+| 14,16 | VDD | 3.3V + 1uF + 220pF |
+| 1,2,3,7,8,9,11,12,15,17 | GND/EP | GND |
 
-| V1 (DIO7) | V2 (DIO8) | Active Path | When |
-|------------|-----------|-------------|------|
-| 0 | 0 | All OFF | Standby or 2.4GHz active |
-| 1 | 0 | RFC ↔ J1 | Sub-GHz RX |
-| 0 | 1 | RFC ↔ J2 | Sub-GHz TX (low power) |
-| 1 | 1 | RFC ↔ J3 | Sub-GHz TX (high power) |
+Note: The RFSW truth table must be configured so that DIO5/DIO6 activate the RFX2401C TXEN/RXEN when the 2.4GHz path is selected. This is done via `radio_rfsw_ctrl` in the hardware.json. The default ELRS RFSW config already handles this — DIO5 goes HIGH for HF RX mode, DIO6 goes HIGH for HF TX mode.
 
 ## DEA102700LT-6307A2 (2.4GHz LPF)
 
@@ -132,12 +123,41 @@ GPIO 0, 10, 18, 19 are unused on Mono.
 |-------|------|------------|
 | 1 | IN | LR1121 RFIO_HF (pin 26) |
 | 2 | GND | GND |
-| 3 | OUT | Antenna trace (same net as SKY13588 RFC) |
+| 3 | OUT | RFX2401C TXRX (pin 4) |
 | 4 | GND | GND |
 
-## Antenna Junction
+## SKY13588-460LF (SP3T Band Select Switch)
 
-SKY13588 RFC (pin 11) and DEA LPF OUT (pin 3) connect to the **same trace** going to the UFL connector. Keep this junction point as small as possible. Only one path is active at a time — no collision.
+| Pin # | Name | Connect To |
+|-------|------|------------|
+| 1 | J1 | Johanson IPD direct-tie output (pins 6+8+9 joined) — sub-GHz |
+| 2 | GND | GND |
+| 3 | J3 | NC (unused third throw) |
+| 4 | V1 | LR1121 DIO7 (pin 11) |
+| 5 | V2 | LR1121 DIO8 (pin 10) |
+| 6 | VDD | 3.3V + 100nF |
+| 7 | GND | GND |
+| 8 | GND | GND |
+| 9 | J2 | RFX2401C ANT (pin 10) — 2.4GHz |
+| 10 | GND | GND |
+| 11 | RFC | DC block cap → UFL → dual-band antenna |
+| 12 | GND | GND |
+| 13 | EP | GND |
+
+### Switch Truth Table (controlled by LR1121 RFSW)
+
+| V1 (DIO7) | V2 (DIO8) | RFC connects to | Mode |
+|------------|-----------|-----------------|------|
+| 0 | 0 | All OFF | Standby |
+| 1 | 0 | J1 | Sub-GHz active |
+| 0 | 1 | J2 | 2.4GHz active |
+| 1 | 1 | J3 | Unused |
+
+The `radio_rfsw_ctrl` firmware config sets DIO5-DIO8 states for each radio mode:
+- Sub-GHz RX: DIO7 HIGH → RFC↔J1 (sub-GHz), DIO5 LOW (RFX2401C off)
+- Sub-GHz TX: DIO7 HIGH → RFC↔J1 (sub-GHz), DIO6 LOW (RFX2401C off)
+- 2.4GHz RX: DIO8 HIGH → RFC↔J2 (2.4GHz), DIO5 HIGH (RFX2401C RXEN)
+- 2.4GHz TX: DIO8 HIGH → RFC↔J2 (2.4GHz), DIO6 HIGH (RFX2401C TXEN)
 
 ## 32MHz TCXO Wiring
 
@@ -148,17 +168,26 @@ TCXO GND (pins 1,2) → GND
 LR1121 XTB (pin 5) → float
 ```
 
-## Mono BOM (new parts vs current schematic)
+## Mono BOM (RF section)
 
-**Remove:**
-- RFX2401C (U3) and caps C25, C26
-- One UFL connector (keep JP1, remove JP2)
+| Ref | Part | LCSC | Package | Price | Function |
+|-----|------|------|---------|-------|----------|
+| U4 | LR1121IMLTRT | C7498014 | QFN-32 5×5 | ~$2.50 | Multi-band transceiver |
+| U6 | SKY13588-460LF | C2151906 | QFN-12 2×2 | ~$0.89 | SP3T band select switch |
+| U3 | RFX2401C | C19213 | QFN-16 3×3 | ~$0.51 | 2.4GHz PA+LNA (100mW) |
+| T1 | 0900PC16J0042001E | C19842466 | 10-pad 2.0×1.6 | ~$0.96 | Sub-GHz IPD (direct-tie) |
+| FL1 | DEA102700LT-6307A2 | C574024 | 0402 4-pin | ~$0.10 | 2.4GHz LPF |
+| U5 | OW7EL89CENUYO3YLC-32M | C22381772 | SMD2016 | ~$0.40 | 32MHz TCXO |
+| JP1 | U.FL-R-SMT-1(80) | C88374 | SMD | ~$0.08 | Antenna connector |
+| — | 220R | C274342 | 0201 | ~$0.01 | TCXO series resistor |
+| — | 10pF | C20069240 | 0201 | ~$0.01 | TCXO DC-cut cap |
+| — | 100nF ×5 | C76939 | 0201 | — | SKY VDD + LR1121 decoupling |
+| — | 4.7uF | C23733 | 0402 | — | LR1121 VR_PA |
+| — | 10uH | C6808014 | 0603 | — | LR1121 DC-DC |
+| — | 1uF + 220pF | C76935 + C62548 | 0201 | — | RFX2401C VDD |
+| — | 100k ×2 | C270364 | 0201 | — | DIO5, DIO6 pull-downs |
 
-**Add:**
-- SKY13588-460LF (C2151906) + 100nF VDD decoupling
-- Rewire DIO7 → V1, DIO8 → V2
-
-**Rewire all ESP32-C3 GPIOs** per the GPIO table above.
+**Mono RF subtotal: ~$5.46**
 
 ---
 
@@ -169,101 +198,75 @@ Two identical Mono RF sections sharing one ESP32-C3.
 ## How to Build
 
 1. Start with the corrected Mono schematic
-2. Copy the entire RF section (LR1121 + TCXO + 220R + 10pF + power caps + 10uH inductor + 4.7uF + Johanson IPD + SKY13588 + DEA LPF + UFL)
+2. Copy the entire RF section: LR1121 + TCXO + 220R + 10pF + power caps + 10uH + 4.7uF + Johanson IPD + SKY13588 + DEA LPF + RFX2401C + 1uF + 220pF + UFL
 3. This becomes Radio 2
-4. Delete the LED from Radio 1's GPIO (GPIO8 becomes Radio 2 BUSY)
-5. Rewire ESP32 GPIOs to match the Gemini target
+4. Rewire ESP32 GPIOs per the Gemini table below
 
-## What's Different From Mono
+## Gemini ESP32-C3 GPIO Map (matches `Generic C3 LR1121 True Diversity.json`)
 
-| Item | Mono | Gemini |
-|------|------|--------|
-| LR1121 count | 1 | 2 |
-| TCXO count | 1 | 2 |
-| SKY13588 count | 1 | 2 |
-| Johanson IPD count | 1 | 2 |
-| DEA LPF count | 1 | 2 |
-| 10uH inductor count | 1 | 2 |
-| UFL count | 1 | 2 |
-| LED | GPIO8 | **GPIO19** |
-| Button | GPIO9 | GPIO9 (same) |
-| Radio 1 NSS | GPIO7 | **GPIO0** |
-| Radio 2 | — | Added |
+| GPIO | ESP32 Pin # | Function | ELRS Key |
+|------|------------|----------|----------|
+| 0 | 4 | Radio 1 NSS + 10k pull-up | `radio_nss` |
+| 1 | 5 | Radio 1 IRQ (DIO9) | `radio_dio1` |
+| 2 | 6 | Radio 1 RST + 10k pull-up | `radio_rst` |
+| 3 | 8 | Radio 1 BUSY | `radio_busy` |
+| 4 | 9 | SPI MOSI (shared) | `radio_mosi` |
+| 5 | 10 | SPI MISO (shared) | `radio_miso` |
+| 6 | 12 | SPI SCK (shared) | `radio_sck` |
+| 7 | 13 | Radio 2 NSS + 10k pull-up | `radio_nss_2` |
+| 8 | 14 | Radio 2 BUSY | `radio_busy_2` |
+| 9 | 15 | Button + 10k pull-up | `button` |
+| 10 | 16 | Radio 2 RST | `radio_rst_2` |
+| 18 | 25 | Radio 2 IRQ (DIO9) | `radio_dio1_2` |
+| 19 | 26 | LED (WS2812B) | `led_rgb` |
+| 20 | 27 | CRSF RX | `serial_rx` |
+| 21 | 28 | CRSF TX | `serial_tx` |
 
-## Gemini ESP32-C3 GPIO Rewiring
+## Differences from Mono → Gemini
 
-Starting from Mono, change these connections:
+| GPIO | Mono | Gemini | Change |
+|------|------|--------|--------|
+| 0 | NC | **Radio 1 NSS** | Wire to R1 DIO1 (pin 24) + pull-up |
+| 7 | Radio 1 NSS | **Radio 2 NSS** | Rewire to R2 DIO1 (pin 24) + pull-up |
+| 8 | LED | **Radio 2 BUSY** | Remove LED, wire to R2 DIO0 (pin 25) |
+| 10 | NC | **Radio 2 RST** | Wire to R2 NRESET (pin 6) |
+| 18 | NC | **Radio 2 IRQ** | Wire to R2 DIO9 (pin 9) |
+| 19 | NC | **LED** | Wire to WS2812B |
 
-| GPIO | Mono Function | Gemini Function | Action |
-|------|---------------|-----------------|--------|
-| 0 | NC | **Radio 1 NSS** | Wire to Radio 1 DIO1 (pin 24) + 10k pull-up |
-| 7 | Radio 1 NSS | **Radio 2 NSS** | Rewire from Radio 1 to Radio 2 DIO1 (pin 24) + 10k pull-up |
-| 8 | LED | **Radio 2 BUSY** | Remove LED, wire to Radio 2 DIO0/BUSY (pin 25) |
-| 10 | NC | **Radio 2 RST** | Wire to Radio 2 NRESET (pin 6) |
-| 18 | Serial1 RX / NC | **Radio 2 IRQ** | Wire to Radio 2 DIO9 (pin 9) |
-| 19 | Serial1 TX / NC | **LED** | Wire to WS2812B |
+## Radio 2 Wiring
 
-Keep unchanged:
-- GPIO 1 → Radio 1 DIO9 (IRQ)
-- GPIO 2 → Radio 1 NRESET
-- GPIO 3 → Radio 1 BUSY
-- GPIO 4 → SPI MOSI (shared to both radios)
-- GPIO 5 → SPI MISO (shared to both radios)
-- GPIO 6 → SPI SCK (shared to both radios)
-- GPIO 9 → Button
-- GPIO 20 → CRSF RX
-- GPIO 21 → CRSF TX
+Identical to Radio 1 except for ESP32 connections:
 
-## Radio 2 LR1121 Wiring
+| LR1121 Pin | Radio 1 → ESP32 | Radio 2 → ESP32 |
+|------------|-----------------|-----------------|
+| DIO9 (9) IRQ | GPIO1 | **GPIO18** |
+| DIO1 (24) NSS | GPIO0 | **GPIO7** |
+| DIO0 (25) BUSY | GPIO3 | **GPIO8** |
+| NRESET (6) | GPIO2 | **GPIO10** |
+| DIO3 (22) MOSI | GPIO4 (shared) | GPIO4 (shared) |
+| DIO4 (21) MISO | GPIO5 (shared) | GPIO5 (shared) |
+| DIO2 (23) SCK | GPIO6 (shared) | GPIO6 (shared) |
 
-Identical to Radio 1 (see Part 1 LR1121 pin table), except:
+Radio 2's SKY13588 V1/V2 are controlled by Radio 2's own LR1121 DIO7/DIO8 — no ESP32 GPIOs involved. Same for RFX2401C TXEN/RXEN via Radio 2's DIO5/DIO6.
 
-| Pin | Radio 1 connects to | Radio 2 connects to |
-|-----|---------------------|---------------------|
-| 9 (DIO9/IRQ) | ESP32 GPIO1 | ESP32 **GPIO18** |
-| 24 (DIO1/NSS) | ESP32 GPIO7 → **GPIO0** | ESP32 **GPIO7** |
-| 25 (DIO0/BUSY) | ESP32 GPIO3 | ESP32 **GPIO8** |
-| 6 (NRESET) | ESP32 GPIO2 | ESP32 **GPIO10** |
-
-All other LR1121 pins (power, TCXO, RF) are identical to Radio 1 but with their own dedicated components.
-
-## Radio 2 RF Section
-
-Exact copy of Radio 1:
-- Own LR1121 + own TCXO + own power caps + own 10uH inductor
-- Own SKY13588 (DIO7→V1, DIO8→V2 from Radio 2's LR1121)
-- Own Johanson IPD
-- Own DEA LPF on RFIO_HF
-- Own UFL connector
-
-Radio 2's sub-GHz and 2.4GHz paths combine at its own UFL, same as Radio 1.
-
-## Gemini Shared SPI Bus
-
-Three wires connect to both radios:
-
-```
-ESP32 GPIO4 (MOSI) → Radio 1 DIO3 (pin 22) AND Radio 2 DIO3 (pin 22)
-ESP32 GPIO5 (MISO) → Radio 1 DIO4 (pin 21) AND Radio 2 DIO4 (pin 21)
-ESP32 GPIO6 (SCK)  → Radio 1 DIO2 (pin 23) AND Radio 2 DIO2 (pin 23)
-```
-
-NSS lines are separate — the ESP32 selects which radio to talk to by pulling the correct NSS LOW.
+Each radio has its own complete RF chain → its own UFL → its own dual-band antenna. 2 UFL total.
 
 ---
 
 ## Routing Notes
 
-1. **50Ω traces** on all RF paths (SKY13588 RFC → UFL, DEA OUT → junction, RFIO_HF → DEA IN)
-2. **Differential pair** for LR1121 RFI_N/RFI_P → Johanson IPD (matched length, tight coupling)
-3. **Place Johanson IPD adjacent to LR1121** — differential traces must be short
-4. **Place SKY13588 between IPD and UFL** — minimize trace length on switched paths
-5. **Place DEA LPF near the antenna junction** — short 2.4GHz trace to UFL
-6. **Antenna junction** where sub-GHz (RFC) and 2.4GHz (DEA OUT) meet: keep stub as short as possible
-7. **Solid ground pour** on bottom layer, via stitch around all RF components
-8. **No routing under LR1121, SKY13588, or Johanson IPD** on the opposite layer
-9. **TCXO close to LR1121 XTA** with 220R+10pF in the signal path
-10. **10uH inductor close to LR1121 DCC_SW** — tight DC-DC loop to VBAT
-11. **WiFi antenna (2450AT18A100E) at board edge** — separate from ELRS RF section, min 5mm keepout
-12. **Crystal 40MHz close to ESP32 XTAL pins** — 24nH inductor on XTAL_P side, 18pF load caps
-13. **For Gemini: keep both RF sections symmetric** — mirror layout if possible for consistent RF performance
+1. **SKY13588 RFC → UFL**: 50Ω controlled impedance, DC block cap in series, as short as possible
+2. **Johanson IPD → SKY13588 J1**: short 50Ω trace, this carries the direct-tie sub-GHz signal
+3. **RFX2401C ANT → SKY13588 J2**: short 50Ω trace, this carries the amplified 2.4GHz signal
+4. **LR1121 RFIO_HF → DEA → RFX2401C TXRX**: 50Ω, keep DEA close to RFIO_HF
+5. **LR1121 RFI_N/RFI_P → IPD**: matched-length differential pair, as short as possible
+6. **Place order on PCB**: LR1121 → (IPD + DEA/RFX2401C side by side) → SKY13588 → UFL at board edge
+7. **SKY13588 VDD**: 100nF decoupling right at pin 6
+8. **RFX2401C VDD**: 1uF + 220pF close to VDD pins
+9. **Ground pour**: solid bottom layer, via stitch around all RF components
+10. **No routing under RF ICs** on opposite layer
+11. **TCXO**: close to LR1121 XTA, 220R + 10pF in signal path
+12. **10uH inductor**: close to LR1121 DCC_SW, tight loop to VBAT
+13. **WiFi antenna**: board edge, separate from ELRS RF, 5mm keepout
+14. **40MHz crystal**: close to ESP32 XTAL pins, 24nH on XTAL_P, 18pF load caps
+15. **For Gemini**: mirror the two RF sections symmetrically for consistent performance

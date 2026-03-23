@@ -649,7 +649,7 @@
         "uuid": "b1c2d3e4-f5a6-7890-bcde-f12345678901"
       }
     ],
-    "used_designators": "C14-18,C27-42,U6-10,TP5-8,T2,R8-14,JP3-4,D2,#PWR15-22,#PWR24-27,#PWR48-70,AE2,#FLG4-6,X2,USB2,L2-4",
+    "used_designators": "U3",
     "variants": []
   },
   "sheets": [
