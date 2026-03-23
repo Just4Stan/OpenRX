@@ -4352,8 +4352,8 @@
 		)
 	)
 	(rectangle
-		(start 26.67 38.1)
-		(end 82.55 55.88)
+		(start 11.43 38.1)
+		(end 67.31 55.88)
 		(stroke
 			(width 0)
 			(type default)
@@ -4365,7 +4365,7 @@
 	)
 	(text "interrupt (naming from lite/nano)"
 		(exclude_from_sim no)
-		(at 245.364 72.898 0)
+		(at 230.124 72.898 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4374,374 +4374,374 @@
 		(uuid "b7876543-d453-4059-9e32-f7ee1b62320f")
 	)
 	(junction
-		(at 210.82 121.92)
+		(at 195.58 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "020663bb-685c-4cbc-bb56-5ed17d036c91")
 	)
 	(junction
-		(at 64.77 85.09)
+		(at 49.53 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "068dbb2a-a25b-4fa7-aa92-f830f7e4a07d")
 	)
 	(junction
-		(at 170.18 36.83)
+		(at 154.94 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "124f54e9-5811-43ce-9d2f-5f1c4653e8e5")
 	)
 	(junction
-		(at 97.79 29.21)
+		(at 82.55 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1586a02a-59b7-4632-ab79-d30381aa064e")
 	)
 	(junction
-		(at 170.18 29.21)
+		(at 154.94 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18a31f0f-5698-4db6-8bf8-03177a50754a")
 	)
 	(junction
-		(at 354.33 90.17)
+		(at 339.09 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b204c9a-e711-4e78-84e7-feb9d9f310e2")
 	)
 	(junction
-		(at 340.36 128.27)
+		(at 325.12 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ea5f8ad-bbb1-4408-b0b0-a25815193979")
 	)
 	(junction
-		(at 144.78 29.21)
+		(at 129.54 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "282d501f-2aaa-4b68-a63b-6c1689ae3d44")
 	)
 	(junction
-		(at 182.88 36.83)
+		(at 167.64 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2997e220-4d3b-4962-aca1-0e02d24c6ba0")
 	)
 	(junction
-		(at 180.34 121.92)
+		(at 165.1 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "306457b4-0a03-4868-9f07-5c92b84a0d9f")
 	)
 	(junction
-		(at 134.62 36.83)
+		(at 119.38 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3514f8f0-2382-42de-933a-2aa517941062")
 	)
 	(junction
-		(at 134.62 31.75)
+		(at 119.38 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4aa5eed0-53ec-40bf-a906-187dd8920408")
 	)
 	(junction
-		(at 68.58 73.66)
+		(at 53.34 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53373c72-1557-4f46-b8d4-3d93213819af")
 	)
 	(junction
-		(at 394.97 97.79)
+		(at 379.73 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53787b42-16af-42df-b34c-34a9a7c157e6")
 	)
 	(junction
-		(at 73.66 41.91)
+		(at 58.42 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "552f3f72-273d-454c-8502-462efb161bbb")
 	)
 	(junction
-		(at 195.58 121.92)
+		(at 180.34 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55ff0fe9-6afa-4c6b-ad08-af7561c32bd6")
 	)
 	(junction
-		(at 381 90.17)
+		(at 365.76 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d152e73-a12b-47ae-9e32-f749d55947cf")
 	)
 	(junction
-		(at 182.88 29.21)
+		(at 167.64 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68bcb40a-9f26-4cd6-a18b-28773df18215")
 	)
 	(junction
-		(at 354.33 116.84)
+		(at 339.09 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "690958a9-1bfd-45bd-8eaa-0172ae08aef6")
 	)
 	(junction
-		(at 368.3 119.38)
+		(at 353.06 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c68af55-12c3-465c-909e-004e0ea86b23")
 	)
 	(junction
-		(at 157.48 29.21)
+		(at 142.24 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "705290d4-18ee-4c65-bfd8-4850afbb250c")
 	)
 	(junction
-		(at 288.29 154.94)
+		(at 273.05 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70e9cadd-56f0-4b88-91f5-d5815da631c7")
 	)
 	(junction
-		(at 168.91 111.76)
+		(at 153.67 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77fa36a1-f010-4e9f-8938-ce28409acba6")
 	)
 	(junction
-		(at 186.69 111.76)
+		(at 171.45 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b0628cf-3798-4254-9539-a4d7790a9b06")
 	)
 	(junction
-		(at 331.47 45.72)
+		(at 316.23 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7be1e890-7468-40cb-b09c-5d7d5b804549")
 	)
 	(junction
-		(at 397.51 128.27)
+		(at 382.27 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7dbb7537-657b-4dce-b4aa-214ba827b68d")
 	)
 	(junction
-		(at 44.45 49.53)
+		(at 29.21 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f8a9a58-213d-4ca4-a57f-04266d7c78ca")
 	)
 	(junction
-		(at 411.48 153.67)
+		(at 396.24 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83073c37-2b66-432e-aae1-2168965a787a")
 	)
 	(junction
-		(at 368.3 104.14)
+		(at 353.06 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8333d0ae-5c06-4fae-8bad-a93ee8bb98c8")
 	)
 	(junction
-		(at 210.82 111.76)
+		(at 195.58 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dbc938b-c1cf-4302-aec3-b745d4fd5ab4")
 	)
 	(junction
-		(at 80.01 26.67)
+		(at 64.77 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95330098-e124-4636-b7e1-511b95cd3191")
 	)
 	(junction
-		(at 134.62 29.21)
+		(at 119.38 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b065e99-4ba3-4a68-8393-c8d11b59f0e8")
 	)
 	(junction
-		(at 39.37 41.91)
+		(at 24.13 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0f8e7cd-783e-4369-b0a7-ea5501a13a98")
 	)
 	(junction
-		(at 354.33 106.68)
+		(at 339.09 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a628f93f-7834-4cd0-9e95-1b9e060eecf8")
 	)
 	(junction
-		(at 157.48 36.83)
+		(at 142.24 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0a357d1-4894-4674-989e-bf34034076f2")
 	)
 	(junction
-		(at 320.04 45.72)
+		(at 304.8 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9b20456-ba54-4247-9430-948e58eb5a07")
 	)
 	(junction
-		(at 326.39 110.49)
+		(at 311.15 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba1aaf0b-9017-4a1c-8541-cef2bec74428")
 	)
 	(junction
-		(at 241.3 44.45)
+		(at 226.06 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bad8ca52-8087-4c79-a7c7-0110bb06ca32")
 	)
 	(junction
-		(at 241.3 36.83)
+		(at 226.06 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd0e8478-c60b-4bf0-bb79-8ada628ea8d4")
 	)
 	(junction
-		(at 194.31 121.92)
+		(at 179.07 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "beb630ea-75c6-40ec-9987-154a30890ae8")
 	)
 	(junction
-		(at 180.34 111.76)
+		(at 165.1 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4087585-0d39-4d9b-8031-301369242974")
 	)
 	(junction
-		(at 220.98 111.76)
+		(at 205.74 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c503976c-c422-40b1-b24e-ac7a39444407")
 	)
 	(junction
-		(at 168.91 121.92)
+		(at 153.67 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9ea2a01-e874-4a8e-82bd-b09482708dd0")
 	)
 	(junction
-		(at 196.85 121.92)
+		(at 181.61 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d65abedd-80a7-4778-a148-fd1b0d78fee1")
 	)
 	(junction
-		(at 134.62 34.29)
+		(at 119.38 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e72abdd0-9a7c-4433-863e-e4d1b257dce8")
 	)
 	(junction
-		(at 397.51 140.97)
+		(at 382.27 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8118561-0231-4748-8547-3337b387107d")
 	)
 	(junction
-		(at 63.5 49.53)
+		(at 48.26 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f293217d-c38a-4ca7-8b92-4d96e52abd6a")
 	)
 	(no_connect
-		(at 309.88 59.69)
+		(at 294.64 59.69)
 		(uuid "05ceb8ba-0aca-493b-9871-062dab92be46")
 	)
 	(no_connect
-		(at 309.88 72.39)
+		(at 294.64 72.39)
 		(uuid "0eb3fa49-5377-4d9e-bba8-a35a7504c505")
 	)
 	(no_connect
-		(at 309.88 74.93)
+		(at 294.64 74.93)
 		(uuid "1d5038bc-3904-4366-99b6-593ac1b0e475")
 	)
 	(no_connect
-		(at 309.88 69.85)
+		(at 294.64 69.85)
 		(uuid "3f3a1f2e-3718-4842-bee5-0ab5f6e0a7c7")
 	)
 	(no_connect
-		(at 134.62 74.93)
+		(at 119.38 74.93)
 		(uuid "4917c35a-9bc1-4791-8735-3912357de2a9")
 	)
 	(no_connect
-		(at 73.66 92.71)
+		(at 58.42 92.71)
 		(uuid "64555bab-07d0-4c0d-88a7-9ecbec92674e")
 	)
 	(no_connect
-		(at 134.62 69.85)
+		(at 119.38 69.85)
 		(uuid "70b649e2-d94f-4d94-a438-ed95fe037688")
 	)
 	(no_connect
-		(at 97.79 66.04)
+		(at 82.55 66.04)
 		(uuid "71461bdb-b300-44cd-9f53-b2cce7de080e")
 	)
 	(no_connect
-		(at 134.62 82.55)
+		(at 119.38 82.55)
 		(uuid "7347fa7c-98f0-4368-af26-166dd79f62c3")
 	)
 	(no_connect
-		(at 309.88 62.23)
+		(at 294.64 62.23)
 		(uuid "79172a96-b6e9-4439-bb23-98900f863923")
 	)
 	(no_connect
-		(at 179.07 71.12)
+		(at 163.83 71.12)
 		(uuid "7c7c3f7f-a6ed-4e16-a5a2-f1095381d5e8")
 	)
 	(no_connect
-		(at 266.7 62.23)
+		(at 251.46 62.23)
 		(uuid "83a01662-8d0e-439c-9ea6-789caf7b17e5")
 	)
 	(no_connect
-		(at 354.33 97.79)
+		(at 339.09 97.79)
 		(uuid "86d7b9db-a328-43be-ba82-5a7e6d303037")
 	)
 	(no_connect
-		(at 309.88 67.31)
+		(at 294.64 67.31)
 		(uuid "8bbff350-087d-4b35-bee6-e023dda66f9e")
 	)
 	(no_connect
-		(at 134.62 77.47)
+		(at 119.38 77.47)
 		(uuid "9115c0c0-6f18-4401-a9df-1ad76d0d2986")
 	)
 	(no_connect
-		(at 309.88 64.77)
+		(at 294.64 64.77)
 		(uuid "95fb9f7c-2e9d-452c-83d0-68b9aaaa6d3f")
 	)
 	(no_connect
-		(at 97.79 54.61)
+		(at 82.55 54.61)
 		(uuid "acc5d77e-c87b-4aca-ab8c-123cd0b78a5c")
 	)
 	(no_connect
-		(at 97.79 68.58)
+		(at 82.55 68.58)
 		(uuid "b4df2cd9-73cc-499e-9177-d734a192300e")
 	)
 	(no_connect
-		(at 97.79 57.15)
+		(at 82.55 57.15)
 		(uuid "bec65253-f63b-46ed-abee-7cb98f996e0d")
 	)
 	(no_connect
-		(at 134.62 80.01)
+		(at 119.38 80.01)
 		(uuid "da651004-6733-4578-a6b3-2e3a2ae9b75a")
 	)
 	(no_connect
-		(at 134.62 72.39)
+		(at 119.38 72.39)
 		(uuid "e044c835-d31e-4e48-b5b1-38ca8b034633")
 	)
 	(wire
 		(pts
-			(xy 254 59.69) (xy 256.54 59.69)
+			(xy 238.76 59.69) (xy 241.3 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4751,7 +4751,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 153.67) (xy 411.48 153.67)
+			(xy 382.27 153.67) (xy 396.24 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4761,7 +4761,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 138.43) (xy 397.51 140.97)
+			(xy 382.27 138.43) (xy 382.27 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4771,7 +4771,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 57.15) (xy 313.69 57.15)
+			(xy 294.64 57.15) (xy 298.45 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4781,7 +4781,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 121.92) (xy 196.85 121.92)
+			(xy 180.34 121.92) (xy 181.61 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4791,7 +4791,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 128.27) (xy 342.9 128.27)
+			(xy 325.12 128.27) (xy 327.66 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4801,7 +4801,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 142.24) (xy 364.49 142.24)
+			(xy 294.64 142.24) (xy 349.25 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4811,7 +4811,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 121.92) (xy 168.91 121.92)
+			(xy 152.4 121.92) (xy 153.67 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4821,7 +4821,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 82.55) (xy 97.79 82.55)
+			(xy 57.15 82.55) (xy 82.55 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4831,7 +4831,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 57.15) (xy 243.84 52.07)
+			(xy 228.6 57.15) (xy 228.6 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4841,7 +4841,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 29.21) (xy 97.79 26.67)
+			(xy 82.55 29.21) (xy 82.55 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4851,7 +4851,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 121.92) (xy 220.98 121.92)
+			(xy 195.58 121.92) (xy 205.74 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4861,7 +4861,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 36.83) (xy 170.18 36.83)
+			(xy 142.24 36.83) (xy 154.94 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4871,7 +4871,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 111.76) (xy 210.82 111.76)
+			(xy 189.23 111.76) (xy 195.58 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4881,7 +4881,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 115.57) (xy 326.39 115.57)
+			(xy 294.64 115.57) (xy 311.15 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4891,7 +4891,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 52.07) (xy 254 52.07)
+			(xy 228.6 52.07) (xy 238.76 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4901,7 +4901,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 29.21) (xy 182.88 29.21)
+			(xy 154.94 29.21) (xy 167.64 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4911,7 +4911,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 41.91) (xy 48.26 41.91)
+			(xy 24.13 41.91) (xy 33.02 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4921,7 +4921,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 36.83) (xy 134.62 39.37)
+			(xy 119.38 36.83) (xy 119.38 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4931,7 +4931,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 73.66) (xy 64.77 74.93)
+			(xy 49.53 73.66) (xy 49.53 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4941,7 +4941,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 73.66) (xy 68.58 73.66)
+			(xy 57.15 73.66) (xy 53.34 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4951,7 +4951,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 110.49) (xy 326.39 113.03)
+			(xy 311.15 110.49) (xy 311.15 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4961,7 +4961,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 59.69) (xy 246.38 59.69)
+			(xy 228.6 59.69) (xy 231.14 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4971,7 +4971,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 119.38) (xy 381 124.46)
+			(xy 365.76 119.38) (xy 365.76 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4981,7 +4981,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 26.67) (xy 80.01 26.67)
+			(xy 82.55 26.67) (xy 64.77 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4991,7 +4991,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 111.76) (xy 186.69 114.3)
+			(xy 171.45 111.76) (xy 171.45 114.3)
 		)
 		(stroke
 			(width 0)
@@ -5001,7 +5001,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 104.14) (xy 381 104.14)
+			(xy 353.06 104.14) (xy 365.76 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5011,7 +5011,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 111.76) (xy 354.33 111.76)
+			(xy 344.17 111.76) (xy 339.09 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5021,7 +5021,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 49.53) (xy 44.45 46.99)
+			(xy 29.21 49.53) (xy 29.21 46.99)
 		)
 		(stroke
 			(width 0)
@@ -5031,7 +5031,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 41.91) (xy 73.66 41.91)
+			(xy 48.26 41.91) (xy 58.42 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5041,7 +5041,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 128.27) (xy 340.36 128.27)
+			(xy 322.58 128.27) (xy 325.12 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5051,7 +5051,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 111.76) (xy 186.69 111.76)
+			(xy 165.1 111.76) (xy 171.45 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5061,7 +5061,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 135.89) (xy 397.51 128.27)
+			(xy 382.27 135.89) (xy 382.27 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5071,7 +5071,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 29.21) (xy 170.18 29.21)
+			(xy 142.24 29.21) (xy 154.94 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5081,7 +5081,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 146.05) (xy 397.51 153.67)
+			(xy 382.27 146.05) (xy 382.27 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5091,7 +5091,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 74.93) (xy 72.39 73.66)
+			(xy 57.15 74.93) (xy 57.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5101,7 +5101,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 91.44) (xy 139.7 91.44)
+			(xy 119.38 91.44) (xy 124.46 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5111,7 +5111,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 41.91) (xy 320.04 45.72)
+			(xy 304.8 41.91) (xy 304.8 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5121,7 +5121,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 113.03) (xy 220.98 111.76)
+			(xy 205.74 113.03) (xy 205.74 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5131,7 +5131,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 140.97) (xy 403.86 140.97)
+			(xy 382.27 140.97) (xy 388.62 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5141,7 +5141,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 121.92) (xy 180.34 121.92)
+			(xy 153.67 121.92) (xy 165.1 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5151,7 +5151,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 73.66) (xy 64.77 73.66)
+			(xy 53.34 73.66) (xy 49.53 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5161,7 +5161,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 90.17) (xy 394.97 90.17)
+			(xy 365.76 90.17) (xy 379.73 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5171,7 +5171,7 @@
 	)
 	(wire
 		(pts
-			(xy 397.51 140.97) (xy 397.51 143.51)
+			(xy 382.27 140.97) (xy 382.27 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5181,7 +5181,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 92.71) (xy 97.79 92.71)
+			(xy 67.31 92.71) (xy 82.55 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5191,7 +5191,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 49.53) (xy 63.5 46.99)
+			(xy 48.26 49.53) (xy 48.26 46.99)
 		)
 		(stroke
 			(width 0)
@@ -5201,7 +5201,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 49.53) (xy 44.45 49.53)
+			(xy 24.13 49.53) (xy 29.21 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5211,7 +5211,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 111.76) (xy 210.82 111.76)
+			(xy 205.74 111.76) (xy 195.58 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5221,7 +5221,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 99.06) (xy 391.16 99.06)
+			(xy 365.76 99.06) (xy 375.92 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5231,7 +5231,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 109.22) (xy 354.33 106.68)
+			(xy 339.09 109.22) (xy 339.09 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5241,7 +5241,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 85.09) (xy 64.77 85.09)
+			(xy 82.55 85.09) (xy 49.53 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5251,7 +5251,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 45.72) (xy 320.04 45.72)
+			(xy 294.64 45.72) (xy 304.8 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5261,7 +5261,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 29.21) (xy 157.48 29.21)
+			(xy 129.54 29.21) (xy 142.24 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5271,7 +5271,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 114.3) (xy 354.33 116.84)
+			(xy 339.09 114.3) (xy 339.09 116.84)
 		)
 		(stroke
 			(width 0)
@@ -5281,7 +5281,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 45.72) (xy 331.47 45.72)
+			(xy 304.8 45.72) (xy 316.23 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5291,7 +5291,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 111.76) (xy 180.34 113.03)
+			(xy 165.1 111.76) (xy 165.1 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5301,7 +5301,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 49.53) (xy 73.66 49.53)
+			(xy 48.26 49.53) (xy 58.42 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5311,7 +5311,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 36.83) (xy 182.88 36.83)
+			(xy 154.94 36.83) (xy 167.64 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5321,7 +5321,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 41.91) (xy 39.37 41.91)
+			(xy 21.59 41.91) (xy 24.13 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5331,7 +5331,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 34.29) (xy 134.62 36.83)
+			(xy 119.38 34.29) (xy 119.38 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5341,7 +5341,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 91.44) (xy 139.7 78.74)
+			(xy 124.46 91.44) (xy 124.46 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5351,7 +5351,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 29.21) (xy 97.79 31.75)
+			(xy 82.55 29.21) (xy 82.55 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5361,7 +5361,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 41.91) (xy 97.79 41.91)
+			(xy 58.42 41.91) (xy 82.55 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5371,7 +5371,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 139.7) (xy 364.49 139.7)
+			(xy 294.64 139.7) (xy 349.25 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5381,7 +5381,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 107.95) (xy 326.39 110.49)
+			(xy 311.15 107.95) (xy 311.15 110.49)
 		)
 		(stroke
 			(width 0)
@@ -5391,7 +5391,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 85.09) (xy 64.77 82.55)
+			(xy 71.12 44.45) (xy 82.55 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9add4c91-e622-4cfc-91d1-c2157d61d451")
+	)
+	(wire
+		(pts
+			(xy 49.53 85.09) (xy 49.53 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5401,7 +5411,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 137.16) (xy 364.49 137.16)
+			(xy 294.64 137.16) (xy 349.25 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5411,7 +5421,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 52.07) (xy 266.7 52.07)
+			(xy 246.38 52.07) (xy 251.46 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5421,17 +5431,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 44.45) (xy 97.79 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f0719b2-8112-40bc-b911-177e9a996a93")
-	)
-	(wire
-		(pts
-			(xy 168.91 120.65) (xy 168.91 121.92)
+			(xy 153.67 120.65) (xy 153.67 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5441,7 +5441,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 119.38) (xy 381 119.38)
+			(xy 353.06 119.38) (xy 365.76 119.38)
 		)
 		(stroke
 			(width 0)
@@ -5451,7 +5451,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 44.45) (xy 78.74 53.34)
+			(xy 63.5 44.45) (xy 63.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5461,7 +5461,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 53.34) (xy 44.45 53.34)
+			(xy 63.5 53.34) (xy 29.21 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5471,7 +5471,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 119.38) (xy 368.3 119.38)
+			(xy 339.09 119.38) (xy 353.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -5481,7 +5481,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 111.76) (xy 383.54 111.76)
+			(xy 361.95 111.76) (xy 368.3 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5491,7 +5491,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 59.69) (xy 266.7 59.69)
+			(xy 248.92 59.69) (xy 251.46 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5501,7 +5501,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 121.92) (xy 194.31 121.92)
+			(xy 165.1 121.92) (xy 179.07 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5511,7 +5511,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 121.92) (xy 210.82 120.65)
+			(xy 195.58 121.92) (xy 195.58 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5521,7 +5521,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 154.94) (xy 290.83 154.94)
+			(xy 273.05 154.94) (xy 275.59 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5531,7 +5531,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 36.83) (xy 266.7 36.83)
+			(xy 226.06 36.83) (xy 251.46 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5541,7 +5541,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 111.76) (xy 210.82 113.03)
+			(xy 195.58 111.76) (xy 195.58 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5551,7 +5551,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 121.92) (xy 195.58 121.92)
+			(xy 179.07 121.92) (xy 180.34 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5561,7 +5561,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 36.83) (xy 195.58 36.83)
+			(xy 167.64 36.83) (xy 180.34 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5571,7 +5571,7 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 128.27) (xy 397.51 128.27)
+			(xy 396.24 128.27) (xy 382.27 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5581,7 +5581,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 41.91) (xy 320.04 41.91)
+			(xy 302.26 41.91) (xy 304.8 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5591,7 +5591,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 36.83) (xy 157.48 36.83)
+			(xy 129.54 36.83) (xy 142.24 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5601,7 +5601,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 106.68) (xy 354.33 104.14)
+			(xy 339.09 106.68) (xy 339.09 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5611,7 +5611,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 104.14) (xy 368.3 104.14)
+			(xy 339.09 104.14) (xy 353.06 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5621,7 +5621,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 113.03) (xy 168.91 111.76)
+			(xy 153.67 113.03) (xy 153.67 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5631,7 +5631,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 78.74) (xy 158.75 78.74)
+			(xy 124.46 78.74) (xy 143.51 78.74)
 		)
 		(stroke
 			(width 0)
@@ -5641,7 +5641,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 144.78) (xy 364.49 144.78)
+			(xy 294.64 144.78) (xy 349.25 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5651,7 +5651,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 116.84) (xy 354.33 119.38)
+			(xy 339.09 116.84) (xy 339.09 119.38)
 		)
 		(stroke
 			(width 0)
@@ -5661,7 +5661,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 104.14) (xy 381 99.06)
+			(xy 365.76 104.14) (xy 365.76 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5671,7 +5671,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 111.76) (xy 180.34 111.76)
+			(xy 152.4 111.76) (xy 165.1 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5681,7 +5681,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 121.92) (xy 210.82 121.92)
+			(xy 181.61 121.92) (xy 195.58 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5691,7 +5691,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 53.34) (xy 44.45 49.53)
+			(xy 29.21 53.34) (xy 29.21 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5701,7 +5701,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 31.75) (xy 134.62 34.29)
+			(xy 119.38 31.75) (xy 119.38 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5711,7 +5711,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 44.45) (xy 266.7 44.45)
+			(xy 246.38 44.45) (xy 251.46 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5721,7 +5721,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 97.79) (xy 394.97 97.79)
+			(xy 365.76 97.79) (xy 379.73 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5731,7 +5731,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 44.45) (xy 254 44.45)
+			(xy 226.06 44.45) (xy 238.76 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5741,7 +5741,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 46.99) (xy 48.26 46.99)
+			(xy 29.21 46.99) (xy 33.02 46.99)
 		)
 		(stroke
 			(width 0)
@@ -5751,7 +5751,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 29.21) (xy 144.78 29.21)
+			(xy 119.38 29.21) (xy 129.54 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5761,7 +5761,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 90.17) (xy 354.33 92.71)
+			(xy 339.09 90.17) (xy 339.09 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5771,7 +5771,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 124.46) (xy 391.16 124.46)
+			(xy 365.76 124.46) (xy 375.92 124.46)
 		)
 		(stroke
 			(width 0)
@@ -5781,7 +5781,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 93.98) (xy 147.32 93.98)
+			(xy 119.38 93.98) (xy 132.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5791,7 +5791,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 29.21) (xy 195.58 29.21)
+			(xy 167.64 29.21) (xy 180.34 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5801,7 +5801,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 154.94) (xy 288.29 154.94)
+			(xy 270.51 154.94) (xy 273.05 154.94)
 		)
 		(stroke
 			(width 0)
@@ -5811,7 +5811,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 90.17) (xy 381 90.17)
+			(xy 339.09 90.17) (xy 365.76 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5821,7 +5821,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 59.69) (xy 147.32 59.69)
+			(xy 119.38 59.69) (xy 132.08 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5831,7 +5831,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 120.65) (xy 180.34 121.92)
+			(xy 165.1 120.65) (xy 165.1 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5841,7 +5841,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 121.92) (xy 220.98 120.65)
+			(xy 205.74 121.92) (xy 205.74 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5851,7 +5851,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 88.9) (xy 266.7 88.9)
+			(xy 245.11 88.9) (xy 251.46 88.9)
 		)
 		(stroke
 			(width 0)
@@ -5861,7 +5861,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 85.09) (xy 64.77 86.36)
+			(xy 49.53 85.09) (xy 49.53 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5871,7 +5871,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 45.72) (xy 337.82 45.72)
+			(xy 316.23 45.72) (xy 322.58 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5881,7 +5881,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 29.21) (xy 134.62 31.75)
+			(xy 119.38 29.21) (xy 119.38 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5890,7 +5890,7 @@
 		(uuid "ffd7ad19-281e-4b27-bce9-fd9db4c742c7")
 	)
 	(label "DIO1"
-		(at 134.62 49.53 0)
+		(at 119.38 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5900,7 +5900,7 @@
 		(uuid "0a8c1461-c2a9-4e1d-a043-f9c472dd14db")
 	)
 	(label "DIO1"
-		(at 266.7 73.66 180)
+		(at 251.46 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5910,7 +5910,7 @@
 		(uuid "190f394b-5ec3-4f8a-932a-3481559bce07")
 	)
 	(label "MISO"
-		(at 266.7 76.2 180)
+		(at 251.46 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5920,7 +5920,7 @@
 		(uuid "30585d27-43a4-4bfe-a1e8-f55648936407")
 	)
 	(label "TXEN"
-		(at 309.88 54.61 0)
+		(at 294.64 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5930,7 +5930,7 @@
 		(uuid "33459bad-6caf-4707-861c-22c75c213139")
 	)
 	(label "BUSY"
-		(at 266.7 86.36 180)
+		(at 251.46 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5940,7 +5940,7 @@
 		(uuid "38a8a3e8-38ad-423e-9823-c74a8fde3403")
 	)
 	(label "RST"
-		(at 266.7 71.12 180)
+		(at 251.46 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5950,7 +5950,7 @@
 		(uuid "3da9d3c4-20ec-4c9b-bf19-00c59ad2b30a")
 	)
 	(label "MOSI"
-		(at 266.7 78.74 180)
+		(at 251.46 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5960,7 +5960,7 @@
 		(uuid "3f109533-f868-4076-9624-28be82de14da")
 	)
 	(label "CHIP_EN"
-		(at 76.2 85.09 0)
+		(at 60.96 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5970,7 +5970,7 @@
 		(uuid "4634efd1-035b-412d-896e-993cbb8a81ac")
 	)
 	(label "SCK"
-		(at 134.62 52.07 0)
+		(at 119.38 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5980,7 +5980,7 @@
 		(uuid "4a639830-03ee-4ad6-9fb2-b62dc0df5d24")
 	)
 	(label "MOSI"
-		(at 134.62 57.15 0)
+		(at 119.38 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5990,7 +5990,7 @@
 		(uuid "51ec53d9-3dfd-4e04-9360-1dc0962e3862")
 	)
 	(label "LED"
-		(at 134.62 91.44 0)
+		(at 119.38 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6000,7 +6000,7 @@
 		(uuid "53c8a780-e789-4f45-98e5-9e163640dc82")
 	)
 	(label "SCK"
-		(at 266.7 81.28 180)
+		(at 251.46 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6010,7 +6010,7 @@
 		(uuid "58a01317-78b8-4d60-bb61-10d728b532f5")
 	)
 	(label "TXEN"
-		(at 326.39 91.44 180)
+		(at 311.15 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6020,7 +6020,7 @@
 		(uuid "62e0fc11-ebe3-4355-bb0b-616f343fac78")
 	)
 	(label "BUSY"
-		(at 134.62 62.23 0)
+		(at 119.38 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6030,7 +6030,7 @@
 		(uuid "7646b608-c24e-4126-9527-bdd575288cbc")
 	)
 	(label "XTAL_P"
-		(at 86.36 44.45 0)
+		(at 72.39 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6040,7 +6040,7 @@
 		(uuid "81dbb377-35cf-4d82-b5e2-c5839434025a")
 	)
 	(label "RXEN"
-		(at 309.88 52.07 0)
+		(at 294.64 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6050,7 +6050,7 @@
 		(uuid "87248d90-7c05-4549-91d8-1a163d31640e")
 	)
 	(label "NSS"
-		(at 134.62 59.69 0)
+		(at 119.38 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6060,7 +6060,7 @@
 		(uuid "a3ff188c-4ac7-40a4-b18d-34138996bdaf")
 	)
 	(label "MISO"
-		(at 134.62 54.61 0)
+		(at 119.38 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6070,7 +6070,7 @@
 		(uuid "abd4af25-4bc1-416e-a080-16e9b0b109c8")
 	)
 	(label "WIFI"
-		(at 82.55 92.71 0)
+		(at 67.31 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6080,7 +6080,7 @@
 		(uuid "b1b5203e-da82-4ee3-acec-a2bc03c8d06c")
 	)
 	(label "VDD"
-		(at 134.62 29.21 0)
+		(at 119.38 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6090,7 +6090,7 @@
 		(uuid "b8e49f11-6859-4d59-9f77-255dbe739614")
 	)
 	(label "RXEN"
-		(at 326.39 93.98 180)
+		(at 311.15 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6100,7 +6100,7 @@
 		(uuid "bb3803c4-3bee-4c29-8739-75861a4b758e")
 	)
 	(label "RST"
-		(at 82.55 82.55 180)
+		(at 67.31 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6110,7 +6110,7 @@
 		(uuid "d29ca8d4-d0b1-4711-81a6-2edbf0ee019f")
 	)
 	(label "XTAL_N"
-		(at 86.36 41.91 0)
+		(at 71.12 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6120,7 +6120,7 @@
 		(uuid "d8dcc4c5-3e4d-4fb9-824f-eebe83d5d016")
 	)
 	(label "CHIP_BOOT"
-		(at 134.62 93.98 0)
+		(at 119.38 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6130,7 +6130,7 @@
 		(uuid "dc5ed3e6-326f-477f-bde9-6789f8fc0cae")
 	)
 	(label "NSS"
-		(at 266.7 83.82 180)
+		(at 251.46 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6141,7 +6141,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 147.32 86.36 0)
+		(at 132.08 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6152,7 +6152,7 @@
 		(fields_autoplaced yes)
 		(uuid "066a46dd-2172-4f6e-8ed1-debc5012cac1")
 		(property "Reference" "#PWR09"
-			(at 147.32 90.17 0)
+			(at 132.08 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6163,7 +6163,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 147.32 81.28 0)
+			(at 132.08 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6173,7 +6173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 86.36 0)
+			(at 132.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6184,7 +6184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 86.36 0)
+			(at 132.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6195,7 +6195,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 147.32 86.36 0)
+			(at 132.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6206,7 +6206,7 @@
 			)
 		)
 		(property "LCSC" "C19213"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6227,12 +6227,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR09")
 					(unit 1)
@@ -6242,7 +6236,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 173.99 83.82 0)
+		(at 158.75 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6253,7 +6247,7 @@
 		(fields_autoplaced yes)
 		(uuid "089624cb-fccb-4aff-939e-0768d763b551")
 		(property "Reference" "#PWR011"
-			(at 173.99 90.17 0)
+			(at 158.75 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6264,7 +6258,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 173.99 88.9 0)
+			(at 158.75 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6274,7 +6268,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 83.82 0)
+			(at 158.75 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6285,7 +6279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 83.82 0)
+			(at 158.75 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6296,7 +6290,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 83.82 0)
+			(at 158.75 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6317,12 +6311,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR011")
 					(unit 1)
@@ -6332,7 +6320,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:U.FL-R-SMT-1(80)")
-		(at 388.62 111.76 270)
+		(at 373.38 111.76 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6343,7 +6331,7 @@
 		(fields_autoplaced yes)
 		(uuid "09dc9744-a23f-40d6-aaaa-32b70d5cea26")
 		(property "Reference" "JP2"
-			(at 394.97 110.4899 90)
+			(at 379.73 110.4899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6354,7 +6342,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1(80)"
-			(at 394.97 113.0299 90)
+			(at 379.73 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6365,7 +6353,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:RF-SMD_FRF05002-JSS103M"
-			(at 375.92 111.76 0)
+			(at 360.68 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6376,7 +6364,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Connectors_HRS_U-FL-R-SMT-1-80_3310472280-IPE-XBoard-end-IPXConnector-SMD_C88374.html"
-			(at 373.38 111.76 0)
+			(at 358.14 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6387,7 +6375,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 388.62 111.76 0)
+			(at 373.38 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6398,7 +6386,7 @@
 			)
 		)
 		(property "LCSC Part" "C88374"
-			(at 370.84 111.76 0)
+			(at 355.6 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6409,7 +6397,7 @@
 			)
 		)
 		(property "LCSC" "C88374"
-			(at 29.21 26.67 0)
+			(at 13.97 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6439,7 +6427,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 180.34 116.84 0)
+		(at 165.1 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6449,7 +6437,7 @@
 		(dnp no)
 		(uuid "12873075-aaa9-46a7-ba3f-e1f9c79e9ff3")
 		(property "Reference" "C9"
-			(at 184.404 115.57 0)
+			(at 169.164 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6460,7 +6448,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 184.404 118.11 0)
+			(at 169.164 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6471,7 +6459,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 181.3052 120.65 0)
+			(at 166.0652 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6482,7 +6470,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 116.84 0)
+			(at 165.1 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6493,7 +6481,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 180.34 116.84 0)
+			(at 165.1 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6504,7 +6492,7 @@
 			)
 		)
 		(property "LCSC" "C76935"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6528,12 +6516,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C9")
 					(unit 1)
@@ -6543,7 +6525,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 340.36 128.27 0)
+		(at 325.12 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6554,7 +6536,7 @@
 		(fields_autoplaced yes)
 		(uuid "148f8f15-a8ae-4df3-a5e5-f320fcdfa601")
 		(property "Reference" "#PWR042"
-			(at 340.36 134.62 0)
+			(at 325.12 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6565,7 +6547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 340.36 133.35 0)
+			(at 325.12 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6575,7 +6557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 128.27 0)
+			(at 325.12 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6586,7 +6568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 128.27 0)
+			(at 325.12 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6597,7 +6579,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 128.27 0)
+			(at 325.12 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6621,7 +6603,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:ESP32-C3FH4")
-		(at 115.57 66.04 0)
+		(at 100.33 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6632,7 +6614,7 @@
 		(fields_autoplaced yes)
 		(uuid "15ad4fde-0fa9-47c5-9925-12804fe1fb9b")
 		(property "Reference" "U1"
-			(at 115.57 38.1 0)
+			(at 100.33 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6642,7 +6624,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3FH4"
-			(at 115.57 40.64 0)
+			(at 100.33 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6652,7 +6634,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:QFN-32_L5.0-W5.0-P0.50-TL-EP3.7"
-			(at 115.57 93.98 0)
+			(at 100.33 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6663,7 +6645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 66.04 0)
+			(at 100.33 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6674,7 +6656,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 66.04 0)
+			(at 100.33 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6685,7 +6667,7 @@
 			)
 		)
 		(property "LCSC Part" "C2858491"
-			(at 115.57 96.52 0)
+			(at 100.33 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6696,7 +6678,7 @@
 			)
 		)
 		(property "LCSC" "C2858491"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6813,12 +6795,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U1")
 					(unit 1)
@@ -6827,8 +6803,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 67.31 44.45 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "19dacfb7-0d6d-4e34-9961-da6e0efa71ca")
+		(property "Reference" "L2"
+			(at 69.088 46.228 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24nH"
+			(at 72.898 46.228 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 67.31 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at -246.38 2.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C430052"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1bf6781d-ebe6-4734-8f8e-ef77992c1ea0")
+		)
+		(pin "1"
+			(uuid "87d87a2a-e41d-4269-9bc2-8a843849e67a")
+		)
+		(instances
+			(project "OpenRX-Mono"
+				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OpenRX-Shared:U.FL-R-SMT-1(80)")
-		(at 408.94 140.97 270)
+		(at 393.7 140.97 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6839,7 +6916,7 @@
 		(fields_autoplaced yes)
 		(uuid "21e4d393-05ae-464b-860f-d7555a29adff")
 		(property "Reference" "JP1"
-			(at 415.29 139.6999 90)
+			(at 400.05 139.6999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6850,7 +6927,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1(80)"
-			(at 415.29 142.2399 90)
+			(at 400.05 142.2399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6861,7 +6938,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:RF-SMD_FRF05002-JSS103M"
-			(at 396.24 140.97 0)
+			(at 381 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6872,7 +6949,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Connectors_HRS_U-FL-R-SMT-1-80_3310472280-IPE-XBoard-end-IPXConnector-SMD_C88374.html"
-			(at 393.7 140.97 0)
+			(at 378.46 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6883,7 +6960,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 408.94 140.97 0)
+			(at 393.7 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6894,7 +6971,7 @@
 			)
 		)
 		(property "LCSC Part" "C88374"
-			(at 391.16 140.97 0)
+			(at 375.92 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6905,7 +6982,7 @@
 			)
 		)
 		(property "LCSC" "C88374"
-			(at 49.53 55.88 0)
+			(at 34.29 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,12 +7003,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "JP1")
 					(unit 1)
@@ -6941,7 +7012,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 147.32 52.07 0)
+		(at 132.08 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6952,7 +7023,7 @@
 		(fields_autoplaced yes)
 		(uuid "23297c0d-af71-45f7-806a-0cf05aad3cac")
 		(property "Reference" "#PWR08"
-			(at 147.32 55.88 0)
+			(at 132.08 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6963,7 +7034,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 147.32 46.99 0)
+			(at 132.08 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6973,7 +7044,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 52.07 0)
+			(at 132.08 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6984,7 +7055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 52.07 0)
+			(at 132.08 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6995,7 +7066,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 147.32 52.07 0)
+			(at 132.08 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7016,12 +7087,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR08")
 					(unit 1)
@@ -7031,7 +7096,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 168.91 116.84 0)
+		(at 153.67 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7041,7 +7106,7 @@
 		(dnp no)
 		(uuid "24d164ce-496a-4897-bbd7-3a0515fa5496")
 		(property "Reference" "C12"
-			(at 172.466 115.57 0)
+			(at 157.226 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7052,7 +7117,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 172.466 118.11 0)
+			(at 157.226 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7063,7 +7128,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 169.8752 120.65 0)
+			(at 154.6352 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7074,7 +7139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 116.84 0)
+			(at 153.67 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7085,7 +7150,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 168.91 116.84 0)
+			(at 153.67 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7096,7 +7161,7 @@
 			)
 		)
 		(property "LCSC" "C15525"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7120,12 +7185,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C12")
 					(unit 1)
@@ -7135,7 +7194,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 257.81 44.45 90)
+		(at 242.57 44.45 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7145,7 +7204,7 @@
 		(dnp no)
 		(uuid "2547f90c-3e24-45ab-920c-6e1d4c7c13d8")
 		(property "Reference" "C22"
-			(at 257.81 38.1 90)
+			(at 242.57 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7155,7 +7214,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 257.81 40.64 90)
+			(at 242.57 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7165,7 +7224,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 261.62 43.4848 0)
+			(at 246.38 43.4848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7176,7 +7235,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 44.45 0)
+			(at 242.57 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7187,7 +7246,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 257.81 44.45 0)
+			(at 242.57 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7198,7 +7257,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 224.79 214.63 0)
+			(at 209.55 214.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7216,12 +7275,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C22")
 					(unit 1)
@@ -7231,7 +7284,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 257.81 52.07 90)
+		(at 242.57 52.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7241,7 +7294,7 @@
 		(dnp no)
 		(uuid "257f09f1-3765-4eb1-b87c-d7e0fe556d32")
 		(property "Reference" "C23"
-			(at 252.476 48.26 90)
+			(at 237.236 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7251,7 +7304,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 257.81 48.26 90)
+			(at 242.57 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7261,7 +7314,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 261.62 51.1048 0)
+			(at 246.38 51.1048 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7272,7 +7325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 52.07 0)
+			(at 242.57 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7283,7 +7336,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 257.81 52.07 0)
+			(at 242.57 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7294,7 +7347,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 224.79 222.25 0)
+			(at 209.55 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7312,12 +7365,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C23")
 					(unit 1)
@@ -7327,7 +7374,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 80.01 26.67 0)
+		(at 64.77 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7338,7 +7385,7 @@
 		(fields_autoplaced yes)
 		(uuid "266a6c18-462b-4c85-ab5c-a93d1637dbd2")
 		(property "Reference" "#PWR028"
-			(at 80.01 30.48 0)
+			(at 64.77 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7349,7 +7396,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 80.01 21.59 0)
+			(at 64.77 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7359,7 +7406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 26.67 0)
+			(at 64.77 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7370,7 +7417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 26.67 0)
+			(at 64.77 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7381,7 +7428,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 26.67 0)
+			(at 64.77 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7402,12 +7449,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR028")
 					(unit 1)
@@ -7417,7 +7458,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 167.64 121.92 90)
+		(at 152.4 121.92 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7427,7 +7468,7 @@
 		(dnp no)
 		(uuid "2adff0ae-c737-4855-a5ef-54dbe5ccbdd1")
 		(property "Reference" "TP4"
-			(at 160.528 122.174 90)
+			(at 145.288 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7437,7 +7478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.464 122.174 90)
+			(at 141.224 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7447,7 +7488,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
-			(at 167.64 116.84 0)
+			(at 152.4 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7458,7 +7499,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 116.84 0)
+			(at 152.4 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7469,7 +7510,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 167.64 121.92 0)
+			(at 152.4 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7490,12 +7531,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP4")
 					(unit 1)
@@ -7505,7 +7540,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 157.48 33.02 0)
+		(at 142.24 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7516,7 +7551,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cd2fe2e-057f-4a79-8750-b8e1445b1620")
 		(property "Reference" "C2"
-			(at 161.29 31.7499 0)
+			(at 146.05 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7527,7 +7562,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 161.29 34.2899 0)
+			(at 146.05 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7538,7 +7573,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 158.4452 36.83 0)
+			(at 143.2052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7549,7 +7584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 33.02 0)
+			(at 142.24 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7560,7 +7595,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 157.48 33.02 0)
+			(at 142.24 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7571,7 +7606,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7595,12 +7630,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C2")
 					(unit 1)
@@ -7610,7 +7639,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 64.77 90.17 0)
+		(at 49.53 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7620,7 +7649,7 @@
 		(dnp no)
 		(uuid "2cf63081-b8bd-4aa2-8d83-c72b8e02a36f")
 		(property "Reference" "C8"
-			(at 57.15 88.9 0)
+			(at 41.91 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7631,7 +7660,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 57.15 91.44 0)
+			(at 41.91 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7642,7 +7671,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 65.7352 93.98 0)
+			(at 50.4952 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7653,7 +7682,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 90.17 0)
+			(at 49.53 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7664,7 +7693,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 64.77 90.17 0)
+			(at 49.53 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7675,7 +7704,7 @@
 			)
 		)
 		(property "LCSC" "C76935"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7699,12 +7728,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C8")
 					(unit 1)
@@ -7714,7 +7737,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 317.5 35.56 90)
+		(at 302.26 35.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7725,7 +7748,7 @@
 		(fields_autoplaced yes)
 		(uuid "32ced8fb-8d37-4aec-9564-2a35ac6e5921")
 		(property "Reference" "#PWR030"
-			(at 323.85 35.56 0)
+			(at 308.61 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7736,7 +7759,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 321.31 35.5599 90)
+			(at 306.07 35.5599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7747,7 +7770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 317.5 35.56 0)
+			(at 302.26 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7758,7 +7781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 317.5 35.56 0)
+			(at 302.26 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7769,7 +7792,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 317.5 35.56 0)
+			(at 302.26 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7784,12 +7807,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR030")
 					(unit 1)
@@ -7799,7 +7816,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:DEA102700LT-6307A2")
-		(at 368.3 111.76 0)
+		(at 353.06 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7809,7 +7826,7 @@
 		(dnp no)
 		(uuid "35513407-4147-47c6-b543-58352dbb792b")
 		(property "Reference" "USB1"
-			(at 367.792 97.282 0)
+			(at 352.552 97.282 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7819,7 +7836,7 @@
 			)
 		)
 		(property "Value" "DEA102700LT-6307A2"
-			(at 367.792 99.822 0)
+			(at 352.552 99.822 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7829,7 +7846,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L_DEA102700LT-XXX"
-			(at 368.3 120.65 0)
+			(at 353.06 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7840,7 +7857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 111.76 0)
+			(at 353.06 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7851,7 +7868,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 368.3 111.76 0)
+			(at 353.06 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7862,7 +7879,7 @@
 			)
 		)
 		(property "LCSC Part" "C574024"
-			(at 368.3 123.19 0)
+			(at 353.06 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7873,7 +7890,7 @@
 			)
 		)
 		(property "LCSC" "C574024"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7906,7 +7923,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:LR1121IMLTRT")
-		(at 288.29 57.15 0)
+		(at 273.05 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7916,7 +7933,7 @@
 		(dnp no)
 		(uuid "355cfb8a-966e-4370-9147-a0e4b16ad671")
 		(property "Reference" "U4"
-			(at 294.386 27.94 0)
+			(at 279.146 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7927,7 +7944,7 @@
 			)
 		)
 		(property "Value" "LR1121IMLTRT"
-			(at 294.386 30.48 0)
+			(at 279.146 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7938,7 +7955,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:QFN-32_L5.0-W5.0-P0.50-BL-EP3.7"
-			(at 288.29 91.44 0)
+			(at 273.05 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7949,7 +7966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 288.29 57.15 0)
+			(at 273.05 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7960,7 +7977,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 288.29 57.15 0)
+			(at 273.05 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7971,7 +7988,7 @@
 			)
 		)
 		(property "LCSC Part" "C7498014"
-			(at 288.29 93.98 0)
+			(at 273.05 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7982,7 +7999,7 @@
 			)
 		)
 		(property "LCSC" "C7498014"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8093,12 +8110,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U4")
 					(unit 1)
@@ -8108,7 +8119,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 64.77 78.74 0)
+		(at 49.53 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8119,7 +8130,7 @@
 		(fields_autoplaced yes)
 		(uuid "361fa626-066c-44a7-9bcc-a1d9c967e0d2")
 		(property "Reference" "R1"
-			(at 67.31 77.4699 0)
+			(at 52.07 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8130,7 +8141,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 67.31 80.0099 0)
+			(at 52.07 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8141,7 +8152,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 62.992 78.74 90)
+			(at 47.752 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +8163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 78.74 0)
+			(at 49.53 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8163,7 +8174,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 78.74 0)
+			(at 49.53 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8174,7 +8185,7 @@
 			)
 		)
 		(property "LCSC" "C106225"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8198,12 +8209,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R1")
 					(unit 1)
@@ -8213,7 +8218,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 96.52 0)
+		(at 245.11 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8224,7 +8229,7 @@
 		(fields_autoplaced yes)
 		(uuid "3b09100a-d384-48cf-bb7e-4096c7f7ecd6")
 		(property "Reference" "#PWR047"
-			(at 260.35 102.87 0)
+			(at 245.11 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8235,7 +8240,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 101.6 0)
+			(at 245.11 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8245,7 +8250,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 96.52 0)
+			(at 245.11 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8256,7 +8261,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 96.52 0)
+			(at 245.11 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8267,7 +8272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 96.52 0)
+			(at 245.11 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8291,7 +8296,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 45.72 0)
+		(at 58.42 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8301,7 +8306,7 @@
 		(dnp no)
 		(uuid "3e0c88b0-0e9b-4d73-9601-775cffdaec69")
 		(property "Reference" "C7"
-			(at 66.04 44.45 0)
+			(at 50.8 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8312,7 +8317,7 @@
 			)
 		)
 		(property "Value" "18pF"
-			(at 66.04 46.99 0)
+			(at 50.8 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8323,7 +8328,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 74.6252 49.53 0)
+			(at 59.3852 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8334,7 +8339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 45.72 0)
+			(at 58.42 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8345,7 +8350,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 45.72 0)
+			(at 58.42 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8356,7 +8361,7 @@
 			)
 		)
 		(property "LCSC" "C62164"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8380,12 +8385,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C7")
 					(unit 1)
@@ -8395,7 +8394,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 170.18 29.21 0)
+		(at 154.94 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8406,7 +8405,7 @@
 		(fields_autoplaced yes)
 		(uuid "4187a7a0-90d1-459f-90f8-b9eda073c013")
 		(property "Reference" "#PWR01"
-			(at 170.18 33.02 0)
+			(at 154.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8417,7 +8416,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 170.18 24.13 0)
+			(at 154.94 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8427,7 +8426,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 29.21 0)
+			(at 154.94 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8438,7 +8437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 29.21 0)
+			(at 154.94 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8449,7 +8448,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 170.18 29.21 0)
+			(at 154.94 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8470,12 +8469,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR01")
 					(unit 1)
@@ -8485,7 +8478,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 313.69 64.77 0)
+		(at 298.45 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8496,7 +8489,7 @@
 		(fields_autoplaced yes)
 		(uuid "47134ae6-65ae-417d-b0ca-0c313b3c773a")
 		(property "Reference" "#PWR037"
-			(at 313.69 71.12 0)
+			(at 298.45 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8507,7 +8500,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 313.69 69.85 0)
+			(at 298.45 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8517,7 +8510,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 313.69 64.77 0)
+			(at 298.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8528,7 +8521,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 64.77 0)
+			(at 298.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8539,7 +8532,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 313.69 64.77 0)
+			(at 298.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8554,12 +8547,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR037")
 					(unit 1)
@@ -8569,7 +8556,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 394.97 93.98 0)
+		(at 379.73 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8580,7 +8567,7 @@
 		(fields_autoplaced yes)
 		(uuid "4758c3e1-0c8c-4fb1-9f58-892e6538bbc1")
 		(property "Reference" "C26"
-			(at 398.78 92.7099 0)
+			(at 383.54 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8591,7 +8578,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 398.78 95.2499 0)
+			(at 383.54 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8602,7 +8589,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 395.9352 97.79 0)
+			(at 380.6952 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8613,7 +8600,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 394.97 93.98 0)
+			(at 379.73 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8624,7 +8611,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 394.97 93.98 0)
+			(at 379.73 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8635,7 +8622,7 @@
 			)
 		)
 		(property "LCSC" "C76935"
-			(at 6.35 40.64 0)
+			(at -8.89 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8662,7 +8649,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:TLV75533PDQNR")
-		(at 196.85 114.3 0)
+		(at 181.61 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8673,7 +8660,7 @@
 		(fields_autoplaced yes)
 		(uuid "498b970b-9b97-4830-a358-7e3e1e084e98")
 		(property "Reference" "U2"
-			(at 195.58 104.14 0)
+			(at 180.34 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8683,7 +8670,7 @@
 			)
 		)
 		(property "Value" "TLV75533PDQNR"
-			(at 195.58 106.68 0)
+			(at 180.34 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8693,7 +8680,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:X2SON-4_L1.0-W1.0-P0.65-TL-EP"
-			(at 196.85 124.46 0)
+			(at 181.61 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8704,7 +8691,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 114.3 0)
+			(at 181.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8715,7 +8702,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 114.3 0)
+			(at 181.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8726,7 +8713,7 @@
 			)
 		)
 		(property "LCSC Part" "C2861882"
-			(at 196.85 127 0)
+			(at 181.61 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8737,7 +8724,7 @@
 			)
 		)
 		(property "LCSC" "C2861882"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8770,12 +8757,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U2")
 					(unit 1)
@@ -8785,7 +8766,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 39.37 45.72 180)
+		(at 24.13 45.72 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8795,7 +8776,7 @@
 		(dnp no)
 		(uuid "4ba4c81c-03fd-4515-9c04-e4fb6be70363")
 		(property "Reference" "C6"
-			(at 31.75 44.196 0)
+			(at 16.51 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8806,7 +8787,7 @@
 			)
 		)
 		(property "Value" "18pF"
-			(at 31.75 46.736 0)
+			(at 16.51 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8817,7 +8798,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 38.4048 41.91 0)
+			(at 23.1648 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8828,7 +8809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 45.72 0)
+			(at 24.13 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8839,7 +8820,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 39.37 45.72 0)
+			(at 24.13 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8850,7 +8831,7 @@
 			)
 		)
 		(property "LCSC" "C62164"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8874,12 +8855,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C6")
 					(unit 1)
@@ -8889,7 +8864,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 260.35 59.69 90)
+		(at 245.11 59.69 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8899,7 +8874,7 @@
 		(dnp no)
 		(uuid "4e092d85-bcfa-4f97-97b1-a215e60e569f")
 		(property "Reference" "C13"
-			(at 262.89 66.04 90)
+			(at 247.65 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8910,7 +8885,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 262.89 63.5 90)
+			(at 247.65 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8921,7 +8896,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 264.16 58.7248 0)
+			(at 248.92 58.7248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8932,7 +8907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 59.69 0)
+			(at 245.11 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8943,7 +8918,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 260.35 59.69 0)
+			(at 245.11 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8954,7 +8929,7 @@
 			)
 		)
 		(property "LCSC" "C20069240"
-			(at 214.63 133.35 0)
+			(at 199.39 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8981,7 +8956,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 121.92 0)
+		(at 180.34 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8992,7 +8967,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f9cddac-b46a-4a6a-b597-064c32743a53")
 		(property "Reference" "#PWR013"
-			(at 195.58 128.27 0)
+			(at 180.34 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9003,7 +8978,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 127 0)
+			(at 180.34 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9013,7 +8988,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 121.92 0)
+			(at 180.34 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9024,7 +8999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 121.92 0)
+			(at 180.34 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9035,7 +9010,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 121.92 0)
+			(at 180.34 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9056,12 +9031,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR013")
 					(unit 1)
@@ -9071,7 +9040,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 260.35 92.71 180)
+		(at 245.11 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9082,7 +9051,7 @@
 		(fields_autoplaced yes)
 		(uuid "50b194c5-8279-4338-a72c-04b1ed8414cf")
 		(property "Reference" "R7"
-			(at 262.89 91.4399 0)
+			(at 247.65 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9093,7 +9062,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 262.89 93.9799 0)
+			(at 247.65 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9104,7 +9073,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 262.128 92.71 90)
+			(at 246.888 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9115,7 +9084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 92.71 0)
+			(at 245.11 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9126,7 +9095,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 260.35 92.71 0)
+			(at 245.11 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9137,7 +9106,7 @@
 			)
 		)
 		(property "LCSC" "C270364"
-			(at -62.23 31.75 0)
+			(at -77.47 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9164,7 +9133,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 97.79 77.47 90)
+		(at 82.55 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9174,7 +9143,7 @@
 		(dnp no)
 		(uuid "54851c03-d1de-4838-9608-02d293c2e388")
 		(property "Reference" "TP1"
-			(at 90.678 77.724 90)
+			(at 75.438 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9184,7 +9153,7 @@
 			)
 		)
 		(property "Value" "RX"
-			(at 86.614 77.724 90)
+			(at 71.374 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9194,7 +9163,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
-			(at 97.79 72.39 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9205,7 +9174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 72.39 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9216,7 +9185,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 97.79 77.47 0)
+			(at 82.55 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9237,12 +9206,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP1")
 					(unit 1)
@@ -9252,7 +9215,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 182.88 33.02 0)
+		(at 167.64 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9263,7 +9226,7 @@
 		(fields_autoplaced yes)
 		(uuid "56942f77-2b9d-412b-89d2-e3cc060cddbc")
 		(property "Reference" "C4"
-			(at 186.69 31.7499 0)
+			(at 171.45 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9274,7 +9237,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 186.69 34.2899 0)
+			(at 171.45 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9285,7 +9248,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 183.8452 36.83 0)
+			(at 168.6052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9296,7 +9259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 33.02 0)
+			(at 167.64 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9307,7 +9270,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.88 33.02 0)
+			(at 167.64 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9318,7 +9281,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9342,12 +9305,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C4")
 					(unit 1)
@@ -9357,7 +9314,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 313.69 35.56 90)
+		(at 298.45 35.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9368,7 +9325,7 @@
 		(fields_autoplaced yes)
 		(uuid "57dca0fd-e6b3-4017-b426-fb43a9f02669")
 		(property "Reference" "C20"
-			(at 313.69 27.94 90)
+			(at 298.45 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9378,7 +9335,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 313.69 30.48 90)
+			(at 298.45 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9388,7 +9345,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 317.5 34.5948 0)
+			(at 302.26 34.5948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9399,7 +9356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 35.56 0)
+			(at 298.45 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9410,7 +9367,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 313.69 35.56 0)
+			(at 298.45 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9421,7 +9378,7 @@
 			)
 		)
 		(property "LCSC" "C23733"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9439,12 +9396,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C20")
 					(unit 1)
@@ -9454,7 +9405,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 341.63 45.72 270)
+		(at 326.39 45.72 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9464,7 +9415,7 @@
 		(dnp no)
 		(uuid "5853db84-4671-4a75-b068-cf5582b6f324")
 		(property "Reference" "C24"
-			(at 341.884 38.481 90)
+			(at 326.644 38.481 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9474,7 +9425,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 341.884 41.021 90)
+			(at 326.644 41.021 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9484,7 +9435,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 337.82 46.6852 0)
+			(at 322.58 46.6852 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9495,7 +9446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 341.63 45.72 0)
+			(at 326.39 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9506,7 +9457,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 341.63 45.72 0)
+			(at 326.39 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9517,7 +9468,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 374.65 -124.46 0)
+			(at 359.41 -124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9535,12 +9486,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C24")
 					(unit 1)
@@ -9550,7 +9495,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:RFX2401C")
-		(at 340.36 114.3 0)
+		(at 325.12 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9561,7 +9506,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c7d38fb-9c65-4914-8df1-d8833492ba45")
 		(property "Reference" "U3"
-			(at 340.36 82.55 0)
+			(at 325.12 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9571,7 +9516,7 @@
 			)
 		)
 		(property "Value" "RFX2401C"
-			(at 340.36 85.09 0)
+			(at 325.12 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9581,7 +9526,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:QFN-16_L3.0-W3.0-P0.50-BL-EP1.7"
-			(at 340.36 135.89 0)
+			(at 325.12 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9592,7 +9537,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/RF-Transceiver-ICs_SKYWORKS_RFX2401C_RFX2401C_C19213.html"
-			(at 340.36 138.43 0)
+			(at 325.12 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9603,7 +9548,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 340.36 114.3 0)
+			(at 325.12 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9614,7 +9559,7 @@
 			)
 		)
 		(property "LCSC Part" "C19213"
-			(at 340.36 140.97 0)
+			(at 325.12 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9625,7 +9570,7 @@
 			)
 		)
 		(property "LCSC" "C19213"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9697,7 +9642,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 381 151.13 0)
+		(at 365.76 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9708,7 +9653,7 @@
 		(fields_autoplaced yes)
 		(uuid "65b6ee21-3bc5-4ba0-a52c-3454d0baed7e")
 		(property "Reference" "#PWR038"
-			(at 381 157.48 0)
+			(at 365.76 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9719,7 +9664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 381 156.21 0)
+			(at 365.76 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9729,7 +9674,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 381 151.13 0)
+			(at 365.76 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9740,7 +9685,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 151.13 0)
+			(at 365.76 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9751,7 +9696,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 381 151.13 0)
+			(at 365.76 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9766,12 +9711,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR038")
 					(unit 1)
@@ -9781,7 +9720,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 93.98 0)
+		(at 49.53 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9792,7 +9731,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b1a56de-d253-42b2-a335-226099a6d6aa")
 		(property "Reference" "#PWR06"
-			(at 64.77 100.33 0)
+			(at 49.53 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9803,7 +9742,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 99.06 0)
+			(at 49.53 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9813,7 +9752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 93.98 0)
+			(at 49.53 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9824,7 +9763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 93.98 0)
+			(at 49.53 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9835,7 +9774,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 93.98 0)
+			(at 49.53 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9856,12 +9795,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR06")
 					(unit 1)
@@ -9871,7 +9804,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 57.15 270)
+		(at 205.74 57.15 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9882,7 +9815,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d3f33c2-428d-4474-b850-13dd94b86a90")
 		(property "Reference" "#PWR035"
-			(at 214.63 57.15 0)
+			(at 199.39 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9893,7 +9826,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 57.1499 90)
+			(at 201.93 57.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9904,7 +9837,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 57.15 0)
+			(at 205.74 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9915,7 +9848,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 57.15 0)
+			(at 205.74 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9926,7 +9859,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 57.15 0)
+			(at 205.74 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9941,12 +9874,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR035")
 					(unit 1)
@@ -9956,7 +9883,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:XL-1010RGBC-WS2812B")
-		(at 168.91 74.93 0)
+		(at 153.67 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9966,7 +9893,7 @@
 		(dnp no)
 		(uuid "6ecff0ae-701b-4397-967a-c0c9925238a5")
 		(property "Reference" "D1"
-			(at 179.324 64.516 0)
+			(at 164.084 64.516 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9976,7 +9903,7 @@
 			)
 		)
 		(property "Value" "XL-1010RGBC-WS2812B"
-			(at 179.324 67.056 0)
+			(at 164.084 67.056 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9986,7 +9913,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:LED-SMD_4P-L1.0-W1.0-TL_XL-1010RGBC-WS2812B"
-			(at 168.91 91.44 0)
+			(at 153.67 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9997,7 +9924,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 74.93 0)
+			(at 153.67 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10008,7 +9935,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 74.93 0)
+			(at 153.67 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10019,7 +9946,7 @@
 			)
 		)
 		(property "LCSC Part" "C5349953"
-			(at 168.91 93.98 0)
+			(at 153.67 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10030,7 +9957,7 @@
 			)
 		)
 		(property "LCSC" "C5349953"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10060,12 +9987,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "D1")
 					(unit 1)
@@ -10075,7 +9996,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 394.97 97.79 0)
+		(at 379.73 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10085,7 +10006,7 @@
 		(dnp no)
 		(uuid "704247fa-2cee-41a7-ab38-735d584d2b22")
 		(property "Reference" "#PWR045"
-			(at 394.97 104.14 0)
+			(at 379.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10096,7 +10017,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 394.97 101.854 0)
+			(at 379.73 101.854 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10106,7 +10027,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 394.97 97.79 0)
+			(at 379.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10117,7 +10038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 394.97 97.79 0)
+			(at 379.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10128,7 +10049,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 394.97 97.79 0)
+			(at 379.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10152,7 +10073,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 345.44 45.72 90)
+		(at 330.2 45.72 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10163,7 +10084,7 @@
 		(fields_autoplaced yes)
 		(uuid "70be17bb-e60d-43a4-b16a-5151c3b0c14c")
 		(property "Reference" "#PWR034"
-			(at 351.79 45.72 0)
+			(at 336.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10174,7 +10095,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 350.52 45.72 0)
+			(at 335.28 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10184,7 +10105,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 345.44 45.72 0)
+			(at 330.2 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10195,7 +10116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 345.44 45.72 0)
+			(at 330.2 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10206,7 +10127,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 345.44 45.72 0)
+			(at 330.2 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10221,12 +10142,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR034")
 					(unit 1)
@@ -10236,7 +10151,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 411.48 153.67 0)
+		(at 396.24 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10247,7 +10162,7 @@
 		(fields_autoplaced yes)
 		(uuid "70fa7d90-d496-4c9d-9fcc-93be4abebed0")
 		(property "Reference" "#PWR040"
-			(at 411.48 160.02 0)
+			(at 396.24 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10258,7 +10173,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 411.48 158.75 0)
+			(at 396.24 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10268,7 +10183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 411.48 153.67 0)
+			(at 396.24 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10279,7 +10194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 411.48 153.67 0)
+			(at 396.24 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10290,7 +10205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 411.48 153.67 0)
+			(at 396.24 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10305,12 +10220,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR040")
 					(unit 1)
@@ -10320,7 +10229,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:OW2EL89CENUXFMYLC-32M")
-		(at 232.41 58.42 0)
+		(at 217.17 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10330,7 +10239,7 @@
 		(dnp no)
 		(uuid "73a5bd61-5bc7-4f8a-bb76-ed634a9bdb9d")
 		(property "Reference" "U5"
-			(at 225.552 49.53 0)
+			(at 210.312 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10340,7 +10249,7 @@
 			)
 		)
 		(property "Value" "OW2EL89CENUXFMYLC-32M"
-			(at 225.552 52.07 0)
+			(at 210.312 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10350,7 +10259,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L3.2-W2.5-BL"
-			(at 232.41 67.31 0)
+			(at 217.17 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10361,7 +10270,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 58.42 0)
+			(at 217.17 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10372,7 +10281,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 58.42 0)
+			(at 217.17 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10383,7 +10292,7 @@
 			)
 		)
 		(property "LCSC Part" "C22434888"
-			(at 232.41 69.85 0)
+			(at 217.17 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10394,7 +10303,7 @@
 			)
 		)
 		(property "LCSC" "C22434888"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10418,12 +10327,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "U5")
 					(unit 1)
@@ -10433,7 +10336,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 313.69 41.91 90)
+		(at 298.45 41.91 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10443,7 +10346,7 @@
 		(dnp no)
 		(uuid "782a0ca8-fd18-404b-b7fd-e0f331a2b233")
 		(property "Reference" "L1"
-			(at 311.658 39.37 90)
+			(at 296.418 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10453,7 +10356,7 @@
 			)
 		)
 		(property "Value" "10uH"
-			(at 315.468 39.37 90)
+			(at 300.228 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10463,7 +10366,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 313.69 41.91 0)
+			(at 298.45 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10474,7 +10377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 41.91 0)
+			(at 298.45 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10485,7 +10388,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 313.69 41.91 0)
+			(at 298.45 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10496,7 +10399,7 @@
 			)
 		)
 		(property "LCSC" "C6808014"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10514,12 +10417,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "L1")
 					(unit 1)
@@ -10529,7 +10426,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:CJ17-400001010B20")
-		(at 55.88 44.45 0)
+		(at 40.64 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10539,7 +10436,7 @@
 		(dnp no)
 		(uuid "7d63efad-a37b-42fe-8a38-cb4d6f3b695d")
 		(property "Reference" "X1"
-			(at 55.626 57.658 0)
+			(at 40.386 57.658 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10549,7 +10446,7 @@
 			)
 		)
 		(property "Value" "CJ17-400001010B20"
-			(at 55.626 60.198 0)
+			(at 40.386 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10559,7 +10456,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:CRYSTAL-SMD_4P-L1.6-W1.2-BL"
-			(at 55.88 54.61 0)
+			(at 40.64 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10570,7 +10467,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 44.45 0)
+			(at 40.64 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10581,7 +10478,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 44.45 0)
+			(at 40.64 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10592,7 +10489,7 @@
 			)
 		)
 		(property "LCSC Part" "C2875272"
-			(at 55.88 57.15 0)
+			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10603,7 +10500,7 @@
 			)
 		)
 		(property "LCSC" "C2875272"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10633,12 +10530,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "X1")
 					(unit 1)
@@ -10648,7 +10539,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 34.29 0)
+		(at 64.77 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10658,7 +10549,7 @@
 		(dnp no)
 		(uuid "7df4489b-7266-4e1d-823a-4bf2fad94bd1")
 		(property "Reference" "#PWR023"
-			(at 80.01 40.64 0)
+			(at 64.77 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10669,7 +10560,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.454 36.322 0)
+			(at 61.214 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10679,7 +10570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 34.29 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10690,7 +10581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 34.29 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10701,7 +10592,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 34.29 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10722,12 +10613,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR023")
 					(unit 1)
@@ -10737,7 +10622,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:2450AT18A100E")
-		(at 77.47 92.71 90)
+		(at 62.23 92.71 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10747,7 +10632,7 @@
 		(dnp no)
 		(uuid "7f417945-eb50-4da3-8352-32e9a7a4038c")
 		(property "Reference" "AE1"
-			(at 77.47 95.504 90)
+			(at 62.23 95.504 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10757,7 +10642,7 @@
 			)
 		)
 		(property "Value" "2450AT18A100E"
-			(at 77.47 98.044 90)
+			(at 62.23 98.044 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10767,7 +10652,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:ANT-SMD_L3.2-W1.6"
-			(at 90.17 92.71 0)
+			(at 74.93 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10778,17 +10663,6 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/RF-Antenna_JOHANSON_2450AT18A100E_2450AT18A100E_C89334.html"
-			(at 92.71 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
 			(at 77.47 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -10799,8 +10673,19 @@
 				)
 			)
 		)
+		(property "Description" ""
+			(at 62.23 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "LCSC Part" "C89334"
-			(at 95.25 92.71 0)
+			(at 80.01 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10811,7 +10696,7 @@
 			)
 		)
 		(property "LCSC" "C89334"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10835,12 +10720,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "AE1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "AE1")
 					(unit 1)
@@ -10850,7 +10729,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 381 90.17 0)
+		(at 365.76 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10861,7 +10740,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f58d4f2-f41f-4e34-b9b5-b488ebe4f69f")
 		(property "Reference" "#PWR046"
-			(at 381 93.98 0)
+			(at 365.76 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10872,7 +10751,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 381 85.09 0)
+			(at 365.76 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10882,7 +10761,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 381 90.17 0)
+			(at 365.76 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10893,7 +10772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 90.17 0)
+			(at 365.76 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10904,7 +10783,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 381 90.17 0)
+			(at 365.76 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10928,7 +10807,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 90.17 0)
+		(at 132.08 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10939,7 +10818,7 @@
 		(fields_autoplaced yes)
 		(uuid "82d2675a-c86d-455c-b75d-b189f5b96bb0")
 		(property "Reference" "R3"
-			(at 149.86 88.8999 0)
+			(at 134.62 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10950,7 +10829,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 149.86 91.4399 0)
+			(at 134.62 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10961,7 +10840,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 145.542 90.17 90)
+			(at 130.302 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10972,7 +10851,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 90.17 0)
+			(at 132.08 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10983,7 +10862,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 90.17 0)
+			(at 132.08 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10994,7 +10873,7 @@
 			)
 		)
 		(property "LCSC" "C106225"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11018,12 +10897,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R3")
 					(unit 1)
@@ -11033,7 +10906,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 55.88 0)
+		(at 132.08 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11044,7 +10917,7 @@
 		(fields_autoplaced yes)
 		(uuid "87d1293f-0567-4f74-a08a-7ea38c78b138")
 		(property "Reference" "R2"
-			(at 149.86 54.6099 0)
+			(at 134.62 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11055,7 +10928,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 149.86 57.1499 0)
+			(at 134.62 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11066,7 +10939,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 145.542 55.88 90)
+			(at 130.302 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11077,7 +10950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 55.88 0)
+			(at 132.08 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11088,7 +10961,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 55.88 0)
+			(at 132.08 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11099,7 +10972,7 @@
 			)
 		)
 		(property "LCSC" "C106225"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11123,12 +10996,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R2")
 					(unit 1)
@@ -11138,7 +11005,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 168.91 111.76 0)
+		(at 153.67 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11149,7 +11016,7 @@
 		(fields_autoplaced yes)
 		(uuid "883ffd60-d9bc-4eac-b0bb-b24f21e69b93")
 		(property "Reference" "#PWR012"
-			(at 168.91 115.57 0)
+			(at 153.67 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11160,7 +11027,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 168.91 106.68 0)
+			(at 153.67 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11170,7 +11037,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 111.76 0)
+			(at 153.67 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11181,7 +11048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 111.76 0)
+			(at 153.67 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11192,7 +11059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 168.91 111.76 0)
+			(at 153.67 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11213,12 +11080,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR012")
 					(unit 1)
@@ -11228,7 +11089,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 210.82 116.84 0)
+		(at 195.58 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11238,7 +11099,7 @@
 		(dnp no)
 		(uuid "8978ec5a-02df-4702-9a9f-71d99b2c66bf")
 		(property "Reference" "C10"
-			(at 203.2 115.57 0)
+			(at 187.96 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11249,7 +11110,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 203.2 118.11 0)
+			(at 187.96 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11260,7 +11121,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 211.7852 120.65 0)
+			(at 196.5452 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11271,7 +11132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 116.84 0)
+			(at 195.58 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11282,7 +11143,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 210.82 116.84 0)
+			(at 195.58 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11293,7 +11154,7 @@
 			)
 		)
 		(property "LCSC" "C76935"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11317,12 +11178,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C10")
 					(unit 1)
@@ -11332,7 +11187,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 97.79 80.01 90)
+		(at 82.55 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11342,7 +11197,7 @@
 		(dnp no)
 		(uuid "8afbb795-69e6-49db-87dd-9b2fed9c7626")
 		(property "Reference" "TP2"
-			(at 90.678 80.264 90)
+			(at 75.438 80.264 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11352,7 +11207,7 @@
 			)
 		)
 		(property "Value" "TX"
-			(at 86.614 80.264 90)
+			(at 71.374 80.264 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11362,7 +11217,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
-			(at 97.79 74.93 0)
+			(at 82.55 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11373,7 +11228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 74.93 0)
+			(at 82.55 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11384,7 +11239,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 97.79 80.01 0)
+			(at 82.55 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11405,12 +11260,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP2")
 					(unit 1)
@@ -11420,7 +11269,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 180.34 111.76 0)
+		(at 165.1 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11431,7 +11280,7 @@
 		(fields_autoplaced yes)
 		(uuid "8dba7249-e61e-4644-a1d5-40d1b927a32b")
 		(property "Reference" "#FLG02"
-			(at 180.34 109.855 0)
+			(at 165.1 109.855 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11442,7 +11291,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 180.34 106.68 0)
+			(at 165.1 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11452,7 +11301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 111.76 0)
+			(at 165.1 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11463,7 +11312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 111.76 0)
+			(at 165.1 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11474,7 +11323,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 180.34 111.76 0)
+			(at 165.1 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11495,12 +11344,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG02")
 					(unit 1)
@@ -11510,7 +11353,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 165.1 66.04 0)
+		(at 149.86 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11521,7 +11364,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f0c72f2-0461-49cc-904c-657f4c7febe7")
 		(property "Reference" "#PWR010"
-			(at 165.1 69.85 0)
+			(at 149.86 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11532,7 +11375,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 165.1 60.96 0)
+			(at 149.86 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11542,7 +11385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 66.04 0)
+			(at 149.86 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11553,7 +11396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 66.04 0)
+			(at 149.86 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11564,7 +11407,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 165.1 66.04 0)
+			(at 149.86 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11585,12 +11428,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR010")
 					(unit 1)
@@ -11600,7 +11437,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 381 93.98 0)
+		(at 365.76 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11611,7 +11448,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ff1a41a-35a5-4aeb-914c-426c74540d88")
 		(property "Reference" "C25"
-			(at 384.81 92.7099 0)
+			(at 369.57 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11622,7 +11459,7 @@
 			)
 		)
 		(property "Value" "220pF"
-			(at 384.81 95.2499 0)
+			(at 369.57 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11633,7 +11470,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 381.9652 97.79 0)
+			(at 366.7252 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11644,7 +11481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 93.98 0)
+			(at 365.76 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11655,7 +11492,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 381 93.98 0)
+			(at 365.76 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11666,7 +11503,7 @@
 			)
 		)
 		(property "LCSC" "C62548"
-			(at 7.62 40.64 0)
+			(at -7.62 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11693,7 +11530,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 36.83 0)
+		(at 154.94 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11704,7 +11541,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a2ac6c2-1d30-4b57-9081-abcede1d68ed")
 		(property "Reference" "#PWR02"
-			(at 170.18 43.18 0)
+			(at 154.94 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11715,7 +11552,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 41.91 0)
+			(at 154.94 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11725,7 +11562,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 36.83 0)
+			(at 154.94 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11736,7 +11573,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 36.83 0)
+			(at 154.94 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11747,7 +11584,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 36.83 0)
+			(at 154.94 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11768,12 +11605,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR02")
 					(unit 1)
@@ -11783,7 +11614,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 326.39 110.49 270)
+		(at 311.15 110.49 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11794,7 +11625,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a66f64a-4a2d-4817-9343-8afd79f0ee61")
 		(property "Reference" "#PWR041"
-			(at 320.04 110.49 0)
+			(at 304.8 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11805,7 +11636,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 322.58 110.4899 90)
+			(at 307.34 110.4899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11816,7 +11647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 110.49 0)
+			(at 311.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11827,7 +11658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 110.49 0)
+			(at 311.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11838,7 +11669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 326.39 110.49 0)
+			(at 311.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11862,7 +11693,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 41.91 270)
+		(at 21.59 41.91 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11873,7 +11704,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bf43681-2146-4c60-881b-d2a0d6cb9ed6")
 		(property "Reference" "#PWR05"
-			(at 30.48 41.91 0)
+			(at 15.24 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11884,7 +11715,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 41.9099 90)
+			(at 17.78 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11895,7 +11726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 41.91 0)
+			(at 21.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11906,7 +11737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 41.91 0)
+			(at 21.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11917,7 +11748,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 41.91 0)
+			(at 21.59 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11938,12 +11769,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR05")
 					(unit 1)
@@ -11953,7 +11778,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 220.98 111.76 0)
+		(at 205.74 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11964,7 +11789,7 @@
 		(fields_autoplaced yes)
 		(uuid "a02039cd-04c2-4adc-a088-f450b0ff7031")
 		(property "Reference" "#PWR014"
-			(at 220.98 115.57 0)
+			(at 205.74 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11975,7 +11800,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 220.98 106.68 0)
+			(at 205.74 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11985,7 +11810,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 111.76 0)
+			(at 205.74 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11996,7 +11821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 111.76 0)
+			(at 205.74 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12007,7 +11832,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 220.98 111.76 0)
+			(at 205.74 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12028,12 +11853,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR014")
 					(unit 1)
@@ -12043,7 +11862,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 72.39 78.74 0)
+		(at 57.15 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12054,7 +11873,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4828251-83a1-4cff-a1e8-0f27541e30aa")
 		(property "Reference" "R4"
-			(at 74.93 77.4699 0)
+			(at 59.69 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12065,7 +11884,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.93 80.0099 0)
+			(at 59.69 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12076,7 +11895,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 70.612 78.74 90)
+			(at 55.372 78.74 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12087,7 +11906,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 78.74 0)
+			(at 57.15 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12098,7 +11917,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 72.39 78.74 0)
+			(at 57.15 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12109,7 +11928,7 @@
 			)
 		)
 		(property "LCSC" "C106225"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12133,12 +11952,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R4")
 					(unit 1)
@@ -12148,7 +11961,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 195.58 33.02 0)
+		(at 180.34 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12159,7 +11972,7 @@
 		(fields_autoplaced yes)
 		(uuid "a71df70b-f630-4400-ac7b-a53a38e966e7")
 		(property "Reference" "C5"
-			(at 199.39 31.7499 0)
+			(at 184.15 31.7499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12171,7 +11984,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 199.39 34.2899 0)
+			(at 184.15 34.2899 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12183,7 +11996,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 196.5452 36.83 0)
+			(at 181.3052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12194,7 +12007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 33.02 0)
+			(at 180.34 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12205,7 +12018,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 195.58 33.02 0)
+			(at 180.34 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12216,7 +12029,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12240,12 +12053,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C5")
 					(unit 1)
@@ -12255,7 +12062,7 @@
 	)
 	(symbol
 		(lib_id "OpenRX-Shared:0900PC16J0042001E")
-		(at 381 140.97 0)
+		(at 365.76 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12266,7 +12073,7 @@
 		(fields_autoplaced yes)
 		(uuid "a73b8782-2746-46f1-a3c7-72ba012f82ee")
 		(property "Reference" "T1"
-			(at 381 128.27 0)
+			(at 365.76 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12276,7 +12083,7 @@
 			)
 		)
 		(property "Value" "0900PC16J0042001E"
-			(at 381 130.81 0)
+			(at 365.76 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12286,7 +12093,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:FILTER-SMD_10P-L2.0-W1.6-BL"
-			(at 381 153.67 0)
+			(at 365.76 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12297,7 +12104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 140.97 0)
+			(at 365.76 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12308,7 +12115,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 381 140.97 0)
+			(at 365.76 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12319,7 +12126,7 @@
 			)
 		)
 		(property "LCSC Part" "C19842466"
-			(at 381 156.21 0)
+			(at 365.76 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12330,7 +12137,7 @@
 			)
 		)
 		(property "LCSC" "C19842466"
-			(at 49.53 55.88 0)
+			(at 34.29 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12372,12 +12179,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "T1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "T1")
 					(unit 1)
@@ -12387,7 +12188,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 59.69 270)
+		(at 205.74 59.69 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12398,7 +12199,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa0f39a0-48b2-445b-a878-05f8ff3ca935")
 		(property "Reference" "#PWR036"
-			(at 214.63 59.69 0)
+			(at 199.39 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12409,7 +12210,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 59.6899 90)
+			(at 201.93 59.6899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12420,7 +12221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 59.69 0)
+			(at 205.74 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12431,7 +12232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 59.69 0)
+			(at 205.74 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12442,7 +12243,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 59.69 0)
+			(at 205.74 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12457,12 +12258,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR036")
 					(unit 1)
@@ -12472,7 +12267,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 168.91 121.92 180)
+		(at 153.67 121.92 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12483,7 +12278,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd634f29-2fe2-43cf-bcea-558816a4dd2d")
 		(property "Reference" "#FLG01"
-			(at 168.91 123.825 0)
+			(at 153.67 123.825 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12494,7 +12289,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 168.91 127 0)
+			(at 153.67 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12504,7 +12299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 121.92 0)
+			(at 153.67 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12515,7 +12310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 121.92 0)
+			(at 153.67 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12526,7 +12321,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 168.91 121.92 0)
+			(at 153.67 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12547,12 +12342,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG01")
 					(unit 1)
@@ -12562,7 +12351,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 220.98 116.84 0)
+		(at 205.74 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12572,7 +12361,7 @@
 		(dnp no)
 		(uuid "be144202-4512-44a0-8751-ec7203efc7f7")
 		(property "Reference" "C11"
-			(at 213.36 115.57 0)
+			(at 198.12 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12583,7 +12372,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 213.36 118.11 0)
+			(at 198.12 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12594,7 +12383,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 221.9452 120.65 0)
+			(at 206.7052 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12605,7 +12394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 116.84 0)
+			(at 205.74 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12616,7 +12405,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 220.98 116.84 0)
+			(at 205.74 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12627,7 +12416,7 @@
 			)
 		)
 		(property "LCSC" "C15525"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12651,12 +12440,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C11")
 					(unit 1)
@@ -12666,7 +12449,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 210.82 111.76 0)
+		(at 195.58 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12677,7 +12460,7 @@
 		(fields_autoplaced yes)
 		(uuid "c27a9da7-96f5-42bc-a4ed-b3fa6b9549e8")
 		(property "Reference" "#FLG03"
-			(at 210.82 109.855 0)
+			(at 195.58 109.855 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12688,7 +12471,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 210.82 106.68 0)
+			(at 195.58 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12698,7 +12481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 111.76 0)
+			(at 195.58 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12709,7 +12492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 111.76 0)
+			(at 195.58 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12720,7 +12503,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 210.82 111.76 0)
+			(at 195.58 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12741,12 +12524,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#FLG03")
 					(unit 1)
@@ -12756,7 +12533,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 68.58 73.66 0)
+		(at 53.34 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12767,7 +12544,7 @@
 		(fields_autoplaced yes)
 		(uuid "c29fc067-cccf-4dba-82cb-c0fe303baf37")
 		(property "Reference" "#PWR07"
-			(at 68.58 77.47 0)
+			(at 53.34 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12778,7 +12555,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 68.58 68.58 0)
+			(at 53.34 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12788,7 +12565,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 73.66 0)
+			(at 53.34 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12799,7 +12576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 73.66 0)
+			(at 53.34 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12810,7 +12587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 68.58 73.66 0)
+			(at 53.34 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12831,12 +12608,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR07")
 					(unit 1)
@@ -12846,7 +12617,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 241.3 36.83 0)
+		(at 226.06 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12857,7 +12628,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4893467-976e-4574-abde-8b18c30e423d")
 		(property "Reference" "#PWR031"
-			(at 241.3 40.64 0)
+			(at 226.06 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12868,7 +12639,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 241.3 31.75 0)
+			(at 226.06 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12878,7 +12649,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 36.83 0)
+			(at 226.06 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12889,7 +12660,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 36.83 0)
+			(at 226.06 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12900,7 +12671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 241.3 36.83 0)
+			(at 226.06 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12915,12 +12686,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR031")
 					(unit 1)
@@ -12930,7 +12695,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 144.78 33.02 0)
+		(at 129.54 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12941,7 +12706,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca761263-3768-4744-99b7-3a5927012d0d")
 		(property "Reference" "C1"
-			(at 148.59 31.7499 0)
+			(at 133.35 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12952,7 +12717,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 148.59 34.2899 0)
+			(at 133.35 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12963,7 +12728,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 145.7452 36.83 0)
+			(at 130.5052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12974,7 +12739,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 33.02 0)
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12985,7 +12750,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 144.78 33.02 0)
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12996,7 +12761,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13020,12 +12785,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C1")
 					(unit 1)
@@ -13035,7 +12794,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 49.53 0)
+		(at 48.26 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13045,7 +12804,7 @@
 		(dnp no)
 		(uuid "cc15174d-27f4-4c84-b9c7-2e925485b17e")
 		(property "Reference" "#PWR04"
-			(at 63.5 55.88 0)
+			(at 48.26 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13056,7 +12815,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.072 51.308 0)
+			(at 52.832 51.308 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13066,7 +12825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 49.53 0)
+			(at 48.26 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13077,7 +12836,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 49.53 0)
+			(at 48.26 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13088,7 +12847,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 49.53 0)
+			(at 48.26 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13109,12 +12868,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR04")
 					(unit 1)
@@ -13124,7 +12877,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 313.69 60.96 180)
+		(at 298.45 60.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13135,7 +12888,7 @@
 		(fields_autoplaced yes)
 		(uuid "d14e96c9-2c1e-40c4-8942-e3f90530da1a")
 		(property "Reference" "R5"
-			(at 316.23 59.6899 0)
+			(at 300.99 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13146,7 +12899,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 316.23 62.2299 0)
+			(at 300.99 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13157,7 +12910,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 315.468 60.96 90)
+			(at 300.228 60.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13168,7 +12921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 60.96 0)
+			(at 298.45 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13179,7 +12932,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 313.69 60.96 0)
+			(at 298.45 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13190,7 +12943,7 @@
 			)
 		)
 		(property "LCSC" "C270364"
-			(at -8.89 0 0)
+			(at -24.13 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13208,12 +12961,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "R5")
 					(unit 1)
@@ -13223,7 +12970,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 100.33 0)
+		(at 101.6 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13234,7 +12981,7 @@
 		(fields_autoplaced yes)
 		(uuid "df8597cb-2f72-48ce-99f2-1b54f42b627b")
 		(property "Reference" "#PWR03"
-			(at 116.84 106.68 0)
+			(at 101.6 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13245,7 +12992,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 105.41 0)
+			(at 101.6 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13255,7 +13002,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 100.33 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13266,7 +13013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 100.33 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13277,7 +13024,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 100.33 0)
+			(at 101.6 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13298,12 +13045,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR03")
 					(unit 1)
@@ -13313,7 +13054,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 397.51 128.27 180)
+		(at 382.27 128.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13324,7 +13065,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7c5b15f-d7be-4af7-8d1f-14def90b77db")
 		(property "Reference" "#PWR039"
-			(at 397.51 121.92 0)
+			(at 382.27 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13335,7 +13076,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 397.51 123.19 0)
+			(at 382.27 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13345,7 +13086,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 397.51 128.27 0)
+			(at 382.27 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13356,7 +13097,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 397.51 128.27 0)
+			(at 382.27 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13367,7 +13108,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 397.51 128.27 0)
+			(at 382.27 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13382,12 +13123,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR039")
 					(unit 1)
@@ -13397,7 +13132,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 241.3 40.64 0)
+		(at 226.06 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13408,7 +13143,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7e41cb7-7c08-44ef-bf8d-a8a3331f5fc3")
 		(property "Reference" "C21"
-			(at 245.11 39.3699 0)
+			(at 229.87 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13419,7 +13154,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 245.11 41.9099 0)
+			(at 229.87 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13430,7 +13165,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 242.2652 44.45 0)
+			(at 227.0252 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13441,7 +13176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 40.64 0)
+			(at 226.06 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13452,7 +13187,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 241.3 40.64 0)
+			(at 226.06 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13463,7 +13198,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 71.12 7.62 0)
+			(at 55.88 7.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13481,12 +13216,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C21")
 					(unit 1)
@@ -13496,7 +13225,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 167.64 111.76 90)
+		(at 152.4 111.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13506,7 +13235,7 @@
 		(dnp no)
 		(uuid "eb800128-80f7-4ddf-a030-36864919baca")
 		(property "Reference" "TP3"
-			(at 160.528 112.014 90)
+			(at 145.288 112.014 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13516,7 +13245,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 156.464 112.014 90)
+			(at 141.224 112.014 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13526,7 +13255,7 @@
 			)
 		)
 		(property "Footprint" "OpenRX-Shared:SolderPad_1.0x1.5mm"
-			(at 167.64 106.68 0)
+			(at 152.4 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13537,7 +13266,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 106.68 0)
+			(at 152.4 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13548,7 +13277,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 167.64 111.76 0)
+			(at 152.4 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13569,12 +13298,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "TP3")
 					(unit 1)
@@ -13584,7 +13307,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 250.19 59.69 270)
+		(at 234.95 59.69 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13594,7 +13317,7 @@
 		(dnp no)
 		(uuid "ed03bed1-afee-435e-a672-598194ec4759")
 		(property "Reference" "R6"
-			(at 250.19 55.118 90)
+			(at 234.95 55.118 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13604,7 +13327,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 250.19 57.658 90)
+			(at 234.95 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13614,7 +13337,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 250.19 57.912 90)
+			(at 234.95 57.912 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13625,7 +13348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 59.69 0)
+			(at 234.95 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13636,7 +13359,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 250.19 59.69 0)
+			(at 234.95 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13647,7 +13370,7 @@
 			)
 		)
 		(property "LCSC" "C274342"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13674,7 +13397,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 368.3 104.14 180)
+		(at 353.06 104.14 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13684,7 +13407,7 @@
 		(dnp no)
 		(uuid "f22bcc9b-a252-4742-9e5b-15e95c7103e9")
 		(property "Reference" "#PWR044"
-			(at 368.3 97.79 0)
+			(at 353.06 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13695,7 +13418,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 372.364 102.87 0)
+			(at 357.124 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13705,7 +13428,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 104.14 0)
+			(at 353.06 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13716,7 +13439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 104.14 0)
+			(at 353.06 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13727,7 +13450,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 104.14 0)
+			(at 353.06 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13751,7 +13474,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 80.01 30.48 0)
+		(at 64.77 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13762,7 +13485,7 @@
 		(fields_autoplaced yes)
 		(uuid "f23c85ab-cba3-4a99-b160-12cc498aee8a")
 		(property "Reference" "C19"
-			(at 83.82 29.2099 0)
+			(at 68.58 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13773,7 +13496,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 83.82 31.7499 0)
+			(at 68.58 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13784,7 +13507,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 80.9752 34.29 0)
+			(at 65.7352 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13795,7 +13518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 30.48 0)
+			(at 64.77 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13806,7 +13529,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 80.01 30.48 0)
+			(at 64.77 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13817,7 +13540,7 @@
 			)
 		)
 		(property "LCSC" "C76935"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13841,12 +13564,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C19")
 					(unit 1)
@@ -13856,7 +13573,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 288.29 154.94 0)
+		(at 273.05 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13867,7 +13584,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7e54aed-ec36-4403-8900-2ed3bcbef508")
 		(property "Reference" "#PWR029"
-			(at 288.29 161.29 0)
+			(at 273.05 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13878,7 +13595,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 288.29 160.02 0)
+			(at 273.05 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13888,7 +13605,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 288.29 154.94 0)
+			(at 273.05 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13899,7 +13616,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 288.29 154.94 0)
+			(at 273.05 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13910,7 +13627,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 288.29 154.94 0)
+			(at 273.05 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13925,12 +13642,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR029")
 					(unit 1)
@@ -13940,7 +13651,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 368.3 119.38 0)
+		(at 353.06 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13951,7 +13662,7 @@
 		(fields_autoplaced yes)
 		(uuid "f93e9366-508c-44b9-8a41-7d01c8812660")
 		(property "Reference" "#PWR043"
-			(at 368.3 125.73 0)
+			(at 353.06 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13962,7 +13673,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.3 124.46 0)
+			(at 353.06 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13972,7 +13683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 119.38 0)
+			(at 353.06 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13983,7 +13694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 119.38 0)
+			(at 353.06 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13994,7 +13705,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 119.38 0)
+			(at 353.06 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14018,7 +13729,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 170.18 33.02 0)
+		(at 154.94 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14029,7 +13740,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb3a5774-087d-439e-8ae8-1a6ed7319ac7")
 		(property "Reference" "C3"
-			(at 173.99 31.7499 0)
+			(at 158.75 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14040,7 +13751,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 173.99 34.2899 0)
+			(at 158.75 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14051,7 +13762,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 171.1452 36.83 0)
+			(at 155.9052 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14062,7 +13773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 33.02 0)
+			(at 154.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14073,7 +13784,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 170.18 33.02 0)
+			(at 154.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14084,7 +13795,7 @@
 			)
 		)
 		(property "LCSC" "C76939"
-			(at 0 0 0)
+			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14108,12 +13819,6 @@
 				)
 			)
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C3")
 					(unit 1)
@@ -14123,7 +13828,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 241.3 44.45 0)
+		(at 226.06 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14134,7 +13839,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe4867f3-3a21-4f69-bfe1-517e0d449f4b")
 		(property "Reference" "#PWR032"
-			(at 241.3 50.8 0)
+			(at 226.06 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14145,7 +13850,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 241.3 49.53 0)
+			(at 226.06 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14155,7 +13860,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 44.45 0)
+			(at 226.06 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14166,7 +13871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 44.45 0)
+			(at 226.06 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14177,7 +13882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 44.45 0)
+			(at 226.06 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14192,12 +13897,6 @@
 		)
 		(instances
 			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR032")
 					(unit 1)
@@ -14207,7 +13906,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 331.47 45.72 0)
+		(at 316.23 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14218,7 +13917,7 @@
 		(fields_autoplaced yes)
 		(uuid "feaeba5e-c326-4d3a-a526-b6054a42c349")
 		(property "Reference" "#PWR033"
-			(at 331.47 49.53 0)
+			(at 316.23 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14229,7 +13928,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 331.47 40.64 0)
+			(at 316.23 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14239,7 +13938,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 331.47 45.72 0)
+			(at 316.23 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14250,7 +13949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 331.47 45.72 0)
+			(at 316.23 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14261,7 +13960,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 331.47 45.72 0)
+			(at 316.23 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14275,12 +13974,6 @@
 			(uuid "962de5b3-29b8-4e2d-a5db-bfe5e77b1c76")
 		)
 		(instances
-			(project "OpenRX-Mono"
-				(path "/a1b2c3d4-e5f6-7890-abcd-ef1234567890/e1f2a3b4-c5d6-7890-1234-567890abcdef"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR033")
