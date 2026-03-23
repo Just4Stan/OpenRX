@@ -505,7 +505,7 @@
         "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
       }
     ],
-    "used_designators": "T1,L1,C20-24,#PWR29-40,JP1,R5-9,U4-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
