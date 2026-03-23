@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+*/.DS_Store
+
+# KiCad backup and temp files
+*.kicad_prl
+*-backups/
+*.bak
+*.tmp
+*~
+\#*\#
+_autosave-*
+*.000
+
+# KiCad local state
+fp-info-cache
+
+# Old single-project starter (superseded by 6 receiver projects)
+/OpenRX/
+
+# Claude Code
+.claude/
