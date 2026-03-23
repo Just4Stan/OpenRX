@@ -6866,22 +6866,11 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C206441"
 			(at -246.38 2.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C430052"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
