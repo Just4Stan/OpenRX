@@ -2790,7 +2790,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "OpenRX-Shared:OW2EL89CENUXFMYLC-32M"
+		(symbol "OpenRX-Shared:OW7EL89CENUYO3YLC-32M"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2806,7 +2806,7 @@
 					)
 				)
 			)
-			(property "Value" "OW2EL89CENUXFMYLC-32M"
+			(property "Value" "OW7EL89CENUYO3YLC-32M"
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2816,7 +2816,7 @@
 					)
 				)
 			)
-			(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L3.2-W2.5-BL"
+			(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L2.0-W1.6-BL_TXC_7Z"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2849,7 +2849,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C22434888"
+			(property "LCSC Part" "C22381772"
 				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2860,7 +2860,7 @@
 					)
 				)
 			)
-			(symbol "OW2EL89CENUXFMYLC-32M_0_1"
+			(symbol "OW7EL89CENUYO3YLC-32M_0_1"
 				(rectangle
 					(start -8.89 3.81)
 					(end 8.89 -3.81)
@@ -10217,7 +10217,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenRX-Shared:OW2EL89CENUXFMYLC-32M")
+		(lib_id "OpenRX-Shared:OW7EL89CENUYO3YLC-32M")
 		(at 217.17 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -10237,7 +10237,7 @@
 				)
 			)
 		)
-		(property "Value" "OW2EL89CENUXFMYLC-32M"
+		(property "Value" "OW7EL89CENUYO3YLC-32M"
 			(at 210.312 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10247,7 +10247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L3.2-W2.5-BL"
+		(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L2.0-W1.6-BL_TXC_7Z"
 			(at 217.17 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -10280,7 +10280,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22434888"
+		(property "LCSC Part" "C22381772"
 			(at 217.17 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10291,7 +10291,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22434888"
+		(property "LCSC" "C22381772"
 			(at -15.24 0 0)
 			(hide yes)
 			(show_name no)

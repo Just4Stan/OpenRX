@@ -3,6 +3,8 @@
 > Release-plan note: `OpenRX-Mono` is the active mainstream single-`LR1121` release project. It was transferred from the former `OpenRX-Dual` concept so the schematic content is preserved while the product stack is simplified.
 >
 > Audit note: the intended ELRS-compatible architecture for this board is `LR1121 DIO9 -> radio_dio1` and `LR1121 RFSW -> RFX2401C TXEN/RXEN control`. The FEM is driven entirely by LR1121 RFSW pins via `SetDioAsRfSwitch()` — no ESP32 GPIOs are used for FEM control.
+>
+> BOM note: use [verification/bom/OpenRX-Mono-lcsc.csv](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/verification/bom/OpenRX-Mono-lcsc.csv) for the current fitted part numbers. The preferred Johanson sub-GHz IPD is still the schematic baseline, but its direct LCSC page currently shows `Out of Stock`.
 
 Single-radio multi-band ExpressLRS receiver with optional PA+LNA path.
 One `LR1121` covers `868/915MHz` and `2.4GHz` on a single mainstream hardware platform.
@@ -638,6 +640,7 @@ All parts sourced from LCSC for JLCPCB assembly compatibility.
 
 **Balun Alternatives (LCSC):**
 - Preferred: `0900PC16J0042001E / C19842466`
+- Current direct-page status: `C19842466` is showing `Out of Stock` on LCSC as of 2026-03-23
 - If that part goes out of stock, use the discrete Semtech-style RF network rather than a random wideband 50:100 balun
 - Older generic 868/915MHz Johanson baluns are not as attractive here because they are not LR11xx-specific and LCSC stock is worse
 

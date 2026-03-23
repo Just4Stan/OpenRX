@@ -3,6 +3,8 @@
 Active release SKU. Tiny `2.4GHz` ExpressLRS receiver with ceramic main antenna.
 
 > Release-plan note: Lite stays in the release stack. Its intended product form is a ceramic-antenna-only micro / whoop receiver. Any Molex / alternate-main-antenna references below should be treated as historical schematic detail, not the product decision.
+>
+> BOM note: use [verification/bom/OpenRX-Lite-lcsc.csv](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/verification/bom/OpenRX-Lite-lcsc.csv) for the current fitted part numbers exported from the active schematic.
 
 - PCB: 16x12mm target, 2-layer, 1.0mm thickness
 - Procurement snapshot: the current schematic prices closer to `$8.8` from LCSC before VAT/shipping. The old `EUR 3-4` target is not realistic for the current fitted parts.

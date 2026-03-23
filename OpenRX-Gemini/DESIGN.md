@@ -5,6 +5,8 @@ Status: Later-phase active concept in the reduced release stack
 Target: Xrossband dual-band simultaneous ExpressLRS receiver
 
 > Release-plan note: `OpenRX-Gemini` remains in the release stack as the premium flagship, but only after `Lite` and `Mono`. This document should be treated as a concept target until the design is a true `2x LR1121` implementation.
+>
+> BOM/package note: parts of the long-form BOM discussion below predate the later 0201 compaction and current LCSC cleanup. For the current fitted part numbers, use the schematic and [verification/bom/OpenRX-Gemini-lcsc.csv](/Users/stan/Library/Mobile%20Documents/com~apple~CloudDocs/OpenRX/verification/bom/OpenRX-Gemini-lcsc.csv) as the source of truth.
 
 ## Overview
 
@@ -690,6 +692,8 @@ The preferred OpenRX part is `0900PC16J0042001E / C19842466`. If LCSC stock disa
 1. Use the discrete LR1121 direct-tie / matching network and tune it on the real board
 2. Do not substitute a generic wideband balun by default; that loses the LR11xx-specific match and weakens CE confidence
 3. Older Johanson 863-928MHz baluns such as `0896FB15A0100(E)` or `0896BM15E0025(E)` are secondary options only, and recent LCSC stock has been poor
+
+As of 2026-03-23, the direct LCSC product page for `C19842466` is showing `Out of Stock`, so keep it as the intended fitted baseline but not as a currently safe procurement assumption.
 
 If using discrete balun, add 3-4 passive components (inductors + capacitors) instead of BL1.
 
