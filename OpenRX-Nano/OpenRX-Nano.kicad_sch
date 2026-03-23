@@ -31,7 +31,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../shared/sheets/esp32c3_sx1281_rx_core.kicad_sch"
+		(property "Sheetfile" "esp32c3_sx1281_rx_core.kicad_sch"
 			(at 25.4 141.478 0)
 			(show_name no)
 			(do_not_autoplace no)
