@@ -79,9 +79,11 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
+      "OpenRX-Shared",
       "easyeda2kicad"
     ],
     "pinned_symbol_libs": [
+      "OpenRX-Shared",
       "easyeda2kicad"
     ]
   },

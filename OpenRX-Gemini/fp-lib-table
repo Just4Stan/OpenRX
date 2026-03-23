@@ -1,3 +1,4 @@
 (fp_lib_table
+  (lib (name "OpenRX-Shared")(type "KiCad")(uri "${KIPRJMOD}/../shared/libs/OpenRX-Shared.pretty")(options "")(descr "Repo-level shared footprints"))
   (lib (name "OpenRX-Gemini")(type "KiCad")(uri "${KIPRJMOD}/libs/OpenRX-Gemini.pretty")(options "")(descr "Project-local footprints"))
 )

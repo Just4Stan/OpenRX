@@ -1,3 +1,4 @@
 (sym_lib_table
+  (lib (name "OpenRX-Shared")(type "KiCad")(uri "${KIPRJMOD}/../shared/libs/OpenRX-Shared.kicad_sym")(options "")(descr "Repo-level shared symbols"))
   (lib (name "OpenRX-Gemini")(type "KiCad")(uri "${KIPRJMOD}/libs/OpenRX-Gemini.kicad_sym")(options "")(descr "Project-local symbols"))
 )

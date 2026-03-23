@@ -1,0 +1,165 @@
+(kicad_sch
+  (version 20231120)
+  (generator "codex")
+  (generator_version "1.0")
+  (uuid "488293bf-a361-4959-9226-e5baf7b91769")
+  (paper "A3")
+  (lib_symbols)
+  (polyline
+    (pts
+      (xy 20.32 40.64) (xy 76.20 40.64) (xy 76.20 86.36) (xy 20.32 86.36) (xy 20.32 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "484182bf-1c86-4633-b495-e8cee7d7b92b")
+  )
+  (polyline
+    (pts
+      (xy 88.90 27.94) (xy 182.88 27.94) (xy 182.88 128.27) (xy 88.90 128.27) (xy 88.90 27.94)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "8064b4d0-057c-4c5a-a6af-1a0b02dbde5b")
+  )
+  (polyline
+    (pts
+      (xy 195.58 27.94) (xy 297.18 27.94) (xy 297.18 128.27) (xy 195.58 128.27) (xy 195.58 27.94)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "af512fcb-da90-4381-815b-bac2aea3fe51")
+  )
+  (polyline
+    (pts
+      (xy 309.88 40.64) (xy 388.62 40.64) (xy 388.62 86.36) (xy 309.88 86.36) (xy 309.88 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "a7788c8d-2188-4abe-8cf5-4dc93f585008")
+  )
+  (text "OpenRX Shared SX1281 Receiver Core"
+    (at 19.05 15.24 0)
+    (effects
+      (font
+        (size 2.032 2.032)
+      )
+    )
+    (uuid "5eac3ea6-6546-4963-84f0-c96d74a0373b")
+  )
+  (text "This sheet is the reusable capture host for the Lite/Nano SX1281 family."
+    (at 19.05 22.86 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "a115f163-2d94-4be9-a781-fcccd24bf882")
+  )
+  (text "POWER"
+    (at 24.13 46.99 0)
+    (effects
+      (font
+        (size 1.778 1.778)
+      )
+    )
+    (uuid "e77f6d63-f288-47c9-b546-9b5e5d74627e")
+  )
+  (text "U3  ME6211C33M5G-N\nC1/C2 input decoupling\nC3/C4 output decoupling\nVIN 5V input rail\nVOUT +3.3V system rail"
+    (at 24.13 54.61 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "bd72c569-72d2-4d1c-9e4d-4642a9f175f5")
+  )
+  (text "MCU + CLOCK"
+    (at 92.71 34.29 0)
+    (effects
+      (font
+        (size 1.778 1.778)
+      )
+    )
+    (uuid "112fa560-89d4-40b7-b50b-833ad28a9fd9")
+  )
+  (text "U1  ESP32-C3FH4\nY1  40MHz crystal\nR1/C6 EN RC delay\nR2 NSS pull-up\nR3 BOOT pull-up\nOptional GPIO9 boot pad\nOptional GPIO18/GPIO19 USB test pads"
+    (at 92.71 41.91 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "c34e3f3e-7345-444b-8910-e4fab609b16e")
+  )
+  (text "Firmware-critical mapping:\nGPIO4 = radio_sck\nGPIO5 = radio_dio1\nGPIO6 = radio_miso\nGPIO7 = radio_mosi\nGPIO8 = radio_nss\nGPIO3 = radio_busy\nGPIO2 = radio_rst\nU0RXD = serial_rx\nU0TXD = serial_tx"
+    (at 92.71 71.12 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "dce62a7f-2ffc-4539-9c16-b75d9d8ad97d")
+  )
+  (text "RADIO + TCXO"
+    (at 199.39 34.29 0)
+    (effects
+      (font
+        (size 1.778 1.778)
+      )
+    )
+    (uuid "8c3b5d7f-2f87-4e63-8972-facaaa48dceb")
+  )
+  (text "U2  SX1281IMLTRT\nY2  52MHz TCXO\nC9/C10/C12/C13 supply decoupling\nR5/C11 radio reset network\nLDO mode on VR_PA\nDIO2/DIO3 left unused in Lite baseline"
+    (at 199.39 41.91 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "ee0364fd-af80-40f9-9ef5-8e21b8ad7be6")
+  )
+  (text "SX1281 pin contract already validated against local ExpressLRS:\nuse logical radio_dio1 for IRQ, not radio_dio0.\nKeep BUSY and RST in the baseline."
+    (at 199.39 71.12 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "a0878990-2410-4ebf-b4f4-21a411629df0")
+  )
+  (text "RF OUTPUT"
+    (at 313.69 46.99 0)
+    (effects
+      (font
+        (size 1.778 1.778)
+      )
+    )
+    (uuid "1e6ed02a-6c0e-40a3-9db1-a3c8bf3e4392")
+  )
+  (text "ANT1 2450AT18A100E\nL1/C16 Lite matching network\nNo PA/LNA in the shared Lite core\nKeep antenna edge-placement and keepout in PCB work"
+    (at 313.69 54.61 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "ed681b01-e5f7-4780-b193-70ed47931e29")
+  )
+  (text "Use the OpenRX-Shared library alias for imported symbols, footprints, and 3D models.\nNext capture pass on this sheet: place U3/U1/Y1/U2/Y2/ANT1, then add the passive network exactly from OpenRX-Lite/SCHEMATIC.md."
+    (at 20.32 144.78 0)
+    (effects
+      (font
+        (size 1.27 1.27)
+      )
+    )
+    (uuid "3272122e-a7df-4270-b748-11d74e002039")
+  )
+)

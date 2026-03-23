@@ -79,9 +79,11 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
+      "OpenRX-Shared",
       "OpenRX-Lite"
     ],
     "pinned_symbol_libs": [
+      "OpenRX-Shared",
       "OpenRX-Lite"
     ]
   },
@@ -170,6 +172,15 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "8521861a-4fab-458b-8289-5e2efb91d906",
+      "Root"
+    ],
+    [
+      "d4225140-81df-42e7-abd7-e679e5ab5187",
+      "ESP32-C3 + SX1281 Core"
+    ]
+  ],
   "text_variables": {}
 }

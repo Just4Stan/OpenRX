@@ -79,9 +79,11 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
+      "OpenRX-Shared",
       "OpenRX-Gemini"
     ],
     "pinned_symbol_libs": [
+      "OpenRX-Shared",
       "OpenRX-Gemini"
     ]
   },
