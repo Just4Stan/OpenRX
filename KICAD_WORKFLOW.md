@@ -6,6 +6,24 @@ Working procedure for schematic capture and layout. Checked against the local Ex
 
 Do not advance all 6 projects independently. Three reusable hardware cores feed the six products. Capture one core, freeze it, then fan out.
 
+## KiCad File Safety
+
+Do not hand-author large `.kicad_sch` or `.kicad_pcb` structure in a text editor.
+
+Use the KiCad GUI for:
+- creating new sheets
+- placing symbols
+- wiring symbols
+- building PCB structure
+
+Text-side edits are only for small, targeted fixes copied from a known-good KiCad file pattern.
+Every text-side schematic change must be validated before it is handed back:
+
+- schematic: `'/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli' sch erc <project>.kicad_sch`
+- pcb: validate in KiCad GUI or use the matching `kicad-cli pcb` path where applicable
+
+This repo should be treated as GUI-authored KiCad data with CLI verification, not as freehand S-expression source.
+
 ## Capture Order
 
 | # | Receiver | Core | Status | Notes |
@@ -93,6 +111,27 @@ These apply to every receiver:
 - **CHIP_EN**: Always use 10k pull-up + 1uF RC delay to GND.
 - **GPIO2**: Safe to use for NRESET (no boot function).
 
+## 2.4GHz RF Path
+
+The DEA102700LT-6307A2 (TDK, LCSC C574024) is a 50-ohm-in/50-ohm-out multilayer LPF in 0402. RadioMaster uses this as the **sole component** between SX1281 RFIO and antenna/FEM on all their receivers. No discrete matching network needed — the ~40-to-50 ohm mismatch on RFIO is acceptable in practice (~0.5 dB loss).
+
+### Without FEM (Lite)
+
+```
+SX1281 RFIO (pin 15) → DEA102700LT-6307A2 → ceramic antenna or UFL
+```
+
+### With RFX2401C (Nano, PWM, Dual, Gemini)
+
+```
+SX1281 RFIO (pin 15) → DEA102700LT-6307A2 → RFX2401C TXRX (pin 4, 50Ω)
+RFX2401C ANT (pin 10) → 0.3pF shunt to GND → UFL connector
+```
+
+The 0.3pF on the ANT output is **mandatory per RFX2401C datasheet** — filters the 5th harmonic (~12 GHz). Without it, expect CE spurious emission failure. Place as close to ANT pin as possible.
+
+**Do NOT add** discrete L-match or pi-filter networks. The DESIGN.md files contain stale matching network sections that should be ignored.
+
 ## SX1281 Power Mode
 
 Use **LDO mode** on all SX1281 receivers:
@@ -153,7 +192,7 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
    - `power_3v3` sheet
    - `sx1281_radio` sheet
    - `crsf_io` sheet
-2. Add Lite-specific: ceramic antenna (2450AT18A100E) + L-match network (2.2nH series + 1.0pF shunt) on SX1281 RFIO
+2. Add Lite-specific: DEA102700LT-6307A2 LPF on SX1281 RFIO → ceramic antenna (2450AT18A100E)
 3. Connect all hierarchical pins
 4. Run ERC
 
@@ -168,9 +207,10 @@ Once Lite passes ERC:
 
 1. Copy Lite's top-level structure
 2. Reuse same 3 shared sheets (esp32c3_core, power_3v3, sx1281_radio)
-3. Add new shared sheet: `rfx2401c_fem.kicad_sch` (RFX2401C + SAW filter + UFL connector)
-4. Wire RFIO -> RFX2401C RF_IN, TXEN -> GPIO1, RXEN -> GPIO0
-5. Remove ceramic antenna (Lite-specific)
+3. Add new shared sheet: `rfx2401c_fem.kicad_sch` (RFX2401C + 0.3pF 5th harmonic cap + UFL connector)
+4. Wire: SX1281 RFIO → DEA102700LT-6307A2 → RFX2401C TXRX. RFX2401C ANT → 0.3pF shunt → UFL
+5. Wire TXEN → GPIO1, RXEN → GPIO0
+6. Remove ceramic antenna (Lite-specific)
 
 ### Step 8: Move to LR1121 family
 
