@@ -80,11 +80,11 @@
   "libraries": {
     "pinned_footprint_libs": [
       "OpenRX-Shared",
-      "libs"
+      "OpenRX-Lite"
     ],
     "pinned_symbol_libs": [
       "OpenRX-Shared",
-      "libs"
+      "OpenRX-Lite"
     ]
   },
   "meta": {
