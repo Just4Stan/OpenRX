@@ -1,10 +1,10 @@
 # macOS
 .DS_Store
-*/.DS_Store
+**/.DS_Store
 
 # KiCad backup and temp files
 *.kicad_prl
-*-backups/
+**/*-backups/
 *.bak
 *.tmp
 *~
@@ -14,14 +14,12 @@ _autosave-*
 
 # KiCad local state
 fp-info-cache
+*.rpt
+*.lck
 
-# Old single-project starter (superseded by 6 receiver projects)
-/OpenRX/
+# iCloud history directories
+**/.history
+.history
 
 # Claude Code
 .claude/
-OpenRX-Lite/.history
-*.rpt
-*.lck
-*/.history
-.history
