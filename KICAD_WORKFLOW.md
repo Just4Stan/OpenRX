@@ -81,7 +81,7 @@ Use KiCad hierarchical sheets. Capture these blocks once in `shared/sheets/`, th
 
 | Sheet | Contents | Used By |
 |-------|----------|---------|
-| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + XL-1010RGBC-WS2812B | Lite, Nano, 900, Dual |
+| `esp32c3_core.kicad_sch` | ESP32-C3 + 40MHz crystal + EN RC delay + boot button + USB pads + XL-1010RGBC-WS2812B + C89334 Wi-Fi antenna | Lite, Nano, 900, Dual |
 | `power_3v3.kicad_sch` | TLV75533PDQNR + 1uF local VIN/VOUT caps | Lite, Nano, 900, Dual |
 | `sx1281_radio.kicad_sch` | SX1281 + 52MHz TCXO + VR_PA cap + NSS pull-up + NRESET RC | Lite, Nano, PWM |
 | `rfx2401c_fem.kicad_sch` | RFX2401C + SAW filter + UFL connector + matching | Nano, Dual, PWM, Gemini |
@@ -159,6 +159,16 @@ These apply to every receiver:
 - **CHIP_EN**: Always use 10k pull-up + 1uF RC delay to GND.
 - **GPIO2**: Safe to use for NRESET (no boot function).
 
+## ESP32 Wi-Fi Update Path
+
+ExpressLRS receivers on ESP32-C3 support receiver-side Wi-Fi update / admin mode. That is an ESP32 function and should not be merged with the ELRS radio RF path.
+
+- Use `2450AT18A100E` (`C89334`) on `LNA_IN` as the ESP32 Wi-Fi/BLE antenna
+- treat it as a short-range update / admin path only
+- keep it fully separate from the SX1281 or LR1121 antenna path
+- do not add RF sharing or switching between ESP32 Wi-Fi and the ELRS radio
+- keep the OpenFC pattern in mind here: ceramic antenna on the ESP32 side, separate ELRS radio path
+
 ## 2.4GHz RF Path
 
 The DEA102700LT-6307A2 (TDK, LCSC C574024) is a 50-ohm-in/50-ohm-out multilayer LPF in 0402. RadioMaster uses this as the **sole component** between SX1281 RFIO and antenna/FEM on all their receivers. No discrete matching network needed — the ~40-to-50 ohm mismatch on RFIO is acceptable in practice (~0.5 dB loss).
@@ -204,9 +214,10 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
 4. Add: CHIP_EN circuit (10k pull-up + 1uF to GND)
 5. Add: GPIO9 boot pull-up (10k)
 6. Add: XL-1010RGBC-WS2812B on GPIO10 + 330R series + 100nF decoupling, powered from 5V
-7. Add: USB D+/D- test pads on GPIO18/19
-8. Add: 3.3V decoupling (3x 100nF on VDD3P3, VDD_SPI, VDD3P3_RTC + 1uF on VDDA)
-9. Export hierarchical pins for: SPI bus (SCK/MISO/MOSI/NSS), radio control (DIO1/BUSY/RST), UART (TX/RX), power control (TXEN/RXEN), power rails (3.3V/GND/5V)
+7. Add: `2450AT18A100E` (`C89334`) on `LNA_IN` as the ESP32 Wi-Fi update antenna, with the required edge placement and keepout
+8. Add: USB D+/D- test pads on GPIO18/19
+9. Add: 3.3V decoupling (3x 100nF on VDD3P3, VDD_SPI, VDD3P3_RTC + 1uF on VDDA)
+10. Export hierarchical pins for: SPI bus (SCK/MISO/MOSI/NSS), radio control (DIO1/BUSY/RST), UART (TX/RX), power control (TXEN/RXEN), power rails (3.3V/GND/5V)
 
 ### Step 2: Create shared power sheet
 
@@ -240,7 +251,7 @@ This is the first receiver to capture. It establishes the SX1281 core that Nano 
    - `power_3v3` sheet
    - `sx1281_radio` sheet
    - `crsf_io` sheet
-2. Add Lite-specific: DEA102700LT-6307A2 LPF on SX1281 RFIO → ceramic antenna (2450AT18A100E)
+2. Add Lite-specific ELRS RF path: DEA102700LT-6307A2 on SX1281 RFIO → chosen ELRS antenna path. This is separate from the ESP32 Wi-Fi ceramic antenna in `esp32c3_core`.
 3. Connect all hierarchical pins
 4. Run ERC
 
@@ -275,7 +286,7 @@ Only after Lite + Nano are stable:
 - **ESP32-C3**: Crystal close to XTAL pins, no routing under crystal
 - **Decoupling**: Every VDD pin gets its own 100nF, placed within 1mm of pin
 - **GND**: Solid ground pour on both sides, via stitch around RF sections
-- **Antenna keepout**: No copper (except ground) within 5mm of ceramic antenna (Lite)
+- **Antenna keepout**: keep the ESP32 Wi-Fi ceramic antenna keepout separate from any ELRS 2.4GHz antenna keepout or feed structure
 - **UFL connector**: Place at board edge, ground vias surrounding pad
 
 ## Known Issues

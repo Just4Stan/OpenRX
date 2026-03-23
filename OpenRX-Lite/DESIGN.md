@@ -1,6 +1,8 @@
 # OpenRX-Lite Schematic Documentation
 
-Budget 2.4GHz ExpressLRS receiver. No PA/LNA, no UFL -- direct SX1281 to ceramic chip antenna.
+Budget 2.4GHz ExpressLRS receiver.
+
+> Audit note: the antenna sections below are stale. `C89334` / `2450AT18A100E` is now reserved for the ESP32-C3 Wi-Fi update/admin antenna path, separate from the ELRS radio RF path. Use `KICAD_WORKFLOW.md` as the authority for new schematic capture.
 
 - PCB: 16x12mm, 2-layer, 1.0mm thickness
 - Target BOM: EUR 3-4

@@ -22,3 +22,5 @@ fp-info-cache
 .claude/
 OpenRX-Lite/.history
 *.rpt
+*.lck
+*/.history
