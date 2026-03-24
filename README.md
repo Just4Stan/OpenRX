@@ -8,9 +8,9 @@ Part of the [OpenDrone](https://github.com/Just4Stan) ecosystem. Three ELRS 4.0 
 
 | Model | Band | RF | Front-End | Antenna | Target Price | ELRS Target |
 |-------|------|-----|-----------|---------|-------------|-------------|
-| **Lite** | 2.4 GHz | SX1281 | DEA LPF only | Ceramic (Molex tower) | €8-10 | Generic C3 2400 |
-| **Mono** | Multi-band | LR1121 | RFX2401C + SKY13588 + Johanson IPD | 1× UFL, dual-band | €15-18 | Generic C3 LR1121 |
-| **Gemini** | Xrossband | 2× LR1121 | 2× (RFX2401C + SKY13588 + Johanson IPD) | 2× UFL, dual-band | €25-30 | Generic C3 LR1121 True Diversity |
+| **Lite** | 2.4 GHz | SX1281 | DEA LPF only | Ceramic (Molex tower) | €8-15 | Generic C3 2400 |
+| **Mono** | Multi-band | LR1121 | RFX2401C + SKY13588 + Johanson IPD | 1× UFL, dual-band | €15-25 | Generic C3 LR1121 |
+| **Gemini** | Xrossband | 2× LR1121 | 2× (RFX2401C + SKY13588 + Johanson IPD) | 2× UFL, dual-band | €25-35 | Generic C3 LR1121 True Diversity |
 
 ## Architecture
 
