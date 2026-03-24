@@ -495,12 +495,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "OpenRX-Shared",
-      "OpenRX-Mono"
+      "OpenRX-Shared"
     ],
     "pinned_symbol_libs": [
-      "OpenRX-Shared",
-      "OpenRX-Mono"
+      "OpenRX-Shared"
     ]
   },
   "meta": {

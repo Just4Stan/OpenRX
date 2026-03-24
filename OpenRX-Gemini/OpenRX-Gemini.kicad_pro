@@ -483,12 +483,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "OpenRX-Shared",
-      "OpenRX-Gemini"
+      "OpenRX-Shared"
     ],
     "pinned_symbol_libs": [
-      "OpenRX-Shared",
-      "OpenRX-Gemini"
+      "OpenRX-Shared"
     ]
   },
   "meta": {
