@@ -1,0 +1,4 @@
+(version 1)
+(rule "GND zone clearance to 50 Ohm nets"
+  (constraint clearance (min 0.300mm))
+  (condition "A.NetClass == '50Ohm' && B.Type == 'Zone'"))
