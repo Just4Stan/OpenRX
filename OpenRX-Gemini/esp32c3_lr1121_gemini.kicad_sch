@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "488293bf-a361-4959-9226-e5baf7b91769")
-	(paper "A3")
+	(paper "A2")
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -4847,6 +4847,12 @@
 		(uuid "09545a92-1c83-4e96-8e81-f0eb4a6795c6")
 	)
 	(junction
+		(at 416.56 246.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c398f9f-f812-4bab-9612-56424dfa090c")
+	)
+	(junction
 		(at 161.29 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4859,10 +4865,28 @@
 		(uuid "1586a02a-59b7-4632-ab79-d30381aa064e")
 	)
 	(junction
+		(at 344.17 255.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15db76f8-f8c5-4be7-aab5-91e6420df729")
+	)
+	(junction
 		(at 161.29 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18a31f0f-5698-4db6-8bf8-03177a50754a")
+	)
+	(junction
+		(at 478.79 232.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a9585d8-fdf0-495b-8e42-28b913b4fbeb")
+	)
+	(junction
+		(at 411.48 241.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "208d4269-9e3d-4672-950e-3c9e3f4b5004")
 	)
 	(junction
 		(at 243.84 245.11)
@@ -4889,6 +4913,12 @@
 		(uuid "2997e220-4d3b-4962-aca1-0e02d24c6ba0")
 	)
 	(junction
+		(at 438.15 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ad66d06-acb8-444f-a042-ce39c94368d4")
+	)
+	(junction
 		(at 196.85 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4905,6 +4935,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3514f8f0-2382-42de-933a-2aa517941062")
+	)
+	(junction
+		(at 304.8 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "368967d6-92a5-42e1-bcfb-c08c18df5eb4")
 	)
 	(junction
 		(at 214.63 172.72)
@@ -4925,16 +4961,40 @@
 		(uuid "421589ca-6b31-477a-86c0-249502536bf8")
 	)
 	(junction
+		(at 297.18 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45102db0-70cb-4ac9-b1fb-6df1d73ef296")
+	)
+	(junction
 		(at 196.85 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "475a82fe-b699-4297-bd78-5a129605fa12")
 	)
 	(junction
+		(at 387.35 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "488888e6-6f15-42bf-9bf9-46f21ad7606c")
+	)
+	(junction
+		(at 431.8 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48c3328d-dd36-4da9-ad09-fb8d55faee7b")
+	)
+	(junction
 		(at 125.73 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4aa5eed0-53ec-40bf-a906-187dd8920408")
+	)
+	(junction
+		(at 431.8 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52c3a6a6-245e-4b8f-ab3d-5360b7d3ae8a")
 	)
 	(junction
 		(at 59.69 73.66)
@@ -4961,10 +5021,22 @@
 		(uuid "567e09eb-c1a6-4db1-9446-60c1da6eb3a7")
 	)
 	(junction
+		(at 486.41 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56ce5355-bab2-4722-a67c-acd9ab52e636")
+	)
+	(junction
 		(at 243.84 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5da4ae53-75df-4412-896d-98c8d7c90d98")
+	)
+	(junction
+		(at 478.79 245.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e8956c2-a720-46f6-9234-3b37ff5c659f")
 	)
 	(junction
 		(at 182.88 203.2)
@@ -4979,6 +5051,12 @@
 		(uuid "6298a409-3090-4815-90d4-b6f9bb6c4a6c")
 	)
 	(junction
+		(at 438.15 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6466e5d3-778c-4dc8-8c47-1f3d3e0f73cb")
+	)
+	(junction
 		(at 173.99 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4989,6 +5067,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69201f46-b8ec-4025-8f61-8cb1ccbcbd2c")
+	)
+	(junction
+		(at 449.58 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6efe3b01-f53a-4700-8353-eb9be6f31420")
 	)
 	(junction
 		(at 148.59 29.21)
@@ -5015,6 +5099,12 @@
 		(uuid "712dad1d-eb23-4e29-91bf-14da7c8fd64d")
 	)
 	(junction
+		(at 478.79 242.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74e1ccb2-551c-4bf7-81cb-44b8e04fcaf0")
+	)
+	(junction
 		(at 160.02 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5039,6 +5129,12 @@
 		(uuid "7f8a9a58-213d-4ca4-a57f-04266d7c78ca")
 	)
 	(junction
+		(at 403.86 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83a4cf40-b619-4659-b2d1-04987800228d")
+	)
+	(junction
 		(at 243.84 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5051,10 +5147,28 @@
 		(uuid "8dbc938b-c1cf-4302-aec3-b745d4fd5ab4")
 	)
 	(junction
+		(at 297.18 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93ada3f2-99f9-494f-933c-7ce34df15dba")
+	)
+	(junction
+		(at 443.23 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9458575f-380a-4ad9-a31a-26944b959eea")
+	)
+	(junction
 		(at 71.12 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95330098-e124-4636-b7e1-511b95cd3191")
+	)
+	(junction
+		(at 417.83 200.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9884658a-c9d9-434c-8a34-1e34f6824cff")
 	)
 	(junction
 		(at 125.73 29.21)
@@ -5073,6 +5187,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0f8e7cd-783e-4369-b0a7-ea5501a13a98")
+	)
+	(junction
+		(at 431.8 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a63422d0-4dee-4c84-aeed-6423359cf974")
+	)
+	(junction
+		(at 304.8 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac880fd5-1105-4884-8ddd-4fdb25e783df")
 	)
 	(junction
 		(at 148.59 36.83)
@@ -5135,6 +5261,18 @@
 		(uuid "d7eaedae-ad8d-49f3-b43d-0b919b7188a1")
 	)
 	(junction
+		(at 486.41 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc01aea2-af1e-4460-95aa-3f22685571e9")
+	)
+	(junction
+		(at 411.48 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de9370ff-0303-440f-abaf-9cf768e3366a")
+	)
+	(junction
 		(at 203.2 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5153,6 +5291,12 @@
 		(uuid "e72abdd0-9a7c-4433-863e-e4d1b257dce8")
 	)
 	(junction
+		(at 449.58 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb010a52-f350-4271-a3e5-abec60c3aa3b")
+	)
+	(junction
 		(at 181.61 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5163,6 +5307,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f293217d-c38a-4ca7-8b92-4d96e52abd6a")
+	)
+	(junction
+		(at 403.86 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3233479-d84a-4b58-875c-42c82d0169f9")
+	)
+	(junction
+		(at 375.92 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f448066a-74fb-428c-8104-c42668fa89a8")
 	)
 	(junction
 		(at 168.91 185.42)
@@ -5197,6 +5353,14 @@
 		(uuid "1d5038bc-3904-4366-99b6-593ac1b0e475")
 	)
 	(no_connect
+		(at 365.76 172.72)
+		(uuid "1f521c63-16bf-4275-948c-2fab0c52b5bd")
+	)
+	(no_connect
+		(at 365.76 160.02)
+		(uuid "38e78e54-af4d-4b4e-be4e-461b57e52910")
+	)
+	(no_connect
 		(at 130.81 172.72)
 		(uuid "3f3a1f2e-3718-4842-bee5-0ab5f6e0a7c7")
 	)
@@ -5225,6 +5389,14 @@
 		(uuid "7347fa7c-98f0-4368-af26-166dd79f62c3")
 	)
 	(no_connect
+		(at 365.76 167.64)
+		(uuid "74a17f76-3b3b-4106-965a-913e553315b9")
+	)
+	(no_connect
+		(at 431.8 170.18)
+		(uuid "76bb046f-9c55-4f80-bfa2-4446a8416138")
+	)
+	(no_connect
 		(at 130.81 165.1)
 		(uuid "79172a96-b6e9-4439-bb23-98900f863923")
 	)
@@ -5245,8 +5417,16 @@
 		(uuid "9115c0c0-6f18-4401-a9df-1ad76d0d2986")
 	)
 	(no_connect
+		(at 365.76 165.1)
+		(uuid "912ef089-605b-44af-aa68-65355554b89c")
+	)
+	(no_connect
 		(at 130.81 167.64)
 		(uuid "95fb9f7c-2e9d-452c-83d0-68b9aaaa6d3f")
+	)
+	(no_connect
+		(at 322.58 162.56)
+		(uuid "a39a4ddf-c828-4a84-8fdd-1673ffffc20d")
 	)
 	(no_connect
 		(at 88.9 54.61)
@@ -5264,6 +5444,22 @@
 		(at 125.73 72.39)
 		(uuid "e044c835-d31e-4e48-b5b1-38ca8b034633")
 	)
+	(no_connect
+		(at 448.31 238.76)
+		(uuid "f4290037-f917-4db9-8047-01d59032da65")
+	)
+	(no_connect
+		(at 365.76 170.18)
+		(uuid "f4d8eb2b-0d52-4cca-88d8-3c1331dcba3b")
+	)
+	(no_connect
+		(at 365.76 162.56)
+		(uuid "f5e4b5de-cdb1-4d38-8e1d-0f7008eb5169")
+	)
+	(no_connect
+		(at 365.76 175.26)
+		(uuid "fc257f45-b0de-41f9-87d3-c39b766a66c1")
+	)
 	(wire
 		(pts
 			(xy 74.93 162.56) (xy 77.47 162.56)
@@ -5273,6 +5469,16 @@
 			(type default)
 		)
 		(uuid "0256d3fe-9df9-401f-8c2a-3e2306bc763a")
+	)
+	(wire
+		(pts
+			(xy 443.23 170.18) (xy 449.58 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04436a2e-65c7-43e2-99df-0b7b2f49e4a1")
 	)
 	(wire
 		(pts
@@ -5306,6 +5512,36 @@
 	)
 	(wire
 		(pts
+			(xy 299.72 157.48) (xy 299.72 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c496677-41c2-45fd-90c9-9a521727d321")
+	)
+	(wire
+		(pts
+			(xy 403.86 180.34) (xy 403.86 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d12ef40-e7dc-4289-8ae0-0511abb6b22f")
+	)
+	(wire
+		(pts
+			(xy 438.15 184.15) (xy 438.15 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7efaeb-1c9a-4f86-b806-817f72972463")
+	)
+	(wire
+		(pts
 			(xy 64.77 154.94) (xy 69.85 154.94)
 		)
 		(stroke
@@ -5323,6 +5559,46 @@
 			(type default)
 		)
 		(uuid "1034b245-e9e8-4b94-a0ee-fd3e0f8a1ea9")
+	)
+	(wire
+		(pts
+			(xy 403.86 182.88) (xy 403.86 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "123fc4ca-869d-4b24-afa6-4a395a6c3d7d")
+	)
+	(wire
+		(pts
+			(xy 431.8 186.69) (xy 431.8 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e7ca4c-fdda-44a5-a67d-26e5a618fd4d")
+	)
+	(wire
+		(pts
+			(xy 411.48 241.3) (xy 411.48 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "136ad499-aa57-431e-b559-6b88a4556e70")
+	)
+	(wire
+		(pts
+			(xy 443.23 162.56) (xy 449.58 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "136ae3b6-f035-43ed-885d-cf75f3d9a98c")
 	)
 	(wire
 		(pts
@@ -5406,6 +5682,16 @@
 	)
 	(wire
 		(pts
+			(xy 375.92 146.05) (xy 387.35 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccedfc5-8de3-43ca-8c69-581d68ef7e57")
+	)
+	(wire
+		(pts
 			(xy 201.93 121.92) (xy 212.09 121.92)
 		)
 		(stroke
@@ -5423,6 +5709,16 @@
 			(type default)
 		)
 		(uuid "1d551f77-bc23-4c1b-b311-67bc6aab8f05")
+	)
+	(wire
+		(pts
+			(xy 378.46 237.49) (xy 365.76 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1db4d9bf-59e7-408b-b28e-fc6e9572fe67")
 	)
 	(wire
 		(pts
@@ -5496,6 +5792,26 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 242.57) (xy 365.76 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267cdb61-e85f-448c-8c83-e7f47556a6e0")
+	)
+	(wire
+		(pts
+			(xy 299.72 160.02) (xy 302.26 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a89156-47da-4c41-96d3-339c5a1187a7")
+	)
+	(wire
+		(pts
 			(xy 64.77 162.56) (xy 67.31 162.56)
 		)
 		(stroke
@@ -5503,6 +5819,36 @@
 			(type default)
 		)
 		(uuid "28900a12-249d-4458-9450-1c9fddabf43a")
+	)
+	(wire
+		(pts
+			(xy 415.29 200.66) (xy 417.83 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29082c36-91e2-4853-aca5-fcddc2980b8b")
+	)
+	(wire
+		(pts
+			(xy 438.15 241.3) (xy 448.31 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c68aeb7-81d1-4518-b526-97b65350bea5")
+	)
+	(wire
+		(pts
+			(xy 478.79 232.41) (xy 478.79 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e1dde25-ad19-4a0c-b850-77d798e09a22")
 	)
 	(wire
 		(pts
@@ -5566,6 +5912,46 @@
 	)
 	(wire
 		(pts
+			(xy 431.8 184.15) (xy 438.15 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b5d2bd9-afa5-4987-919f-405e9a23cb9b")
+	)
+	(wire
+		(pts
+			(xy 320.04 160.02) (xy 322.58 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c02ddb8-4a75-425b-9301-0019badf91c7")
+	)
+	(wire
+		(pts
+			(xy 431.8 176.53) (xy 438.15 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d6b9697-c13b-48bb-8db8-0af50e2909e0")
+	)
+	(wire
+		(pts
+			(xy 297.18 144.78) (xy 304.8 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f9b45d3-3035-4135-8c07-4fc71082d41c")
+	)
+	(wire
+		(pts
 			(xy 35.56 49.53) (xy 35.56 46.99)
 		)
 		(stroke
@@ -5603,6 +5989,16 @@
 			(type default)
 		)
 		(uuid "46cc798a-a758-47dd-9bc3-e00d2338e70c")
+	)
+	(wire
+		(pts
+			(xy 309.88 160.02) (xy 312.42 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46edb03a-587f-4256-afa6-794b7dd02488")
 	)
 	(wire
 		(pts
@@ -5656,6 +6052,16 @@
 	)
 	(wire
 		(pts
+			(xy 417.83 200.66) (xy 420.37 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50aa3d64-4e26-4b38-80d5-32bbb41a7311")
+	)
+	(wire
+		(pts
 			(xy 63.5 74.93) (xy 63.5 73.66)
 		)
 		(stroke
@@ -5673,6 +6079,26 @@
 			(type default)
 		)
 		(uuid "51458a61-2d4d-4178-8b6b-ee073fe33da7")
+	)
+	(wire
+		(pts
+			(xy 416.56 246.38) (xy 411.48 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "518326ee-c9e1-475c-93b6-7cbeb20fa4be")
+	)
+	(wire
+		(pts
+			(xy 448.31 246.38) (xy 416.56 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c0c2ab-877d-4dae-b4ae-141fe8c8efbf")
 	)
 	(wire
 		(pts
@@ -5696,6 +6122,16 @@
 	)
 	(wire
 		(pts
+			(xy 387.35 146.05) (xy 393.7 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b38fa3-9037-44ed-9373-9b9809b1392b")
+	)
+	(wire
+		(pts
 			(xy 212.09 113.03) (xy 212.09 111.76)
 		)
 		(stroke
@@ -5713,6 +6149,16 @@
 			(type default)
 		)
 		(uuid "594f5bbc-28f0-4952-a1f7-92ac665e976c")
+	)
+	(wire
+		(pts
+			(xy 463.55 257.81) (xy 463.55 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b7898e7-e062-492a-b486-abd642415793")
 	)
 	(wire
 		(pts
@@ -5786,6 +6232,16 @@
 	)
 	(wire
 		(pts
+			(xy 486.41 224.79) (xy 478.79 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711b4b91-a91c-4c83-8cc7-080b72c45a30")
+	)
+	(wire
+		(pts
 			(xy 30.48 49.53) (xy 35.56 49.53)
 		)
 		(stroke
@@ -5823,6 +6279,16 @@
 			(type default)
 		)
 		(uuid "76398a6a-249a-450a-9f9f-16765a7d1a01")
+	)
+	(wire
+		(pts
+			(xy 375.92 142.24) (xy 375.92 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7655a6d1-5192-4e17-abba-f16d7a0733fe")
 	)
 	(wire
 		(pts
@@ -5896,6 +6362,16 @@
 	)
 	(wire
 		(pts
+			(xy 431.8 179.07) (xy 431.8 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84d8fdb4-5571-4fa2-b31b-b1e4d2f1123a")
+	)
+	(wire
+		(pts
 			(xy 140.97 148.59) (xy 152.4 148.59)
 		)
 		(stroke
@@ -5906,6 +6382,16 @@
 	)
 	(wire
 		(pts
+			(xy 383.54 187.96) (xy 403.86 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "862021ca-ec3d-44a1-98cf-264da0a491b8")
+	)
+	(wire
+		(pts
 			(xy 171.45 111.76) (xy 171.45 113.03)
 		)
 		(stroke
@@ -5913,6 +6399,16 @@
 			(type default)
 		)
 		(uuid "86dcec49-d78f-49af-ae42-5a321dd86054")
+	)
+	(wire
+		(pts
+			(xy 304.8 152.4) (xy 322.58 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "874cfcab-5906-43ae-99b4-d8b65c84ed90")
 	)
 	(wire
 		(pts
@@ -5956,6 +6452,16 @@
 	)
 	(wire
 		(pts
+			(xy 431.8 189.23) (xy 431.8 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e619078-dcec-4ed4-8566-1adcbd0235b8")
+	)
+	(wire
+		(pts
 			(xy 27.94 41.91) (xy 30.48 41.91)
 		)
 		(stroke
@@ -5973,6 +6479,16 @@
 			(type default)
 		)
 		(uuid "91e89e92-e7c3-436a-bc81-2f4469812083")
+	)
+	(wire
+		(pts
+			(xy 304.8 144.78) (xy 309.88 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ba0380-3433-4359-a635-08ea227720f9")
 	)
 	(wire
 		(pts
@@ -6006,6 +6522,26 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 245.11) (xy 365.76 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991949fb-a2a7-4719-8900-a38de4444d63")
+	)
+	(wire
+		(pts
+			(xy 431.8 162.56) (xy 443.23 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a23d398-e8c7-4595-95a1-4055579a126c")
+	)
+	(wire
+		(pts
 			(xy 77.47 44.45) (xy 88.9 44.45)
 		)
 		(stroke
@@ -6023,6 +6559,16 @@
 			(type default)
 		)
 		(uuid "9beae8b8-172f-4d74-9b94-14f9e19b8477")
+	)
+	(wire
+		(pts
+			(xy 478.79 242.57) (xy 478.79 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c242e7a-8a65-4f72-a36c-827ef7737e3a")
 	)
 	(wire
 		(pts
@@ -6076,6 +6622,26 @@
 	)
 	(wire
 		(pts
+			(xy 478.79 224.79) (xy 478.79 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a82d0945-96de-49b1-b1aa-c939dcf04083")
+	)
+	(wire
+		(pts
+			(xy 297.18 137.16) (xy 322.58 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9f085d2-6b20-4bbb-b650-b584e48209fc")
+	)
+	(wire
+		(pts
 			(xy 69.85 53.34) (xy 35.56 53.34)
 		)
 		(stroke
@@ -6113,6 +6679,16 @@
 			(type default)
 		)
 		(uuid "b040860b-cc84-4536-9528-fb7c75ed881c")
+	)
+	(wire
+		(pts
+			(xy 486.41 250.19) (xy 478.79 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b04120dd-0932-4451-a8e7-8fd4cc0d55a7")
 	)
 	(wire
 		(pts
@@ -6156,6 +6732,16 @@
 	)
 	(wire
 		(pts
+			(xy 448.31 243.84) (xy 411.48 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b662e52c-1edd-4ce7-b808-1c43211169e8")
+	)
+	(wire
+		(pts
 			(xy 201.93 111.76) (xy 201.93 113.03)
 		)
 		(stroke
@@ -6163,6 +6749,16 @@
 			(type default)
 		)
 		(uuid "b86a89d2-a226-48a2-ae93-e6094ce8a213")
+	)
+	(wire
+		(pts
+			(xy 449.58 162.56) (xy 455.93 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9fd7c97-cf19-4b14-a0bf-8b77f210bbe5")
 	)
 	(wire
 		(pts
@@ -6186,6 +6782,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 255.27) (xy 346.71 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd563db-f6dd-4300-ae59-7fcead9e4410")
+	)
+	(wire
+		(pts
 			(xy 138.43 144.78) (xy 140.97 144.78)
 		)
 		(stroke
@@ -6206,6 +6812,16 @@
 	)
 	(wire
 		(pts
+			(xy 365.76 146.05) (xy 375.92 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e41a8b-4494-461e-86be-f364ae87348d")
+	)
+	(wire
+		(pts
 			(xy 176.53 241.3) (xy 176.53 243.84)
 		)
 		(stroke
@@ -6216,6 +6832,26 @@
 	)
 	(wire
 		(pts
+			(xy 431.8 162.56) (xy 431.8 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c739d814-e7e7-4613-8ba5-214df37e7ebe")
+	)
+	(wire
+		(pts
+			(xy 431.8 181.61) (xy 431.8 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a9f5d3-9730-493d-82e7-10c19a9c50a9")
+	)
+	(wire
+		(pts
 			(xy 160.02 113.03) (xy 160.02 111.76)
 		)
 		(stroke
@@ -6223,6 +6859,16 @@
 			(type default)
 		)
 		(uuid "cdfa0c71-db69-4565-81cc-9082572d3bcd")
+	)
+	(wire
+		(pts
+			(xy 378.46 240.03) (xy 365.76 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee7ef50-ff07-4632-8d20-f59c6b57b971")
 	)
 	(wire
 		(pts
@@ -6286,6 +6932,16 @@
 	)
 	(wire
 		(pts
+			(xy 317.5 144.78) (xy 322.58 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e0f145-5555-4d82-b149-7760075eaa4f")
+	)
+	(wire
+		(pts
 			(xy 125.73 31.75) (xy 125.73 34.29)
 		)
 		(stroke
@@ -6336,6 +6992,16 @@
 	)
 	(wire
 		(pts
+			(xy 341.63 255.27) (xy 344.17 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4852077-482f-4595-89f7-1ddc46b6247d")
+	)
+	(wire
+		(pts
 			(xy 125.73 29.21) (xy 135.89 29.21)
 		)
 		(stroke
@@ -6343,6 +7009,26 @@
 			(type default)
 		)
 		(uuid "e4ae4a8d-b8e8-4f7a-ad5a-e9def49a6e86")
+	)
+	(wire
+		(pts
+			(xy 478.79 240.03) (xy 478.79 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69e7ec1-0dba-41b2-80de-0476c71bfd81")
+	)
+	(wire
+		(pts
+			(xy 411.48 238.76) (xy 411.48 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e860d7a8-833c-459a-b701-3a7dad1fe44a")
 	)
 	(wire
 		(pts
@@ -6416,6 +7102,26 @@
 	)
 	(wire
 		(pts
+			(xy 449.58 170.18) (xy 455.93 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f816528f-224f-4b1f-85b0-c66862d7d976")
+	)
+	(wire
+		(pts
+			(xy 478.79 250.19) (xy 478.79 245.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f84a8602-419b-40d2-9375-34fbc1a3d044")
+	)
+	(wire
+		(pts
 			(xy 138.43 57.15) (xy 138.43 54.61)
 		)
 		(stroke
@@ -6433,6 +7139,16 @@
 			(type default)
 		)
 		(uuid "fc20a6ce-0309-4bb7-91a8-cf65a5f81b5c")
+	)
+	(wire
+		(pts
+			(xy 299.72 152.4) (xy 304.8 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9fd62b-954f-48a5-a019-a19add4153d8")
 	)
 	(wire
 		(pts
@@ -6476,6 +7192,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 142.24) (xy 375.92 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff76f7a8-8667-48ca-beb5-2acded52f4fd")
+	)
+	(wire
+		(pts
 			(xy 125.73 29.21) (xy 125.73 31.75)
 		)
 		(stroke
@@ -6493,6 +7219,26 @@
 			(justify left bottom)
 		)
 		(uuid "0a8c1461-c2a9-4e1d-a043-f9c472dd14db")
+	)
+	(label "MOSI"
+		(at 322.58 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "131681ab-19e8-4ff6-b75c-d610136a3343")
+	)
+	(label "NSS1"
+		(at 322.58 184.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "14eb1f83-29fa-4100-a6a6-5dfe7bc1dcdf")
 	)
 	(label "IRQ1"
 		(at 87.63 176.53 180)
@@ -6513,6 +7259,16 @@
 			(justify right bottom)
 		)
 		(uuid "274ecd36-5d33-4769-8697-a4e7b489bc52")
+	)
+	(label "RXEN"
+		(at 365.76 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d731947-4e4d-4371-8154-4c1fa7f65260")
 	)
 	(label "MISO"
 		(at 87.63 179.07 180)
@@ -6554,6 +7310,16 @@
 		)
 		(uuid "3f109533-f868-4076-9624-28be82de14da")
 	)
+	(label "SCK"
+		(at 322.58 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4161815e-c6e8-44a9-9e0c-2a96d8a62710")
+	)
 	(label "CHIP_EN"
 		(at 67.31 85.09 0)
 		(effects
@@ -6583,6 +7349,16 @@
 			(justify right bottom)
 		)
 		(uuid "4d835c66-f71b-4a6d-a304-6547616ef8fb")
+	)
+	(label "TXEN"
+		(at 365.76 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "579dbd6a-a1a1-46cd-a548-bf6da5204de5")
 	)
 	(label "SCK"
 		(at 87.63 184.15 180)
@@ -6625,6 +7401,26 @@
 		(uuid "63891658-f46b-4900-a1c7-027a4b0b663f")
 	)
 	(label "DIO7-1"
+		(at 448.31 229.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "66b9d852-a07c-4c10-8f0b-55afced195e2")
+	)
+	(label "RST1"
+		(at 322.58 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6bdf71fe-5377-4077-ac53-c34c037ebea8")
+	)
+	(label "DIO7-1"
 		(at 213.36 232.41 180)
 		(effects
 			(font
@@ -6633,6 +7429,16 @@
 			(justify right bottom)
 		)
 		(uuid "6e65d627-dd7c-41b2-988c-9977a9d6bc1e")
+	)
+	(label "DIO8-1"
+		(at 365.76 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79e88832-99ad-4772-9c39-7d1fd6070179")
 	)
 	(label "BUSY1"
 		(at 125.73 62.23 0)
@@ -6643,6 +7449,16 @@
 			(justify left bottom)
 		)
 		(uuid "7ea7542a-5849-4043-8ead-4049fd98d3e5")
+	)
+	(label "TXEN"
+		(at 403.86 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7ec94f36-8e38-4341-9e6e-8197344053fc")
 	)
 	(label "XTAL_P"
 		(at 78.74 44.45 0)
@@ -6675,6 +7491,26 @@
 		(uuid "9162ae3d-ee97-42f6-8f5e-9785e8c9cf77")
 	)
 	(label "DIO7-1"
+		(at 322.58 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97928a89-51a6-4745-ad84-54e12db7ee87")
+	)
+	(label "MISO"
+		(at 322.58 176.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a09a18d5-ee0d-4bd8-9b0e-c0333cbb65fc")
+	)
+	(label "DIO7-1"
 		(at 87.63 191.77 180)
 		(effects
 			(font
@@ -6683,6 +7519,16 @@
 			(justify right bottom)
 		)
 		(uuid "a1b0c0ca-f3dd-493e-bea6-64f659e150f7")
+	)
+	(label "IRQ1"
+		(at 322.58 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1cdeed7-c706-41af-bc82-a1be61b7f028")
 	)
 	(label "SCK"
 		(at 125.73 54.61 0)
@@ -6704,6 +7550,16 @@
 		)
 		(uuid "b1b5203e-da82-4ee3-acec-a2bc03c8d06c")
 	)
+	(label "RXEN"
+		(at 403.86 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b459b791-df9f-4ca9-a739-bc23461db3cd")
+	)
 	(label "VDD"
 		(at 125.73 29.21 0)
 		(effects
@@ -6713,6 +7569,16 @@
 			(justify left bottom)
 		)
 		(uuid "b8e49f11-6859-4d59-9f77-255dbe739614")
+	)
+	(label "BUSY1"
+		(at 322.58 186.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d1eae6c6-8abf-4ce9-91f2-e1727bb2c739")
 	)
 	(label "RST1"
 		(at 74.93 82.55 180)
@@ -6764,6 +7630,16 @@
 		)
 		(uuid "ecc0d387-3877-435b-a3ea-d3aab78cc1d7")
 	)
+	(label "DIO8-1"
+		(at 448.31 232.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f40a5d66-aace-4bce-868b-c99996ed9af4")
+	)
 	(label "LED"
 		(at 125.73 59.69 0)
 		(effects
@@ -6773,6 +7649,176 @@
 			(justify left bottom)
 		)
 		(uuid "fbcb58de-de2a-413b-a2ec-3494c2991832")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 486.41 224.79 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "027e9d30-c715-4a26-adc2-6f9795f7b09d")
+		(property "Reference" "#PWR071"
+			(at 486.41 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 486.41 219.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 486.41 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 486.41 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 486.41 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f63d19b-e5a9-45fc-9b2b-aaa06f330d96")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 438.15 180.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "03edde99-b1d0-42f3-a925-b9f428f2995b")
+		(property "Reference" "C30"
+			(at 447.04 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.3pF"
+			(at 447.04 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 437.1848 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 438.15 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 648.97 297.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5661db59-9a0d-4bf3-840f-c37c3df40ca4")
+		)
+		(pin "2"
+			(uuid "1bbd618d-6c5d-4ecc-b10e-b1a968286d42")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -6867,6 +7913,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6951,6 +8003,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7026,6 +8084,182 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 455.93 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f480045-8753-47bb-be1e-5adb19d70f7c")
+		(property "Reference" "C32"
+			(at 448.31 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 448.31 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 456.8952 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 455.93 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 455.93 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C76935"
+			(at 245.11 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c59b69cd-002f-420f-a739-826106de7d4f")
+		)
+		(pin "2"
+			(uuid "0fcdf9ff-8157-486c-8dc4-5d1b70002964")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 297.18 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fab83dc-5bcb-46d8-868d-32f455b6f76e")
+		(property "Reference" "#PWR049"
+			(at 297.18 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 297.18 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 297.18 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb5ed40f-30e8-4e63-89f9-661bbf073ae2")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -7123,6 +8357,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "C9")
 					(unit 1)
 				)
@@ -7328,6 +8568,182 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 403.86 180.34 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "187eb570-3f08-46fc-8f87-b34343bd168f")
+		(property "Reference" "#PWR062"
+			(at 397.51 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 400.05 180.3399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 403.86 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 403.86 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 403.86 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9c7b5cd-c80e-4a6d-b37f-7cf577f86b71")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 369.57 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18bd33cc-2112-463f-be09-661a755d2143")
+		(property "Reference" "C28"
+			(at 369.57 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 369.57 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 373.38 134.9248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 369.57 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 369.57 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23733"
+			(at 55.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b70283cd-f551-4422-8aca-ebf1a2e25c65")
+		)
+		(pin "2"
+			(uuid "52c11e5d-9dd7-4113-a761-f7fb6a6b5d76")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C28")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7414,6 +8830,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "L2")
 					(unit 1)
 				)
@@ -7506,6 +8928,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "C16")
 					(unit 1)
 				)
@@ -7617,6 +9045,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7697,6 +9131,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR08")
 					(unit 1)
 				)
@@ -7799,6 +9239,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C12")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7886,6 +9332,102 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 304.8 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25677ed9-c3ff-4e3c-a891-b8a5f6c80279")
+		(property "Reference" "C26"
+			(at 310.642 149.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 315.976 149.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 305.7652 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 304.8 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C76939"
+			(at 134.62 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d8c7ab5-cb5f-4dd4-8889-b65c80dba575")
+		)
+		(pin "2"
+			(uuid "f4f439a7-5bca-4692-b7ab-c991af63add1")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -7979,6 +9521,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C23")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8063,6 +9611,105 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 297.18 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27793b33-964c-4fff-9936-79460c488f49")
+		(property "Reference" "C25"
+			(at 300.99 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 300.99 142.2399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 298.1452 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 297.18 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C76939"
+			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06e6ff34-8a0d-47af-86e8-be9abdb6aa43")
+		)
+		(pin "2"
+			(uuid "c837d2c4-9085-4f59-8852-7bae3ab0f992")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C25")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8141,6 +9788,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "TP4")
 					(unit 1)
 				)
@@ -8244,6 +9897,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8342,6 +10001,138 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:0900PC16J0042001E")
+		(at 394.97 241.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3259dc2e-6001-479f-b70f-6b38e040778b")
+		(property "Reference" "T2"
+			(at 394.97 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0900PC16J0042001E"
+			(at 394.97 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:FILTER-SMD_10P-L2.0-W1.6-BL"
+			(at 394.97 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 394.97 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 394.97 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19842466"
+			(at 394.97 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19842466"
+			(at 63.5 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "42e2ddd5-fab6-436d-93f3-cac48f8cb6dc")
+		)
+		(pin "3"
+			(uuid "f10311c6-ca14-49bd-8a0c-f6892a2f6e35")
+		)
+		(pin "2"
+			(uuid "323f965c-afbe-40a2-9ff3-5c41d9f8a32a")
+		)
+		(pin "6"
+			(uuid "04008c47-0f5d-434b-b74d-4982b6ea1799")
+		)
+		(pin "7"
+			(uuid "88059e11-b225-4fa4-9321-6dabb9b3ec0d")
+		)
+		(pin "5"
+			(uuid "8eeb6fee-57f8-4357-9295-f132272c4a86")
+		)
+		(pin "8"
+			(uuid "0e781b48-ee82-448e-8bf7-df650867fe6e")
+		)
+		(pin "1"
+			(uuid "bebb43fa-4874-4a68-8114-c2a5ceee11c7")
+		)
+		(pin "10"
+			(uuid "1c67efad-bd9a-4759-9b9b-6dc22fc2e45c")
+		)
+		(pin "9"
+			(uuid "d35478e3-fa33-46cc-9ddb-a63ac75fce49")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "T2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8417,6 +10208,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR030")
 					(unit 1)
 				)
@@ -8617,6 +10414,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8716,6 +10519,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8791,6 +10600,90 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 401.32 146.05 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a912b59-5c52-4e51-b12d-1896ec7a48e5")
+		(property "Reference" "#PWR061"
+			(at 407.67 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 406.4 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 401.32 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 401.32 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 401.32 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "720b0085-7098-467d-9fb3-6ad883af1aab")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -8873,6 +10766,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8947,6 +10846,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -9049,6 +10954,90 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 431.8 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f1104f0-898e-4213-9311-b17e3ffcd2b4")
+		(property "Reference" "#PWR066"
+			(at 431.8 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 431.8 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 431.8 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 431.8 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 431.8 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e12ef339-7ac2-4b3f-aedf-0a0e9f935da2")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9123,6 +11112,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -9207,6 +11202,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR01")
 					(unit 1)
 				)
@@ -9301,6 +11302,180 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 416.56 246.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42c123dc-b2f1-416a-a91a-c0bb8552df29")
+		(property "Reference" "#PWR064"
+			(at 416.56 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 416.56 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 416.56 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 416.56 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 416.56 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d060246e-bf90-4b22-a055-74fa6b7dd5a2")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 306.07 160.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "437dbc29-20fc-454c-8070-78f70da9f452")
+		(property "Reference" "R7"
+			(at 306.07 155.448 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 306.07 157.988 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 306.07 158.242 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 306.07 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C274342"
+			(at 55.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1a6b2e79-f713-4e1d-9812-4b63c1d03290")
+		)
+		(pin "1"
+			(uuid "6a509bd6-c9c8-4c56-acc9-fbbdba14dd7d")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9401,6 +11576,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "U3")
 					(unit 1)
 				)
@@ -9522,6 +11703,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9620,6 +11807,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9712,6 +11905,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C13")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9796,6 +11995,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9871,6 +12076,104 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 443.23 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "531b0fef-72ff-43c1-bdef-bd6e6863d3ee")
+		(property "Reference" "C31"
+			(at 435.61 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220pF"
+			(at 435.61 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 444.1952 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 443.23 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 443.23 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C62548"
+			(at 241.3 -2.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68929a6d-5dd4-44f5-93a8-70a8ce969bdf")
+		)
+		(pin "2"
+			(uuid "c0cd40ae-f43b-44ed-8bac-b2e872521f48")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -9952,6 +12255,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "TP1")
 					(unit 1)
 				)
@@ -10055,6 +12364,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10142,6 +12457,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "C20")
 					(unit 1)
 				)
@@ -10236,6 +12557,90 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 438.15 176.53 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a3fadec-d67f-41a4-a351-05edcc249a9f")
+		(property "Reference" "#PWR067"
+			(at 438.15 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 438.15 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 438.15 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 438.15 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e074130-d250-4aa6-9402-930c448fc5fe")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10310,6 +12715,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR054")
 					(unit 1)
 				)
@@ -10392,6 +12803,91 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 276.86 160.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60724a02-967e-4c62-8e1f-75fdd0b0376c")
+		(property "Reference" "#PWR047"
+			(at 270.51 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 276.86 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "011f1102-56fe-4624-bc6e-95c10abbb1ef")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10467,6 +12963,104 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 316.23 160.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "666634a0-3e11-4b4c-a47f-1309cd48941a")
+		(property "Reference" "C17"
+			(at 318.77 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10pF"
+			(at 318.77 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 320.04 159.0548 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 316.23 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C20069240"
+			(at 270.51 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cdaac5b-21a5-4bbe-8b0b-d7efeccc44af")
+		)
+		(pin "2"
+			(uuid "d94c1f96-72ae-4594-868c-573442503228")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -10554,6 +13148,168 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 449.58 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b9ca217-e3fb-46e4-b395-34be124e11a1")
+		(property "Reference" "#PWR068"
+			(at 449.58 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 449.58 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 449.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 449.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 449.58 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e4a12e6-283d-4979-8561-aae62865231e")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 374.65 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cd9996e-5087-4d72-b167-5eb59351d802")
+		(property "Reference" "#PWR058"
+			(at 374.65 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 374.65 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 374.65 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18b12b10-ccd9-46e7-bea7-81e122d64e03")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10630,6 +13386,90 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 463.55 257.81 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e1f9e44-c190-44e3-80ba-3fa9064fa48f")
+		(property "Reference" "#PWR070"
+			(at 463.55 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 463.55 262.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 463.55 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 463.55 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 463.55 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "78026b89-6296-4f32-a923-cc8fb558476a")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -10746,6 +13586,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10821,6 +13667,209 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 369.57 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "722d665e-70be-4539-9585-0d7eaf974f75")
+		(property "Reference" "L3"
+			(at 367.538 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uH"
+			(at 371.348 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 369.57 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 369.57 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 369.57 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C6808014"
+			(at 55.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8519c03d-6aed-4c2b-b456-5f83fec06aa0")
+		)
+		(pin "1"
+			(uuid "85b4978a-af6e-4527-a6aa-4d98a3710464")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:U.FL-R-SMT-1(80)")
+		(at 483.87 237.49 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7326c275-50a1-48c6-a2a6-3b6d02b33a4d")
+		(property "Reference" "JP2"
+			(at 490.22 236.2199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "U.FL-R-SMT-1(80)"
+			(at 490.22 238.7599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:RF-SMD_FRF05002-JSS103M"
+			(at 471.17 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Connectors_HRS_U-FL-R-SMT-1-80_3310472280-IPE-XBoard-end-IPXConnector-SMD_C88374.html"
+			(at 468.63 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 483.87 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C88374"
+			(at 466.09 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C88374"
+			(at 124.46 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "6194ffc5-2194-429b-9937-419eecf48b8c")
+		)
+		(pin "2"
+			(uuid "aef2dad6-91c5-47b4-be95-ceb2b618bcdd")
+		)
+		(pin "1"
+			(uuid "930a459e-7832-4e1b-8836-881457c24ffe")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -10931,6 +13980,180 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 449.58 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "773aa5d7-998f-4267-8e06-6f4859bc3721")
+		(property "Reference" "#PWR069"
+			(at 449.58 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 449.58 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 449.58 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 449.58 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 449.58 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08f89c46-fba3-418c-b725-be5c83f40a67")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 313.69 144.78 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78056877-f0cc-4376-99ee-0c4993d63901")
+		(property "Reference" "C27"
+			(at 313.69 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 313.69 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 317.5 143.8148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 313.69 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 313.69 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C76939"
+			(at 280.67 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf41a3db-ad87-4670-8723-3fb486648b6e")
+		)
+		(pin "2"
+			(uuid "2590f501-2822-4cf0-8556-d2795ecc49f5")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C27")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11018,6 +14241,159 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:RFX2401C")
+		(at 417.83 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a97c9dc-5092-4536-8617-510b7761827c")
+		(property "Reference" "U10"
+			(at 417.83 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RFX2401C"
+			(at 417.83 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:QFN-16_L3.0-W3.0-P0.50-BL-EP1.7"
+			(at 417.83 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/RF-Transceiver-ICs_SKYWORKS_RFX2401C_RFX2401C_C19213.html"
+			(at 417.83 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 417.83 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19213"
+			(at 417.83 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19213"
+			(at 241.3 -2.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "03c36fa9-cae3-4ec8-aa3e-504de04591a1")
+		)
+		(pin "1"
+			(uuid "fc0fceb8-bc4e-42fe-a803-a101201fb528")
+		)
+		(pin "5"
+			(uuid "5173d635-fa0d-454b-b988-d202e700bf56")
+		)
+		(pin "6"
+			(uuid "967b490d-0d96-44d4-be84-8021b75e576f")
+		)
+		(pin "17"
+			(uuid "6f0c48f2-d87d-453a-bde0-e59e5b8155e4")
+		)
+		(pin "16"
+			(uuid "b37f67e3-d5b8-4ff1-8282-3b7c68c3fc59")
+		)
+		(pin "15"
+			(uuid "9da8bd0f-bb40-446f-b98b-afae2762324e")
+		)
+		(pin "14"
+			(uuid "a82b2a99-0dc7-468f-b78d-235bcedc774b")
+		)
+		(pin "13"
+			(uuid "d26c7a7d-4a04-4b74-a91c-234adf29bb2a")
+		)
+		(pin "12"
+			(uuid "03742069-b555-4ab9-bb91-6edb36dc7741")
+		)
+		(pin "11"
+			(uuid "541610b6-df26-44ed-87a5-b75a6b1b48d5")
+		)
+		(pin "10"
+			(uuid "7282b0a2-030e-4382-bed4-37f35d4f51ed")
+		)
+		(pin "9"
+			(uuid "e74237e0-7abc-4657-878f-56d0352deaef")
+		)
+		(pin "8"
+			(uuid "a1e62b56-75d2-4c56-b95d-8b83c80bbf25")
+		)
+		(pin "7"
+			(uuid "3d8d2ede-e9ea-45da-aff6-8db9f104d1e8")
+		)
+		(pin "4"
+			(uuid "7edeaa31-7776-4f41-8e53-809572a62b6c")
+		)
+		(pin "3"
+			(uuid "fdee5930-44f0-47b1-95ab-77c292cbfbbd")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -11110,6 +14486,90 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 394.97 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b94d6f0-8c9d-4daa-8143-90b2db532922")
+		(property "Reference" "#PWR060"
+			(at 394.97 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 394.97 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 394.97 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 394.97 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 394.97 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6a5aa0a-83a8-49d8-9aa6-1f8748f142b0")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -11226,6 +14686,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "X1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11305,6 +14771,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR023")
 					(unit 1)
 				)
@@ -11416,6 +14888,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "AE1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11515,6 +14993,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11591,6 +15075,180 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 344.17 255.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86d39059-1b78-4481-8c16-c1e6bf300948")
+		(property "Reference" "#PWR050"
+			(at 344.17 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 344.17 260.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 344.17 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 344.17 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a04cfb9-d669-4e3c-8375-c4e30e9da920")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 397.51 146.05 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "86e75cc7-7a38-4086-84d6-9215549d79b6")
+		(property "Reference" "C29"
+			(at 397.764 138.811 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 397.764 141.351 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 393.7 147.0152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 397.51 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 397.51 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C76939"
+			(at 430.53 -24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eda3c59d-f543-4e61-a5b8-49163e375721")
+		)
+		(pin "2"
+			(uuid "7bae5d1c-09c4-412c-a4aa-995cb9e56623")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -11693,6 +15351,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11773,6 +15437,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR012")
 					(unit 1)
 				)
@@ -11875,6 +15545,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11953,6 +15629,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "TP2")
 					(unit 1)
 				)
@@ -12041,6 +15723,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12121,6 +15809,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR010")
 					(unit 1)
 				)
@@ -12217,6 +15911,119 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:DEA102700LT-6307A2")
+		(at 374.65 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91855ae5-0152-478e-9977-5d5190a4810d")
+		(property "Reference" "USB3"
+			(at 377.19 205.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DEA102700LT-6307A2"
+			(at 377.19 208.026 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L_DEA102700LT-XXX"
+			(at 374.65 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C574024"
+			(at 374.65 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C574024"
+			(at 71.12 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "6e1b3b81-9239-45f2-9dbf-37bc21990af0")
+		)
+		(pin "4"
+			(uuid "474a4324-9412-4889-b88b-60390b0f23a9")
+		)
+		(pin "2"
+			(uuid "f800676d-f7d1-4a05-a178-d82fa6458c07")
+		)
+		(pin "1"
+			(uuid "01bc4d62-200f-4dc5-8c00-75ad336fca52")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "USB3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12292,6 +16099,90 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 374.65 180.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99eff777-cc43-486a-8676-5a1da605bc4c")
+		(property "Reference" "#PWR057"
+			(at 374.65 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 374.65 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 374.65 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96d70725-b734-49af-931a-0ca7a61e8ea9")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -12375,6 +16266,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR02")
 					(unit 1)
 				)
@@ -12464,6 +16361,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12538,6 +16441,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR043")
 					(unit 1)
 				)
@@ -12623,6 +16532,91 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 373.38 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1e5014b-3163-493e-843a-83edf5bd2d8a")
+		(property "Reference" "#PWR051"
+			(at 379.73 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 377.19 135.8899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 373.38 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 373.38 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 373.38 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ed53e80-3acc-4b91-aa0f-b9e0569fcb4d")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -12725,6 +16719,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "R4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12822,6 +16822,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "C5")
 					(unit 1)
 				)
@@ -12952,6 +16958,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "T1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13027,6 +17039,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR036")
 					(unit 1)
 				)
@@ -13109,6 +17127,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13185,6 +17209,91 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 276.86 157.48 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b704b4a5-37f9-487c-9e75-e78d8ffa2252")
+		(property "Reference" "#PWR042"
+			(at 270.51 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 276.86 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53de9227-8e9a-4daf-b20b-b77e396a8688")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -13295,6 +17404,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "USB2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13375,6 +17490,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -13514,6 +17635,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13612,6 +17739,90 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 297.18 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be69ea5e-04cc-44f9-a2f3-385829a67d49")
+		(property "Reference" "#PWR048"
+			(at 297.18 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 297.18 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 297.18 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32bad9e5-2009-44d7-905e-80451ff4af33")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13692,6 +17903,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#FLG03")
 					(unit 1)
 				)
@@ -13780,6 +17997,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13854,6 +18077,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR031")
 					(unit 1)
 				)
@@ -14005,6 +18234,91 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 411.48 236.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7f58ab6-462b-4d65-9839-c07af6113ee8")
+		(property "Reference" "#PWR063"
+			(at 417.83 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 415.29 236.2199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "057a7dec-95c4-42d6-9922-3d66c1a44cb9")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14104,6 +18418,147 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:SKY13588-460LF")
+		(at 463.55 238.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb45d313-70a4-4f31-bade-3594e3377adc")
+		(property "Reference" "U11"
+			(at 463.55 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SKY13588-460LF"
+			(at 463.55 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:QFN-12_L2.0-W2.0-P0.50-BL-EP0.8"
+			(at 463.55 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 463.55 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 463.55 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2151906"
+			(at 463.55 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2151906"
+			(at 97.79 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "13"
+			(uuid "24a3cf0a-650b-4f24-89a7-bf2820151222")
+		)
+		(pin "12"
+			(uuid "5e76d880-26c4-4be4-8efe-d0ed9d8b500f")
+		)
+		(pin "11"
+			(uuid "f69ef437-c9d7-4d06-bdfa-e73fc55b7caf")
+		)
+		(pin "10"
+			(uuid "ba1a8e10-e149-4340-8c89-42a102b9deb6")
+		)
+		(pin "9"
+			(uuid "b02a4f52-7181-4286-8662-d053cce363d1")
+		)
+		(pin "8"
+			(uuid "4e3dca45-6169-4060-99f4-e6a57f249975")
+		)
+		(pin "7"
+			(uuid "1ed1827f-f250-40b4-a0d3-e7b4e01ec5a2")
+		)
+		(pin "6"
+			(uuid "8af5e455-13ad-4ef9-aaf6-151498313c4d")
+		)
+		(pin "5"
+			(uuid "ef1b2590-9082-4086-9450-a427fd5f9c6d")
+		)
+		(pin "4"
+			(uuid "12cb1f3c-9c4e-41cb-a328-b9c1be28c548")
+		)
+		(pin "3"
+			(uuid "b75a1d0f-4330-465d-8957-c89657c0e7fe")
+		)
+		(pin "2"
+			(uuid "e3b6e519-03e0-4da3-bb2e-2d23b0e69c90")
+		)
+		(pin "1"
+			(uuid "d9e2944d-1772-4f33-8407-141ee2d65227")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U11")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14187,6 +18642,168 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 387.35 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf59d5f8-8e07-4654-b9bd-06913f144cf4")
+		(property "Reference" "#PWR059"
+			(at 387.35 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 387.35 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 387.35 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 387.35 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 387.35 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa80464e-98ed-4771-a9a3-ba2777d2b506")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 486.41 250.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3486e52-f590-42ad-9486-cb716fe8d963")
+		(property "Reference" "#PWR072"
+			(at 486.41 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 486.41 255.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 486.41 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 486.41 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 486.41 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf4e449d-f9fd-4aea-ab36-96f053004af3")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14261,6 +18878,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR046")
 					(unit 1)
 				)
@@ -14340,6 +18963,119 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:OW7EL89CENUYO3YLC-32M")
+		(at 288.29 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc9732c1-2b63-48b2-b33b-97c2bdb7f8c4")
+		(property "Reference" "U8"
+			(at 281.432 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OW7EL89CENUYO3YLC-32M"
+			(at 281.432 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:OSC-SMD_4P-L2.0-W1.6-BL_TXC_7Z"
+			(at 288.29 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 288.29 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 288.29 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C22381772"
+			(at 288.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22381772"
+			(at 55.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "06946bab-30a5-4269-b2d3-9a9adc220485")
+		)
+		(pin "3"
+			(uuid "0c0d96e2-8f7f-4f1e-9bd8-853da6bbb68a")
+		)
+		(pin "1"
+			(uuid "a5f29f61-5a1e-4116-a330-0eb12a4cf444")
+		)
+		(pin "2"
+			(uuid "9a5b68c9-6df9-40f2-96eb-acd3eddbc288")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -14423,6 +19159,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR03")
 					(unit 1)
 				)
@@ -14520,6 +19262,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C21")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14598,6 +19346,12 @@
 			)
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "TP3")
 					(unit 1)
 				)
@@ -14688,6 +19442,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "R6")
 					(unit 1)
 				)
@@ -14791,6 +19551,208 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:LR1121IMLTRT")
+		(at 344.17 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f43bf5c9-73b1-4962-89b5-57dfdfb3f71e")
+		(property "Reference" "U9"
+			(at 350.266 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LR1121IMLTRT"
+			(at 350.266 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:QFN-32_L5.0-W5.0-P0.50-BL-EP3.7"
+			(at 344.17 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 344.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C7498014"
+			(at 344.17 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7498014"
+			(at 55.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bf64bb3a-54e8-424d-9867-4f2d5750d615")
+		)
+		(pin "6"
+			(uuid "dd612389-14f8-4674-98a2-7674ab731295")
+		)
+		(pin "7"
+			(uuid "cbcb3ae7-7be7-48f4-a4f3-40db8063136f")
+		)
+		(pin "9"
+			(uuid "16371511-a9d0-4da5-b829-391b3d03a9eb")
+		)
+		(pin "5"
+			(uuid "5af26033-87e7-49ec-810e-7d874395347b")
+		)
+		(pin "1"
+			(uuid "a1a02c16-ea9c-4aee-a528-e465788c149b")
+		)
+		(pin "4"
+			(uuid "78caba50-9051-444d-ac5c-6fea796cb337")
+		)
+		(pin "3"
+			(uuid "2402b6b6-79a3-4b90-a128-cd1f6e921cd4")
+		)
+		(pin "8"
+			(uuid "7b11bd92-1278-484a-8864-79f515523cd5")
+		)
+		(pin "22"
+			(uuid "76dc583b-88a2-4070-8fd2-e897e1b621af")
+		)
+		(pin "11"
+			(uuid "3558c7b2-c64f-4b9a-8570-830ee8c5299f")
+		)
+		(pin "12"
+			(uuid "9612049e-0844-4bb2-80ac-12c5430d7bee")
+		)
+		(pin "17"
+			(uuid "bfaf635a-e3e1-4dc3-897d-811d48e6773f")
+		)
+		(pin "16"
+			(uuid "c76426dd-eda5-415c-906a-3a35ccde7330")
+		)
+		(pin "15"
+			(uuid "12d8e686-225a-4334-a64d-bcf53824f95b")
+		)
+		(pin "13"
+			(uuid "d77b7713-fe7c-4a9d-b36d-35b5f1d0b887")
+		)
+		(pin "14"
+			(uuid "7c5d3cb6-1060-4fde-82da-a401d0976564")
+		)
+		(pin "27"
+			(uuid "e9bc6baf-ffff-4247-8890-ce5f30792ea4")
+		)
+		(pin "28"
+			(uuid "2357d922-ac67-4b12-8ef3-2e7c8374da31")
+		)
+		(pin "26"
+			(uuid "8bf50890-21c7-4582-9e8f-e5d1fffdf0ae")
+		)
+		(pin "29"
+			(uuid "15e1aeaf-c1fd-4347-a484-15147dc8d8bc")
+		)
+		(pin "25"
+			(uuid "f97ed0d0-dd01-4dce-b9c6-4b8b8fc17396")
+		)
+		(pin "23"
+			(uuid "d3be57c3-9cdd-42c9-be80-369f65937e33")
+		)
+		(pin "30"
+			(uuid "e51139b9-aded-4340-8f6e-1ee269ba53fe")
+		)
+		(pin "31"
+			(uuid "11dae605-e2cf-4cfc-9ca5-c8a20aa7a7b0")
+		)
+		(pin "24"
+			(uuid "bf814d5b-72d2-4fdc-a928-603652bdd222")
+		)
+		(pin "10"
+			(uuid "04bca8e6-d857-4331-b05d-8383b699bbb7")
+		)
+		(pin "32"
+			(uuid "9837c965-4238-428c-9bda-314be7b04ec1")
+		)
+		(pin "33"
+			(uuid "d983f770-4c9f-430c-9b4a-12758ea7ab78")
+		)
+		(pin "18"
+			(uuid "361319aa-f037-4b37-b722-901f484db7e6")
+		)
+		(pin "20"
+			(uuid "4a8c0654-77cb-4816-88c2-46d6535b3588")
+		)
+		(pin "19"
+			(uuid "aee9c628-42a6-4008-81b6-d2d26d8d4588")
+		)
+		(pin "21"
+			(uuid "345bacdd-2392-468c-88c5-4745480273dc")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "U9")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14865,6 +19827,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR029")
 					(unit 1)
 				)
@@ -14968,6 +19936,12 @@
 					(unit 1)
 				)
 			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15042,6 +20016,12 @@
 		(instances
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
 					(reference "#PWR032")
 					(unit 1)
 				)
@@ -15121,6 +20101,90 @@
 			(project "OpenRX-Mono"
 				(path "/b1c2d3e4-f5a6-7890-bcde-f12345678901/f1e2d3c4-b5a6-7890-1234-567890fedcba"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 417.83 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff73c3a2-43a3-4567-9fef-fdd386b6495f")
+		(property "Reference" "#PWR065"
+			(at 417.83 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 417.83 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 417.83 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 417.83 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 417.83 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45a056c3-bd1a-4ba8-88a4-a3d4dfd53e71")
+		)
+		(instances
+			(project "OpenRX-Gemini"
+				(path "/c2d3e4f5-a6b7-8901-cdef-234567890abc/a1b2c3d4-e5f6-7890-abcd-ef0123456789"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
