@@ -16,10 +16,15 @@ _autosave-*
 fp-info-cache
 *.rpt
 *.lck
+*.kicad_dru
 
-# iCloud history directories
+# iCloud
 **/.history
 .history
 
 # Claude Code
 .claude/
+
+# Build artifacts
+**/*.zip
+**/production/backups/

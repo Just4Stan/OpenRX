@@ -9157,7 +9157,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9ea965b3-8a96-45c3-9831-4ada3346dbbc")
 		(property "Reference" "AE2"

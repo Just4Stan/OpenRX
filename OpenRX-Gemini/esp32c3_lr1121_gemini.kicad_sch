@@ -7254,7 +7254,7 @@
 		)
 		(uuid "274ecd36-5d33-4769-8697-a4e7b489bc52")
 	)
-	(label "RXEN"
+	(label "RXEN1"
 		(at 365.76 152.4 0)
 		(effects
 			(font
@@ -7354,7 +7354,7 @@
 		)
 		(uuid "4d835c66-f71b-4a6d-a304-6547616ef8fb")
 	)
-	(label "TXEN"
+	(label "TXEN1"
 		(at 365.76 154.94 0)
 		(effects
 			(font
@@ -7504,7 +7504,7 @@
 		)
 		(uuid "8506c4a8-6b14-4fe9-bc38-5df64a40ed67")
 	)
-	(label "TXEN"
+	(label "TXEN2"
 		(at 130.81 157.48 0)
 		(effects
 			(font
@@ -7644,7 +7644,7 @@
 		)
 		(uuid "dc5ed3e6-326f-477f-bde9-6789f8fc0cae")
 	)
-	(label "RXEN"
+	(label "RXEN2"
 		(at 130.81 154.94 0)
 		(effects
 			(font
@@ -7828,7 +7828,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C76927"
 			(at 648.97 297.18 0)
 			(hide yes)
 			(show_name no)
@@ -8942,7 +8942,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C76927"
 			(at 414.02 299.72 0)
 			(hide yes)
 			(show_name no)

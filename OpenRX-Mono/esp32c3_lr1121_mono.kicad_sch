@@ -7486,7 +7486,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C76927"
 			(at 414.02 299.72 0)
 			(hide yes)
 			(show_name no)
