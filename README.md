@@ -70,3 +70,7 @@ Current low-stock / likely `JLCPCB Global Sourcing` candidates:
 - `C19842466` `0900PC16J0042001E`
 - `C7498014` `LR1121IMLTRT`
 - `C2151551` `SX1281IMLTRT` for a full `1000 pcs` Lite build
+
+## License
+
+This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal** ([CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt)). See [LICENSE](LICENSE) for details.

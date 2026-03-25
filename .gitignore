@@ -1,30 +1,43 @@
 # macOS
 .DS_Store
-**/.DS_Store
 
-# KiCad backup and temp files
-*.kicad_prl
-**/*-backups/
+# KiCad backup and autosave
+*-backups/
 *.bak
-*.tmp
-*~
-\#*\#
-_autosave-*
 *.000
+_autosave-*
+*~
+\#auto_saved_files#
 
-# KiCad local state
-fp-info-cache
-*.rpt
-*.lck
+# KiCad generated/local
+*.kicad_prl
 *.kicad_dru
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.lck
+*.net
+*.rpt
+*.tmp
+fp-info-cache
+replicate_layout.log
 
-# iCloud
-**/.history
-.history
+# KiCad local history
+**/.history/
 
-# Claude Code
+# 3D exports (not library files)
+**/.step
+**/*.glb
+
+# Production output (generated, re-exportable)
+**/production/
+
+# Fabrication toolkit config
+fabrication-toolkit-options.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude
 .claude/
-
-# Build artifacts
-**/*.zip
-**/production/backups/
+CLAUDE.md
