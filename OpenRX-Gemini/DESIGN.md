@@ -1,73 +1,51 @@
 # OpenRX-Gemini
 
-Final active flagship dual-radio receiver schematic based on `ESP32-C3 + 2x LR1121`.
+Dual-LR1121 Gemini/Xrossband receiver. ESP32-C3 + 2x LR1121 + 2x RFX2401C + 2x SKY13414 + 2x Johanson IPD.
 
-## Current Schematic
+## Schematic
 
-- Main sheet: `OpenRX-Gemini/esp32c3_lr1121_gemini.kicad_sch`
-- Radio chain A:
-  - `LR1121 -> 0900PC16J0042001E -> SKY13588`
-  - `LR1121 RFIO_HF -> DEA102700LT-6307A2 -> RFX2401C -> 0.3 pF shunt -> SKY13588`
-  - `SKY13588 RFC -> JP1 U.FL`
-- Radio chain B mirrors chain A and exits through `JP2`
-- Wi-Fi / service antenna: `AE1 2450AT18A100E`
+- Main sheet: `esp32c3_lr1121_gemini.kicad_sch`
+- Radio chain A: `LR1121 → IPD → SKY13414 → JP1 U.FL`
+- Radio chain B: mirrors chain A → `JP2 U.FL`
+- 2.4 GHz paths: `LR1121 RFIO_HF → 2450FM07D0034 → RFX2401C → 0.3pF → SKY13414 RF3`
+- RF switch control (both chains): `DIO7 → V3, DIO8 → V2, V1 → GND`
+- RFX2401C control: `DIO5 → RXEN, DIO6 → TXEN`
+- Wiring SHOULD be symmetrical — ELRS sends SetDioAsRfSwitch to both radios simultaneously
 
-## Firmware Basis
+### KNOWN BUGS (not ordered for fabrication yet)
 
-- ExpressLRS env basis: `Unified_ESP32C3_LR1121_RX_via_UART`
-- OTA basis: `Unified_ESP32C3_LR1121_RX_via_WIFI`
-- Upstream target basis: `Generic C3 LR1121 True Diversity`
+1. **DIO7-2/DIO8-2 wiring bug:** Both SKY13414 switches (U6, U11) are controlled by Radio A's DIO7-1/DIO8-1. Radio B's DIO7-2/DIO8-2 are single-pin nets (go nowhere). Fix: U11 V3→DIO7-2, U11 V2→DIO8-2.
 
-Important firmware note:
+2. **Schematic still has old components:** index.json shows SKY13588-460LF (U6) and DEA102700LT-6307A2 (USB1) in the schematic — not yet updated to SKY13414 and 2450FM07D0034.
 
-- Gemini needs an OpenRX-specific true-diversity / Gemini target entry in the ELRS targets repo
-- Gemini needs the final dual-radio pin layout and matching `radio_rfsw_ctrl` definitions
+## Firmware
+
+- ELRS target: `Unified_ESP32C3_LR1121_RX` (same binary as Mono)
+- Hardware JSON: `/shared/elrs-targets/OpenRX Gemini LR1121.json`
+- `radio_nss_2` enables dual-radio mode
+- `radio_rfsw_ctrl: [15, 0, 0, 12, 4, 10, 0, 9]` — same as Mono, see Mono DESIGN.md for decode table
 
 ## Flash Interface
 
-- `TP1` = `RX`
-- `TP2` = `TX`
-- `TP3` = `5V`
-- `TP4` = `GND`
-- `SW1` / `BUTTON` pulls `GPIO9` low for manual UART download mode
-
-First flash:
-
-- hold the onboard `BUTTON`
-- power the board through `TP3`
-- flash over `TP1/TP2/TP3/TP4`
-- use Wi-Fi OTA after the first successful flash
-
-## Datasheets
-
-Local shared datasheets used by Gemini are present under `datasheets/common/`, including:
-
-- `ESP32-C3FH4_datasheet.pdf`
-- `LR1121_datasheet.pdf`
-- `LR1121_user_manual.pdf`
-- `RFX2401C_datasheet.pdf`
-- `SKY13588-460LF_datasheet.pdf`
-- `0900PC16J0042001E_datasheet.pdf`
-- `OW7EL89CENUYO3YLC-32M_datasheet.pdf`
-- `TLV755P_datasheet.pdf`
-- `Hirose_U.FL-R-SMT-1_80_C88374.pdf`
-- `2450AT18A100E_antenna.pdf`
-- `CJ17-400001010B20_datasheet.pdf`
-
-The official `DEA102700LT-6307A2` PDF is still not mirrored locally.
+- Pads: `5V`, `GND`, `RX`, `TX`
+- `BOOT` pad + tactile button on GPIO9
+- Hold BOOT/button during power-up for UART download mode
+- Use Wi-Fi OTA after first flash
 
 ## Sourcing
 
-- Active fitted Gemini schematic has no blank `LCSC` fields
-- The main likely `JLCPCB Global Sourcing` parts are:
-  - `C2151906` `SKY13588-460LF`
-  - `C19842466` `0900PC16J0042001E`
-  - `C7498014` `LR1121IMLTRT`
+- `C255353` SKY13414-485LF (x2)
+- `C19842466` 0900PC16J0042001E (x2, consign from DigiKey)
+- `C7498014` LR1121IMLTRT (x2)
+- `C2651081` 2450FM07D0034 (x2)
+- `C19213` RFX2401C (x2)
 
 ## Release To-Do
 
+- **Fix DIO7-2/DIO8-2 wiring** — Radio B switch has no control signals
+- **Update schematic components** — replace SKY13588 with SKY13414, DEA102700 with 2450FM07D0034
+- Rename USB1/USB2 ref designators to FL1/FL2
 - Finish PCB routing / DRC
-- Add OpenRX Gemini target entry in the ELRS targets repo
-- Verify both radios on the shared SPI bus during bring-up
 - Validate symmetric RF performance across both chains
-- Run Gemini / Xrossband pre-scan and link validation
+- Run Gemini / Xrossband link validation
+- CE / RED pre-scan for dual-band operation

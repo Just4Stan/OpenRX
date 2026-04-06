@@ -1,76 +1,76 @@
 # OpenRX
 
-Open-source ExpressLRS receiver family built around three active boards:
+Open-source ExpressLRS receiver family — four active boards:
 
-- `OpenRX-Lite`: compact `2.4 GHz` SX1281 receiver with ceramic ELRS antenna
-- `OpenRX-Mono`: single-`LR1121` multi-band receiver with `1x U.FL`
-- `OpenRX-Gemini`: dual-`LR1121` Gemini/Xrossband receiver with `2x U.FL`
+- `OpenRX-Lite`: compact 2.4 GHz SX1281 receiver with ceramic antenna
+- `OpenRX-Lite-UFL`: same as Lite with U.FL antenna connector
+- `OpenRX-Mono`: single-LR1121 multi-band receiver with 1x U.FL
+- `OpenRX-Gemini`: dual-LR1121 Gemini/Xrossband receiver with 2x U.FL
 
-The active schematics are:
+| Model | Band | RF | Front-End | Antenna | ELRS Target |
+|-------|------|-----|-----------|---------|-------------|
+| **Lite** | 2.4 GHz | SX1281 | 2450FM07D0034 BPF | Ceramic | `Unified_ESP32C3_2400_RX` |
+| **Lite UFL** | 2.4 GHz | SX1281 | 2450FM07D0034 BPF | U.FL | `Unified_ESP32C3_2400_RX` |
+| **Mono** | Multi-band | LR1121 | RFX2401C + SKY13414 + Johanson IPD | 1x U.FL | `Unified_ESP32C3_LR1121_RX` |
+| **Gemini** | Xrossband | 2x LR1121 | 2x (RFX2401C + SKY13414 + Johanson IPD) | 2x U.FL | `Unified_ESP32C3_LR1121_RX` |
 
-| Model | Band | RF | Front-End | Antenna | Target Price | ELRS Target |
-|-------|------|-----|-----------|---------|-------------|-------------|
-| **Lite** | 2.4 GHz | SX1281 | DEA LPF only | Ceramic (Molex tower) | €8-15 | Generic C3 2400 |
-| **Mono** | Multi-band | LR1121 | RFX2401C + SKY13588 + Johanson IPD | 1× UFL, dual-band | €15-25 | Generic C3 LR1121 |
-| **Gemini** | Xrossband | 2× LR1121 | 2× (RFX2401C + SKY13588 + Johanson IPD) | 2× UFL, dual-band | €25-35 | Generic C3 LR1121 True Diversity |
+Mono and Gemini use the same firmware binary — `radio_nss_2` in hardware.json activates dual-radio mode.
+
+## Active Schematics
 
 - `OpenRX-Lite/esp32c3_sx1281_lite.kicad_sch`
+- `OpenRX-Lite-UFL/esp32c3_sx1281_lite.kicad_sch`
 - `OpenRX-Mono/esp32c3_lr1121_mono.kicad_sch`
 - `OpenRX-Gemini/esp32c3_lr1121_gemini.kicad_sch`
 
-These are the current source of truth for the hardware. Older Nano / 900 / Dual / PWM concepts live under `archive/legacy-projects/`.
-
 ## Documentation
 
-The active documentation is intentionally reduced to:
-
-- this `README.md`
 - `OpenRX-Lite/DESIGN.md`
+- `OpenRX-Lite-UFL/DESIGN.md`
 - `OpenRX-Mono/DESIGN.md`
 - `OpenRX-Gemini/DESIGN.md`
 
-## Active Board Summary
+## Flashing
 
-| Board | Role | ExpressLRS env basis | First-flash path | Main release work |
-|------|------|-----------------------|------------------|-------------------|
-| Lite | `2.4 GHz` SX1281 RX | `Unified_ESP32C3_2400_RX_via_UART` / `_via_WIFI` | UART pads + temporary `CHIP_BOOT` access | PCB finish, target entry, RF validation |
-| Mono | single-`LR1121` multi-band RX | `Unified_ESP32C3_LR1121_RX_via_UART` / `_via_WIFI` | UART pads + onboard `BUTTON` | PCB finish, target entry, `radio_rfsw_ctrl`, RF validation |
-| Gemini | dual-`LR1121` Gemini RX | `Unified_ESP32C3_LR1121_RX_via_UART` / `_via_WIFI` | UART pads + onboard `BUTTON` | PCB finish, target entry, dual-radio validation |
+All boards expose `5V`, `GND`, `RX`, `TX` pads and a `BOOT` pad (GPIO9 to GND) for initial UART flashing. Mono and Gemini also have a tactile button on GPIO9. After first flash, use Wi-Fi OTA or Betaflight passthrough.
 
-OpenRX-specific `hardware.json` / layout entries still need to be created in the ExpressLRS targets repo.
+## ELRS Firmware Targets
 
-## Flashing Interface
+Hardware JSON files are in `/shared/elrs-targets/`:
 
-All three boards expose:
+- `OpenRX Lite 2400.json`
+- `OpenRX Mono LR1121.json`
+- `OpenRX Gemini LR1121.json`
+- `targets_entries.json`
 
-- `TP1` = `RX`
-- `TP2` = `TX`
-- `TP3` = `5V`
-- `TP4` = `GND`
+## KiCad Libraries
 
-Current boot entry:
+All projects use KiCad 9 with project-local libraries only — no global library dependencies.
 
-- Lite: `GPIO9` exists as `CHIP_BOOT`, but there is no dedicated BOOT pad or button
-- Mono: `BUTTON` pulls `GPIO9` low for manual UART download mode
-- Gemini: `BUTTON` pulls `GPIO9` low for manual UART download mode
+`shared/libs/` contains:
+
+| Library | Contents |
+|---------|----------|
+| `OpenRX-Shared.kicad_sym` | Symbols: ESP32-C3, LR1121, SX1281, RFX2401C, SKY13414, TLV75533, Johanson IPD, 2450FM07D0034, antennas, LED, connectors |
+| `OpenRX-Shared.pretty` | Footprints: QFN-14/16/24/32, X2SON, antenna, filter, LED, switch, solder pads |
+| `OpenRX-Shared.3dshapes` | 3D models (.step + .wrl) |
+
+All symbols include an `LCSC Part` property for JLCPCB BOM export.
 
 ## Datasheets
 
-The shared local cache is `datasheets/common/`.
-
-All active IC / RF datasheets needed for Lite, Mono, and Gemini are present locally there except for the official `DEA102700LT-6307A2` PDF, which still needs to be mirrored into the repo. Use the official TDK product page as the current source of truth for that part.
+Shared local cache in `datasheets/common/`. All active IC/RF datasheets are present locally.
 
 ## Sourcing
 
-As of `2026-03-24`, the active schematics have no blank `LCSC` fields.
+Current low-stock / JLCPCB Global Sourcing candidates:
 
-Current low-stock / likely `JLCPCB Global Sourcing` candidates:
-
-- `C2151906` `SKY13588-460LF`
-- `C19842466` `0900PC16J0042001E`
-- `C7498014` `LR1121IMLTRT`
-- `C2151551` `SX1281IMLTRT` for a full `1000 pcs` Lite build
+- `C255353` SKY13414-485LF
+- `C19842466` 0900PC16J0042001E (consign from DigiKey)
+- `C7498014` LR1121IMLTRT
+- `C2151551` SX1281IMLTRT (for 1000 pcs Lite build)
+- `C2651081` 2450FM07D0034
 
 ## License
 
-This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal** ([CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt)). See [LICENSE](LICENSE) for details.
+**CERN Open Hardware Licence Version 2 - Strongly Reciprocal** ([CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt)). See [LICENSE](LICENSE).
