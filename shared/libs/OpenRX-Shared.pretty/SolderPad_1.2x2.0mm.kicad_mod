@@ -1,24 +1,102 @@
-(footprint "OpenRX-Shared:SolderPad_1.2x2.0mm"
-	(version 20240108)
-	(generator "hand")
+(footprint "SolderPad_1.2x2.0mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Solder pad 1.2x2.0mm with 25% corner radius, 2.0mm pitch compatible")
 	(tags "solder pad connector CRSF ELRS")
-	(attr smd)
-	(fp_text reference "REF**" (at 0 -1.7) (layer "F.SilkS")
-		(effects (font (size 0.8 0.8) (thickness 0.12)))
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(layer "F.SilkS")
+		(uuid "4216e771-3d5d-4a28-b0f4-375ff2e7ae23")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
 	)
-	(fp_text value "SolderPad" (at 0 1.7) (layer "F.Fab")
-		(effects (font (size 0.8 0.8) (thickness 0.12)))
+	(property "Value" "SolderPad"
+		(at 0 1.7 0)
+		(layer "F.Fab")
+		(uuid "508d351c-6551-46e9-9471-a249bc1aae62")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbfaedc9-59c3-4fdd-83df-cd97b4d9e3e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5983033-04b8-4d21-89e9-8f37833dfa1e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.85 -1.25)
+		(end 0.85 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f0e841bf-2f0a-4694-b51f-3941e2c95abc")
+	)
+	(fp_line
+		(start -0.85 1.25)
+		(end -0.85 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "094f236f-ddca-4ae4-b4b5-67fcd1da671b")
+	)
+	(fp_line
+		(start 0.85 -1.25)
+		(end 0.85 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e84aafd4-c3b1-405e-bd2b-0c7705a128ce")
+	)
+	(fp_line
+		(start 0.85 1.25)
+		(end -0.85 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62738612-b35f-49d3-8f96-cf6ba4f42737")
 	)
 	(pad "1" smd roundrect
 		(at 0 0)
-		(size 1.2 2.0)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(size 1.5 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(uuid "3e5f32c4-7b4a-4023-9b82-33a734fa9e54")
 	)
-	(fp_line (start -0.85 -1.25) (end 0.85 -1.25) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
-	(fp_line (start 0.85 -1.25) (end 0.85 1.25) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
-	(fp_line (start 0.85 1.25) (end -0.85 1.25) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
-	(fp_line (start -0.85 1.25) (end -0.85 -1.25) (layer "F.CrtYd") (stroke (width 0.05) (type solid)))
+	(embedded_fonts no)
 )

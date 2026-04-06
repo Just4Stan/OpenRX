@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.09
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -147,7 +147,7 @@
         "min_track_width": 0.09,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.25,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -693,7 +693,7 @@
         "uuid": "8521861a-4fab-458b-8289-5e2efb91d906"
       }
     ],
-    "used_designators": "L1",
+    "used_designators": "FL1,TP5",
     "variants": []
   },
   "sheets": [

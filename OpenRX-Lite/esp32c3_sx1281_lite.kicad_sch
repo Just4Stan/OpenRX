@@ -759,6 +759,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "OpenRX-Shared:2450FM07D0034T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FL"
+				(at 0 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2450FM07D0034T"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L"
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C2651081.pdf"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "JOHANSON(约翰逊)"
+				(at 0 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "2450FM07D0034T"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C2651081"
+				(at 0 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part_1" "C2651081"
+				(at 0 -35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RF Filters"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2450FM07D0034T_0_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 0 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -11.43 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 11.43 270)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OpenRX-Shared:47948-0001"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1161,163 +1362,6 @@
 				)
 				(pin input line
 					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "OpenRX-Shared:DEA102700LT-6307A2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "USB"
-				(at 4.826 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "DEA102700LT-6307A2"
-				(at 11.684 8.382 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L_DEA102700LT-XXX"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C574024"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "DEA102700LT-6307A2_0_1"
-				(rectangle
-					(start -6.35 5.08)
-					(end 6.35 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -8.89 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 7.62 270)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -3661,6 +3705,12 @@
 		(uuid "2a430dac-0983-4d82-8b3b-ca99cc816a79")
 	)
 	(junction
+		(at 288.29 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b9a6b25-ac47-4335-90d9-eb1f10dd7314")
+	)
+	(junction
 		(at 180.34 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3715,12 +3765,6 @@
 		(uuid "55ff0fe9-6afa-4c6b-ad08-af7561c32bd6")
 	)
 	(junction
-		(at 303.53 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "631ed686-7bb7-4bcb-a959-4caee58ab670")
-	)
-	(junction
 		(at 182.88 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3737,12 +3781,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77fa36a1-f010-4e9f-8938-ce28409acba6")
-	)
-	(junction
-		(at 303.53 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78980e92-f62e-43b3-8a41-bed8e265060f")
 	)
 	(junction
 		(at 186.69 111.76)
@@ -3763,6 +3801,12 @@
 		(uuid "7f8a9a58-213d-4ca4-a57f-04266d7c78ca")
 	)
 	(junction
+		(at 147.32 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85fffa9f-7bf7-4f4f-8b83-1f488454ec7e")
+	)
+	(junction
 		(at 210.82 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3773,6 +3817,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95330098-e124-4636-b7e1-511b95cd3191")
+	)
+	(junction
+		(at 288.29 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98098ed6-4810-46f3-9427-0fedbb1fb9ed")
 	)
 	(junction
 		(at 134.62 29.21)
@@ -3797,6 +3847,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0a357d1-4894-4674-989e-bf34034076f2")
+	)
+	(junction
+		(at 303.53 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd957c94-4c64-47a8-abed-a4ce400b861b")
 	)
 	(junction
 		(at 194.31 121.92)
@@ -3829,22 +3885,10 @@
 		(uuid "d07d59d6-f6d7-47af-a4a2-2b75de33293a")
 	)
 	(junction
-		(at 288.29 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d47443bc-db4f-4670-b16a-7817618b4a17")
-	)
-	(junction
 		(at 196.85 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d65abedd-80a7-4778-a148-fd1b0d78fee1")
-	)
-	(junction
-		(at 288.29 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d81ed484-9171-400f-b86a-9b4218b1dff3")
 	)
 	(junction
 		(at 134.62 34.29)
@@ -3863,6 +3907,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc1e1e76-ff03-451c-a6c1-b1c8e62b556d")
+	)
+	(junction
+		(at 303.53 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe1a1c68-8cc6-4e69-a069-66dc44424b9f")
 	)
 	(no_connect
 		(at 252.73 69.85)
@@ -3968,7 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 80.01) (xy 288.29 82.55)
+			(xy 288.29 80.01) (xy 288.29 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4008,7 +4058,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 67.31) (xy 303.53 67.31)
+			(xy 288.29 63.5) (xy 303.53 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4105,16 +4155,6 @@
 			(type default)
 		)
 		(uuid "2e4c12a5-5bdd-490a-85d7-4013f79c28ce")
-	)
-	(wire
-		(pts
-			(xy 312.42 74.93) (xy 331.47 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30326f33-1e06-4d0d-ba2b-e48a1ff0ce9f")
 	)
 	(wire
 		(pts
@@ -4248,7 +4288,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 74.93) (xy 294.64 74.93)
+			(xy 288.29 74.93) (xy 292.1 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4328,7 +4368,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 82.55) (xy 303.53 82.55)
+			(xy 288.29 86.36) (xy 303.53 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4638,6 +4678,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 74.93) (xy 331.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d081d2-f17d-44a4-8bb6-2326f58f6912")
+	)
+	(wire
+		(pts
 			(xy 210.82 111.76) (xy 210.82 113.03)
 		)
 		(stroke
@@ -4798,7 +4848,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 69.85) (xy 288.29 67.31)
+			(xy 288.29 69.85) (xy 288.29 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5166,7 +5216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "089624cb-fccb-4aff-939e-0768d763b551")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR015"
 			(at 173.99 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5226,7 +5276,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR011")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5243,7 +5293,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "12873075-aaa9-46a7-ba3f-e1f9c79e9ff3")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 184.404 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +5368,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5531,7 +5581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1944ad04-acc8-45dc-bdd7-68b44ee98092")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR023"
 			(at 246.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5592,7 +5642,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR018")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5609,7 +5659,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "22bb3eb1-6547-42e6-a143-05090f0a7f34")
-		(property "Reference" "L"
+		(property "Reference" "L1"
 			(at 85.344 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5682,7 +5732,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "L")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -5777,7 +5827,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24d164ce-496a-4897-bbd7-3a0515fa5496")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 172.466 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5852,7 +5902,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5870,7 +5920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "266a6c18-462b-4c85-ab5c-a93d1637dbd2")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR05"
 			(at 80.01 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -5930,7 +5980,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR028")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -6024,7 +6074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cd2fe2e-057f-4a79-8750-b8e1445b1620")
-		(property "Reference" "C2"
+		(property "Reference" "C6"
 			(at 161.29 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6099,7 +6149,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C2")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6116,7 +6166,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cf63081-b8bd-4aa2-8d83-c72b8e02a36f")
-		(property "Reference" "C8"
+		(property "Reference" "C2"
 			(at 57.15 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6191,7 +6241,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C8")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6301,7 +6351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e0c88b0-0e9b-4d73-9601-775cffdaec69")
-		(property "Reference" "C7"
+		(property "Reference" "C3"
 			(at 66.04 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6376,7 +6426,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C7")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6384,7 +6434,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 303.53 67.31 180)
+		(at 303.53 63.5 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6394,8 +6444,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f39b6fd-361d-4d6d-aa93-3cbc216fe2b1")
-		(property "Reference" "#PWR025"
-			(at 303.53 60.96 0)
+		(property "Reference" "#PWR026"
+			(at 303.53 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6406,7 +6456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 303.53 62.23 0)
+			(at 303.53 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6416,7 +6466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 303.53 67.31 0)
+			(at 303.53 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6427,7 +6477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 303.53 67.31 0)
+			(at 303.53 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6438,7 +6488,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 67.31 0)
+			(at 303.53 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6454,7 +6504,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR025")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -6471,7 +6521,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40d3f990-1577-40ab-a8ae-e5160e2f616a")
-		(property "Reference" "C20"
+		(property "Reference" "C7"
 			(at 150.114 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6546,7 +6596,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C20")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6564,7 +6614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4187a7a0-90d1-459f-90f8-b9eda073c013")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR013"
 			(at 170.18 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -6624,7 +6674,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR01")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6642,7 +6692,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41e6526a-1fc5-4b2a-a1c9-b2a29d986891")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR021"
 			(at 228.4044 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6702,7 +6752,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR020")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6720,7 +6770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4245d16c-88f9-43d4-a5e5-0b6c65a1e75b")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR025"
 			(at 298.45 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6780,7 +6830,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR022")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6874,6 +6924,135 @@
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OpenRX-Shared:2450FM07D0034T")
+		(at 303.53 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45ed440d-2695-46f3-a660-c6424989c0bd")
+		(property "Reference" "FL1"
+			(at 315.976 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2450FM07D0034T"
+			(at 315.976 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L"
+			(at 303.53 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2651081.pdf"
+			(at 303.53 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 303.53 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JOHANSON(约翰逊)"
+			(at 303.53 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "2450FM07D0034T"
+			(at 303.53 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2651081"
+			(at 303.53 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part_1" "C2651081"
+			(at 303.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00c6ecc6-a9fc-4890-84be-f835313b511d")
+		)
+		(pin "3"
+			(uuid "a54ac283-085c-4383-8796-07d7c0cb0380")
+		)
+		(pin "2"
+			(uuid "ee0750cc-2d92-4681-8812-be72a98e9a14")
+		)
+		(pin "4"
+			(uuid "2ea47f13-df49-4fd0-b06b-2cedaa86bf97")
+		)
+		(instances
+			(project "OpenRX-Lite"
+				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
+					(reference "FL1")
 					(unit 1)
 				)
 			)
@@ -7001,7 +7180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ba4c81c-03fd-4515-9c04-e4fb6be70363")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 31.75 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7076,7 +7255,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7094,7 +7273,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f9cddac-b46a-4a6a-b597-064c32743a53")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR016"
 			(at 195.58 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7154,7 +7333,83 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR013")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 93.98 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5139907e-5188-4a60-b677-18f3b1288c31")
+		(property "Reference" "TP5"
+			(at 147.574 101.092 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.574 105.156 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OpenRX-Shared:SolderPad_1.2x2.0mm"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "486cfec5-74ed-42f8-a0ad-07510e737305")
+		)
+		(instances
+			(project "OpenRX-Lite"
+				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -7248,7 +7503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56942f77-2b9d-412b-89d2-e3cc060cddbc")
-		(property "Reference" "C4"
+		(property "Reference" "C11"
 			(at 186.69 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7323,7 +7578,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C4")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7341,7 +7596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58020da6-d99f-4f1d-9edf-51fbaf35deda")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR022"
 			(at 228.6 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7401,7 +7656,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR017")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7419,7 +7674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c3650b4-01ce-48b8-9772-b1ed7b744995")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 325.12 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -7480,114 +7735,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "OpenRX-Shared:DEA102700LT-6307A2")
-		(at 303.53 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "66d1bb88-f957-450d-9b0e-e5549a6bf4ea")
-		(property "Reference" "USB1"
-			(at 316.738 62.992 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DEA102700LT-6307A2"
-			(at 316.738 65.532 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "OpenRX-Shared:FILTER-SMD_4P-L1.0-W0.5-L_DEA102700LT-XXX"
-			(at 303.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 303.53 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 303.53 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C574024"
-			(at 303.53 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C574024"
-			(at 0 0 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "37ff87e7-fba5-4269-bc2b-224dd532c175")
-		)
-		(pin "4"
-			(uuid "096b9ada-395e-429b-aa06-0ba2de9f3bdc")
-		)
-		(pin "2"
-			(uuid "a687125c-4458-4d53-b672-ac5cfc4ffa86")
-		)
-		(pin "1"
-			(uuid "02b806ea-bb22-4011-ad91-48b515afee2a")
-		)
-		(instances
-			(project "OpenRX-Lite"
-				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "USB1")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7605,7 +7753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b1a56de-d253-42b2-a335-226099a6d6aa")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR03"
 			(at 64.77 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7665,7 +7813,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR06")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7790,7 +7938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aeaf8bc-f30d-4e5d-bb72-ecde28292ab1")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 240.03 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7863,7 +8011,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -7987,7 +8135,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7df4489b-7266-4e1d-823a-4bf2fad94bd1")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR06"
 			(at 80.01 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8047,7 +8195,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR023")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -8166,7 +8314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82d2675a-c86d-455c-b75d-b189f5b96bb0")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 149.86 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8241,7 +8389,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8259,7 +8407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87d1293f-0567-4f74-a08a-7ea38c78b138")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 149.86 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8334,7 +8482,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8429,7 +8577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8978ec5a-02df-4702-9a9f-71d99b2c66bf")
-		(property "Reference" "C10"
+		(property "Reference" "C15"
 			(at 203.2 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8504,7 +8652,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C10")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -8676,7 +8824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f0c72f2-0461-49cc-904c-657f4c7febe7")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011"
 			(at 165.1 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -8736,7 +8884,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR010")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8925,7 +9073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94455fa0-f7ef-4f0f-8334-e89b72afdc0b")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR024"
 			(at 270.51 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8985,7 +9133,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR019")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9003,7 +9151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a2ac6c2-1d30-4b57-9081-abcede1d68ed")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR014"
 			(at 170.18 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -9063,7 +9211,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR02")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9081,7 +9229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bf43681-2146-4c60-881b-d2a0d6cb9ed6")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR01"
 			(at 30.48 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -9142,7 +9290,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9157,7 +9305,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ea965b3-8a96-45c3-9831-4ada3346dbbc")
 		(property "Reference" "AE2"
@@ -9270,7 +9418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a02039cd-04c2-4adc-a088-f450b0ff7031")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR019"
 			(at 220.98 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9330,7 +9478,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR014")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -9348,7 +9496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1159368-0cff-46dc-a07f-a8a39ec363a6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR017"
 			(at 195.58 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9409,7 +9557,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9427,7 +9575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a260ca2e-1e84-46c5-884f-3877fca2b651")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR020"
 			(at 228.4044 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9487,7 +9635,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR021")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9505,7 +9653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4828251-83a1-4cff-a1e8-0f27541e30aa")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 74.93 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9580,7 +9728,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9598,7 +9746,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a71df70b-f630-4400-ac7b-a53a38e966e7")
-		(property "Reference" "C5"
+		(property "Reference" "C12"
 			(at 199.39 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9673,7 +9821,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C5")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -9691,7 +9839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa73549f-180a-4721-ae63-4c9146cd890c")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 195.58 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -9752,7 +9900,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9770,7 +9918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab5b5ff2-4df7-46d0-ac34-355702f0db6d")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR010"
 			(at 157.48 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9830,7 +9978,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR029")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9925,7 +10073,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be144202-4512-44a0-8751-ec7203efc7f7")
-		(property "Reference" "C11"
+		(property "Reference" "C16"
 			(at 213.36 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10000,7 +10148,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C11")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -10096,7 +10244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c29fc067-cccf-4dba-82cb-c0fe303baf37")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR04"
 			(at 68.58 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10156,7 +10304,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR07")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10174,7 +10322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca761263-3768-4744-99b7-3a5927012d0d")
-		(property "Reference" "C1"
+		(property "Reference" "C5"
 			(at 148.59 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10249,7 +10397,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10266,7 +10414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc15174d-27f4-4c84-b9c7-2e925485b17e")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 63.5 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10326,7 +10474,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -10344,7 +10492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce82f800-9bec-4e77-98ee-0cd3e032f02c")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 325.12 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10405,7 +10553,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -10521,7 +10669,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 303.53 82.55 0)
+		(at 303.53 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10531,8 +10679,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de2be130-700c-4832-aada-bc914f52ec32")
-		(property "Reference" "#PWR024"
-			(at 303.53 88.9 0)
+		(property "Reference" "#PWR027"
+			(at 303.53 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10543,7 +10691,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 303.53 87.63 0)
+			(at 303.53 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10553,7 +10701,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 303.53 82.55 0)
+			(at 303.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10564,7 +10712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 303.53 82.55 0)
+			(at 303.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10575,7 +10723,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 303.53 82.55 0)
+			(at 303.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10591,7 +10739,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR024")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -10609,7 +10757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df8597cb-2f72-48ce-99f2-1b54f42b627b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR07"
 			(at 116.84 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10669,7 +10817,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "#PWR03")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10687,7 +10835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e295e4be-495d-4329-8053-2f6405ee53c0")
-		(property "Reference" "C15"
+		(property "Reference" "C17"
 			(at 226.06 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10762,7 +10910,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C15")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -10780,7 +10928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e34a9ab8-8154-4591-8419-308caede43b2")
-		(property "Reference" "C16"
+		(property "Reference" "C20"
 			(at 302.26 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10855,7 +11003,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C16")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -10949,7 +11097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f23c85ab-cba3-4a99-b160-12cc498aee8a")
-		(property "Reference" "C19"
+		(property "Reference" "C4"
 			(at 83.82 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11024,7 +11172,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C19")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -11042,7 +11190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa410152-cda6-450b-823b-1c6da09cbe35")
-		(property "Reference" "C14"
+		(property "Reference" "C18"
 			(at 238.76 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11117,7 +11265,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C14")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -11135,7 +11283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fac62a95-fdb8-45f0-bdfd-385d8380c793")
-		(property "Reference" "C17"
+		(property "Reference" "C14"
 			(at 213.36 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11210,7 +11358,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C17")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -11228,7 +11376,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb3a5774-087d-439e-8ae8-1a6ed7319ac7")
-		(property "Reference" "C3"
+		(property "Reference" "C9"
 			(at 173.99 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11303,7 +11451,7 @@
 		(instances
 			(project "OpenRX-Lite"
 				(path "/8521861a-4fab-458b-8289-5e2efb91d906/d4225140-81df-42e7-abd7-e679e5ab5187"
-					(reference "C3")
+					(reference "C9")
 					(unit 1)
 				)
 			)
