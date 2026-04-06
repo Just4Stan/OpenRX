@@ -1,0 +1,50 @@
+{
+    "opendrone": {
+        "name": "OpenDrone",
+
+        "rx_2400": {
+            "lite": {
+                "product_name": "OpenRX Lite 2.4GHz RX",
+                "lua_name": "ORX Lite",
+                "layout_file": "OpenRX Lite 2400.json",
+                "upload_methods": [
+                    "uart",
+                    "wifi",
+                    "betaflight"
+                ],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_2400_RX"
+            }
+        },
+
+        "rx_dual": {
+            "mono": {
+                "product_name": "OpenRX Mono Dual Band RX",
+                "lua_name": "ORX Mono",
+                "layout_file": "OpenRX Mono LR1121.json",
+                "upload_methods": [
+                    "uart",
+                    "wifi",
+                    "betaflight"
+                ],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_LR1121_RX"
+            },
+            "gemini": {
+                "product_name": "OpenRX Gemini XrossBand RX",
+                "lua_name": "ORX Gemini",
+                "layout_file": "OpenRX Gemini LR1121.json",
+                "upload_methods": [
+                    "uart",
+                    "wifi",
+                    "betaflight"
+                ],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_LR1121_RX"
+            }
+        }
+    }
+}
