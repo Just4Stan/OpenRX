@@ -34,6 +34,10 @@ replicate_layout.log
 # Fabrication toolkit config
 fabrication-toolkit-options.json
 
+# Generated files
+**/netlist.xml
+**/schematic_analysis.json
+
 # Python
 __pycache__/
 *.pyc

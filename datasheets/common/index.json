@@ -1,0 +1,331 @@
+{
+  "schematic": "/Users/stan/Library/Mobile Documents/com~apple~CloudDocs/OpenRX/OpenRX-Gemini/OpenRX-Gemini.kicad_sch",
+  "last_sync": "2026-04-06T13:08:04.881088+00:00",
+  "parts": {
+    "C15525": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "10uF",
+      "references": [
+        "C12",
+        "C11"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C15525'",
+      "last_attempt": "2026-04-06T13:07:22.336702+00:00"
+    },
+    "C85926": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "470nF",
+      "references": [
+        "C16"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C85926'",
+      "last_attempt": "2026-04-06T13:07:22.912390+00:00"
+    },
+    "C66942": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "1nF",
+      "references": [
+        "C18"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C66942'",
+      "last_attempt": "2026-04-06T13:07:23.578846+00:00"
+    },
+    "C76939": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "100nF",
+      "references": [
+        "C2",
+        "C20",
+        "C13",
+        "C4",
+        "C5",
+        "C1",
+        "C15",
+        "C14",
+        "C17",
+        "C3"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C76939'",
+      "last_attempt": "2026-04-06T13:07:24.155385+00:00"
+    },
+    "C62164": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "18pF",
+      "references": [
+        "C7",
+        "C6"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C62164'",
+      "last_attempt": "2026-04-06T13:07:24.718129+00:00"
+    },
+    "C76935": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "1uF",
+      "references": [
+        "C9",
+        "C8",
+        "C10",
+        "C19"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C76935'",
+      "last_attempt": "2026-04-06T13:07:25.287690+00:00"
+    },
+    "C5349953": {
+      "manufacturer": "",
+      "description": "",
+      "value": "XL-1010RGBC-WS2812B",
+      "references": [
+        "D1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C5349953'",
+      "last_attempt": "2026-04-06T13:07:25.847580+00:00"
+    },
+    "C206441": {
+      "manufacturer": "",
+      "description": "Inductor",
+      "value": "24nH",
+      "references": [
+        "L"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C206441'",
+      "last_attempt": "2026-04-06T13:07:26.406368+00:00"
+    },
+    "C22434896": {
+      "manufacturer": "",
+      "description": "",
+      "value": "OW7EL89CENUNFAYLC-52M",
+      "references": [
+        "OSC1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C22434896'",
+      "last_attempt": "2026-04-06T13:07:26.971400+00:00"
+    },
+    "C106225": {
+      "manufacturer": "",
+      "description": "Resistor",
+      "value": "10k",
+      "references": [
+        "R1",
+        "R3",
+        "R2",
+        "R4"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C106225'",
+      "last_attempt": "2026-04-06T13:07:27.549222+00:00"
+    },
+    "C2858491": {
+      "manufacturer": "",
+      "description": "",
+      "value": "ESP32-C3FH4",
+      "references": [
+        "U1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2858491'",
+      "last_attempt": "2026-04-06T13:07:28.115031+00:00"
+    },
+    "C2861882": {
+      "manufacturer": "",
+      "description": "",
+      "value": "TLV75533PDQNR",
+      "references": [
+        "U2"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2861882'",
+      "last_attempt": "2026-04-06T13:07:28.679013+00:00"
+    },
+    "C2151551": {
+      "manufacturer": "",
+      "description": "",
+      "value": "SX1281IMLTRT",
+      "references": [
+        "U3"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2151551'",
+      "last_attempt": "2026-04-06T13:07:29.247285+00:00"
+    },
+    "C574024": {
+      "manufacturer": "",
+      "description": "",
+      "value": "DEA102700LT-6307A2",
+      "references": [
+        "USB1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C574024'",
+      "last_attempt": "2026-04-06T13:07:29.906467+00:00"
+    },
+    "C2875272": {
+      "manufacturer": "",
+      "description": "",
+      "value": "CJ17-400001010B20",
+      "references": [
+        "X1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2875272'",
+      "last_attempt": "2026-04-06T13:07:30.471155+00:00"
+    },
+    "C89334": {
+      "manufacturer": "",
+      "description": "",
+      "value": "2450AT18A100E",
+      "references": [
+        "AE1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C89334'",
+      "last_attempt": "2026-04-06T13:07:22.336210+00:00"
+    },
+    "C62548": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "220pF",
+      "references": [
+        "C15"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C62548'",
+      "last_attempt": "2026-04-06T13:07:43.691753+00:00"
+    },
+    "C20069240": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "10pF",
+      "references": [
+        "C13"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C20069240'",
+      "last_attempt": "2026-04-06T13:07:43.691334+00:00"
+    },
+    "C76927": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "0.3pF",
+      "references": [
+        "C16"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C76927'",
+      "last_attempt": "2026-04-06T13:07:44.285981+00:00"
+    },
+    "C23733": {
+      "manufacturer": "",
+      "description": "Unpolarized capacitor",
+      "value": "4.7uF",
+      "references": [
+        "C20"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C23733'",
+      "last_attempt": "2026-04-06T13:07:44.287559+00:00"
+    },
+    "C274342": {
+      "manufacturer": "",
+      "description": "Resistor",
+      "value": "220R",
+      "references": [
+        "R6"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C274342'",
+      "last_attempt": "2026-04-06T13:07:44.864085+00:00"
+    },
+    "C6808014": {
+      "manufacturer": "",
+      "description": "Inductor",
+      "value": "10uH",
+      "references": [
+        "L1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C6808014'",
+      "last_attempt": "2026-04-06T13:07:44.855998+00:00"
+    },
+    "C19842466": {
+      "manufacturer": "",
+      "description": "",
+      "value": "0900PC16J0042001E",
+      "references": [
+        "T1"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C19842466'",
+      "last_attempt": "2026-04-06T13:07:45.427887+00:00"
+    },
+    "C2976675": {
+      "manufacturer": "",
+      "description": "",
+      "value": "TS2306A 240GF MSM 9_C2976675",
+      "references": [
+        "U3"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2976675'",
+      "last_attempt": "2026-04-06T13:07:45.430679+00:00"
+    },
+    "C7498014": {
+      "manufacturer": "",
+      "description": "",
+      "value": "LR1121IMLTRT",
+      "references": [
+        "U4"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C7498014'",
+      "last_attempt": "2026-04-06T13:07:46.002804+00:00"
+    },
+    "C22381772": {
+      "manufacturer": "",
+      "description": "",
+      "value": "OW7EL89CENUYO3YLC-32M",
+      "references": [
+        "U5"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C22381772'",
+      "last_attempt": "2026-04-06T13:07:46.002885+00:00"
+    },
+    "C2151906": {
+      "manufacturer": "",
+      "description": "",
+      "value": "SKY13588-460LF",
+      "references": [
+        "U6"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C2151906'",
+      "last_attempt": "2026-04-06T13:07:46.653274+00:00"
+    },
+    "C19213": {
+      "manufacturer": "",
+      "description": "",
+      "value": "RFX2401C",
+      "references": [
+        "U7"
+      ],
+      "status": "not_found",
+      "error": "No LCSC results for 'C19213'",
+      "last_attempt": "2026-04-06T13:07:46.653451+00:00"
+    }
+  }
+}
