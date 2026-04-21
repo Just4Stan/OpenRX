@@ -2,6 +2,3 @@
 (rule "GND zone clearance to 50 Ohm nets"
   (constraint clearance (min 0.300mm))
   (condition "A.NetClass == '50Ohm' && B.Type == 'Zone'"))
-(rule copper_to_copper
-	(constraint clearance (min 0.1mm))
-)

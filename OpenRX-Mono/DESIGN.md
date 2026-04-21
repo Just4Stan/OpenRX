@@ -77,7 +77,6 @@ Filter pin 1 (chipset side) is 40 ohm, designed for SX1280/SX1281. LR1121 RFIO_H
 
 ## Release To-Do
 
-- Rename USB2 ref designator to FL1
 - Finish PCB routing / DRC
-- Validate RF path switching and rfsw_ctrl on hardware
+- Validate RF path switching and rfsw_ctrl on hardware (NanoVNA)
 - Run CE / RED pre-scan for 2.4 GHz and sub-GHz operation

@@ -74,9 +74,10 @@ PASSIVE_LIBS = {"Device:C", "Device:R", "Device:L"}
 # ── Schematic sub-sheets containing actual components ────────────────────
 BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SHEETS: list[str] = [
-    os.path.join(BASE, "OpenRX-Lite",   "esp32c3_sx1281_lite.kicad_sch"),
-    os.path.join(BASE, "OpenRX-Mono",   "esp32c3_lr1121_mono.kicad_sch"),
-    os.path.join(BASE, "OpenRX-Gemini", "esp32c3_lr1121_gemini.kicad_sch"),
+    os.path.join(BASE, "OpenRX-Lite",     "esp32c3_sx1281_lite.kicad_sch"),
+    os.path.join(BASE, "OpenRX-Lite-UFL", "esp32c3_sx1281_lite.kicad_sch"),
+    os.path.join(BASE, "OpenRX-Mono",     "esp32c3_lr1121_mono.kicad_sch"),
+    os.path.join(BASE, "OpenRX-Gemini",   "esp32c3_lr1121_gemini.kicad_sch"),
 ]
 
 

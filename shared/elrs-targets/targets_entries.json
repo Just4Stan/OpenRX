@@ -15,6 +15,19 @@
                 "min_version": "3.5.0",
                 "platform": "esp32-c3",
                 "firmware": "Unified_ESP32C3_2400_RX"
+            },
+            "lite_ufl": {
+                "product_name": "OpenRX Lite-UFL 2.4GHz RX",
+                "lua_name": "ORX Lite-UFL",
+                "layout_file": "OpenRX Lite-UFL 2400.json",
+                "upload_methods": [
+                    "uart",
+                    "wifi",
+                    "betaflight"
+                ],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_2400_RX"
             }
         },
 
