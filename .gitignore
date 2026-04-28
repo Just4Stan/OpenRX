@@ -38,6 +38,9 @@ fabrication-toolkit-options.json
 **/netlist.xml
 **/schematic_analysis.json
 
+# JLC/sourcing quote drops (per-quote, not source of truth)
+verification/bom/jlc-quote-*.md
+
 # Python
 __pycache__/
 *.pyc
