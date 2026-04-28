@@ -237,8 +237,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.25,
-          "drill": 0.15
+          "diameter": 0.3,
+          "drill": 0.2
         }
       ],
       "zones_allow_external_fillets": false
@@ -522,8 +522,8 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.09,
         "tuning_profile": "",
-        "via_diameter": 0.25,
-        "via_drill": 0.15,
+        "via_diameter": 0.3,
+        "via_drill": 0.2,
         "wire_width": 6
       }
     ],
